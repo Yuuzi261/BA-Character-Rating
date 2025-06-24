@@ -3,20 +3,22 @@
     <div class="card-header">
       蔚藍檔案 角色評分
       <button @click="$emit('toggle-dark-mode')" class="theme-toggle-btn" :title="isDarkMode ? '切換至明亮模式' : '切換至暗黑模式'">
-        <svg v-if="isDarkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="5"></circle>
-          <line x1="12" y1="1" x2="12" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="23"></line>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-          <line x1="1" y1="12" x2="3" y2="12"></line>
-          <line x1="21" y1="12" x2="23" y2="12"></line>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-        <svg v-else xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
+        <Transition name="icon-fade-slide" mode="out-in">
+          <svg v-if="isDarkMode" key="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg v-else key="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </Transition>
       </button>
     </div>
     
@@ -205,7 +207,6 @@ watch(() => props.character.ratings.overall, async (newVal, oldVal) => {
   gap: 0;
 }
 
-
 .theme-toggle-btn {
   position: absolute;
   right: 15px;
@@ -222,6 +223,32 @@ watch(() => props.character.ratings.overall, async (newVal, oldVal) => {
   justify-content: center;
   transition: background-color 0.2s ease;
 }
+
+.icon-fade-slide-enter-active,
+.icon-fade-slide-leave-active {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.icon-fade-slide-enter-from {
+  opacity: 0;
+  transform: rotateY(90deg);
+}
+
+.icon-fade-slide-leave-to {
+  opacity: 0;
+  transform: rotateY(-90deg);
+}
+
+.icon-fade-slide-enter-to {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.icon-fade-slide-leave-from {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
 .theme-toggle-btn:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
