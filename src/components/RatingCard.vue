@@ -129,8 +129,7 @@ import FavoriteItemSection from './FavoriteItemSection.vue';
 import FavoriteItemModal from './modal/FavoriteItemModal.vue';
 
 const props = defineProps({
-  character: { type: Object, required: true },
-  isDarkMode: { type: Boolean, default: false },
+  character: { type: Object, required: true }, 
   theme: { type: String, default: 'system' }
 });
 defineEmits(['open-selector', 'toggle-dark-mode']);

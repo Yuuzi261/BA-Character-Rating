@@ -5,9 +5,8 @@
         v-if="currentCharacter"
         :character="currentCharacter" 
         @open-selector="isSelectorVisible = true"
-        :theme="settingStore.theme"
-        :is-dark-mode="isDarkMode"
-        @toggle-dark-mode="toggleDarkMode"
+        :theme="settingStore.theme" 
+        @toggle-dark-mode="settingStore.toggleTheme"
       />
       <CharacterSelector 
         :is-visible="isSelectorVisible"
@@ -29,42 +28,19 @@ import { fetchData } from '@/utils/fetchData';
 import { getAssetsFile } from '@/utils/getAssetsFile';
 import { loadFontCSS } from '@/utils/loadFontCSS'
 import { useSettingStore } from '@/store/setting';
+import { storeToRefs } from 'pinia';
 import RatingCard from '@/components/RatingCard.vue';
 import CharacterSelector from '@/components/modal/CharacterSelector.vue';
 import NProgress from 'nprogress'
 import '@/style/nprogress/nprogress.css'
 
 const settingStore = useSettingStore();
-const osPrefersDark = ref(window.matchMedia('(prefers-color-scheme: dark)').matches);
-
-const isDarkMode = computed(() => {
-  if (settingStore.theme === 'dark') return true;
-  if (settingStore.theme === 'light') return false;
-  return osPrefersDark.value; // 'system'
-});
+const { isDarkMode } = storeToRefs(settingStore); // Maintaining responsiveness with storeToRefs
 
 const language = ref('zh-tw');
 const allCharacters = ref([]); 
 const currentCharacter = ref(null);
 const isSelectorVisible = ref(false);
-
-const toggleDarkMode = () => {
-  const themes = ['light', 'dark', 'system'];
-  const currentTheme = settingStore.theme || 'system';
-  const currentIndex = themes.indexOf(currentTheme);
-  const nextIndex = (currentIndex + 1) % themes.length;
-  settingStore.theme = themes[nextIndex];
-};
-
-// 根據系統偏好設置主題
-const initSystemTheme = () => {
-  const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-  mediaQuery.addEventListener('change', (e) => {
-    osPrefersDark.value = e.matches;
-  });
-};
-
-initSystemTheme();
 
 const handleCharacterSelect = (characterId) => {
   const selected = allCharacters.value.find(c => c.id === characterId);
@@ -83,6 +59,9 @@ const getIdFromUrl = () => {
 
 onMounted(async () => {
   NProgress.configure({ showSpinner: false });
+  
+  // 初始化主題監聽器
+  settingStore.initThemeListener();
   NProgress.start();
 
   try {
