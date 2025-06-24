@@ -4,10 +4,10 @@ import { ref } from 'vue'
 export const useSettingStore = defineStore(
   'setting',
   () => {
-    const isDarkMode = ref(null)
+    const theme = ref('system')
 
     return {
-      isDarkMode,
+      theme,
     }
   },
   {

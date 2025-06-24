@@ -4,7 +4,8 @@
       <RatingCard 
         v-if="currentCharacter"
         :character="currentCharacter" 
-        @open-selector="isSelectorVisible = true" 
+        @open-selector="isSelectorVisible = true"
+        :theme="settingStore.theme"
         :is-dark-mode="isDarkMode"
         @toggle-dark-mode="toggleDarkMode"
       />
@@ -34,25 +35,33 @@ import NProgress from 'nprogress'
 import '@/style/nprogress/nprogress.css'
 
 const settingStore = useSettingStore();
-const isDarkMode = computed(() => settingStore.isDarkMode);
+const osPrefersDark = ref(window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+const isDarkMode = computed(() => {
+  if (settingStore.theme === 'dark') return true;
+  if (settingStore.theme === 'light') return false;
+  return osPrefersDark.value; // 'system'
+});
+
 const language = ref('zh-tw');
 const allCharacters = ref([]); 
 const currentCharacter = ref(null);
 const isSelectorVisible = ref(false);
 
 const toggleDarkMode = () => {
-  settingStore.isDarkMode = !settingStore.isDarkMode;
+  const themes = ['light', 'dark', 'system'];
+  const currentTheme = settingStore.theme || 'system';
+  const currentIndex = themes.indexOf(currentTheme);
+  const nextIndex = (currentIndex + 1) % themes.length;
+  settingStore.theme = themes[nextIndex];
 };
 
 // 根據系統偏好設置主題
 const initSystemTheme = () => {
-  const matches = window.matchMedia('(prefers-color-scheme: dark)');
-  matches.addEventListener('change', (e) => {
-    settingStore.isDarkMode = e.matches;
+  const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  mediaQuery.addEventListener('change', (e) => {
+    osPrefersDark.value = e.matches;
   });
-
-  if (settingStore.isDarkMode !== null) return; // 如果已經手動設置過主題，則不再自動切換
-  settingStore.isDarkMode = matches.matches;
 };
 
 initSystemTheme();

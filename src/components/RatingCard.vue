@@ -2,9 +2,10 @@
   <div class="character-card">
     <div class="card-header">
       蔚藍檔案 角色評分
-      <button @click="$emit('toggle-dark-mode')" class="theme-toggle-btn" :title="isDarkMode ? '切換至明亮模式' : '切換至暗黑模式'">
+      <button @click="$emit('toggle-dark-mode')" class="theme-toggle-btn" :title="themeToggleTitle">
         <Transition name="icon-fade-slide" mode="out-in">
-          <svg v-if="isDarkMode" key="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Light Mode Icon -->
+          <svg v-if="theme === 'light'" key="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -15,8 +16,14 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
-          <svg v-else key="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Dark Mode Icon -->
+          <svg v-else-if="theme === 'dark'" key="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- System Mode Icon -->
+          <svg v-else key="system-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 7 A5 5 0 0 0 12 17 Z" fill="currentColor" stroke="none"></path>
           </svg>
         </Transition>
       </button>
@@ -123,9 +130,19 @@ import FavoriteItemModal from './modal/FavoriteItemModal.vue';
 
 const props = defineProps({
   character: { type: Object, required: true },
-  isDarkMode: { type: Boolean, default: false }
+  isDarkMode: { type: Boolean, default: false },
+  theme: { type: String, default: 'system' }
 });
 defineEmits(['open-selector', 'toggle-dark-mode']);
+
+const themeToggleTitle = computed(() => {
+  switch (props.theme) {
+    case 'light': return '切換至暗黑模式';
+    case 'dark': return '切換至跟隨系統';
+    case 'system':
+    default: return '切換至明亮模式';
+  }
+});
 
 const ratingCategories = [
   { key: 'newbie', label: '新手期：' },
