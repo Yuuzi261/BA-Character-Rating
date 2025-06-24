@@ -29,6 +29,8 @@ import { getAssetsFile } from '@/utils/getAssetsFile';
 import { loadFontCSS } from '@/utils/loadFontCSS'
 import RatingCard from '@/components/RatingCard.vue';
 import CharacterSelector from '@/components/modal/CharacterSelector.vue';
+import NProgress from 'nprogress'
+import '@/style/nprogress/nprogress.css'
 
 const isDarkMode = ref(false);
 const language = ref('zh-tw');
@@ -50,29 +52,31 @@ const handleCharacterSelect = (characterId) => {
 };
 
 onMounted(async () => {
+  NProgress.configure({ showSpinner: false });
+  NProgress.start();
+
   try {
+    // 載入角色數據
     const data = await fetchData(language.value);
     allCharacters.value = data;
-    
+
     if (allCharacters.value.length > 0) {
       currentCharacter.value = allCharacters.value[0];
     }
     console.log('數據已載入並設定完成。');
-  } catch (error) {
-    console.error('載入數據失敗:', error);
-    alert('載入數據失敗:', error);
-  }
 
-  try {
+    // 載入字體 CSS
     const fonts = [
       'fonts/NEXONFootballGothic/result.css',
-    ]
-
+    ];
     await Promise.all(
       fonts.map(path => loadFontCSS(getAssetsFile(path)))
-    )
-  } catch (err) {
-    console.error('字體載入失敗:', err)
+    );
+  } catch (error) {
+    console.error('載入資源失敗:', error);
+    alert('載入資源失敗，請檢查網路或稍後再試。');
+  } finally {
+    NProgress.done();
   }
 });
 </script>
