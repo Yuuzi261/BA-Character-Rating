@@ -65,6 +65,13 @@ const handleCharacterSelect = (characterId) => {
   isSelectorVisible.value = false;
 };
 
+// 從 URL 獲取 id
+const getIdFromUrl = () => {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('id');
+  return id ? parseInt(id) : null;
+};
+
 onMounted(async () => {
   NProgress.configure({ showSpinner: false });
   NProgress.start();
@@ -74,9 +81,16 @@ onMounted(async () => {
     const data = await fetchData(language.value);
     allCharacters.value = data;
 
-    if (allCharacters.value.length > 0) {
-      currentCharacter.value = allCharacters.value[0];
+    // 從 URL 讀取 id 並設置角色
+    const urlId = getIdFromUrl();
+
+    // 如果 URL 中有有效的 id，使用該角色，否則使用第一個角色
+    if (urlId && allCharacters.value.some(c => c.id === urlId)) {
+      handleCharacterSelect(urlId);
+    } else if (allCharacters.value.length > 0) {
+      handleCharacterSelect(allCharacters.value[0].id);
     }
+
     console.log('數據已載入並設定完成。');
 
     // 載入字體 CSS

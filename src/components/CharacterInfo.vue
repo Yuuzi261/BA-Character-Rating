@@ -15,13 +15,14 @@
 </template>
 
 <script setup>
+import { watch } from 'vue';
 import { useI18n } from '@/composables/useI18n.js';
 import { getAvatarUrl } from '@/utils/getAvatarUrl';
 import { getSchoolIconUrl } from '@/utils/getSchoolIconUrl';
 
 const { t } = useI18n();
 
-defineProps({
+const props = defineProps({
   id: {
     type: Number,
     required: true
@@ -41,6 +42,13 @@ defineProps({
 });
 
 defineEmits(['avatar-click']);
+
+// 監聽 id 變化，更新 URL 參數
+watch(() => props.id, (newId) => {
+  const url = new URL(window.location);
+  url.searchParams.set('id', newId);
+  window.history.replaceState({}, '', url);
+}, { immediate: true });
 </script>
 
 <style scoped>
