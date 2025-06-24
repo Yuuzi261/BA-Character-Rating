@@ -23,25 +23,39 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed, watch } from 'vue';
 import { fetchData } from '@/utils/fetchData';
 import { getAssetsFile } from '@/utils/getAssetsFile';
 import { loadFontCSS } from '@/utils/loadFontCSS'
+import { useSettingStore } from '@/store/setting';
 import RatingCard from '@/components/RatingCard.vue';
 import CharacterSelector from '@/components/modal/CharacterSelector.vue';
 import NProgress from 'nprogress'
 import '@/style/nprogress/nprogress.css'
 
-const isDarkMode = ref(false);
+const settingStore = useSettingStore();
+const isDarkMode = computed(() => settingStore.isDarkMode);
 const language = ref('zh-tw');
 const allCharacters = ref([]); 
 const currentCharacter = ref(null);
 const isSelectorVisible = ref(false);
 
 const toggleDarkMode = () => {
-  isDarkMode.value = !isDarkMode.value;
-  document.body.classList.toggle('dark-mode', isDarkMode.value); // 將 class 應用到 body
+  settingStore.isDarkMode = !settingStore.isDarkMode;
 };
+
+// 根據系統偏好設置主題
+const initSystemTheme = () => {
+  const matches = window.matchMedia('(prefers-color-scheme: dark)');
+  matches.addEventListener('change', (e) => {
+    settingStore.isDarkMode = e.matches;
+  });
+
+  if (settingStore.isDarkMode !== null) return; // 如果已經手動設置過主題，則不再自動切換
+  settingStore.isDarkMode = matches.matches;
+};
+
+initSystemTheme();
 
 const handleCharacterSelect = (characterId) => {
   const selected = allCharacters.value.find(c => c.id === characterId);
@@ -79,6 +93,10 @@ onMounted(async () => {
     NProgress.done();
   }
 });
+
+watch(isDarkMode, (newValue) => {
+  document.body.classList.toggle('dark-mode', newValue);
+}, { immediate: true }); 
 </script>
 
 <style>
