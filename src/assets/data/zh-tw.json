@@ -1,5 +1,59 @@
 [
   {
+    "id": 0,
+    "fullname": "貓夜",
+    "name": "貓夜",
+    "nicknames": ["貓夜"],
+    "school": "Hyakkiyako",
+    "attackType": "Sonic",
+    "defenseType": "Heavy",
+    "weapon": "SR",
+    "position": [0, "輔助"],
+    "uniqueWeaponRecommended": "開！",
+    "acquisitionMethod": "愚人節限定池",
+    "skillMainOparts": "easter_egg_frenzy_max_umeboshi",
+    "skillSubOparts": "easter_egg_frenzy_max_umeboshi",
+    "l2dUnlock": 100,
+    "city": "S",
+    "outdoor": "S",
+    "indoor": "S",
+    "equipments": [
+      "badge",
+      "badge",
+      "badge"
+    ],
+    "uniqueWeaponStar2": "增益時間增加",
+    "uniqueWeaponStar3": ["outdoor", "SS"],
+    "ratingVersion": "4.1",
+    "ratings": {
+      "newbie": [5, 0, 0],
+      "totalAssault": [5, 0, 0],
+      "pvp": [5, 0, 0],
+      "grandAssault": [5, 0, 0],
+      "limitBreakAssault": [5, 0, 0],
+      "jointFiringDrill": [5, 0, 0],
+      "eventChallenge": [5, 0, 0],
+      "overall": 101
+    },
+    "skillsSummary": {
+      "ex": "2Cost增加一名隊友振動屬攻66.6%（持續40秒）並獲得一枚「猫眼」",
+      "ns": "每20秒使圓形範圍內的友軍攻撃力25%增加（持續30秒）",
+      "ss": "當隊伍「猫眼」達到3枚時，消耗使全體Cost減少1和振動屬攻40.8%增加"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "大決戰新神已至",
+      "pvp": "吉祥物可愛就完事",
+      "grandAssault": "大決戰新神已至",
+      "limitBreakAssault": null,
+      "jointFiringDrill": "水花帶飛擺爛",
+      "eventChallenge": "水花帶飛擺爛"
+    },
+    "uniqueWeaponRecommendedSummary": "開開開",
+    "overallRecommendation": "必備，必抽捏",
+    "skillOrder": ["EX3", "技一.二.三Lv4", "技三LV7", "技二Lv7", "技一Lv7", "EX5", "技三Lv10", "技二Lv10", "技一Lv10", "Max"]
+  },
+  {
     "id": 154,
     "fullname": "秋泉 紅葉",
     "name": "紅葉",

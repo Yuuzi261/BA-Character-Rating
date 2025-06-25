@@ -1,13 +1,13 @@
 <template>
   <div v-if="rating" class="star-rating">
     <template v-for="n in rating[0]" :key="'black-' + n">
-      <span class="star black-star">★</span>
+      <span class="star black-star">{{ star ? '★' : '❤︎' }}</span>
     </template>
     <template v-for="n in rating[1]" :key="'blue-' + n">
-      <span class="star blue-star">★</span>
+      <span class="star blue-star">{{ star ? '★' : '❤︎' }}</span>
     </template>
     <template v-for="n in rating[2]" :key="'red-' + n">
-      <span class="star red-star">★</span>
+      <span class="star red-star">{{ star ? '★' : '❤︎' }}</span>
     </template>
   </div>
   <div v-else>
@@ -20,6 +20,10 @@ defineProps({
   rating: {
     type: [Array, null],
     required: true
+  },
+  star: {
+    type: Boolean,
+    default: true
   }
 });
 </script>

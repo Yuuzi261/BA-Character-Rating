@@ -1,24 +1,24 @@
 <template>
   <div :class="{ 'dark-mode': isDarkMode }">
-    <RatingCard 
+    <RatingCard
       v-if="currentCharacter"
-      :character="currentCharacter" 
+      :character="currentCharacter"
       @open-selector="isSelectorVisible = true"
-      :theme="settingStore.theme" 
+      :theme="settingStore.theme"
       :locale="settingStore.locale"
       @toggle-dark-mode="settingStore.toggleTheme"
     />
-    <CharacterSelector 
+    <CharacterSelector
       :is-visible="isSelectorVisible"
-      :characters="allCharacters"
-      @select="handleCharacterSelect" 
-      @close="isSelectorVisible = false" 
+      :characters="selectableCharacters"
+      @select="handleCharacterSelect"
+      @close="isSelectorVisible = false"
     />
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from 'vue';
+import { ref, onMounted, watch, computed } from 'vue';
 import { runIPGeolocation } from '@/utils/ipGeolocation';
 import { fetchData } from '@/utils/fetchData';
 import { getAssetsFile } from '@/utils/getAssetsFile';
@@ -33,9 +33,14 @@ import '@/style/nprogress/nprogress.css'
 const settingStore = useSettingStore();
 const { isDarkMode } = storeToRefs(settingStore); // Maintaining responsiveness with storeToRefs
 
-const allCharacters = ref([]); 
+const allCharacters = ref([]);
 const currentCharacter = ref(null);
 const isSelectorVisible = ref(false);
+
+// Add a computed property to filter out roles with id=0 (easter egg character)
+const selectableCharacters = computed(() => {
+  return allCharacters.value.filter(c => c.id !== 0);
+});
 
 const handleCharacterSelect = (characterId) => {
   const selected = allCharacters.value.find(c => c.id === characterId);
@@ -45,7 +50,6 @@ const handleCharacterSelect = (characterId) => {
   isSelectorVisible.value = false;
 };
 
-// 從 URL 獲取 id
 const getIdFromUrl = () => {
   const params = new URLSearchParams(window.location.search);
   const id = params.get('id');
@@ -54,32 +58,35 @@ const getIdFromUrl = () => {
 
 onMounted(async () => {
   NProgress.configure({ showSpinner: false });
-  
-  // 初始化主題監聽器
+
+  // Initialize the theme listener
   settingStore.initThemeListener();
   NProgress.start();
 
   try {
-    // 等待 IP 定位設定好 locale
+    // Wait for IP location to set locale
     await runIPGeolocation();
 
-    // 載入角色數據，使用 Pinia store 中的 locale
+    // Load character data, using the locale in the Pinia store
     const data = await fetchData(settingStore.locale);
     allCharacters.value = data;
 
-    // 從 URL 讀取 id 並設置角色
     const urlId = getIdFromUrl();
 
-    // 如果 URL 中有有效的 id，使用該角色，否則使用第一個角色
-    if (urlId && allCharacters.value.some(c => c.id === urlId)) {
+    // If there is a valid id in the URL, use that role, otherwise use the first role
+    if (urlId !== null && urlId !== undefined && allCharacters.value.some(c => c.id === urlId)) {
       handleCharacterSelect(urlId);
-    } else if (allCharacters.value.length > 0) {
-      handleCharacterSelect(allCharacters.value[0].id);
+    } else {
+      // If the URL does not specify an ID, or the specified ID does not exist, the first "non-easter egg" character is selected
+      const firstNonEasterEggCharacter = selectableCharacters.value.length > 0 ? selectableCharacters.value[0] : null;
+      if (firstNonEasterEggCharacter) {
+        handleCharacterSelect(firstNonEasterEggCharacter.id);
+      }
     }
 
     console.log('數據已載入並設定完成。');
 
-    // 載入字體 CSS
+    // Load the font CSS
     const fonts = [
       'fonts/NEXONFootballGothic/result.css',
     ];
@@ -96,7 +103,7 @@ onMounted(async () => {
 
 watch(isDarkMode, (newValue) => {
   document.body.classList.toggle('dark-mode', newValue);
-}, { immediate: true }); 
+}, { immediate: true });
 </script>
 
 <style>

@@ -85,7 +85,7 @@
         <RatingSection :title="t('ratingCard.starRating')">
           <div v-for="category in ratingCategories" :key="category.key" class="rating-row">
             <strong>{{ category.label }}</strong>
-            <StarRating :rating="character.ratings[category.key]" />
+            <StarRating :rating="character.ratings[category.key]" :star="Boolean(character.id)" />
             <InfoTooltip v-if="character.ratingsSummary[category.key]" :text="character.ratingsSummary[category.key]">
               <InfoIcon />
             </InfoTooltip>
