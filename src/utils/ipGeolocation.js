@@ -12,7 +12,7 @@ export async function runIPGeolocation() {
     TW: 'zh-tw',
     CN: 'zh-cn',
   }
-  const defaultCountryLang = 'zh-tw'
+  const defaultCountryLang = countryLangMap['TW']
   const controller = new AbortController()
   const timeoutId = setTimeout(() => controller.abort(), 800)
 
