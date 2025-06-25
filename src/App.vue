@@ -24,7 +24,8 @@
 </template>
 
 <script setup>
-import { ref, onMounted, computed, watch } from 'vue';
+import { ref, onMounted, watch } from 'vue';
+import { runIPGeolocation } from '@/utils/ipGeolocation';
 import { fetchData } from '@/utils/fetchData';
 import { getAssetsFile } from '@/utils/getAssetsFile';
 import { loadFontCSS } from '@/utils/loadFontCSS'
@@ -65,6 +66,9 @@ onMounted(async () => {
   NProgress.start();
 
   try {
+    // 等待 IP 定位設定好 locale
+    await runIPGeolocation();
+
     // 載入角色數據，使用 Pinia store 中的 locale
     const data = await fetchData(settingStore.locale);
     allCharacters.value = data;
@@ -94,13 +98,6 @@ onMounted(async () => {
   } finally {
     NProgress.done();
   }
-});
-
-// Watch for locale changes in Pinia store and re-fetch data
-watch(() => settingStore.locale, async (newLocale) => {
-  // Re-fetch data when locale changes
-  const data = await fetchData(newLocale);
-  allCharacters.value = data;
 });
 
 watch(isDarkMode, (newValue) => {
