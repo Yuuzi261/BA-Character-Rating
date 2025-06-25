@@ -1,25 +1,19 @@
 <template>
   <div :class="{ 'dark-mode': isDarkMode }">
-    <div v-if="allCharacters.length > 0">
-      <RatingCard 
-        v-if="currentCharacter"
-        :character="currentCharacter" 
-        @open-selector="isSelectorVisible = true"
-        :theme="settingStore.theme" 
-        :locale="settingStore.locale"
-        @toggle-dark-mode="settingStore.toggleTheme"
-      />
-      <CharacterSelector 
-        :is-visible="isSelectorVisible"
-        :characters="allCharacters"
-        @select="handleCharacterSelect" 
-        @close="isSelectorVisible = false" 
-      />
-    </div>
-    <div v-else>
-      <!-- TODO: 添加loading動畫 -->
-      <p>正在載入角色數據...</p>
-    </div>
+    <RatingCard 
+      v-if="currentCharacter"
+      :character="currentCharacter" 
+      @open-selector="isSelectorVisible = true"
+      :theme="settingStore.theme" 
+      :locale="settingStore.locale"
+      @toggle-dark-mode="settingStore.toggleTheme"
+    />
+    <CharacterSelector 
+      :is-visible="isSelectorVisible"
+      :characters="allCharacters"
+      @select="handleCharacterSelect" 
+      @close="isSelectorVisible = false" 
+    />
   </div>
 </template>
 
