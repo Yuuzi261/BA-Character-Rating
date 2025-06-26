@@ -112,7 +112,7 @@ watch(isDarkMode, (newValue) => {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overscroll-behavior: none;
+  overscroll-behavior-y: none;
 }
 
 body {
