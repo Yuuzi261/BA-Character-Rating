@@ -8,6 +8,9 @@ import { visualizer } from "rollup-plugin-visualizer";
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    allowedHosts: true
+  },
   plugins: [
     vue(), 
     vueDevTools(),
