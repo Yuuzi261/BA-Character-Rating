@@ -120,7 +120,8 @@ const selectedDefenseType = ref([]);
 const selectedSchool = ref([]);
 const selectedWeapon = ref([]);
 const selectedPosition = ref([]);
-const isFilterPanelOpen = ref(false); // Default to closed on all screens
+// Default to open on desktop (>=769px), closed on smaller screens.
+const isFilterPanelOpen = ref(window.matchMedia('(min-width: 769px)').matches);
 
 const filterRefs = {
   attackType: selectedAttackType,
