@@ -1,13 +1,13 @@
 <template>
   <div class="character-card">
     <div class="card-header">
-      <button @click="handleSettingsClick" class="settings-btn" :title="t('common.settings')">
+      <button @click="handleSettingsClick" class="settings-btn tooltip" :data-tooltip="t('common.settings')">
         <img :src="gearIconUrl" alt="Settings Icon" :class="{ 'is-rotating': isSettingsIconRotating }" @animationend="isSettingsIconRotating = false" />
       </button>
 
       <span class="header-title">{{ t('ratingCard.title') }}</span>
 
-      <button @click="$emit('toggle-dark-mode')" class="theme-toggle-btn" :title="themeToggleTitle">
+      <button @click="$emit('toggle-dark-mode')" class="theme-toggle-btn tooltip" :data-tooltip="themeToggleTitle">
         <Transition name="icon-fade-slide" mode="out-in">
           <!-- Light Mode Icon -->
           <svg v-if="theme === 'light'" key="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -248,7 +248,6 @@ watch(() => props.character.ratings.overall, async (newVal, oldVal) => {
   background: white;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  overflow: hidden;
   position: relative;
 }
 
@@ -263,6 +262,7 @@ watch(() => props.character.ratings.overall, async (newVal, oldVal) => {
   align-items: center;
   position: relative;
   z-index: 1;
+  border-radius: 15px 15px 0 0;
 }
 
 .header-title {
@@ -273,6 +273,8 @@ watch(() => props.character.ratings.overall, async (newVal, oldVal) => {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 0;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
 }
 
 .settings-btn {
@@ -359,6 +361,34 @@ watch(() => props.character.ratings.overall, async (newVal, oldVal) => {
 .settings-btn:hover,
 .theme-toggle-btn:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Custom Tooltip for buttons. The button itself must have a position context (e.g., relative or absolute). */
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background-color: #2c3e50;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  z-index: 20; /* Ensure it's above other header elements */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(8px);
 }
 
 .left-section {
@@ -471,6 +501,11 @@ watch(() => props.character.ratings.overall, async (newVal, oldVal) => {
 
 .dark-mode .overall-grade {
   background: linear-gradient(45deg, #2a7fff, #00aeef);
+}
+
+.dark-mode .tooltip::after {
+  background-color: #e0e6ed;
+  color: #1a2b40;
 }
 
 /* General text color for dark mode within the card */
