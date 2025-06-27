@@ -587,7 +587,7 @@ const filteredCharacters = computed(() => {
     grid-template-rows: 0fr;
     opacity: 0;
     margin-bottom: 0;
-    border-bottom-width: 0; /* Collapse the border */
+    border-bottom-width: 0;
   }
 
   .filter-controls.is-open {
@@ -595,6 +595,7 @@ const filteredCharacters = computed(() => {
     grid-template-rows: 1fr;
     opacity: 1;
     margin-bottom: 15px;
+    border-bottom-width: 1px; /* Re-enable border when open on mobile */
   }
 }
 </style>
