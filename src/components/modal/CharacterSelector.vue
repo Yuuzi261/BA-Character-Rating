@@ -289,14 +289,15 @@ const filteredCharacters = computed(() => {
 .close-button:hover { opacity: 1; }
 
 .modal-body {
-  padding: 20px;
   display: flex;
   flex-direction: column;
   height: calc(80vh - 60px); /* Adjust based on header height */
+  padding-top: 20px;
 }
 
 .fixed-section {
   flex-shrink: 0;
+  padding: 0 20px;
 }
 
 .scrollable-section {
@@ -541,6 +542,7 @@ const filteredCharacters = computed(() => {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   gap: 15px;
+  padding: 0 20px 20px;
 }
 
 .character-item {
