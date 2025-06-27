@@ -333,6 +333,7 @@ const filteredCharacters = computed(() => {
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 1rem;
+  min-width: 0;
 }
 
 .dark-mode .search-input {
@@ -448,6 +449,11 @@ const filteredCharacters = computed(() => {
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+.filter-toggle-button:active {
+  transform: translateY(0);
+  background: linear-gradient(45deg, #6495ED, #4682B4); /* Darken on click */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
 
 .filter-toggle-icon {
   width: 20px;
@@ -457,6 +463,10 @@ const filteredCharacters = computed(() => {
 
 .dark-mode .filter-toggle-button {
   background: linear-gradient(45deg, #2a7fff, #00aeef);
+}
+
+.dark-mode .filter-toggle-button:active {
+  background: linear-gradient(45deg, #0062cc, #008fbf);
 }
 
 .filter-group button {
