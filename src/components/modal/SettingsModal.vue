@@ -1,11 +1,11 @@
 <template>
   <teleport to="body">
     <transition name="modal-fade">
-      <div v-if="isVisible" class="modal-overlay" @click.self="close">
+      <div v-if="isVisible" class="modal-overlay" @click.self="closeModal">
         <div class="modal-content">
           <div class="modal-header">
             <h3>{{ t('common.settings') }}</h3>
-            <button @click="close" class="close-button">×</button>
+            <button @click="closeModal" class="close-button">×</button>
           </div>
           <div class="modal-body">
             <div class="setting-group">
@@ -43,7 +43,7 @@ import { ref, computed, toRefs, watch } from 'vue';
 import { useSettingStore } from '@/store/setting';
 import { storeToRefs } from 'pinia';
 import { useI18n } from '@/composables/useI18n.js';
-import { useEscapeKey } from '@/composables/useEscapeKey.js';
+import { useModal } from '@/composables/useModal.js';
 
 const { t } = useI18n();
 
@@ -52,11 +52,11 @@ const props = defineProps({
 });
 const emit = defineEmits(['close']);
 
-const close = () => {
+const closeModal = () => {
   emit('close');
 };
 const { isVisible } = toRefs(props);
-useEscapeKey(isVisible, close);
+useModal(isVisible, closeModal);
 
 const settingStore = useSettingStore();
 const { locale: currentLocale, enableColoredText: isColoredTextEnabled } = storeToRefs(settingStore);
@@ -78,8 +78,7 @@ const closeMenu = () => {
   isOpen.value = false;
 };
 
-useEscapeKey(isOpen, closeMenu);
-
+// For a drop-down menu, clicking anywhere should shrink the content.
 const handleClickOutside = (event) => {
   const isClickInsideButton = dropdownToggleRef.value && dropdownToggleRef.value.contains(event.target);
   const isClickInsideMenu = languageMenuRef.value && languageMenuRef.value.contains(event.target);

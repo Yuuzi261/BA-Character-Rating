@@ -1,9 +1,9 @@
 <template>
   <teleport to="body">
     <transition name="modal-fade">
-      <div v-if="modelValue" class="modal-backdrop" @click.self="close">
+      <div v-if="modelValue" class="modal-backdrop" @click.self="closeModal">
         <div class="modal-content" ref="modalContentRef" :class="color">
-          <button class="close-button" @click="close">&times;</button>
+          <button class="close-button" @click="closeModal">&times;</button>
           <h3 class="modal-title">{{ title }}</h3>
           <div class="modal-body">
             <img v-if="imageUrl" :src="imageUrl" alt="Detail Image" class="modal-image">
@@ -17,7 +17,7 @@
 
 <script setup>
 import { ref, watch, nextTick, toRefs } from 'vue';
-import { useEscapeKey } from '@/composables/useEscapeKey.js';
+import { useModal } from '@/composables/useModal.js';
 
 const props = defineProps({
   modelValue: Boolean,
@@ -38,12 +38,12 @@ const emit = defineEmits(['update:modelValue']);
 
 const modalContentRef = ref(null);
 
-const close = () => {
+const closeModal = () => {
   emit('update:modelValue', false);
 };
 
 const { modelValue } = toRefs(props);
-useEscapeKey(modelValue, close);
+useModal(modelValue, closeModal);
 
 watch(() => props.modelValue, async (show) => {
   if (!show) return;

@@ -1,11 +1,11 @@
 <template>
   <teleport to="body">
     <transition name="modal-fade">
-      <div v-if="isVisible" class="favorite-item-modal-overlay" @click.self="close">
+      <div v-if="isVisible" class="favorite-item-modal-overlay" @click.self="closeModal">
         <div class="modal-content">
           <div class="modal-header">
             <h3>{{ character.name }}{{ t('favoriteItemModal.titleSuffix') }}</h3>
-            <button @click="close" class="close-button">&times;</button>
+            <button @click="closeModal" class="close-button">&times;</button>
           </div>
           <div class="modal-body">
             <ImageWithLoader
@@ -61,7 +61,7 @@ import StarRating from '../ui/StarRating.vue';
 import { useSettingStore } from '@/store/setting';
 import { storeToRefs } from 'pinia';
 import ColoredText from '../ui/ColoredText.vue';
-import { useEscapeKey } from '@/composables/useEscapeKey.js';
+import { useModal } from '@/composables/useModal.js';
 
 const { t } = useI18n();
 
@@ -72,7 +72,7 @@ const props = defineProps({
 
 const emit = defineEmits(['close']);
 
-const close = () => {
+const closeModal = () => {
   emit('close');
 };
 
@@ -80,7 +80,7 @@ const settingStore = useSettingStore();
 const { enableColoredText } = storeToRefs(settingStore);
 
 const { isVisible } = toRefs(props);
-useEscapeKey(isVisible, close);
+useModal(isVisible, closeModal);
 
 const getGiftImageUrl = (favor) => {
   return getAssetsFile(`gift/favor_${favor}.webp`);
