@@ -150,7 +150,6 @@ const resetFilters = () => {
   selectedWeapon.value = [];
   selectedPosition.value = [];
   searchTerm.value = '';
-  isFilterPanelOpen.value = false;
 };
 
 const close = () => {
