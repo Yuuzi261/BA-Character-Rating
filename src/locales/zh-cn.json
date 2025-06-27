@@ -68,7 +68,7 @@
     "acquisitionMethodLabel": "入手方式"
   },
   "characterInfo": {
-    "clickToSwitch": "点击切换角色"
+    "clickToSwitch": "切换学生"
   },
   "terrain": {
     "city": "市街",
@@ -151,15 +151,15 @@
     "ss": "SS技能"
   },
   "characterSelector": {
-    "title": "选择角色",
-    "searchPlaceholder": "搜索角色名称或昵称...",
+    "title": "选择学生",
+    "searchPlaceholder": "搜索学生名称或昵称...",
     "resetFilters": "重设筛选",
     "attackTypeLabel": "攻击属性:",
     "defenseTypeLabel": "装甲属性:",
     "schoolLabel": "学　　园:",
     "weaponLabel": "使用武器:",
     "positionLabel": "角色定位:",
-    "noResults": "找不到符合条件的角色"
+    "noResults": "找不到符合条件的学生"
   },
   "favoriteItemModal": {
     "titleSuffix": "的爱用品",
