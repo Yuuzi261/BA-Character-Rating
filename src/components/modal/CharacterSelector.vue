@@ -8,81 +8,83 @@
             <button class="close-button" @click="close">&times;</button>
           </div>
           <div class="modal-body">
-            <div class="search-and-reset">
-              <input type="text" v-model="searchTerm" :placeholder="t('characterSelector.searchPlaceholder')" class="search-input">
-              <div class="action-buttons">
-                <button @click="resetFilters" class="reset-button">{{ t('characterSelector.resetFilters') }}</button>
-                <button @click="toggleFilterPanel" class="filter-toggle-button">
-                  <img :src="isFilterPanelOpen ? getAssetsFile('icon/filter_close.svg') : getAssetsFile('icon/filter_open.svg')" alt="Toggle Filters" class="filter-toggle-icon">
-                </button>
+            <div class="fixed-section">
+              <div class="search-and-reset">
+                <input type="text" v-model="searchTerm" :placeholder="t('characterSelector.searchPlaceholder')" class="search-input">
+                <div class="action-buttons">
+                  <button @click="resetFilters" class="reset-button">{{ t('characterSelector.resetFilters') }}</button>
+                  <button @click="toggleFilterPanel" class="filter-toggle-button">
+                    <img :src="isFilterPanelOpen ? getAssetsFile('icon/filter_close.svg') : getAssetsFile('icon/filter_open.svg')" alt="Toggle Filters" class="filter-toggle-icon">
+                  </button>
+                </div>
+              </div>
+              <div class="filter-controls" :class="{ 'is-open': isFilterPanelOpen }">
+                <div class="filter-content-wrapper">
+                  <div class="filter-group">
+                    <span class="filter-label">{{ t('characterSelector.attackTypeLabel') }}</span>
+                    <button @click="selectFilter('attackType', null)" :class="{ active: selectedAttackType.length === 0 }">{{ t('common.all') }}</button>
+                    <button v-for="type in attackTypes" :key="type" @click="selectFilter('attackType', type)" :class="{ active: selectedAttackType.includes(type), 'has-icon': true }">
+                      <div class="type-icon-wrapper" :class="`type-bg-${type.toLowerCase()}`">
+                        <img :src="getAssetsFile(`icon/Type_Attack_s.webp`)" alt="Attack Icon" class="type-icon">
+                      </div>
+                      <span>{{ t(`attackType.${type}`) }}</span>
+                    </button>
+                  </div>
+                  <div class="filter-group">
+                    <span class="filter-label">{{ t('characterSelector.defenseTypeLabel') }}</span>
+                    <button @click="selectFilter('defenseType', null)" :class="{ active: selectedDefenseType.length === 0 }">{{ t('common.all') }}</button>
+                    <button v-for="type in defenseTypes" :key="type" @click="selectFilter('defenseType', type)" :class="{ active: selectedDefenseType.includes(type), 'has-icon': true }">
+                      <div class="type-icon-wrapper" :class="`type-bg-${type.toLowerCase()}`">
+                        <img :src="getAssetsFile(`icon/Type_Defense_s.webp`)" alt="Defense Icon" class="type-icon">
+                      </div>
+                      <span>{{ t(`defenseType.${type}`) }}</span>
+                    </button>
+                  </div>
+                  <div class="filter-group">
+                    <span class="filter-label">{{ t('characterSelector.schoolLabel') }}</span>
+                    <button @click="selectFilter('school', null)" :class="{ active: selectedSchool.length === 0 }">{{ t('common.all') }}</button>
+                    <button v-for="school in schools" :key="school" @click="selectFilter('school', school)" :class="{ active: selectedSchool.includes(school), 'has-icon': true }">
+                      <img v-if="school !== 'ETC'" :src="getSchoolIconUrl(school)" :alt="school" class="school-icon" />
+                      <span>{{ t(`schoolAbbr.${school}`) }}</span>
+                    </button>
+                  </div>
+                  <div class="filter-group">
+                    <span class="filter-label">{{ t('characterSelector.weaponLabel') }}</span>
+                    <button @click="selectFilter('weapon', null)" :class="{ active: selectedWeapon.length === 0 }">{{ t('common.all') }}</button>
+                    <button v-for="type in weaponTypes" :key="type" @click="selectFilter('weapon', type)" :class="{ active: selectedWeapon.includes(type) }">
+                      <span class="nexon-font">{{ type }}</span>
+                    </button>
+                  </div>
+                  <div class="filter-group">
+                    <span class="filter-label">{{ t('characterSelector.positionLabel') }}</span>
+                    <button @click="selectFilter('position', null)" :class="{ active: selectedPosition.length === 0 }">{{ t('common.all') }}</button>
+                    <button v-for="type in positionTypes" :key="type.value" @click="selectFilter('position', type.value)" :class="{ active: selectedPosition.includes(type.value) }">
+                      <span class="nexon-font">
+                        <span :class="`position-type-${type.label.toLowerCase()}`">{{ type.label }}</span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-            
-            <div class="filter-controls" :class="{ 'is-open': isFilterPanelOpen }">
-              <div class="filter-content-wrapper">
-                <div class="filter-group">
-                  <span class="filter-label">{{ t('characterSelector.attackTypeLabel') }}</span>
-                  <button @click="selectFilter('attackType', null)" :class="{ active: selectedAttackType.length === 0 }">{{ t('common.all') }}</button>
-                  <button v-for="type in attackTypes" :key="type" @click="selectFilter('attackType', type)" :class="{ active: selectedAttackType.includes(type), 'has-icon': true }">
-                    <div class="type-icon-wrapper" :class="`type-bg-${type.toLowerCase()}`">
-                      <img :src="getAssetsFile(`icon/Type_Attack_s.webp`)" alt="Attack Icon" class="type-icon">
-                    </div>
-                    <span>{{ t(`attackType.${type}`) }}</span>
-                  </button>
+            <div class="scrollable-section">
+              <div class="character-grid">
+                <div 
+                  v-for="char in filteredCharacters" 
+                  :key="char.id" 
+                  class="character-item"
+                  @click="selectCharacter(char.id)"
+                >
+                  <ImageWithLoader
+                    :src="getAvatarUrl(char.id)"
+                    :alt="char.name"
+                    class="item-avatar"
+                  />
+                  <span class="item-name">{{ char.name }}</span>
                 </div>
-                <div class="filter-group">
-                  <span class="filter-label">{{ t('characterSelector.defenseTypeLabel') }}</span>
-                  <button @click="selectFilter('defenseType', null)" :class="{ active: selectedDefenseType.length === 0 }">{{ t('common.all') }}</button>
-                  <button v-for="type in defenseTypes" :key="type" @click="selectFilter('defenseType', type)" :class="{ active: selectedDefenseType.includes(type), 'has-icon': true }">
-                    <div class="type-icon-wrapper" :class="`type-bg-${type.toLowerCase()}`">
-                      <img :src="getAssetsFile(`icon/Type_Defense_s.webp`)" alt="Defense Icon" class="type-icon">
-                    </div>
-                    <span>{{ t(`defenseType.${type}`) }}</span>
-                  </button>
+                <div v-if="filteredCharacters.length === 0" class="no-results">
+                  {{ t('characterSelector.noResults') }}
                 </div>
-                <div class="filter-group">
-                  <span class="filter-label">{{ t('characterSelector.schoolLabel') }}</span>
-                  <button @click="selectFilter('school', null)" :class="{ active: selectedSchool.length === 0 }">{{ t('common.all') }}</button>
-                  <button v-for="school in schools" :key="school" @click="selectFilter('school', school)" :class="{ active: selectedSchool.includes(school), 'has-icon': true }">
-                    <img v-if="school !== 'ETC'" :src="getSchoolIconUrl(school)" :alt="school" class="school-icon" />
-                    <span>{{ t(`schoolAbbr.${school}`) }}</span>
-                  </button>
-                </div>
-                <div class="filter-group">
-                  <span class="filter-label">{{ t('characterSelector.weaponLabel') }}</span>
-                  <button @click="selectFilter('weapon', null)" :class="{ active: selectedWeapon.length === 0 }">{{ t('common.all') }}</button>
-                  <button v-for="type in weaponTypes" :key="type" @click="selectFilter('weapon', type)" :class="{ active: selectedWeapon.includes(type) }">
-                    <span class="nexon-font">{{ type }}</span>
-                  </button>
-                </div>
-                <div class="filter-group">
-                  <span class="filter-label">{{ t('characterSelector.positionLabel') }}</span>
-                  <button @click="selectFilter('position', null)" :class="{ active: selectedPosition.length === 0 }">{{ t('common.all') }}</button>
-                  <button v-for="type in positionTypes" :key="type.value" @click="selectFilter('position', type.value)" :class="{ active: selectedPosition.includes(type.value) }">
-                    <span class="nexon-font">
-                      <span :class="`position-type-${type.label.toLowerCase()}`">{{ type.label }}</span>
-                    </span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="character-grid">
-              <div 
-                v-for="char in filteredCharacters" 
-                :key="char.id" 
-                class="character-item"
-                @click="selectCharacter(char.id)"
-              >
-                <ImageWithLoader
-                  :src="getAvatarUrl(char.id)"
-                  :alt="char.name"
-                  class="item-avatar"
-                />
-                <span class="item-name">{{ char.name }}</span>
-              </div>
-              <div v-if="filteredCharacters.length === 0" class="no-results">
-                {{ t('characterSelector.noResults') }}
               </div>
             </div>
           </div>
@@ -118,7 +120,7 @@ const selectedDefenseType = ref([]);
 const selectedSchool = ref([]);
 const selectedWeapon = ref([]);
 const selectedPosition = ref([]);
-const isFilterPanelOpen = ref(false);
+const isFilterPanelOpen = ref(false); // Default to closed on all screens
 
 const filterRefs = {
   attackType: selectedAttackType,
@@ -238,7 +240,6 @@ const filteredCharacters = computed(() => {
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 25px rgba(0,0,0,0.4);
-  /* border: 1px solid #dee2e6; */
   animation: slide-down 0.3s ease-out;
 }
 
@@ -289,7 +290,19 @@ const filteredCharacters = computed(() => {
 
 .modal-body {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: calc(80vh - 60px); /* Adjust based on header height */
+}
+
+.fixed-section {
+  flex-shrink: 0;
+}
+
+.scrollable-section {
+  flex-grow: 1;
   overflow-y: auto;
+  padding: 10px 0;
 }
 
 .search-and-reset {
@@ -313,9 +326,6 @@ const filteredCharacters = computed(() => {
   font-size: 1rem;
 }
 
-.search-input {
-  width: 100%;
-}
 .dark-mode .search-input {
   background-color: #1f3048;
   border-color: #2a4a6e;
@@ -326,27 +336,33 @@ const filteredCharacters = computed(() => {
   margin: 15px 0;
   border-bottom: 1px solid #dee2e6;
   display: grid;
-  grid-template-rows: 1fr; /* Default to open on desktop */
-  opacity: 1; /* Default to visible on desktop */
-  margin-bottom: 15px; /* Default margin on desktop */
-  /* Transition for grid-template-rows, opacity, margin-bottom, and border-bottom-width */
+  grid-template-rows: 0fr; /* Default collapsed */
+  opacity: 0;
+  margin-bottom: 0;
+  border-bottom-width: 0;
   transition: grid-template-rows 0.3s cubic-bezier(0.4, 0, 0.2, 1),
               opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-              margin-bottom 0.3s cubic-bezier(0.4, 0, 0.2, 1), /* Animate external margin */
-              border-bottom-width 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Animate border */
+             -setting-bottom-width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
+}
+
+.filter-controls.is-open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  margin-bottom: 15px;
+  border-bottom-width: 1px;
 }
 
 .dark-mode .filter-controls {
   border-bottom-color: #2a4a6e;
 }
 
-/* New wrapper for filter content to ensure proper collapse */
+/* Wrapper for filter content to ensure proper collapse */
 .filter-content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Internal gap */
-  padding-bottom: 15px; /* Internal padding */
+  gap: 10px;
+  padding-bottom: 15px;
   min-height: 0; /* Important for grid-template-rows: 0fr to work with flex children */
 }
 
@@ -365,7 +381,6 @@ const filteredCharacters = computed(() => {
 }
 
 .reset-button {
-  /* Inherit some styles from filter buttons for consistency */
   padding: 10px 15px;
   border: 1px solid transparent;
   border-radius: 15px;
@@ -373,37 +388,39 @@ const filteredCharacters = computed(() => {
   transition: all 0.2s ease;
   font-size: 0.85rem;
   white-space: nowrap;
-  
-  /* Specific reset button colors */
-  background: linear-gradient(45deg, #ff6b6b, #e74c3c); /* Lighter red to current red */
+  background: linear-gradient(45deg, #ff6b6b, #e74c3c);
   color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  transform: translateY(0); /* Initial state for transform */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
 }
 
 .reset-button:hover {
-  background: linear-gradient(45deg, #ff4d4d, #d63031); /* Slightly darker/more vibrant on hover */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
-  transform: translateY(-2px); /* Lift effect */
+  background: linear-gradient(45deg, #ff4d4d, #d63031);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
 }
 
 .reset-button:active {
-  background: linear-gradient(45deg, #d63031, #c02a2a); /* Even darker on click */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Smaller shadow to simulate press */
-  transform: translateY(0); /* Press down effect */
+  background: linear-gradient(45deg, #d63031, #c02a2a);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
 }
 
-/* Dark mode adjustments for the reset button */
 .dark-mode .reset-button {
-  background: linear-gradient(45deg, #e74c3c, #c0392b); /* Darker red gradient for dark mode */
+  background: linear-gradient(45deg, #e74c3c, #c0392b);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
-.dark-mode .filter-label {
-  color: #c0c8d0;
+.dark-mode .reset-button:hover {
+  background: linear-gradient(45deg, #c0392b, #a93226);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.dark-mode .reset-button:active {
+  background: linear-gradient(45deg, #a93226, #922b20);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .filter-toggle-button {
-  display: none; /* Hidden by default on desktop */
+  display: flex;
   padding: 0;
   background: linear-gradient(45deg, #87CEEB, #6495ED);
   border: none;
@@ -448,21 +465,12 @@ const filteredCharacters = computed(() => {
   gap: 6px;
   padding: 5px 12px 5px 8px;
 }
-.dark-mode .reset-button:hover {
-  background: linear-gradient(45deg, #c0392b, #a93226); /* Even darker on hover in dark mode */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-.dark-mode .reset-button:active {
-  background: linear-gradient(45deg, #a93226, #922b20);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-}
 
 .dark-mode .filter-group button { background-color: #1f3048; border-color: #2a4a6e; color: #e0e6ed; }
 .filter-group button:hover { background-color: #e9ecef; border-color: #6495ed; }
 .dark-mode .filter-group button:hover { background-color: #2a4a6e; border-color: #00aeef; }
 .filter-group button.active { background-color: #6495ed; color: white; border-color: #6495ed; font-weight: bold; }
-.dark-mode .filter-group button.active { background-color: #00aeef; border-color: #00aeef;
-}
+.dark-mode .filter-group button.active { background-color: #00aeef; border-color: #00aeef; }
 
 .type-icon-wrapper {
   width: 20px;
@@ -488,7 +496,7 @@ const filteredCharacters = computed(() => {
 
 .filter-group button .school-icon {
   /* Default in light mode (inactive button) */
-  filter: invert(1);
+    filter: invert(1);
 }
 
 .filter-group button.active .school-icon {
@@ -576,26 +584,6 @@ const filteredCharacters = computed(() => {
   .modal-content {
     width: 95%;
     max-height: 90vh;
-  }
-
-  .filter-toggle-button {
-    display: flex; /* Show on mobile */
-  }
-
-  .filter-controls {
-    /* Collapsed by default on mobile */
-    grid-template-rows: 0fr;
-    opacity: 0;
-    margin-bottom: 0;
-    border-bottom-width: 0;
-  }
-
-  .filter-controls.is-open {
-    /* Expanded state on mobile */
-    grid-template-rows: 1fr;
-    opacity: 1;
-    margin-bottom: 15px;
-    border-bottom-width: 1px; /* Re-enable border when open on mobile */
   }
 }
 </style>
