@@ -10,53 +10,60 @@
           <div class="modal-body">
             <div class="search-and-reset">
               <input type="text" v-model="searchTerm" :placeholder="t('characterSelector.searchPlaceholder')" class="search-input">
-              <button @click="resetFilters" class="reset-button">{{ t('characterSelector.resetFilters') }}</button>
+              <div class="action-buttons">
+                <button @click="resetFilters" class="reset-button">{{ t('characterSelector.resetFilters') }}</button>
+                <button @click="toggleFilterPanel" class="filter-toggle-button">
+                  <img :src="isFilterPanelOpen ? getAssetsFile('icon/filter_close.svg') : getAssetsFile('icon/filter_open.svg')" alt="Toggle Filters" class="filter-toggle-icon">
+                </button>
+              </div>
             </div>
             
-            <div class="filter-controls">
-              <div class="filter-group">
-                <span class="filter-label">{{ t('characterSelector.attackTypeLabel') }}</span>
-                <button @click="selectFilter('attackType', null)" :class="{ active: selectedAttackType.length === 0 }">{{ t('common.all') }}</button>
-                <button v-for="type in attackTypes" :key="type" @click="selectFilter('attackType', type)" :class="{ active: selectedAttackType.includes(type), 'has-icon': true }">
-                  <div class="type-icon-wrapper" :class="`type-bg-${type.toLowerCase()}`">
-                    <img :src="getAssetsFile(`icon/Type_Attack_s.webp`)" alt="Attack Icon" class="type-icon">
-                  </div>
-                  <span>{{ t(`attackType.${type}`) }}</span>
-                </button>
-              </div>
-              <div class="filter-group">
-                <span class="filter-label">{{ t('characterSelector.defenseTypeLabel') }}</span>
-                <button @click="selectFilter('defenseType', null)" :class="{ active: selectedDefenseType.length === 0 }">{{ t('common.all') }}</button>
-                <button v-for="type in defenseTypes" :key="type" @click="selectFilter('defenseType', type)" :class="{ active: selectedDefenseType.includes(type), 'has-icon': true }">
-                  <div class="type-icon-wrapper" :class="`type-bg-${type.toLowerCase()}`">
-                    <img :src="getAssetsFile(`icon/Type_Defense_s.webp`)" alt="Defense Icon" class="type-icon">
-                  </div>
-                  <span>{{ t(`defenseType.${type}`) }}</span>
-                </button>
-              </div>
-              <div class="filter-group">
-                <span class="filter-label">{{ t('characterSelector.schoolLabel') }}</span>
-                <button @click="selectFilter('school', null)" :class="{ active: selectedSchool.length === 0 }">{{ t('common.all') }}</button>
-                <button v-for="school in schools" :key="school" @click="selectFilter('school', school)" :class="{ active: selectedSchool.includes(school), 'has-icon': true }">
-                  <img v-if="school !== 'ETC'" :src="getSchoolIconUrl(school)" :alt="school" class="school-icon" />
-                  <span>{{ t(`schoolAbbr.${school}`) }}</span>
-                </button>
-              </div>
-              <div class="filter-group">
-                <span class="filter-label">{{ t('characterSelector.weaponLabel') }}</span>
-                <button @click="selectFilter('weapon', null)" :class="{ active: selectedWeapon.length === 0 }">{{ t('common.all') }}</button>
-                <button v-for="type in weaponTypes" :key="type" @click="selectFilter('weapon', type)" :class="{ active: selectedWeapon.includes(type) }">
-                  <span class="nexon-font">{{ type }}</span>
-                </button>
-              </div>
-              <div class="filter-group">
-                <span class="filter-label">{{ t('characterSelector.positionLabel') }}</span>
-                <button @click="selectFilter('position', null)" :class="{ active: selectedPosition.length === 0 }">{{ t('common.all') }}</button>
-                <button v-for="type in positionTypes" :key="type.value" @click="selectFilter('position', type.value)" :class="{ active: selectedPosition.includes(type.value) }">
-                  <span class="nexon-font">
-                    <span :class="`position-type-${type.label.toLowerCase()}`">{{ type.label }}</span>
-                  </span>
-                </button>
+            <div class="filter-controls" :class="{ 'is-open': isFilterPanelOpen }">
+              <div class="filter-content-wrapper">
+                <div class="filter-group">
+                  <span class="filter-label">{{ t('characterSelector.attackTypeLabel') }}</span>
+                  <button @click="selectFilter('attackType', null)" :class="{ active: selectedAttackType.length === 0 }">{{ t('common.all') }}</button>
+                  <button v-for="type in attackTypes" :key="type" @click="selectFilter('attackType', type)" :class="{ active: selectedAttackType.includes(type), 'has-icon': true }">
+                    <div class="type-icon-wrapper" :class="`type-bg-${type.toLowerCase()}`">
+                      <img :src="getAssetsFile(`icon/Type_Attack_s.webp`)" alt="Attack Icon" class="type-icon">
+                    </div>
+                    <span>{{ t(`attackType.${type}`) }}</span>
+                  </button>
+                </div>
+                <div class="filter-group">
+                  <span class="filter-label">{{ t('characterSelector.defenseTypeLabel') }}</span>
+                  <button @click="selectFilter('defenseType', null)" :class="{ active: selectedDefenseType.length === 0 }">{{ t('common.all') }}</button>
+                  <button v-for="type in defenseTypes" :key="type" @click="selectFilter('defenseType', type)" :class="{ active: selectedDefenseType.includes(type), 'has-icon': true }">
+                    <div class="type-icon-wrapper" :class="`type-bg-${type.toLowerCase()}`">
+                      <img :src="getAssetsFile(`icon/Type_Defense_s.webp`)" alt="Defense Icon" class="type-icon">
+                    </div>
+                    <span>{{ t(`defenseType.${type}`) }}</span>
+                  </button>
+                </div>
+                <div class="filter-group">
+                  <span class="filter-label">{{ t('characterSelector.schoolLabel') }}</span>
+                  <button @click="selectFilter('school', null)" :class="{ active: selectedSchool.length === 0 }">{{ t('common.all') }}</button>
+                  <button v-for="school in schools" :key="school" @click="selectFilter('school', school)" :class="{ active: selectedSchool.includes(school), 'has-icon': true }">
+                    <img v-if="school !== 'ETC'" :src="getSchoolIconUrl(school)" :alt="school" class="school-icon" />
+                    <span>{{ t(`schoolAbbr.${school}`) }}</span>
+                  </button>
+                </div>
+                <div class="filter-group">
+                  <span class="filter-label">{{ t('characterSelector.weaponLabel') }}</span>
+                  <button @click="selectFilter('weapon', null)" :class="{ active: selectedWeapon.length === 0 }">{{ t('common.all') }}</button>
+                  <button v-for="type in weaponTypes" :key="type" @click="selectFilter('weapon', type)" :class="{ active: selectedWeapon.includes(type) }">
+                    <span class="nexon-font">{{ type }}</span>
+                  </button>
+                </div>
+                <div class="filter-group">
+                  <span class="filter-label">{{ t('characterSelector.positionLabel') }}</span>
+                  <button @click="selectFilter('position', null)" :class="{ active: selectedPosition.length === 0 }">{{ t('common.all') }}</button>
+                  <button v-for="type in positionTypes" :key="type.value" @click="selectFilter('position', type.value)" :class="{ active: selectedPosition.includes(type.value) }">
+                    <span class="nexon-font">
+                      <span :class="`position-type-${type.label.toLowerCase()}`">{{ type.label }}</span>
+                    </span>
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -111,6 +118,7 @@ const selectedDefenseType = ref([]);
 const selectedSchool = ref([]);
 const selectedWeapon = ref([]);
 const selectedPosition = ref([]);
+const isFilterPanelOpen = ref(false);
 
 const filterRefs = {
   attackType: selectedAttackType,
@@ -142,6 +150,7 @@ const resetFilters = () => {
   selectedWeapon.value = [];
   selectedPosition.value = [];
   searchTerm.value = '';
+  isFilterPanelOpen.value = false;
 };
 
 const close = () => {
@@ -150,6 +159,10 @@ const close = () => {
 
 const { isVisible } = toRefs(props);
 useEscapeKey(isVisible, close);
+
+const toggleFilterPanel = () => {
+  isFilterPanelOpen.value = !isFilterPanelOpen.value;
+};
 
 const selectFilter = (filterType, value) => {
   const targetRef = filterRefs[filterType];
@@ -287,6 +300,12 @@ const filteredCharacters = computed(() => {
   align-items: center;
 }
 
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
 .search-input {
   flex-grow: 1; /* Take up available space */
   padding: 12px 15px;
@@ -306,15 +325,30 @@ const filteredCharacters = computed(() => {
 
 .filter-controls {
   margin: 15px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-bottom: 15px;
   border-bottom: 1px solid #dee2e6;
+  display: grid;
+  grid-template-rows: 1fr; /* Default to open on desktop */
+  opacity: 1; /* Default to visible on desktop */
+  margin-bottom: 15px; /* Default margin on desktop */
+  /* Transition for grid-template-rows, opacity, margin-bottom, and border-bottom-width */
+  transition: grid-template-rows 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              margin-bottom 0.3s cubic-bezier(0.4, 0, 0.2, 1), /* Animate external margin */
+              border-bottom-width 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Animate border */
+  overflow: hidden;
 }
 
 .dark-mode .filter-controls {
   border-bottom-color: #2a4a6e;
+}
+
+/* New wrapper for filter content to ensure proper collapse */
+.filter-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Internal gap */
+  padding-bottom: 15px; /* Internal padding */
+  min-height: 0; /* Important for grid-template-rows: 0fr to work with flex children */
 }
 
 .filter-group {
@@ -367,6 +401,37 @@ const filteredCharacters = computed(() => {
 }
 .dark-mode .filter-label {
   color: #c0c8d0;
+}
+
+.filter-toggle-button {
+  display: none; /* Hidden by default on desktop */
+  padding: 0;
+  background: linear-gradient(45deg, #87CEEB, #6495ED);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.filter-toggle-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.filter-toggle-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* Make icon white */
+}
+
+.dark-mode .filter-toggle-button {
+  background: linear-gradient(45deg, #2a7fff, #00aeef);
 }
 
 .filter-group button {
@@ -506,5 +571,31 @@ const filteredCharacters = computed(() => {
 }
 .modal-fade-enter-from, .modal-fade-leave-to {
   opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    max-height: 90vh;
+  }
+
+  .filter-toggle-button {
+    display: flex; /* Show on mobile */
+  }
+
+  .filter-controls {
+    /* Collapsed by default on mobile */
+    grid-template-rows: 0fr;
+    opacity: 0;
+    margin-bottom: 0;
+    border-bottom-width: 0; /* Collapse the border */
+  }
+
+  .filter-controls.is-open {
+    /* Expanded state on mobile */
+    grid-template-rows: 1fr;
+    opacity: 1;
+    margin-bottom: 15px;
+  }
 }
 </style>
