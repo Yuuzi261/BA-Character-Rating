@@ -1,11 +1,17 @@
 <template>
   <div class="character-info">
-    <div class="character-avatar" @click="$emit('avatar-click')" :title="t('characterInfo.clickToSwitch')">
+    <div class="character-avatar" @click="$emit('avatar-click')">
       <ImageWithLoader
         :src="getAvatarUrl(id)"
         :alt="name"
         class="avatar-image"
       />
+      <div class="avatar-overlay">
+        <svg class="overlay-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 3L4 7l4 4"/><path d="M4 7h16"/><path d="M16 21l4-4-4-4"/><path d="M20 17H4"/>
+        </svg>
+        <span class="overlay-text">{{ t('characterInfo.clickToSwitch') }}</span>
+      </div>
     </div>
     <div class="character-name">{{ name }}</div>
     <div v-if="nicknames && nicknames.length > 0" class="character-nicknames">
@@ -63,6 +69,7 @@ watch(() => props.id, (newId) => {
 }
 
 .character-avatar {
+  position: relative;
   width: 120px;
   height: 120px;
   background: linear-gradient(45deg, #add8e6, #87ceeb);
@@ -81,6 +88,34 @@ watch(() => props.id, (newId) => {
   box-shadow: 0 0 20px rgba(0, 174, 239, 0.7);
 }
 
+.avatar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 40, 50, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Allow click events to penetrate the overlay and trigger the click of the avatar */
+}
+
+.character-avatar:hover .avatar-overlay {
+  opacity: 1;
+}
+
+.overlay-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.5));
+}
+
 .avatar-image {
   width: 100%;
   height: 100%;
@@ -92,6 +127,11 @@ watch(() => props.id, (newId) => {
   font-weight: bold;
   color: #2c3e50;
   margin-bottom: 10px;
+}
+
+.overlay-text {
+  font-weight: bold;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
 }
 
 .character-nicknames {
