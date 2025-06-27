@@ -241,6 +241,7 @@ const filteredCharacters = computed(() => {
   flex-direction: column;
   box-shadow: 0 5px 25px rgba(0,0,0,0.4);
   animation: slide-down 0.3s ease-out;
+  overflow: hidden; /* Clip the scrollbar to respect the border-radius */
 }
 
 @keyframes slide-down {
@@ -304,6 +305,13 @@ const filteredCharacters = computed(() => {
   flex-grow: 1;
   overflow-y: auto;
   padding: 10px 0;
+  /* Custom Scrollbar for Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #bdc3c7 #f8f9fa;
+}
+
+.dark-mode .scrollable-section {
+  scrollbar-color: #7f8c8d #1a2b40;
 }
 
 .search-and-reset {
@@ -587,5 +595,34 @@ const filteredCharacters = computed(() => {
     width: 95%;
     max-height: 90vh;
   }
+}
+
+/* Custom Scrollbar for Webkit browsers (Chrome, Safari, Edge) */
+.scrollable-section::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollable-section::-webkit-scrollbar-track {
+  background: transparent; /* Track is invisible, blending with the modal body */
+}
+
+.scrollable-section::-webkit-scrollbar-thumb {
+  background-color: #bdc3c7;
+  border-radius: 10px;
+  /* Create padding around thumb by using a border with the same color as the modal body */
+  border: 3px solid #f8f9fa;
+}
+
+.dark-mode .scrollable-section::-webkit-scrollbar-thumb {
+  background-color: #7f8c8d;
+  border-color: #1a2b40;
+}
+
+.scrollable-section::-webkit-scrollbar-thumb:hover {
+  background-color: #a9a9a9;
+}
+
+.dark-mode .scrollable-section::-webkit-scrollbar-thumb:hover {
+  background-color: #95a5a6;
 }
 </style>
