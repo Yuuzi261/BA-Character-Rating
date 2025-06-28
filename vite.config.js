@@ -5,6 +5,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import legacy from '@vitejs/plugin-legacy'
 import externalGlobals from "rollup-plugin-external-globals";
 import { visualizer } from "rollup-plugin-visualizer";
+import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -21,6 +22,17 @@ export default defineConfig({
       emitFile: true,
       filename: "stats.html",
     }),
+    VitePWA({ 
+      registerType: 'autoUpdate',
+      workbox: {
+        navigateFallback: '/index.html',
+        navigateFallbackAllowlist: [/.*/],
+      },
+      devOptions: {
+        enabled: true,
+        type: 'module',
+      },
+    })
   ],
   resolve: {
     alias: {

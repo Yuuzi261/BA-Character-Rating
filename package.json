@@ -23,6 +23,7 @@
     "rollup-plugin-visualizer": "^6.0.3",
     "terser": "^5.43.1",
     "vite": "^6.3.5",
+    "vite-plugin-pwa": "^1.0.0",
     "vite-plugin-vue-devtools": "^7.7.7"
   }
 }
