@@ -1,37 +1,41 @@
 <template>
   <div class="character-card">
     <div class="card-header">
-      <button @click="handleSettingsClick" class="settings-btn tooltip" :data-tooltip="t('common.settings')">
-        <img :src="gearIconUrl" alt="Settings Icon" :class="{ 'is-rotating': isSettingsIconRotating }" @animationend="isSettingsIconRotating = false" />
-      </button>
+      <HintTooltip :text="t('common.settings')">
+        <button @click="handleSettingsClick" class="settings-btn">
+          <img :src="gearIconUrl" alt="Settings Icon" :class="{ 'is-rotating': isSettingsIconRotating }" @animationend="isSettingsIconRotating = false" />
+        </button>
+      </HintTooltip>
 
       <span class="header-title">{{ t('ratingCard.title') }}</span>
 
-      <button @click="$emit('toggle-dark-mode')" class="theme-toggle-btn tooltip" :data-tooltip="themeToggleTitle">
-        <Transition name="icon-fade-slide" mode="out-in">
-          <!-- Light Mode Icon -->
-          <svg v-if="theme === 'light'" key="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-          <!-- Dark Mode Icon -->
-          <svg v-else-if="theme === 'dark'" key="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-          <!-- System Mode Icon -->
-          <svg v-else key="system-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"></circle>
-            <path d="M12 7 A5 5 0 0 0 12 17 Z" fill="currentColor" stroke="none"></path>
-          </svg>
-        </Transition>
-      </button>
+      <HintTooltip :text="themeToggleTitle">
+        <button @click="$emit('toggle-dark-mode')" class="theme-toggle-btn">
+          <Transition name="icon-fade-slide" mode="out-in">
+            <!-- Light Mode Icon -->
+            <svg v-if="theme === 'light'" key="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Dark Mode Icon -->
+            <svg v-else-if="theme === 'dark'" key="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <!-- System Mode Icon -->
+            <svg v-else key="system-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 7 A5 5 0 0 0 12 17 Z" fill="currentColor" stroke="none"></path>
+            </svg>
+          </Transition>
+        </button>
+      </HintTooltip>
     </div>
     
     <div class="card-content">
@@ -147,6 +151,7 @@ import RatingSection from './ui/RatingSection.vue';
 import SkillTag from './ui/SkillTag.vue';
 import StarRating from './ui/StarRating.vue';
 import InfoTooltip from './ui/InfoTooltip.vue';
+import HintTooltip from './ui/HintTooltip.vue';
 import InfoIcon from './ui/InfoIcon.vue';
 import FavoriteItemSection from './FavoriteItemSection.vue';
 import FavoriteItemModal from './modal/FavoriteItemModal.vue';
@@ -277,7 +282,8 @@ watch(() => props.character.ratings.overall, async (newVal, oldVal) => {
   overflow: hidden;
 }
 
-.settings-btn {
+.settings-btn,
+.theme-toggle-btn {
   background: none;
   border: none;
   color: white;
@@ -288,13 +294,6 @@ watch(() => props.character.ratings.overall, async (newVal, oldVal) => {
   align-items: center;
   justify-content: center;
   transition: background-color 0.2s ease;
-}
-
-.settings-btn,
-.theme-toggle-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .settings-btn img {
@@ -304,29 +303,22 @@ watch(() => props.character.ratings.overall, async (newVal, oldVal) => {
   transition: transform 0.5s ease-in-out;
 }
 
-.theme-toggle-btn {
-  right: 30px;
-}
-
 .settings-btn img.is-rotating {
   animation: rotate-gear 0.5s ease-in-out;
 }
 
-.theme-toggle-btn {
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.2s ease;
+.card-header > .hint-tooltip-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.settings-btn {
+.card-header > .hint-tooltip-wrapper:first-of-type {
   right: 72px; /* 30px from edge + 34px theme button + 8px gap */
+}
+
+.card-header > .hint-tooltip-wrapper:last-of-type {
+  right: 30px;
 }
 
 .icon-fade-slide-enter-active,
@@ -363,33 +355,7 @@ watch(() => props.character.ratings.overall, async (newVal, oldVal) => {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Custom Tooltip for buttons. The button itself must have a position context (e.g., relative or absolute). */
-.tooltip::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%) translateY(4px);
-  background-color: #2c3e50;
-  color: white;
-  padding: 6px 10px;
-  border-radius: 5px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  white-space: nowrap;
-  z-index: 20; /* Ensure it's above other header elements */
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
 
-.tooltip:hover::after {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(8px);
-}
 
 .left-section {
   background: rgba(248, 249, 250, 0.7);
@@ -503,11 +469,6 @@ watch(() => props.character.ratings.overall, async (newVal, oldVal) => {
   background: linear-gradient(45deg, #2a7fff, #00aeef);
 }
 
-.dark-mode .tooltip::after {
-  background-color: #e0e6ed;
-  color: #1a2b40;
-}
-
 /* General text color for dark mode within the card */
 .dark-mode .right-section {
   color: #e0e6ed;
@@ -579,8 +540,7 @@ watch(() => props.character.ratings.overall, async (newVal, oldVal) => {
     justify-content: space-between;
   }
 
-  .settings-btn,
-  .theme-toggle-btn {
+  .card-header > .hint-tooltip-wrapper {
     position: static;
     transform: none;
   }
