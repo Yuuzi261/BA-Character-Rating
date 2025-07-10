@@ -1401,13 +1401,13 @@
     "ratingDate": "2025/07/10",
     "ratings": {
       "newbie": null,
-      "totalAssault": [5, 0, 0],
+      "totalAssault": [4, 0, 0],
       "pvp": null,
       "grandAssault": [5, 0, 1],
       "limitBreakAssault": [5, 0, 1],
       "jointFiringDrill": [3, 0, 0],
       "eventChallenge": [3, 0, 0],
-      "overall": 83
+      "overall": 78
     },
     "skillsSummary": {
       "ex": "4Cost对直线范围内指定目标造成<blue>1045%</blue>伤害，对指定外目标造成<blue>147%</blue>伤害<purple>每额外消耗1C则增加25%伤害，最多额外消耗2C</purple>",
