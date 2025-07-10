@@ -1401,9 +1401,9 @@
     "ratingDate": "2025/04/27",
     "ratings": {
       "newbie": null,
-      "totalAssault": [2, 0, 0],
+      "totalAssault": [5, 0, 0],
       "pvp": null,
-      "grandAssault": [4, 1, 0],
+      "grandAssault": [5, 0, 1],
       "limitBreakAssault": [5, 0, 1],
       "jointFiringDrill": [3, 0, 0],
       "eventChallenge": [3, 0, 0],
@@ -1416,15 +1416,15 @@
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "暫無對策BOSS 未來可期",
+      "totalAssault": "輸出優秀特甲BOSS多刀可選",
       "pvp": "暫時無搭配組合",
-      "grandAssault": "室內振動BOSS主對策輸出之一",
+      "grandAssault": "室內振動BOSS主對策輸出",
       "limitBreakAssault": "提法瑞斯主對策輸出",
       "jointFiringDrill": "室內振動可選輸出",
       "eventChallenge": "室內振動可選輸出"
     },
     "uniqueWeaponRecommendedSummary": "攻擊力增加，使用時建議專三提升面板",
-    "overallRecommendation": "多數時間綁定光一起走，大決戰卷分可選，爬提法塔主要對策輸出，本質是單體輸出選手，與未花相比沒有血量增傷",
+    "overallRecommendation": "多數時間綁定光一起走，大決戰卷分可選，爬提法塔主要對策輸出，LU難度特甲BOSS多刀可選",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
