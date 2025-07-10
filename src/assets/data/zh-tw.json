@@ -1398,7 +1398,7 @@
     "uniqueWeaponStar2": "爆傷增加",
     "uniqueWeaponStar3": ["indoor", "SS"],
     "ratingVersion": "7.0",
-    "ratingDate": "2025/04/27",
+    "ratingDate": "2025/07/10",
     "ratings": {
       "newbie": null,
       "totalAssault": [4, 0, 0],
@@ -1418,7 +1418,7 @@
       "newbie": null,
       "totalAssault": "輸出優秀特甲BOSS多刀可選",
       "pvp": "暫時無搭配組合",
-      "grandAssault": "室內振動BOSS主對策輸出",
+      "grandAssault": "室內彈甲BOSS主對策輸出",
       "limitBreakAssault": "提法瑞斯主對策輸出",
       "jointFiringDrill": "室內振動可選輸出",
       "eventChallenge": "室內振動可選輸出"
