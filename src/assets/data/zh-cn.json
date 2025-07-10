@@ -1398,16 +1398,16 @@
     "uniqueWeaponStar2": "爆伤增加",
     "uniqueWeaponStar3": ["indoor", "SS"],
     "ratingVersion": "7.0",
-    "ratingDate": "2025/04/27",
+    "ratingDate": "2025/07/10",
     "ratings": {
       "newbie": null,
-      "totalAssault": [2, 0, 0],
+      "totalAssault": [5, 0, 0],
       "pvp": null,
-      "grandAssault": [4, 1, 0],
+      "grandAssault": [5, 0, 1],
       "limitBreakAssault": [5, 0, 1],
       "jointFiringDrill": [3, 0, 0],
       "eventChallenge": [3, 0, 0],
-      "overall": 62
+      "overall": 83
     },
     "skillsSummary": {
       "ex": "4Cost对直线范围内指定目标造成<blue>1045%</blue>伤害，对指定外目标造成<blue>147%</blue>伤害<purple>每额外消耗1C则增加25%伤害，最多额外消耗2C</purple>",
@@ -1416,15 +1416,15 @@
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "暂无对策BOSS 未来可期",
+      "totalAssault": "输出优秀特甲BOSS多刀可选",
       "pvp": "暂时无搭配组合",
-      "grandAssault": "室内振动BOSS主对策输出之一",
+      "grandAssault": "室内弹甲BOSS主对策输出",
       "limitBreakAssault": "提法瑞斯主对策输出",
       "jointFiringDrill": "室内振动可选输出",
       "eventChallenge": "室内振动可选输出"
     },
     "uniqueWeaponRecommendedSummary": "攻击力增加，使用时建议专三提升面板",
-    "overallRecommendation": "多数时间绑定光一起走，大决战卷分可选，爬提法塔主要对策输出，本质是单体输出选手，与未花相比没有血量增伤",
+    "overallRecommendation": "多数时间绑定光一起走，大决战卷分可选，爬提法塔主要对策输出，LU难度特甲BOSS多刀可选",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
@@ -2147,11 +2147,11 @@
       "newbie": null,
       "totalAssault": [2, 0, 0],
       "pvp": null,
-      "grandAssault": [4, 0, 0],
+      "grandAssault": [3, 0, 0],
       "limitBreakAssault": null,
       "jointFiringDrill": [2, 0, 0],
       "eventChallenge": [1, 0, 0],
-      "overall": 43
+      "overall": 38
     },
     "skillsSummary": {
       "ex": "6Cost对一名敌方造成<blue>1892%</blue>伤害，随后对该目标及圆形范围内敌方造成<blue>392%</blue>伤害",

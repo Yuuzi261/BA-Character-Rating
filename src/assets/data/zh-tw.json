@@ -1407,7 +1407,7 @@
       "limitBreakAssault": [5, 0, 1],
       "jointFiringDrill": [3, 0, 0],
       "eventChallenge": [3, 0, 0],
-      "overall": 62
+      "overall": 83
     },
     "skillsSummary": {
       "ex": "4Cost對直線範圍內指定目標造成<blue>1045%</blue>傷害，對指定外目標造成<blue>147%</blue>傷害<purple>每額外消耗1C則增加25%傷害，最多額外消耗2C</purple>",
@@ -2147,11 +2147,11 @@
       "newbie": null,
       "totalAssault": [2, 0, 0],
       "pvp": null,
-      "grandAssault": [4, 0, 0],
+      "grandAssault": [3, 0, 0],
       "limitBreakAssault": null,
       "jointFiringDrill": [2, 0, 0],
       "eventChallenge": [1, 0, 0],
-      "overall": 43
+      "overall": 38
     },
     "skillsSummary": {
       "ex": "6Cost對一名敵方造成<blue>1892%</blue>傷害，隨後對該目標及圓形範圍內敵方造成<blue>392%</blue>傷害",
