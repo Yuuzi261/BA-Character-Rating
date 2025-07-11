@@ -1694,15 +1694,15 @@
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "蓋布拉LU難及以下可選冰柱對策",
+      "totalAssault": "葛夫拉LU難及以下可選冰柱對策",
       "pvp": "暫時無組合搭配",
       "grandAssault": "輕甲BOSS多刀可選",
       "limitBreakAssault": "缺人或機制使用",
       "jointFiringDrill": "射擊演習選用",
       "eventChallenge": "應對護盾機制時選用"
     },
-    "uniqueWeaponRecommendedSummary": "三星即可打TM蓋布拉，LU難需要專一起",
-    "overallRecommendation": "蓋布拉冰柱對策，備戰蓋布拉考慮培養",
+    "uniqueWeaponRecommendedSummary": "三星即可打TM葛夫拉，LU難需要專一起",
+    "overallRecommendation": "葛夫拉冰柱對策，備戰葛夫拉考慮培養",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
@@ -2128,15 +2128,15 @@
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "LU蓋布拉副刀輸出，輕甲高難度多刀可選用替補",
+      "totalAssault": "LU葛夫拉副刀輸出，輕甲高難度多刀可選用替補",
       "pvp": "暫時無搭配組合 ",
-      "grandAssault": "LU蓋布拉副刀輸出，輕甲高難度多刀可選用替補",
+      "grandAssault": "LU葛夫拉副刀輸出，輕甲高難度多刀可選用替補",
       "limitBreakAssault": "缺人或機制使用",
       "jointFiringDrill": "射擊考試機制可選用",
       "eventChallenge": "單體環境可選用"
     },
     "uniqueWeaponRecommendedSummary": "防禦貫通增加，使用基本專二起步、看個人或軸情況培養",
-    "overallRecommendation": "LU/TM難度蓋布拉多刀選擇對策輸出，多BOSS後排推刀選用",
+    "overallRecommendation": "LU/TM難度葛夫拉多刀選擇對策輸出，多BOSS後排推刀選用",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
