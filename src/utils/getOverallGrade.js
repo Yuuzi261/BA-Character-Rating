@@ -1,5 +1,5 @@
 export const getOverallGrade = (score) => {
-  if (score > 100) return 'SS'
+  if (score >= 100) return 'SS'
   if (score >= 90) return 'S'
   if (score >= 80) return 'A'
   if (score >= 70) return 'B'
