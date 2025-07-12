@@ -272,6 +272,77 @@
     }
   },
   {
+    "id": 19,
+    "fullname": "十六夜 野宫",
+    "name": "野宫",
+    "nicknames": ["富婆", "糯糯米"],
+    "school": "Abydos",
+    "attackType": "Piercing",
+    "defenseType": "Light",
+    "weapon": "MG",
+    "position": [0, "范围输出"],
+    "uniqueWeaponRecommended": "有需可商店换",
+    "acquisitionMethod": "新手活动奖励",
+    "skillMainOparts": "nebra",
+    "skillSubOparts": "ether",
+    "l2dUnlock": 5,
+    "city": "A",
+    "outdoor": "A",
+    "indoor": "D",
+    "equipments": ["hat", "hairpin", "watch"],
+    "uniqueWeaponStar2": "暴击伤害增加",
+    "uniqueWeaponStar3": ["indoor", "B"],
+    "ratingVersion": "7.0",
+    "ratingDate": "2025/07/12",
+    "ratings": {
+      "newbie": [5, 0, 0],
+      "totalAssault": [3, 0, 0],
+      "pvp": [4, 0, 0],
+      "grandAssault": [3, 0, 0],
+      "limitBreakAssault": null,
+      "jointFiringDrill": [3, 0, 0],
+      "eventChallenge": [2, 0, 0],
+      "overall": 61
+    },
+    "skillsSummary": {
+      "ex": "5Cost对大范围扇形敌人造成<blue>821%</blue>伤害",
+      "ns": "毎30秒提升自身<blue>41.4%</blue>攻击力<teal>（20秒）</teal>",
+      "ss": "对<red>大型敌人</red>额外造成<blue>12.8%</blue>追伤。<green><red>新手任务赠送白嫖3星平民战神，</red>爱用品增强不用凹球命中</green>"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "球高难可选清杂、黄甲鸡大决战主输出选、船多队叠hit清导弹",
+      "pvp": "市街赛季可选，5费大范围AOE运气好可收全体",
+      "grandAssault": "球高难可选清杂、黄甲鸡大决战主输出选、船多队叠hit清导弹",
+      "limitBreakAssault": "无环境搭配",
+      "jointFiringDrill": "贯通对群环境可选",
+      "eventChallenge": "贯通对群环境可选"
+    },
+    "uniqueWeaponRecommendedSummary": "暴击伤害提升输出幅度，可直接熟练证书商店兑换开专",
+    "overallRecommendation": "萌新平民战神，后期大决战部分对策主刀、或是副队多刀TM替补，市街赛季竞技场赌狗可选。",
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "EX5",
+      "技一Lv7",
+      "技二Lv7",
+      "技三LV7",
+      "技一Lv10",
+      "技二Lv10",
+      "技三Lv10",
+      "Max"
+    ],
+    "favoriteItem": {
+      "name": "秘密愿望清单",
+      "recommendedLevel": [4, 1, 0],
+      "materials": ["5", "nebra"],
+      "effects": [
+        "攻击力<red>500</red>、命中值<red>200</red>",
+        "攻击增加<blue>41.4%</blue>提升至<blue>42.4%</blue><teal>（20秒），<red>新增命中增加</red><blue>36.4%</blue><teal>（20秒）</teal>"
+      ]
+    }
+  },
+  {
     "id": 23,
     "fullname": "黑见 芹香",
     "name": "芹香",
@@ -546,7 +617,7 @@
     "ratingDate": "2025/03/29",
     "ratings": {
       "newbie": null,
-      "totalAssault": [3, 0, 0],
+      "totalAssault": [2, 0, 0],
       "pvp": [4, 1, 0],
       "grandAssault": [2, 0, 0],
       "limitBreakAssault": null,
@@ -568,7 +639,7 @@
       "jointFiringDrill": "群控机制可选",
       "eventChallenge": "群控机制可选 "
     },
-    "uniqueWeaponRecommendedSummary": "可考虑专一拉支援面板，<blue>竞技场建议专二期</blue>",
+    "uniqueWeaponRecommendedSummary": "可考虑专一拉支援面板，<blue>竞技场建议专二起</blue>",
     "overallRecommendation": "霍德多刀可选对策，S9竞技场卷排位可选后排输出",
     "skillOrder": [
       "EX3",
@@ -579,7 +650,7 @@
       "技三Lv10",
       "技二Lv10",
       "技一Lv7(10)",
-      "Max（注意本校学校素材使用女武神警察学校）"
+      "Max"
     ],
     "favoriteItem": {
       "name": "SRT基础教范",
@@ -2523,77 +2594,6 @@
     ]
   },
   {
-    "id": 13004,
-    "fullname": "十六夜 野宫",
-    "name": "野宫",
-    "nicknames": ["富婆", "糯糯米"],
-    "school": "Abydos",
-    "attackType": "Piercing",
-    "defenseType": "Light",
-    "weapon": "MG",
-    "position": [0, "范围输出"],
-    "uniqueWeaponRecommended": "有需可商店换",
-    "acquisitionMethod": "新手活动奖励",
-    "skillMainOparts": "nebra",
-    "skillSubOparts": "ether",
-    "l2dUnlock": 5,
-    "city": "A",
-    "outdoor": "A",
-    "indoor": "D",
-    "equipments": ["hat", "hairpin", "watch"],
-    "uniqueWeaponStar2": "暴击伤害增加",
-    "uniqueWeaponStar3": ["indoor", "B"],
-    "ratingVersion": "7.0",
-    "ratingDate": "2025/07/12",
-    "ratings": {
-      "newbie": [5, 0, 0],
-      "totalAssault": [3, 0, 0],
-      "pvp": [4, 0, 0],
-      "grandAssault": [3, 0, 0],
-      "limitBreakAssault": null,
-      "jointFiringDrill": [3, 0, 0],
-      "eventChallenge": [2, 0, 0],
-      "overall": 61
-    },
-    "skillsSummary": {
-      "ex": "5Cost对大范围扇形敌人造成<blue>821%</blue>伤害",
-      "ns": "毎30秒提升自身<blue>41.4%</blue>攻击力<teal>（20秒）</teal>",
-      "ss": "对<red>大型敌人</red>额外造成<blue>12.8%</blue>追伤。<green>新手任务赠送白嫖3星平民战神，爱用品增强不用凹球命中</green>"
-    },
-    "ratingsSummary": {
-      "newbie": null,
-      "totalAssault": "球高难可选清杂、黄甲鸡大决战主输出选、船多队叠hit清导弹",
-      "pvp": "市街赛季可选，5费大范围AOE运气好可收全体",
-      "grandAssault": "球高难可选清杂、黄甲鸡大决战主输出选、船多队叠hit清导弹",
-      "limitBreakAssault": "无环境搭配",
-      "jointFiringDrill": "贯通对群环境可选",
-      "eventChallenge": "贯通对群环境可选"
-    },
-    "uniqueWeaponRecommendedSummary": "暴击伤害提升输出幅度，可直接熟练证书商店兑换开专",
-    "overallRecommendation": "萌新平民战神，后期大决战部分对策主刀、或是副队多刀TM替补，市街赛季竞技场赌狗可选。",
-    "skillOrder": [
-      "EX3",
-      "技一.二.三Lv4",
-      "EX5",
-      "技一Lv7",
-      "技二Lv7",
-      "技三LV7",
-      "技一Lv10",
-      "技二Lv10",
-      "技三Lv10",
-      "Max"
-    ],
-    "favoriteItem": {
-      "name": "秘密的愿望清单",
-      "recommendedLevel": [4, 1, 0],
-      "materials": ["5", "nebra"],
-      "effects": [
-        "攻击力<red>500</red>、命中值<red>200</red>",
-        "攻击增加<blue>41.4%</blue>提升至<blue>42.4%</blue><teal>(20秒)，<red>新增命中增加</red><blue>36.4%</blue><teal>(20秒)</teal>"
-      ]
-    }
-  },
-  {
     "id": 10010,
     "fullname": "砂狼 白子（骑行）",
     "name": "白子（骑行）",
@@ -2627,7 +2627,7 @@
       "overall": 39
     },
     "skillsSummary": {
-      "ex": "4Cost对圆形范围造成<blue>690%</blue>伤害<teal>(半径200范围)</teal>，且降低敌方攻击力<blue>50%/blue><teal>（10秒）</teal>",
+      "ex": "4Cost对圆形范围造成<blue>690%</blue>伤害<teal>（半径200范围）</teal>，且降低敌方攻击力<blue>50%</blue><teal>（10秒）</teal>",
       "ns": "毎40秒对直线范围造成<blue>369%</blue>伤害",
       "ss": "攻击时，如目标拥有减益效果则会额外造成<blue>7.3%</blue>追伤"
     },
@@ -2662,7 +2662,7 @@
     "nicknames": ["水富婆"],
     "school": "Abydos",
     "attackType": "Explosive",
-    "defenseType": "Light",
+    "defenseType": "Special",
     "weapon": "MG",
     "position": [0, "输出"],
     "uniqueWeaponRecommended": "卷分建议专三",
@@ -2689,15 +2689,15 @@
       "overall": 50
     },
     "skillsSummary": {
-      "ex": "6Cost发动后立即换弹，对敌方单体造成<blue>1113%</blue>伤害后给与自身普攻强化特殊BUFF,无视毎4次普攻之间的开火间隔<red>(100发子弹打完結束)</red>",
-      "ns": "毎40秒给予自身及圆形范围内我方攻速增加<blue>21.6%</blue><teal>(30秒)</teal>",
-      "ss": "使用EX技后，普攻会额外对敌人造成<blue>20.9%</blue>追伤。"
+      "ex": "6Cost发动后立即换弹，对敌方单体造成<blue>1113%</blue>伤害后给与自身普攻强化特殊BUFF，无视毎4次普攻之间的开火间隔<red>（100发子弹打完結束）</red>",
+      "ns": "毎40秒给予自身及圆形范围内我方攻速增加<blue>21.6%</blue><teal>（30秒）</teal>",
+      "ss": "使用EX技后，普攻会额外对敌人造成<blue>20.9%</blue>追伤"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "市街主教寿司多队可选、大决战INS、TM多环境(市街轻甲选) ",
+      "totalAssault": "市街主教寿司多队可选、大决战INS、TM多环境（市街轻甲选）",
       "pvp": "无环境搭配",
-      "grandAssault": "市街主教寿司多队可选、大决战INS、TM多环境(市街轻甲选) ",
+      "grandAssault": "市街主教寿司多队可选、大决战INS、TM多环境（市街轻甲选）",
       "limitBreakAssault": "轻甲赛特可选主副C",
       "jointFiringDrill": "射击演习可选用",
       "eventChallenge": "爆发市街需普攻环境输出可选"
@@ -2731,7 +2731,7 @@
     "acquisitionMethod": "常驻/困难",
     "skillMainOparts": "nebra",
     "skillSubOparts": "nimrud",
-    "l2dUnlock": 6,
+    "l2dUnlock": 9,
     "city": "D",
     "outdoor": "S",
     "indoor": "B",
@@ -2751,8 +2751,8 @@
       "overall": 56
     },
     "skillsSummary": {
-      "ex": "4Cost造成<blue>697%</blue>伤害且前移推进，<red>技能升3级后质变带眩晕</red>，升5级眩晕秒数增加(1.4秒*5hit)",
-      "ns": "HP低于30%时给与自身<blue>191%</blue>治愈力回复<teal>(整场战斗限1次)</teal>",
+      "ex": "4Cost造成<blue>697%</blue>伤害且前移推进，<red>技能升3级后质变带眩晕</red>，升5级眩晕秒数增加<teal>（1.4秒*5hit）</teal>",
+      "ns": "HP低于30%时给与自身<blue>191%</blue>治愈力回复<teal>（整场战斗限1次）</teal>",
       "ss": "使用EX技时，会给与自身<blue>205%</blue>治愈力护盾。<green>爱用品拉高被暴后生存能力提高，50%暴伤抗加算</green>"
     },
     "ratingsSummary": {
@@ -2772,8 +2772,8 @@
       "recommendedLevel": [4, 0, 0],
       "materials": ["17", "nebra"],
       "effects": [
-        "爆抗<red>2000</red>",
-        "持续恢复<blue>191%</blue>提升至<blue>261%</blue><teal>(持续20秒)</teal>，<red>新增爆伤抵抗增加30%</red>，<green>NS能触发2次</green>"
+        "暴抗<red>2000</red>",
+        "持续恢复<blue>191%</blue>提升至<blue>261%</blue><teal>（持续20秒）</teal>，<red>新增暴伤抵抗增加30%</red><green>，NS能触发2次</green>"
       ]
     }
   },
@@ -2862,7 +2862,7 @@
       "overall": 54
     },
     "skillsSummary": {
-      "ex": "4Cost召唤<purple>雨云号</purple>进入战场<teal>(30秒)</teal>，<purple>雨云号</purple>额外拥有绫音<blue>47.5%</blue>攻击力跟<blue>32.6%</blue>暴击值。<purple>雨云号</purple>毎12秒会对一名敌方单位造成<blue>401%</blue>伤害<red>且无视84%防御</red>。",
+      "ex": "4Cost召唤<purple>雨云号</purple>进入战场<teal>（30秒）</teal>，<purple>雨云号</purple>额外拥有绫音<blue>47.5%</blue>攻击力跟<blue>32.6%</blue>暴击值。<purple>雨云号</purple>毎12秒会对一名敌方单位造成<blue>401%</blue>伤害<red>且无视84%防御</red>",
       "ns": "毎30秒对一名敌人造成<blue>215%</blue>伤害<red>且无视84%防御</red>",
       "ss": "<blue>17.3%</blue>爆伤光环"
     },
@@ -2875,7 +2875,7 @@
       "jointFiringDrill": "射击演习可选&机制可选",
       "eventChallenge": "机制可选"
     },
-    "uniqueWeaponRecommendedSummary": "暴击值收益较少，<blue>建议5星专1或是专3(市街绿脸)</blue>",
+    "uniqueWeaponRecommendedSummary": "暴击值收益较少，<blue>建议5星专1或是专3（市街绿脸）</blue>",
     "overallRecommendation": "活动奖励，熟练证书商店也可兑换，TS机制三星就有不错战力，建议培养，黄甲总力大决战多刀+充当暴伤挂件、竞技场使用较多",
     "skillOrder": [
       "EX3",
@@ -2899,7 +2899,7 @@
     "attackType": "Mystic",
     "defenseType": "Heavy",
     "weapon": "SG",
-    "position": [0, "多功能坦(形态1)，范围输出(形态2)"],
+    "position": [0, "多功能坦（形态1），范围输出（形态2）"],
     "uniqueWeaponRecommended": "使用建议专三",
     "acquisitionMethod": "限定池",
     "skillMainOparts": "nebra",
@@ -2909,7 +2909,7 @@
     "outdoor": "S",
     "indoor": "D",
     "equipments": ["hat", "bag", "watch"],
-    "uniqueWeaponStar2": "攻击与血量增加(形态1)、攻击力增加(形态2)",
+    "uniqueWeaponStar2": "攻击与血量增加（形态1）、攻击力增加（形态2）",
     "uniqueWeaponStar3": ["outdoor", "SS"],
     "ratingVersion": "7.0",
     "ratingDate": "2025/07/12",
@@ -2924,9 +2924,9 @@
       "overall": 100
     },
     "skillsSummary": {
-      "ex": "<red>防御形态</red>4Cost位移到指定位置并架设<purple>盾牌</purple>为掩体(掩体额外拥有星野<blue>69.1%</blue>追加血量和同类护甲)，并提高自身攻击力<blue>156%</blue><teal>(40秒)</teal>。<red>攻击形态</red>6Cost对一名敌人造成<blue>149%</blue>伤害，随后对目标圆形范围内敌方造成<blue>503%</blue>伤害。",
-      "ns": "<red>防御形态</red>每40秒更换<purple>防弹插板</purple>降低受到的伤害<blue>24.1% </blue>(防弹插板受到25次攻击后解除)。<red>攻击形态</red>弹药耗尽时触发，对一名敌方造成<blue>400%</blue>伤害",
-      "ss": "<red>防御形态</red>攻击时20%概率使目标降防<blue>19.3%</blue>；<red>攻击形态</red>所有攻击无视85%防御力，提高攻击力14%，使用EX技和触发NS技时立刻换弹，换弹后普攻对扇形范围内敌方造成<blue>150%</blue>伤害"
+      "ex": "<red>防御形态</red>4Cost位移到指定位置并架设<purple>盾牌</purple>为掩体（掩体额外拥有星野<blue>69.1%</blue>追加血量和同类护甲），并提高自身攻击力<blue>156%</blue><teal>（40秒）</teal>；<red>攻击形态</red>6Cost对一名敌人造成<blue>149%</blue>伤害，随后对目标圆形范围内敌方造成<blue>503%</blue>伤害。",
+      "ns": "<red>防御形态</red>每40秒更换<purple>防弹插板</purple>降低受到的伤害<blue>24.1% </blue>（<purple>防弹插板</purple>受到25次攻击后解除）；<red>攻击形态</red>弹药耗尽时触发，对一名敌方造成<blue>400%</blue>伤害",
+      "ss": "<red>防御形态</red>攻击时20%概率使目标降防<blue>19.3%</blue>；<red>攻击形态</red>所有攻击无视<blue>85%</blue>防御力，提高攻击力<blue>14%</blue>，使用EX技和触发NS技时立刻换弹，换弹后普攻对扇形范围内敌方造成<blue>150%</blue>伤害"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -2968,11 +2968,11 @@
     "skillSubOparts": "wolfsegg",
     "l2dUnlock": 5,
     "city": "B",
-    "outdoor": "S",
-    "indoor": "D",
+    "outdoor": "D",
+    "indoor": "S",
     "equipments": ["gloves", "bag", "watch"],
     "uniqueWeaponStar2": "暴击伤害增加",
-    "uniqueWeaponStar3": ["outdoor", "SS"],
+    "uniqueWeaponStar3": ["indoor", "SS"],
     "ratingVersion": "7.0",
     "ratingDate": "2025/07/12",
     "ratings": {
@@ -2986,7 +2986,7 @@
       "overall": 31
     },
     "skillsSummary": {
-      "ex": "3Cost对前方一名敌人造成<blue>331%</blue>伤害并降低防御<blue>30.1%</blue><teal>（30秒）</teal>，阿里乌斯小队人数大于等于3则会提升至降低<blue>51.6%</blue>防御",
+      "ex": "3Cost对前方一名敌人造成<blue>331%</blue>伤害并降低防御<blue>30.1%</blue><teal>（30秒）</teal>，<green>阿里乌斯小队人数大于等于3则会提升至降低<blue>51.6%</blue>防御</green>",
       "ns": "毎40秒造成<blue>409%</blue>伤害且降低防御<blue>10%</blue><teal>（30秒）</teal>",
       "ss": "<blue>17.3%</blue>攻击力光环"
     },
@@ -3028,7 +3028,7 @@
     "acquisitionMethod": "限定池",
     "skillMainOparts": "crystalhaniwa",
     "skillSubOparts": "discocolgante",
-    "l2dUnlock": 5,
+    "l2dUnlock": 3,
     "city": "D",
     "outdoor": "S",
     "indoor": "B",
@@ -3048,9 +3048,9 @@
       "overall": 62
     },
     "skillsSummary": {
-      "ex": "4Cost发射5枚子弹。对直线范围上最初命中的1名敌方造成合计<blue>1115%</blue>伤害，命中同一目标则会额外造成<blue>308%</blue>追伤。释放EX时拥有1层<purple>「EX充电圈」</purple>则会使技能立即进手牌。",
-      "ns": "毎普攻12次，使自身暴伤增加<blue>55.3%</blue><teal>(30秒)</teal>",
-      "ss": "每4.5秒增加10%<purple>「EX充电圈」</purple>，达到100%时则会增加暴击值14.3%。<purple>「EX充电圈」</purple><green>最多可叠1层。</green>"
+      "ex": "4Cost发射5枚子弹。对直线范围上最初命中的1名敌方造成合计<blue>1115%</blue>伤害，命中同一目标则会额外造成<blue>308%</blue>追伤。<red>释放EX时拥有<purple>1层「EX充电圈」</purple>则会使技能立即进手牌</red>",
+      "ns": "毎普攻12次，使自身暴伤增加<blue>55.3%</blue><teal>（30秒）</teal>",
+      "ss": "每4.5秒增加10%<purple>「EX充电圈」</purple>，达到100%时则会增加暴击值<blue>14.3%</blue><teal>（30秒）</teal>。<purple>「EX充电圈」</purple><green>最多可叠1层</green>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -3061,7 +3061,7 @@
       "jointFiringDrill": "有需要可选",
       "eventChallenge": "有需要可选"
     },
-    "uniqueWeaponRecommendedSummary": "<purple>主输出建议开专三</purple>。爬塔、大决战卷分竞速。",
+    "uniqueWeaponRecommendedSummary": "<purple>主输出建议开专三</purple>。爬塔、大决战卷分竞速",
     "overallRecommendation": "缝合水花机制的贯通单体连发输出、LU水藻、大决战和爬塔选",
     "skillOrder": [
       "EX3",
@@ -3094,7 +3094,7 @@
     "city": "D",
     "outdoor": "S",
     "indoor": "B",
-    "equipments": ["hat", "hairpin", "watch"],
+    "equipments": ["gloves", "hairpin", "watch"],
     "uniqueWeaponStar2": "神秘特攻增加",
     "uniqueWeaponStar3": ["outdoor", "SS"],
     "ratingVersion": "7.0",
@@ -3110,8 +3110,8 @@
       "overall": 33
     },
     "skillsSummary": {
-      "ex": "7Cost对扇形范围内一名敌造成<blue>1083%</blue>伤害，并增加<blue>577%</blue>恶寒伤害<teal>(40秒，4秒1跳合计5770%)</teal>，给范围内其他敌人造成<blue>159%</blue>的伤害。",
-      "ns": "毎30秒攻击力增加<blue>37.5%</blue><teal>(20秒)</teal>",
+      "ex": "7Cost对扇形范围内一名敌造成<blue>1083%</blue>伤害，并增加<blue>577%</blue>恶寒伤害<teal>（40秒，4秒1跳合计5770%）</teal>，给范围内其他敌人造成<blue>159%</blue>的伤害",
+      "ns": "毎30秒攻击力增加<blue>37.5%</blue><teal>（20秒）</teal>",
       "ss": "普攻时30%机率增加<blue>19.16%</blue>恶寒伤害<teal>（持续20秒，冷却5秒）</teal>"
     },
     "ratingsSummary": {
@@ -3150,8 +3150,8 @@
     "position": [0, "奶妈坦"],
     "uniqueWeaponRecommended": "专一/看情况",
     "acquisitionMethod": "常驻池",
-    "skillMainOparts": "crystalhaniwa",
-    "skillSubOparts": "discocolgante",
+    "skillMainOparts": "ether",
+    "skillSubOparts": "nimrud",
     "l2dUnlock": 5,
     "city": "B",
     "outdoor": "D",
@@ -3166,14 +3166,14 @@
       "totalAssault": [3, 0, 0],
       "pvp": [4, 0, 0],
       "grandAssault": [4, 0, 0],
-      "limitBreakAssault": [5, 0, 1],
+      "limitBreakAssault": [5, 0, 0],
       "jointFiringDrill": [2, 0, 0],
       "eventChallenge": [2, 0, 0],
       "overall": 72
     },
     "skillsSummary": {
       "ex": "4Cost每5秒一次范围回复治愈力<blue>53.9%</blue>的血量",
-      "ns": "毎30秒释放烟雾弹，提升范围内闪避<blue>39.1%</blue><red>(领域BUFF)</red>",
+      "ns": "毎30秒释放烟雾弹，提升范围内闪避<blue>39.1%</blue><red>（领域BUFF）</red>",
       "ss": "自身生命低于30%时会提升自身闪避<blue>45.9%</blue>"
     },
     "ratingsSummary": {
@@ -3185,7 +3185,7 @@
       "jointFiringDrill": "PVE高压环境功能坦之一，爬塔顶层选、持续群奶机制演习活动选、TM以下猫鬼环境威压主对策选",
       "eventChallenge": "PVE高压环境功能坦之一，爬塔顶层选、持续群奶机制演习活动选、TM以下猫鬼环境威压主对策选"
     },
-    "uniqueWeaponRecommendedSummary": "竞技场&猫鬼总力考虑开，<blue>专1拉生存(专2提升33%治愈量)</blue>；<red>注意:公主阿姨组合时，公主(攻击)练度要高于阿姨，不然敌方瞬会优先锁阿姨</red>",
+    "uniqueWeaponRecommendedSummary": "竞技场&猫鬼总力考虑开，<blue>专1拉生存（专2提升33%治愈量）</blue>；<red>注意：公主阿姨组合时，公主（攻击）练度要高于阿姨，不然敌方瞬会优先锁阿姨</red>",
     "overallRecommendation": "多赛季PVP主特甲坦培养，部分TM环境、持续群奶功能",
     "skillOrder": [
       "EX3",
@@ -3226,16 +3226,16 @@
     "ratings": {
       "newbie": [4, 0, 0],
       "totalAssault": [3, 0, 0],
-      "pvp": [4, 0, 0],
-      "grandAssault": [4, 0, 0],
-      "limitBreakAssault": [5, 0, 1],
-      "jointFiringDrill": [2, 0, 0],
+      "pvp": [2, 0, 0],
+      "grandAssault": [3, 0, 0],
+      "limitBreakAssault": null,
+      "jointFiringDrill": [3, 0, 0],
       "eventChallenge": [2, 0, 0],
-      "overall": 72
+      "overall": 52
     },
     "skillsSummary": {
       "ex": "2Cost使1人回复治愈力的<blue>290%</blue>的血量",
-      "ns": "毎30秒给予HP最低的一人被回复率增加<blue>36%</blue>",
+      "ns": "毎30秒给予HP最低的一人被回复率增加<blue>36%</blue><teal>（20秒）</teal>",
       "ss": "<blue>17.3%</blue>攻速光环，<green>50好感给公主+512治愈力，20好感给公主+272治愈力</green>"
     },
     "ratingsSummary": {
@@ -3248,7 +3248,7 @@
       "eventChallenge": null
     },
     "uniqueWeaponRecommendedSummary": "<blue>活动奖励有爱考虑高专</blue>，攻速光环，专1提面板",
-    "overallRecommendation": "环境储备角色，需要奶妈时可培养。",
+    "overallRecommendation": "环境储备角色，需要奶妈时可培养",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
@@ -3296,9 +3296,9 @@
       "overall": 28
     },
     "skillsSummary": {
-      "ex": "5Cost对7个小圆形范围毎4秒造成攻击力<blue>14.3%</blue>伤害<teal>(48秒打满合计1201%伤害)</teal>",
+      "ex": "5Cost对7个小圆形范围毎4秒造成攻击力<blue>14.3%</blue>伤害<teal>（48秒打满合计1201%伤害）</teal>",
       "ns": "毎50秒提升自身攻击力<blue>37.1%</blue><teal>（40秒）</teal>",
-      "ss": "攻击时如对方有减益效果，则会根据个数额外造成不同的追加伤害<blue>(2.1%/4.1%/6.2%/8.3%/10.3%，最多判定5次)<blue>。<green>爱用品加强输出/防穿</green>"
+      "ss": "<red>攻击时如对方有减益效果</red>，则会根据个数额外造成不同的追加伤害（<blue>2.1%</blue>/<blue>4.1%</blue>/<blue>6.2%</blue>/<blue>8.3%</blue>/<blue>10.3%</blue>，最多判定5次）。<green>爱用品加强输出/防穿</green>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -3310,7 +3310,7 @@
       "eventChallenge": "无常规需要、机制对策可选"
     },
     "uniqueWeaponRecommendedSummary": "攻击力增加，提升输出、对策BOSS上建议开高专",
-    "overallRecommendation": "双地形LU难度主教多刀可用副C，吃BOSS体型及需减益效果叠加，限制较多，竞技场S9拉4号位掩体黄C可选。",
+    "overallRecommendation": "双地形LU难度主教多刀可用副C，吃BOSS体型及需减益效果叠加，限制较多，竞技场S9拉4号位掩体黄C可选",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
@@ -3329,7 +3329,7 @@
       "materials": ["20", "nebra"],
       "effects": [
         "攻击力<red>2000</red>",
-        "攻击增加<blue>37.1%</blue>提升至<blue>50.6%</blue><teal>(40秒)，<red>新增防御贯通值增加</red><blue>652%</blue><teal>(40秒)</teal>"
+        "攻击增加<blue>37.1%</blue>提升至<blue>50.6%</blue><teal>（40秒）</teal>，<red>新增防御贯通值增加652</red>"
       ]
     }
   },
@@ -3367,9 +3367,9 @@
       "overall": 60
     },
     "skillsSummary": {
-      "ex": "3Cost对一名敌方造成<blue>545%</blue>伤害并眩晕5.5秒",
-      "ns": "毎40秒对扇形范围内飞射5枚破片，每枚碎片造成<blue>160%</blue>伤害",
-      "ss": "使用EX技后使自身承受的伤害降低<blue>36.1%</blue><teal>(16秒)</teal>，<green>爱用品减少敌方群控抵抗力，可减少群控计量表的时间需求</green>"
+      "ex": "3Cost对一名敌方造成<blue>545%</blue>伤害并<purple>眩晕</purple>5.5秒",
+      "ns": "毎40秒对扇形范围内<purple>飞射5枚破片</purple>，每枚碎片造成<blue>160%</blue>伤害",
+      "ss": "<red>使用EX技后</red>使自身承受的伤害降低<blue>36.1%</blue><teal>（16秒）</teal>，<green>爱用品减少敌方群控抵抗力，可减少群控计量表的时间需求</green>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -3400,7 +3400,7 @@
       "materials": ["9", "antikythera"],
       "effects": [
         "HP <red>10000</red>",
-        "伤害<blue>160%</blue>提升至<blue>174%</blue>，<red>新增群控抵抗减少</red><blue>16.4%</blue><teal>(30秒)</teal>"
+        "伤害<blue>160%</blue>提升至<blue>174%</blue>，<red>新增群控抵抗减少</red><blue>16.4%</blue><teal>（30秒）</teal>"
       ]
     }
   },
@@ -3434,17 +3434,17 @@
       "grandAssault": [2, 0, 0],
       "limitBreakAssault": null,
       "jointFiringDrill": [2, 0, 0],
-      "eventChallenge": [1, 1, 0],
+      "eventChallenge": [1, 0, 0],
       "overall": 48
     },
     "skillsSummary": {
-      "ex": "3Cost对一名敌方赋予<purple>弱点掌握</purple><teal>(10秒)</teal>，(我方攻击时根据HIT数附加美游<blue>30%</blue>攻击力追加伤害)",
-      "ns": "毎普攻5次对一名敌方造成<blue>283%</blue>伤害",
-      "ss": "换弹时提高自身暴伤<blue>36%</blue><teal>(13秒)，<green>爱用品提高输出能力</green>"
+      "ex": "3Cost对一名敌方赋予<purple>弱点掌握</purple><teal>（10秒）</teal>（我方攻击时根据HIT数附加美游<blue>30%</blue>攻击力追加伤害）",
+      "ns": "<red>毎普攻5次</red>对一名敌方造成<blue>283%</blue>伤害",
+      "ss": "换弹时提高自身暴伤<blue>36%</blue><teal>（13秒）</teal>，<green>爱用品提高输出能力</green>"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "气垫船P2HIT对策，大蛇/霍德等重甲BOSS多刀可选",
+      "totalAssault": "气垫船P2 HIT对策，大蛇/霍德等重甲BOSS多刀可选",
       "pvp": "市街赛季搭配炮台针对掩体闪避坦",
       "grandAssault": "气垫船P2HIT对策，大蛇/霍德等重甲BOSS多刀可选",
       "limitBreakAssault": "缺人或机制使用",
@@ -3467,7 +3467,7 @@
     ],
     "favoriteItem": {
       "name": "哭哭兔兔水杯",
-      "recommendedLevel": [5, 0, 0],
+      "recommendedLevel": [4, 0, 0],
       "materials": ["31", "totempole"],
       "effects": [
         "攻击力<red>1500</red>",
@@ -3509,8 +3509,8 @@
       "overall": 27
     },
     "skillsSummary": {
-      "ex": "4Cost对矩形范围内敌方造成<blue>489%</blue>伤害并造成<blue>66.2%</blue>烧伤<teal>(20秒)</teal>",
-      "ns": "毎40秒对五名敌方造成<blue>160%</blue>伤害并眩晕1.6秒",
+      "ex": "4Cost对矩形范围内敌方造成<blue>489%</blue>伤害并造成<blue>66.2%</blue><purple>烧伤</purple><teal>（20秒）</teal>",
+      "ns": "毎40秒对五名敌方造成<blue>160%</blue>伤害并<purple>眩晕</purple>1.6秒",
       "ss": "<blue>17.3%</blue>爆伤光环"
     },
     "ratingsSummary": {
@@ -3529,7 +3529,6 @@
       "EX3",
       "技三Lv7",
       "技二Lv7",
-      "技一Lv7",
       "技一Lv7",
       "EX5",
       "技三Lv10",

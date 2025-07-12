@@ -272,6 +272,77 @@
     }
   },
   {
+    "id": 19,
+    "fullname": "十六夜 野乃美",
+    "name": "野乃美",
+    "nicknames": ["富婆", "糯糯米"],
+    "school": "Abydos",
+    "attackType": "Piercing",
+    "defenseType": "Light",
+    "weapon": "MG",
+    "position": [0, "範圍輸出"],
+    "uniqueWeaponRecommended": "有需可商店換",
+    "acquisitionMethod": "新手活動獎勵",
+    "skillMainOparts": "nebra",
+    "skillSubOparts": "ether",
+    "l2dUnlock": 5,
+    "city": "A",
+    "outdoor": "A",
+    "indoor": "D",
+    "equipments": ["hat", "hairpin", "watch"],
+    "uniqueWeaponStar2": "暴擊傷害增加",
+    "uniqueWeaponStar3": ["indoor", "B"],
+    "ratingVersion": "7.0",
+    "ratingDate": "2025/07/12",
+    "ratings": {
+      "newbie": [5, 0, 0],
+      "totalAssault": [3, 0, 0],
+      "pvp": [4, 0, 0],
+      "grandAssault": [3, 0, 0],
+      "limitBreakAssault": null,
+      "jointFiringDrill": [3, 0, 0],
+      "eventChallenge": [2, 0, 0],
+      "overall": 61
+    },
+    "skillsSummary": {
+      "ex": "5Cost對大範圍扇形敵人造成<blue>821%</blue>傷害",
+      "ns": "毎30秒提升自身<blue>41.4%</blue>攻擊力<teal>（20秒）</teal>",
+      "ss": "對<red>大型敵人</red>額外造成<blue>12.8%</blue>追傷。<green><red>新手任務贈送白嫖3星平民戰神，</red>愛用品增強不用凹球命中</green>"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "球高難可選清雜、黃甲雞大決戰主輸出選、船多隊疊hit清導彈",
+      "pvp": "市街賽季可選，5費大範圍AOE運氣好可收全體",
+      "grandAssault": "球高難可選清雜、黃甲雞大決戰主輸出選、船多隊疊hit清導彈",
+      "limitBreakAssault": "無環境搭配",
+      "jointFiringDrill": "貫通對群環境可選",
+      "eventChallenge": "貫通對群環境可選"
+    },
+    "uniqueWeaponRecommendedSummary": "暴擊傷害提升輸出幅度，可直接熟練證書商店兌換開專",
+    "overallRecommendation": "萌新平民戰神，後期大決戰部分對策主刀、或是副隊多刀TM替補，市街賽季競技場賭狗可選。",
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "EX5",
+      "技一Lv7",
+      "技二Lv7",
+      "技三LV7",
+      "技一Lv10",
+      "技二Lv10",
+      "技三Lv10",
+      "Max"
+    ],
+    "favoriteItem": {
+      "name": "祕密願望清單",
+      "recommendedLevel": [4, 1, 0],
+      "materials": ["5", "nebra"],
+      "effects": [
+        "攻擊力<red>500</red>、命中值<red>200</red>",
+        "攻擊增加<blue>41.4%</blue>提升至<blue>42.4%</blue><teal>（20秒），<red>新增命中增加</red><blue>36.4%</blue><teal>（20秒）</teal>"
+      ]
+    }
+  },
+  {
     "id": 23,
     "fullname": "黑見 茜香",
     "name": "茜香",
@@ -546,7 +617,7 @@
     "ratingDate": "2025/03/29",
     "ratings": {
       "newbie": null,
-      "totalAssault": [3, 0, 0],
+      "totalAssault": [2, 0, 0],
       "pvp": [4, 1, 0],
       "grandAssault": [2, 0, 0],
       "limitBreakAssault": null,
@@ -568,7 +639,7 @@
       "jointFiringDrill": "群控機制可選",
       "eventChallenge": "群控機制可選"
     },
-    "uniqueWeaponRecommendedSummary": "可考慮專一拉支援面板，<blue>競技場建議專二期</blue>",
+    "uniqueWeaponRecommendedSummary": "可考慮專一拉支援面板，<blue>競技場建議專二起</blue>",
     "overallRecommendation": "霍德多刀可選對策，S9對抗戰卷排位可選後排輸出",
     "skillOrder": [
       "EX3",
@@ -579,7 +650,7 @@
       "技三Lv10",
       "技二Lv10",
       "技一Lv7(10)",
-      "Max（注意本校學校素材使用女武神警察學校）"
+      "Max"
     ],
     "favoriteItem": {
       "name": "SRT基礎教範",
@@ -2523,77 +2594,6 @@
     ]
   },
   {
-    "id": 13004,
-    "fullname": "十六夜 野乃美",
-    "name": "野乃美",
-    "nicknames": ["富婆", "糯糯米"],
-    "school": "Abydos",
-    "attackType": "Piercing",
-    "defenseType": "Light",
-    "weapon": "MG",
-    "position": [0, "範圍輸出"],
-    "uniqueWeaponRecommended": "有需可商店換",
-    "acquisitionMethod": "新手活動獎勵",
-    "skillMainOparts": "nebra",
-    "skillSubOparts": "ether",
-    "l2dUnlock": 5,
-    "city": "A",
-    "outdoor": "A",
-    "indoor": "D",
-    "equipments": ["hat", "hairpin", "watch"],
-    "uniqueWeaponStar2": "暴擊傷害增加",
-    "uniqueWeaponStar3": ["indoor", "B"],
-    "ratingVersion": "7.0",
-    "ratingDate": "2025/07/12",
-    "ratings": {
-      "newbie": [5, 0, 0],
-      "totalAssault": [3, 0, 0],
-      "pvp": [4, 0, 0],
-      "grandAssault": [3, 0, 0],
-      "limitBreakAssault": null,
-      "jointFiringDrill": [3, 0, 0],
-      "eventChallenge": [2, 0, 0],
-      "overall": 61
-    },
-    "skillsSummary": {
-      "ex": "5Cost對大範圍扇形敵人造成<blue>821%</blue>傷害",
-      "ns": "毎30秒提升自身<blue>41.4%</blue>攻擊力<teal>（20秒）</teal>",
-      "ss": "對<red>大型敵人</red>額外造成<blue>12.8%</blue>追傷。<green>新手任務贈送白嫖3星平民戰神，愛用品增強不用凹球命中</green>"
-    },
-    "ratingsSummary": {
-      "newbie": null,
-      "totalAssault": "球高難可選清雜、黃甲雞大決戰主輸出選、船多隊疊hit清導彈",
-      "pvp": "市街賽季可選，5費大範圍AOE運氣好可收全體",
-      "grandAssault": "球高難可選清雜、黃甲雞大決戰主輸出選、船多隊疊hit清導彈",
-      "limitBreakAssault": "無環境搭配",
-      "jointFiringDrill": "貫通對群環境可選",
-      "eventChallenge": "貫通對群環境可選"
-    },
-    "uniqueWeaponRecommendedSummary": "暴擊傷害提升輸出幅度，可直接熟練證書商店兌換開專",
-    "overallRecommendation": "萌新平民戰神，後期大決戰部分對策主刀、或是副隊多刀TM替補，市街賽季競技場賭狗可選。",
-    "skillOrder": [
-      "EX3",
-      "技一.二.三Lv4",
-      "EX5",
-      "技一Lv7",
-      "技二Lv7",
-      "技三LV7",
-      "技一Lv10",
-      "技二Lv10",
-      "技三Lv10",
-      "Max"
-    ],
-    "favoriteItem": {
-      "name": "秘密的願望清單",
-      "recommendedLevel": [4, 1, 0],
-      "materials": ["5", "nebra"],
-      "effects": [
-        "攻擊力<red>500</red>、命中值<red>200</red>",
-        "攻擊增加<blue>41.4%</blue>提升至<blue>42.4%</blue><teal>(20秒)，<red>新增命中增加</red><blue>36.4%</blue><teal>(20秒)</teal>"
-      ]
-    }
-  },
-  {
     "id": 10010,
     "fullname": "砂狼 白子（騎行）",
     "name": "白子（騎行）",
@@ -2627,7 +2627,7 @@
       "overall": 39
     },
     "skillsSummary": {
-      "ex": "4Cost對圓形範圍造成<blue>690%</blue>傷害<teal>(半徑200範圍)</teal>，且降低敵方攻擊力<blue>50%/blue><teal>（10秒）</teal>",
+      "ex": "4Cost對圓形範圍造成<blue>690%</blue>傷害<teal>（半徑200範圍）</teal>，且降低敵方攻擊力<blue>50%</blue><teal>（10秒）</teal>",
       "ns": "毎40秒對直線範圍造成<blue>369%</blue>傷害",
       "ss": "攻擊時，如目標擁有減益效果則會額外造成<blue>7.3%</blue>追傷"
     },
@@ -2662,7 +2662,7 @@
     "nicknames": ["水富婆"],
     "school": "Abydos",
     "attackType": "Explosive",
-    "defenseType": "Light",
+    "defenseType": "Special",
     "weapon": "MG",
     "position": [0, "輸出"],
     "uniqueWeaponRecommended": "卷分建議專三",
@@ -2689,15 +2689,15 @@
       "overall": 50
     },
     "skillsSummary": {
-      "ex": "6Cost發動後立即換彈，對敵方單體造成<blue>1113%</blue>傷害後給與自身普攻強化特殊BUFF,無視毎4次普攻之間的開火間隔<red>(100發子彈打完結束)</red>",
-      "ns": "毎40秒給予自身及圓形範圍內我方攻速增加<blue>21.6%</blue><teal>(30秒)</teal>",
-      "ss": "使用EX技後，普攻會額外對敵人造成<blue>20.9%</blue>追傷。"
+      "ex": "6Cost發動後立即換彈，對敵方單體造成<blue>1113%</blue>傷害後給與自身普攻強化特殊BUFF，無視毎4次普攻之間的開火間隔<red>（100發子彈打完結束）</red>",
+      "ns": "毎40秒給予自身及圓形範圍內我方攻速增加<blue>21.6%</blue><teal>（30秒）</teal>",
+      "ss": "使用EX技後，普攻會額外對敵人造成<blue>20.9%</blue>追傷"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "市街主教壽司多隊可選、大決戰INS、TM多環境(市街輕甲選) ",
+      "totalAssault": "市街主教壽司多隊可選、大決戰INS、TM多環境（市街輕甲選）",
       "pvp": "無環境搭配",
-      "grandAssault": "市街主教壽司多隊可選、大決戰INS、TM多環境(市街輕甲選) ",
+      "grandAssault": "市街主教壽司多隊可選、大決戰INS、TM多環境（市街輕甲選）",
       "limitBreakAssault": "輕甲賽特可選主副C",
       "jointFiringDrill": "射擊演習可選用",
       "eventChallenge": "爆發市街需普攻環境輸出可選"
@@ -2731,7 +2731,7 @@
     "acquisitionMethod": "常駐/困難",
     "skillMainOparts": "nebra",
     "skillSubOparts": "nimrud",
-    "l2dUnlock": 6,
+    "l2dUnlock": 9,
     "city": "D",
     "outdoor": "S",
     "indoor": "B",
@@ -2751,8 +2751,8 @@
       "overall": 56
     },
     "skillsSummary": {
-      "ex": "4Cost造成<blue>697%</blue>傷害且前移推進，<red>技能升3級後質變帶眩暈</red>，升5級眩暈秒數增加(1.4秒*5hit)",
-      "ns": "HP低於30%時給與自身<blue>191%</blue>治癒力回復<teal>(整場戰鬥限1次)</teal>",
+      "ex": "4Cost造成<blue>697%</blue>傷害且前移推進，<red>技能升3級後質變帶眩暈</red>，升5級眩暈秒數增加<teal>（1.4秒*5hit）</teal>",
+      "ns": "HP低於30%時給與自身<blue>191%</blue>治癒力回復<teal>（整場戰鬥限1次）</teal>",
       "ss": "使用EX技時，會給與自身<blue>205%</blue>治癒力護盾。<green>愛用品拉高被暴後生存能力提高，50%暴傷抗加算</green>"
     },
     "ratingsSummary": {
@@ -2768,12 +2768,12 @@
     "overallRecommendation": "速攻減閃避競技場主選坦克，雞跟HOD多刀總力用",
     "skillOrder": ["EX3", "技一.二.三Lv4", "技一Lv7", "技二Lv7", "EX5", "技一Lv10", "技二Lv10", "技三Lv10", "Max"],
     "favoriteItem": {
-      "name": "隨地入場券",
+      "name": "暢通無阻入場券",
       "recommendedLevel": [4, 0, 0],
       "materials": ["17", "nebra"],
       "effects": [
-        "爆抗<red>2000</red>",
-        "持續恢復<blue>191%</blue>提升至<blue>261%</blue><teal>(持續20秒)</teal>，<red>新增爆傷抵抗增加30%</red>，<green>NS能觸發2次</green>"
+        "暴抗<red>2000</red>",
+        "持續恢復<blue>191%</blue>提升至<blue>261%</blue><teal>（持續20秒）</teal>，<red>新增暴傷抵抗增加30%</red><green>，NS能觸發2次</green>"
       ]
     }
   },
@@ -2862,7 +2862,7 @@
       "overall": 54
     },
     "skillsSummary": {
-      "ex": "4Cost召喚<purple>雨雲號</purple>進入戰場<teal>(30秒)</teal>，<purple>雨雲號</purple>額外擁有綾音<blue>47.5%</blue>攻擊力跟<blue>32.6%</blue>暴擊值。<purple>雨雲號</purple>毎12秒會對一名敵方單位造成<blue>401%</blue>傷害<red>且無視84%防禦</red>。",
+      "ex": "4Cost召喚<purple>雨雲號</purple>進入戰場<teal>（30秒）</teal>，<purple>雨雲號</purple>額外擁有綾音<blue>47.5%</blue>攻擊力跟<blue>32.6%</blue>暴擊值。<purple>雨雲號</purple>毎12秒會對一名敵方單位造成<blue>401%</blue>傷害<red>且無視84%防禦</red>",
       "ns": "毎30秒對一名敵人造成<blue>215%</blue>傷害<red>且無視84%防禦</red>",
       "ss": "<blue>17.3%</blue>爆傷光環"
     },
@@ -2875,7 +2875,7 @@
       "jointFiringDrill": "射擊演習可選&機制可選",
       "eventChallenge": "機制可選"
     },
-    "uniqueWeaponRecommendedSummary": "暴擊值收益較少，<blue>建議5星專1或是專3(市街綠臉)</blue>",
+    "uniqueWeaponRecommendedSummary": "暴擊值收益較少，<blue>建議5星專1或是專3（市街綠臉）</blue>",
     "overallRecommendation": "活動獎勵，熟練證書商店也可兌換，TS機制三星就有不錯戰力，建議培養，黃甲總力大決戰多刀+充當暴傷掛件、競技場使用較多",
     "skillOrder": [
       "EX3",
@@ -2899,7 +2899,7 @@
     "attackType": "Mystic",
     "defenseType": "Heavy",
     "weapon": "SG",
-    "position": [0, "多功能坦(形態1)，範圍輸出(形態2)"],
+    "position": [0, "多功能坦（形態1），範圍輸出（形態2）"],
     "uniqueWeaponRecommended": "使用建議專三",
     "acquisitionMethod": "限定池",
     "skillMainOparts": "nebra",
@@ -2909,7 +2909,7 @@
     "outdoor": "S",
     "indoor": "D",
     "equipments": ["hat", "bag", "watch"],
-    "uniqueWeaponStar2": "攻擊與血量增加(形態1)、攻擊力增加(形態2)",
+    "uniqueWeaponStar2": "攻擊與血量增加（形態1）、攻擊力增加（形態2）",
     "uniqueWeaponStar3": ["outdoor", "SS"],
     "ratingVersion": "7.0",
     "ratingDate": "2025/07/12",
@@ -2924,9 +2924,9 @@
       "overall": 100
     },
     "skillsSummary": {
-      "ex": "<red>防禦形態</red>4Cost位移到指定位置並架設<purple>盾牌</purple>為掩體(掩體額外擁有星野<blue>69.1%</blue>追加血量和同類護甲)，並提高自身攻擊力<blue>156%</blue><teal>(40秒)</teal>。<red>攻擊形態</red>6Cost對一名敵人造成<blue>149%</blue>傷害，隨後對目標圓形範圍內敵方造成<blue>503%</blue>傷害。",
-      "ns": "<red>防禦形態</red>每40秒更換<purple>防彈插板</purple>降低受到的傷害<blue>24.1% </blue>(防彈插板受到25次攻擊後解除)。<red>攻擊形態</red>彈藥耗盡時觸發，對一名敵方造成<blue>400%</blue>傷害",
-      "ss": "<red>防禦形態</red>攻擊時20%概率使目標降防<blue>19.3%</blue>；<red>攻擊形態</red>所有攻擊無視85%防禦力，提高攻擊力14%，使用EX技和觸發NS技時立刻換彈，換彈後普攻對扇形範圍內敵方造成<blue>150%</blue>傷害"
+      "ex": "<red>防禦形態</red>4Cost位移到指定位置並架設<purple>盾牌</purple>為掩體（掩體額外擁有星野<blue>69.1%</blue>追加血量和同類護甲），並提高自身攻擊力<blue>156%</blue><teal>（40秒）</teal>；<red>攻擊形態</red>6Cost對一名敵人造成<blue>149%</blue>傷害，隨後對目標圓形範圍內敵方造成<blue>503%</blue>傷害。",
+      "ns": "<red>防禦形態</red>每40秒更換<purple>防彈插板</purple>降低受到的傷害<blue>24.1% </blue>（<purple>防彈插板</purple>受到25次攻擊後解除）；<red>攻擊形態</red>彈藥耗盡時觸發，對一名敵方造成<blue>400%</blue>傷害",
+      "ss": "<red>防禦形態</red>攻擊時20%概率使目標降防<blue>19.3%</blue>；<red>攻擊形態</red>所有攻擊無視<blue>85%</blue>防禦力，提高攻擊力<blue>14%</blue>，使用EX技和觸發NS技時立刻換彈，換彈後普攻對扇形範圍內敵方造成<blue>150%</blue>傷害"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -2968,11 +2968,11 @@
     "skillSubOparts": "wolfsegg",
     "l2dUnlock": 5,
     "city": "B",
-    "outdoor": "S",
-    "indoor": "D",
+    "outdoor": "D",
+    "indoor": "S",
     "equipments": ["gloves", "bag", "watch"],
     "uniqueWeaponStar2": "暴擊傷害增加",
-    "uniqueWeaponStar3": ["outdoor", "SS"],
+    "uniqueWeaponStar3": ["indoor", "SS"],
     "ratingVersion": "7.0",
     "ratingDate": "2025/07/12",
     "ratings": {
@@ -2986,21 +2986,21 @@
       "overall": 31
     },
     "skillsSummary": {
-      "ex": "3Cost對前方一名敵人造成<blue>331%</blue>傷害並降低防禦<blue>30.1%</blue><teal>（30秒）</teal>，阿裡烏斯小隊人數大於等於3則會提升至降低<blue>51.6%</blue>防禦",
+      "ex": "3Cost對前方一名敵人造成<blue>331%</blue>傷害並降低防禦<blue>30.1%</blue><teal>（30秒）</teal>，<green>奧利斯小隊人數大於等於3則會提升至降低<blue>51.6%</blue>防禦</green>",
       "ns": "毎40秒造成<blue>409%</blue>傷害且降低防禦<blue>10%</blue><teal>（30秒）</teal>",
       "ss": "<blue>17.3%</blue>攻擊力光環"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "高防BOSS可選降防角色、阿裡烏斯體系",
+      "totalAssault": "高防BOSS可選降防角色、奧利斯體系",
       "pvp": "有需要可選",
-      "grandAssault": "高防BOSS可選降防角色、阿裡烏斯體系",
+      "grandAssault": "高防BOSS可選降防角色、奧利斯體系",
       "limitBreakAssault": "暫無搭配",
       "jointFiringDrill": "有需要可選",
       "eventChallenge": "有需要可選"
     },
     "uniqueWeaponRecommendedSummary": "降防工具人可不開、<purple>補面板或卷分可專一起步</purple>",
-    "overallRecommendation": " 缺後排降防角色考慮培養、3星可用、多刀TM高難可選用、適用于阿裡烏斯體系最佳、降防2層合計61.6%",
+    "overallRecommendation": " 缺後排降防角色考慮培養、3星可用、多刀TM高難可選用、適用于奧利斯體系最佳、降防2層合計61.6%",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
@@ -3028,7 +3028,7 @@
     "acquisitionMethod": "限定池",
     "skillMainOparts": "crystalhaniwa",
     "skillSubOparts": "discocolgante",
-    "l2dUnlock": 5,
+    "l2dUnlock": 3,
     "city": "D",
     "outdoor": "S",
     "indoor": "B",
@@ -3048,9 +3048,9 @@
       "overall": 62
     },
     "skillsSummary": {
-      "ex": "4Cost發射5枚子彈。對直線範圍上最初命中的1名敵方造成合計<blue>1115%</blue>傷害，命中同一目標則會額外造成<blue>308%</blue>追傷。釋放EX時擁有1層<purple>「EX充電圈」</purple>則會使技能立即進手牌。",
-      "ns": "毎普攻12次，使自身暴傷增加<blue>55.3%</blue><teal>(30秒)</teal>",
-      "ss": "每4.5秒增加10%<purple>「EX充電圈」</purple>，達到100%時則會增加暴擊值14.3%。<purple>「EX充電圈」</purple><green>最多可疊1層。</green>"
+      "ex": "4Cost發射5枚子彈。對直線範圍上最初命中的1名敵方造成合計<blue>1115%</blue>傷害，命中同一目標則會額外造成<blue>308%</blue>追傷。<red>釋放EX時擁有<purple>1層「EX充電圈」</purple>則會使技能立即進手牌</red>",
+      "ns": "毎普攻12次，使自身暴傷增加<blue>55.3%</blue><teal>（30秒）</teal>",
+      "ss": "每4.5秒增加10%<purple>「EX充電圈」</purple>，達到100%時則會增加暴擊值<blue>14.3%</blue><teal>（30秒）</teal>。<purple>「EX充電圈」</purple><green>最多可疊1層</green>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -3061,7 +3061,7 @@
       "jointFiringDrill": "有需要可選",
       "eventChallenge": "有需要可選"
     },
-    "uniqueWeaponRecommendedSummary": "<purple>主輸出建議開專三</purple>。爬塔、大決戰卷分競速。",
+    "uniqueWeaponRecommendedSummary": "<purple>主輸出建議開專三</purple>。爬塔、大決戰卷分競速",
     "overallRecommendation": "縫合水花機制的貫通單體連發輸出、LU水藻、大決戰和爬塔選",
     "skillOrder": [
       "EX3",
@@ -3094,7 +3094,7 @@
     "city": "D",
     "outdoor": "S",
     "indoor": "B",
-    "equipments": ["hat", "hairpin", "watch"],
+    "equipments": ["gloves", "hairpin", "watch"],
     "uniqueWeaponStar2": "神秘特攻增加",
     "uniqueWeaponStar3": ["outdoor", "SS"],
     "ratingVersion": "7.0",
@@ -3110,8 +3110,8 @@
       "overall": 33
     },
     "skillsSummary": {
-      "ex": "7Cost對扇形範圍內一名敵造成<blue>1083%</blue>傷害，並增加<blue>577%</blue>惡寒傷害<teal>(40秒，4秒1跳合計5770%)</teal>，給範圍內其他敵人造成<blue>159%</blue>的傷害。",
-      "ns": "毎30秒攻擊力增加<blue>37.5%</blue><teal>(20秒)</teal>",
+      "ex": "7Cost對扇形範圍內一名敵造成<blue>1083%</blue>傷害，並增加<blue>577%</blue>惡寒傷害<teal>（40秒，4秒1跳合計5770%）</teal>，給範圍內其他敵人造成<blue>159%</blue>的傷害",
+      "ns": "毎30秒攻擊力增加<blue>37.5%</blue><teal>（20秒）</teal>",
       "ss": "普攻時30%機率增加<blue>19.16%</blue>惡寒傷害<teal>（持續20秒，冷卻5秒）</teal>"
     },
     "ratingsSummary": {
@@ -3150,8 +3150,8 @@
     "position": [0, "奶媽坦"],
     "uniqueWeaponRecommended": "專一/看情況",
     "acquisitionMethod": "常駐池",
-    "skillMainOparts": "crystalhaniwa",
-    "skillSubOparts": "discocolgante",
+    "skillMainOparts": "ether",
+    "skillSubOparts": "nimrud",
     "l2dUnlock": 5,
     "city": "B",
     "outdoor": "D",
@@ -3166,14 +3166,14 @@
       "totalAssault": [3, 0, 0],
       "pvp": [4, 0, 0],
       "grandAssault": [4, 0, 0],
-      "limitBreakAssault": [5, 0, 1],
+      "limitBreakAssault": [5, 0, 0],
       "jointFiringDrill": [2, 0, 0],
       "eventChallenge": [2, 0, 0],
       "overall": 72
     },
     "skillsSummary": {
       "ex": "4Cost每5秒一次範圍回復治癒力<blue>53.9%</blue>的血量",
-      "ns": "毎30秒釋放煙霧彈，提升範圍內閃避<blue>39.1%</blue><red>(領域BUFF)</red>",
+      "ns": "毎30秒釋放煙霧彈，提升範圍內閃避<blue>39.1%</blue><red>（領域BUFF）</red>",
       "ss": "自身生命低於30%時會提升自身閃避<blue>45.9%</blue>"
     },
     "ratingsSummary": {
@@ -3185,7 +3185,7 @@
       "jointFiringDrill": "PVE高壓環境功能坦之一，爬塔頂層選、持續群奶機制演習活動選、TM以下貓鬼環境威壓主對策選",
       "eventChallenge": "PVE高壓環境功能坦之一，爬塔頂層選、持續群奶機制演習活動選、TM以下貓鬼環境威壓主對策選"
     },
-    "uniqueWeaponRecommendedSummary": "競技場&貓鬼總力考慮開，<blue>專1拉生存(專2提升33%治癒量)</blue>；<red>注意:公主阿姨組合時，公主(攻擊)練度要高於阿姨，不然敵方瞬會優先鎖阿姨</red>",
+    "uniqueWeaponRecommendedSummary": "競技場&貓鬼總力考慮開，<blue>專1拉生存（專2提升33%治癒量）</blue>；<red>注意：公主阿姨組合時，公主（攻擊）練度要高於阿姨，不然敵方瞬會優先鎖阿姨</red>",
     "overallRecommendation": "多賽季PVP主特甲坦培養，部分TM環境、持續群奶功能",
     "skillOrder": [
       "EX3",
@@ -3226,16 +3226,16 @@
     "ratings": {
       "newbie": [4, 0, 0],
       "totalAssault": [3, 0, 0],
-      "pvp": [4, 0, 0],
-      "grandAssault": [4, 0, 0],
-      "limitBreakAssault": [5, 0, 1],
-      "jointFiringDrill": [2, 0, 0],
+      "pvp": [2, 0, 0],
+      "grandAssault": [3, 0, 0],
+      "limitBreakAssault": null,
+      "jointFiringDrill": [3, 0, 0],
       "eventChallenge": [2, 0, 0],
-      "overall": 72
+      "overall": 52
     },
     "skillsSummary": {
       "ex": "2Cost使1人回復治癒力的<blue>290%</blue>的血量",
-      "ns": "毎30秒給予HP最低的一人被回復率增加<blue>36%</blue>",
+      "ns": "毎30秒給予HP最低的一人被回復率增加<blue>36%</blue><teal>（20秒）</teal>",
       "ss": "<blue>17.3%</blue>攻速光環，<green>50好感給公主+512治癒力，20好感給公主+272治癒力</green>"
     },
     "ratingsSummary": {
@@ -3248,7 +3248,7 @@
       "eventChallenge": null
     },
     "uniqueWeaponRecommendedSummary": "<blue>活動獎勵有愛考慮高專</blue>，攻速光環，專1提面板",
-    "overallRecommendation": "環境儲備角色，需要奶媽時可培養。",
+    "overallRecommendation": "環境儲備角色，需要奶媽時可培養",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
@@ -3296,21 +3296,21 @@
       "overall": 28
     },
     "skillsSummary": {
-      "ex": "5Cost對7個小圓形範圍毎4秒造成攻擊力<blue>14.3%</blue>傷害<teal>(48秒打滿合計1201%傷害)</teal>",
+      "ex": "5Cost對7個小圓形範圍毎4秒造成攻擊力<blue>14.3%</blue>傷害<teal>（48秒打滿合計1201%傷害）</teal>",
       "ns": "毎50秒提升自身攻擊力<blue>37.1%</blue><teal>（40秒）</teal>",
-      "ss": "攻擊時如對方有減益效果，則會根據個數額外造成不同的追加傷害<blue>(2.1%/4.1%/6.2%/8.3%/10.3%，最多判定5次)<blue>。<green>愛用品加強輸出/防穿</green>"
+      "ss": "<red>攻擊時如對方有減益效果</red>，則會根據個數額外造成不同的追加傷害（<blue>2.1%</blue>/<blue>4.1%</blue>/<blue>6.2%</blue>/<blue>8.3%</blue>/<blue>10.3%</blue>，最多判定5次)。<green>愛用品加強輸出/防穿</green>"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "LU主教多刀可選體系對策、阿裡烏斯體系，紅甲大型BOSS多刀可選",
+      "totalAssault": "LU主教多刀可選體系對策、奧利斯體系，紅甲大型BOSS多刀可選",
       "pvp": "850射程拉人、高攻/命中可針對紅甲輸出/閃避坦",
-      "grandAssault": "LU主教多刀可選體系對策、阿裡烏斯體系，紅甲大型BOSS多刀可選",
+      "grandAssault": "LU主教多刀可選體系對策、奧利斯體系，紅甲大型BOSS多刀可選",
       "limitBreakAssault": "無環境搭配",
       "jointFiringDrill": "無常規需要、機制對策可選",
       "eventChallenge": "無常規需要、機制對策可選"
     },
     "uniqueWeaponRecommendedSummary": "攻擊力增加，提升輸出、對策BOSS上建議開高專",
-    "overallRecommendation": "雙地形LU難度主教多刀可用副C，吃BOSS體型及需減益效果疊加，限制較多，競技場S9拉4號位掩體黃C可選。",
+    "overallRecommendation": "雙地形LU難度主教多刀可用副C，吃BOSS體型及需減益效果疊加，限制較多，競技場S9拉4號位掩體黃C可選",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
@@ -3329,7 +3329,7 @@
       "materials": ["20", "nebra"],
       "effects": [
         "攻擊力<red>2000</red>",
-        "攻擊增加<blue>37.1%</blue>提升至<blue>50.6%</blue><teal>(40秒)，<red>新增防禦貫通值增加</red><blue>652%</blue><teal>(40秒)</teal>"
+        "攻擊增加<blue>37.1%</blue>提升至<blue>50.6%</blue><teal>（40秒）</teal>，<red>新增防禦貫通值增加652</red>"
       ]
     }
   },
@@ -3367,9 +3367,9 @@
       "overall": 60
     },
     "skillsSummary": {
-      "ex": "3Cost對一名敵方造成<blue>545%</blue>傷害並眩暈5.5秒",
-      "ns": "毎40秒對扇形範圍內飛射5枚破片，每枚碎片造成<blue>160%</blue>傷害",
-      "ss": "使用EX技後使自身承受的傷害降低<blue>36.1%</blue><teal>(16秒)</teal>，<green>愛用品減少敵方群控抵抗力，可減少群控計量表的時間需求</green>"
+      "ex": "3Cost對一名敵方造成<blue>545%</blue>傷害並<purple>眩暈</purple>5.5秒",
+      "ns": "毎40秒對扇形範圍內<purple>飛射5枚破片</purple>，每枚碎片造成<blue>160%</blue>傷害",
+      "ss": "<red>使用EX技後</red>使自身承受的傷害降低<blue>36.1%</blue><teal>）16秒）</teal>，<green>愛用品減少敵方群控抵抗力，可減少群控計量表的時間需求</green>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -3400,7 +3400,7 @@
       "materials": ["9", "antikythera"],
       "effects": [
         "HP <red>10000</red>",
-        "傷害<blue>160%</blue>提升至<blue>174%</blue>，<red>新增群控抵抗減少</red><blue>16.4%</blue><teal>(30秒)</teal>"
+        "傷害<blue>160%</blue>提升至<blue>174%</blue>，<red>新增群控抵抗減少</red><blue>16.4%</blue><teal>（30秒）</teal>"
       ]
     }
   },
@@ -3434,17 +3434,17 @@
       "grandAssault": [2, 0, 0],
       "limitBreakAssault": null,
       "jointFiringDrill": [2, 0, 0],
-      "eventChallenge": [1, 1, 0],
+      "eventChallenge": [1, 0, 0],
       "overall": 48
     },
     "skillsSummary": {
-      "ex": "3Cost對一名敵方賦予<purple>弱點掌握</purple><teal>(10秒)</teal>，(我方攻擊時根據HIT數附加美遊<blue>30%</blue>攻擊力追加傷害)",
-      "ns": "毎普攻5次對一名敵方造成<blue>283%</blue>傷害",
-      "ss": "換彈時提高自身暴傷<blue>36%</blue><teal>(13秒)，<green>愛用品提高輸出能力</green>"
+      "ex": "3Cost對一名敵方賦予<purple>弱點掌握</purple><teal>（10秒）</teal>（我方攻擊時根據HIT數附加美遊<blue>30%</blue>攻擊力追加傷害）",
+      "ns": "<red>毎普攻5次</red>對一名敵方造成<blue>283%</blue>傷害",
+      "ss": "換彈時提高自身暴傷<blue>36%</blue><teal>（13秒）</teal>，<green>愛用品提高輸出能力</green>"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "氣墊船P2HIT對策，大蛇/霍德等重甲BOSS多刀可選",
+      "totalAssault": "氣墊船P2 HIT對策，大蛇/霍德等重甲BOSS多刀可選",
       "pvp": "市街賽季搭配炮臺針對掩體閃避坦",
       "grandAssault": "氣墊船P2HIT對策，大蛇/霍德等重甲BOSS多刀可選",
       "limitBreakAssault": "缺人或機制使用",
@@ -3467,7 +3467,7 @@
     ],
     "favoriteItem": {
       "name": "哭哭兔兔水杯",
-      "recommendedLevel": [5, 0, 0],
+      "recommendedLevel": [4, 0, 0],
       "materials": ["31", "totempole"],
       "effects": [
         "攻擊力<red>1500</red>",
@@ -3509,8 +3509,8 @@
       "overall": 27
     },
     "skillsSummary": {
-      "ex": "4Cost對矩形範圍內敵方造成<blue>489%</blue>傷害並造成<blue>66.2%</blue>燒傷<teal>(20秒)</teal>",
-      "ns": "毎40秒對五名敵方造成<blue>160%</blue>傷害並眩暈1.6秒",
+      "ex": "4Cost對矩形範圍內敵方造成<blue>489%</blue>傷害並造成<blue>66.2%</blue><purple>燒傷</purple><teal>（20秒）</teal>",
+      "ns": "毎40秒對五名敵方造成<blue>160%</blue>傷害並<purple>眩暈</purple>1.6秒",
       "ss": "<blue>17.3%</blue>爆傷光環"
     },
     "ratingsSummary": {
@@ -3529,7 +3529,6 @@
       "EX3",
       "技三Lv7",
       "技二Lv7",
-      "技一Lv7",
       "技一Lv7",
       "EX5",
       "技三Lv10",
