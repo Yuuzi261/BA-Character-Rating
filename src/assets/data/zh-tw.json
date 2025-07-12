@@ -908,9 +908,9 @@
   },
   {
     "id": 93,
-    "fullname": "霞澤 美遊",
-    "name": "美遊",
-    "nicknames": ["美遊"],
+    "fullname": "霞沢 美優",
+    "name": "美優",
+    "nicknames": ["美優", "美遊"],
     "school": "SRT",
     "attackType": "Piercing",
     "defenseType": "Light",
@@ -940,7 +940,7 @@
       "overall": 48
     },
     "skillsSummary": {
-      "ex": "3Cost對一名敵方賦予<purple>弱點掌握</purple><teal>（10秒）</teal>（我方攻擊時根據HIT數附加美遊<blue>30%</blue>攻擊力追加傷害）",
+      "ex": "3Cost對一名敵方賦予<purple>弱點掌握</purple><teal>（10秒）</teal>（我方攻擊時根據HIT數附加美優<blue>30%</blue>攻擊力追加傷害）",
       "ns": "<red>毎普攻5次</red>對一名敵方造成<blue>283%</blue>傷害",
       "ss": "換彈時提高自身暴傷<blue>36%</blue><teal>（13秒）</teal>，<green>愛用品提高輸出能力</green>"
     },
@@ -1868,7 +1868,7 @@
   },
   {
     "id": 146,
-    "fullname": "霞澤 美優（泳裝）",
+    "fullname": "霞沢 美優（泳裝）",
     "name": "美優（泳裝）",
     "nicknames": ["水美優", "水美遊"],
     "school": "SRT",
