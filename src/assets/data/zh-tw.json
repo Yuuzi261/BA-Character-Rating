@@ -547,29 +547,29 @@
     "ratings": {
       "newbie": null,
       "totalAssault": [3, 0, 0],
-      "pvp": null,
+      "pvp": [4, 1, 0],
       "grandAssault": [2, 0, 0],
       "limitBreakAssault": null,
       "jointFiringDrill": [2, 0, 0],
       "eventChallenge": null,
-      "overall": 38
+      "overall": 50
     },
     "skillsSummary": {
       "ex": "4C小範圍<blue>666%</blue>圓形輸出及施加5.1秒眩暈",
-      "ns": "每35秒對一名敵人造成<blue>343%</blue>傷害後施加每下<blue>56%</blue>燒傷<teal>（20秒）</teal>。<green>愛用品加強可能是備戰LU霍德或是應對新BOSS機制</green>",
-      "ss": "我方攻擊力增加<blue>17.3%</blue>"
+      "ns": "每35秒對一名敵人造成<blue>343%</blue>傷害後施加每下<blue>56%</blue>燒傷<teal>（20秒）</teal>。",
+      "ss": "我方攻擊力增加<blue>17.3%</blue>。<green>愛用品可能是備戰LU霍德或是新BOSS，對抗戰穩定壓低黑子血量/收佐倉</green>"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "LU霍德多隊對策，群控兼輸出輔助後排",
-      "pvp": "暫無特別需要",
-      "grandAssault": "LU霍德多隊對策，群控兼輸出輔助後排",
-      "limitBreakAssault": null,
-      "jointFiringDrill": "考試掛件，群控索敵機制可考慮功能選",
-      "eventChallenge": "群控機制可考慮功能選 "
+      "totalAssault": "霍德多刀可選群控對策輸出，氣墊船P1多刀可選",
+      "pvp": "愛用品穩定壓黑子血量/收佐倉。增加對方重甲坦生存壓力",
+      "grandAssault": "霍德多刀可選群控對策輸出，氣墊船P1多刀可選",
+      "limitBreakAssault": "缺人或機制使用",
+      "jointFiringDrill": "群控機制可選",
+      "eventChallenge": "群控機制可選"
     },
-    "uniqueWeaponRecommendedSummary": "提供不少攻擊力，<blue>輸出掛件層面可考慮5星專1基本</blue>",
-    "overallRecommendation": "LU霍德多刀對策使用，有愛可以考慮培養",
+    "uniqueWeaponRecommendedSummary": "可考慮專一拉支援面板，<blue>競技場建議專二期</blue>",
+    "overallRecommendation": "霍德多刀可選對策，S9對抗戰卷排位可選後排輸出",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
