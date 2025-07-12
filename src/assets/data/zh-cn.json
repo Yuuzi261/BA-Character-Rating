@@ -885,17 +885,7 @@
     },
     "uniqueWeaponRecommendedSummary": "可考虑专一拉支援面板，<blue>竞技场建议专二起</blue>",
     "overallRecommendation": "霍德多刀可选对策，S9竞技场卷排位可选后排输出",
-    "skillOrder": [
-      "EX3",
-      "技一.二.三Lv4",
-      "技三Lv7",
-      "技二Lv7",
-      "EX5",
-      "技三Lv10",
-      "技二Lv10",
-      "技一Lv7(10)",
-      "Max"
-    ],
+    "skillOrder": ["EX3", "技一.二.三Lv4", "技三Lv7", "技二Lv7", "EX5", "技三Lv10", "技二Lv10", "技一Lv7(10)", "Max"],
     "favoriteItem": {
       "name": "SRT基础教范",
       "recommendedLevel": [2, 0, 0],
