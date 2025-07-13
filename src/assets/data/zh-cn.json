@@ -3526,8 +3526,8 @@
       "技二Lv10",
       "Max"
     ]
-  }
-    {
+  },
+  {
     "id": 10001,
     "fullname": "和泉元 艾米",
     "name": "艾米",
@@ -3595,7 +3595,7 @@
       ]
     }
   },
-    {
+  {
     "id": 10007,
     "fullname": "小涂 真纪",
     "name": "真纪",
@@ -3644,7 +3644,17 @@
     },
     "uniqueWeaponRecommendedSummary": "提高攻速增加技能组持续期间输出能力、<red>商店可换至少专3</red>",
     "overallRecommendation": "默认必培养的平民贯通输出、多模式泛用降防辅助",
-    "skillOrder": ["(技一拉满就能上场当破防挂件)技一Lv10", "EX3", "技二.三Lv4", "技三Lv7", "技二Lv7", "EX5", "技三Lv10", "技二Lv10", "Max"]
+    "skillOrder": [
+      "(技一拉满就能上场当破防挂件)技一Lv10",
+      "EX3",
+      "技二.三Lv4",
+      "技三Lv7",
+      "技二Lv7",
+      "EX5",
+      "技三Lv10",
+      "技二Lv10",
+      "Max"
+    ]
   },
   {
     "id": 20019,
@@ -3695,9 +3705,19 @@
     },
     "uniqueWeaponRecommendedSummary": "提高生存能力，<blue>推荐商店至5星专2拉生存</blue>",
     "overallRecommendation": "培养成本较低的平民减防角色",
-    "skillOrder": ["(视素材量选择性升级)EX3", "EX5", "技二Lv7", "技二Lv10", "技一Lv7", "技三Lv7", "技一Lv10", "技三Lv10", "Max"]
+    "skillOrder": [
+      "(视素材量选择性升级)EX3",
+      "EX5",
+      "技二Lv7",
+      "技二Lv10",
+      "技一Lv7",
+      "技三Lv7",
+      "技一Lv10",
+      "技三Lv10",
+      "Max"
+    ]
   },
-   {
+  {
     "id": 10008,
     "fullname": "美甘 妮露",
     "name": "妮露",
@@ -3768,7 +3788,7 @@
       ]
     }
   },
-     {
+  {
     "id": 10012,
     "fullname": "乙花 堇",
     "name": "堇",
@@ -3839,7 +3859,7 @@
       ]
     }
   },
-       {
+  {
     "id": 13010,
     "fullname": "早濑 优香",
     "name": "优香",
@@ -3888,16 +3908,7 @@
     },
     "uniqueWeaponRecommendedSummary": "靠掩体格挡增加等效血量，<blue>竞技场至少专3起</blue>",
     "overallRecommendation": "萌新过渡前中期战神闪避坦",
-    "skillOrder": [
-      "(后期用)EX3",
-      "技一.二.三Lv4",
-      "技一Lv7",
-      "技二Lv7",
-      "技一Lv10",
-      "技二Lv10",      
-      "EX5",
-      "Max"
-    ],
+    "skillOrder": ["(后期用)EX3", "技一.二.三Lv4", "技一Lv7", "技二Lv7", "技一Lv10", "技二Lv10", "EX5", "Max"],
     "favoriteItem": {
       "name": "优香的函数计算器",
       "recommendedLevel": [5, 0, 0],
@@ -3908,7 +3919,7 @@
       ]
     }
   },
-    {
+  {
     "id": 16001,
     "fullname": "一之濑 明日奈",
     "name": "明日奈",
@@ -3957,7 +3968,18 @@
     },
     "uniqueWeaponRecommendedSummary": "暴伤增加提高输出上限、<green>有余力/有爱可刷取</green>",
     "overallRecommendation": "萌新过渡前中期神秘输出，老玩家视情况培养",
-    "skillOrder": ["EX3", "技一.二.三Lv4", "技二Lv7", "技三Lv7", "技一Lv7", "EX5", "技二Lv7", "技一Lv10", "技三Lv10", "Max"]
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "技二Lv7",
+      "技三Lv7",
+      "技一Lv7",
+      "EX5",
+      "技二Lv7",
+      "技一Lv10",
+      "技三Lv10",
+      "Max"
+    ]
   },
   {
     "id": 16002,
@@ -4008,11 +4030,7 @@
     },
     "uniqueWeaponRecommendedSummary": "主要拉高面板，提高护盾血量、<green>使用建议至少5星专1</green>",
     "overallRecommendation": "功能性辅助有需要可培养、总力高难度多刀可选",
-    "skillOrder": [
-      "EX3", 
-      "EX5",
-      "Max"
-    ],
+    "skillOrder": ["EX3", "EX5", "Max"],
     "favoriteItem": {
       "name": "滴泪眼镜",
       "recommendedLevel": [3, 0, 0],
@@ -4023,7 +4041,7 @@
       ]
     }
   },
-    {
+  {
     "id": 20000,
     "fullname": "猫塚 响",
     "name": "响",
@@ -4075,7 +4093,7 @@
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
-      "EX5",      
+      "EX5",
       "技一Lv7",
       "技二Lv7",
       "技三Lv7",
@@ -4094,7 +4112,7 @@
       ]
     }
   },
-    {
+  {
     "id": 23003,
     "fullname": "小钩 晴",
     "name": "晴",
@@ -4143,16 +4161,7 @@
     },
     "uniqueWeaponRecommendedSummary": "加成无用仅面板提升，厨力刷取",
     "overallRecommendation": "霍德多刀可选，其他模式应对群控机制时可选",
-    "skillOrder": [
-      "(可不点高除EX外技能)EX3",
-      "技一.三Lv4",
-      "技三Lv7",
-      "技一Lv7",
-      "EX5",
-      "技三Lv10",
-      "技一Lv10",
-      "Max"
-    ],
+    "skillOrder": ["(可不点高除EX外技能)EX3", "技一.三Lv4", "技三Lv7", "技一Lv7", "EX5", "技三Lv10", "技一Lv10", "Max"],
     "favoriteItem": {
       "name": "雅典娜3号",
       "recommendedLevel": [1, 0, 0],
@@ -4163,7 +4172,7 @@
       ]
     }
   },
-    {
+  {
     "id": 23004,
     "fullname": "白石 歌原",
     "name": "歌原",
@@ -4225,13 +4234,10 @@
       "name": "大师的工具组",
       "recommendedLevel": [5, 0, 0],
       "materials": ["10", "mandragora"],
-      "effects": [
-        "攻速<red>2000</red>",
-        "召唤小炮台增加<red>两座</red>"
-      ]
+      "effects": ["攻速<red>2000</red>", "召唤小炮台增加<red>两座</red>"]
     }
   },
-   {
+  {
     "id": 20001,
     "fullname": "角楯 花凛",
     "name": "花凛",
@@ -4282,7 +4288,7 @@
     "overallRecommendation": "重甲BOSS可选培养、LU难多队可选",
     "skillOrder": ["EX3", "技一.二.三Lv4", "技三Lv7", "技三Lv10", "EX5", "技二Lv10", "技一Lv7", "Max"]
   },
-     {
+  {
     "id": 26001,
     "fullname": "音濑 小玉",
     "name": "小玉",
@@ -4333,7 +4339,7 @@
     "overallRecommendation": "平民泛用群加攻辅助、建议先兑换至三星开技能。后续视个人需求培养",
     "skillOrder": ["EX3", "技三Lv7", "EX5", "技三Lv10", "技一Lv10", "Max"]
   },
-      {
+  {
     "id": 10015,
     "fullname": "天童 爱丽丝",
     "name": "爱丽丝",
@@ -4384,7 +4390,7 @@
     "overallRecommendation": "凹分/厨力培养、演习、高难需要可选",
     "skillOrder": ["EX3", "技一.二.三Lv4", "技二Lv7", "技一Lv7", "技三Lv7", "EX5", "技二Lv10", "技一.三Lv10", "Max"]
   },
-       {
+  {
     "id": 13011,
     "fullname": "才羽 桃",
     "name": "桃",
@@ -4435,7 +4441,7 @@
     "overallRecommendation": "可在商店兑换的平民泛用贯穿清杂",
     "skillOrder": ["EX3", "技二.三Lv4", "技三Lv7", "技二Lv7", "EX5", "技三Lv10", "技二Lv10", "Max"]
   },
-       {
+  {
     "id": 10018,
     "fullname": "花冈 柚子",
     "name": "柚子",
@@ -4484,9 +4490,20 @@
     },
     "uniqueWeaponRecommendedSummary": "暴伤和基础面板增加、主输出必专三。商店兑换高专",
     "overallRecommendation": "可在商店兑换的平民贯通输出，备战LU重甲培养",
-    "skillOrder": ["EX3", "技一.二.三Lv4", "技二Lv7", "技三Lv7", "技一Lv7", "EX5", "技二Lv10", "技三Lv10", "技一Lv10", "Max"]
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "技二Lv7",
+      "技三Lv7",
+      "技一Lv7",
+      "EX5",
+      "技二Lv10",
+      "技三Lv10",
+      "技一Lv10",
+      "Max"
+    ]
   },
-         {
+  {
     "id": 10026,
     "fullname": "美甘 妮露(兔女郎)",
     "name": "妮露(兔女郎)",
@@ -4535,9 +4552,20 @@
     },
     "uniqueWeaponRecommendedSummary": "增加存活能力，本身血少容易暴毙，竞技场建议专二起",
     "overallRecommendation": "除总力/大决战外较为泛用的多功能坦，竞技场玩家视个人需求培养。",
-    "skillOrder": ["EX3", "技一.二.三Lv4", "EX5", "技一Lv7", "技二Lv7", "技三Lv7", "技一Lv10", "技二Lv10", "技三Lv10", "Max"]
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "EX5",
+      "技一Lv7",
+      "技二Lv7",
+      "技三Lv7",
+      "技一Lv10",
+      "技二Lv10",
+      "技三Lv10",
+      "Max"
+    ]
   },
-   {
+  {
     "id": 10027,
     "fullname": "角楯 花凛(兔女郎)",
     "name": "花凛(兔女郎)",
@@ -4586,9 +4614,20 @@
     },
     "uniqueWeaponRecommendedSummary": "提高输出下限，备战鸡斯拉LU难/卷分考虑高专",
     "overallRecommendation": "鸡斯拉对策输出，视个人情况培养",
-    "skillOrder": ["技一.二.三Lv4", "EX3", "技二Lv7", "技三Lv7", "技一Lv7", "EX5", "技二Lv10", "技一Lv10", "技三Lv10", "Max"]
+    "skillOrder": [
+      "技一.二.三Lv4",
+      "EX3",
+      "技二Lv7",
+      "技三Lv7",
+      "技一Lv7",
+      "EX5",
+      "技二Lv10",
+      "技一Lv10",
+      "技三Lv10",
+      "Max"
+    ]
   },
-    {
+  {
     "id": 10028,
     "fullname": "一之濑 明日奈(兔女郎)",
     "name": "明日奈(兔女郎)",
@@ -4643,7 +4682,7 @@
       "EX5",
       "技一Lv7",
       "技二Lv7",
-      "技三Lv7",      
+      "技三Lv7",
       "技一Lv10",
       "技二Lv10",
       "技三Lv10",
@@ -4659,7 +4698,7 @@
       ]
     }
   },
-    {
+  {
     "id": 20013,
     "fullname": "各务 千寻",
     "name": "千寻",
@@ -4710,7 +4749,7 @@
     "overallRecommendation": "霍德、气垫船P1多刀可选群控对策",
     "skillOrder": ["EX3", "技一.三Lv4", "技一.三Lv10", "EX5", "Max"]
   },
-     {
+  {
     "id": 10051,
     "fullname": "白石 歌原(应援团)",
     "name": "歌原(应援团)",
@@ -4759,9 +4798,20 @@
     },
     "uniqueWeaponRecommendedSummary": "强化攻速，提升输出下限，对策凹分需专二起",
     "overallRecommendation": "神秘BOSS多刀可选输出，特甲赛特可选对策输出",
-    "skillOrder": ["EX3", "技一.二.三Lv4", "技一Lv7", "技二Lv7", "EX5", "技三Lv7", "技一Lv10", "技二Lv10", "技三Lv10", "Max"]
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "技一Lv7",
+      "技二Lv7",
+      "EX5",
+      "技三Lv7",
+      "技一Lv10",
+      "技二Lv10",
+      "技三Lv10",
+      "Max"
+    ]
   },
-    {
+  {
     "id": 10052,
     "fullname": "生盐 诺亚",
     "name": "诺亚",
@@ -4810,9 +4860,20 @@
     },
     "uniqueWeaponRecommendedSummary": "主要为了拉高生存能力，视轴情况开专",
     "overallRecommendation": "高防BOSS可选辅助坦，长降防时间视轴可选",
-    "skillOrder": ["EX3", "技一.二.三Lv4", "技二Lv7", "技三Lv7", "EX5", "技三Lv10", "技二Lv10", "技一Lv7", "技一Lv10", "Max"]
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "技二Lv7",
+      "技三Lv7",
+      "EX5",
+      "技三Lv10",
+      "技二Lv10",
+      "技一Lv7",
+      "技一Lv10",
+      "Max"
+    ]
   },
-      {
+  {
     "id": 16010,
     "fullname": "猫塚 响(应援团)",
     "name": "响(应援团)",
@@ -4861,9 +4922,20 @@
     },
     "uniqueWeaponRecommendedSummary": "攻击力增加，提高输出下限，厨力培养，熟练证书商店兑换",
     "overallRecommendation": "厨力培养、演习、高难需要可选",
-    "skillOrder": ["EX3", "技一.二.三Lv4", "技一Lv7", "技二Lv7", "EX5", "技三Lv7", "技二Lv10", "技一Lv10", "技三Lv10", "Max"]
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "技一Lv7",
+      "技二Lv7",
+      "EX5",
+      "技三Lv7",
+      "技二Lv10",
+      "技一Lv10",
+      "技三Lv10",
+      "Max"
+    ]
   },
-      {
+  {
     "id": 20019,
     "fullname": "室笠 茜(兔女郎)",
     "name": "茜(兔女郎)",
@@ -4912,6 +4984,17 @@
     },
     "uniqueWeaponRecommendedSummary": "挂件使轴情况开专，竞技场建议专二起",
     "overallRecommendation": "室内赛季竞技场可选后排对策，神秘总力可选挂件",
-    "skillOrder": ["(只当挂件不点EX)EX3", "技一.二.三Lv4", "技二Lv7", "技三Lv7", "技一Lv7", "EX5", "技三Lv7", "技二Lv10", "技一Lv10", "Max"]
-  },
+    "skillOrder": [
+      "(只当挂件不点EX)EX3",
+      "技一.二.三Lv4",
+      "技二Lv7",
+      "技三Lv7",
+      "技一Lv7",
+      "EX5",
+      "技三Lv7",
+      "技二Lv10",
+      "技一Lv10",
+      "Max"
+    ]
+  }
 ]

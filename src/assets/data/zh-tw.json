@@ -3526,8 +3526,8 @@
       "技二Lv10",
       "Max"
     ]
-  }
-    {
+  },
+  {
     "id": 10001,
     "fullname": "和泉元 英美",
     "name": "英美",
@@ -3595,7 +3595,7 @@
       ]
     }
   },
-    {
+  {
     "id": 10007,
     "fullname": "小塗 真紀",
     "name": "真紀",
@@ -3644,7 +3644,17 @@
     },
     "uniqueWeaponRecommendedSummary": "提高攻速增加技能組持續期間輸出能力、<red>商店可換至少專3</red>",
     "overallRecommendation": "默認必培養的平民貫通輸出、多模式泛用降防輔助",
-    "skillOrder": ["(技一拉滿就能上場當破防掛件)技一Lv10", "EX3", "技二.三Lv4", "技三Lv7", "技二Lv7", "EX5", "技三Lv10", "技二Lv10", "Max"]
+    "skillOrder": [
+      "(技一拉滿就能上場當破防掛件)技一Lv10",
+      "EX3",
+      "技二.三Lv4",
+      "技三Lv7",
+      "技二Lv7",
+      "EX5",
+      "技三Lv10",
+      "技二Lv10",
+      "Max"
+    ]
   },
   {
     "id": 20019,
@@ -3695,9 +3705,19 @@
     },
     "uniqueWeaponRecommendedSummary": "提高生存能力，<blue>推薦商店至5星專2拉生存</blue>",
     "overallRecommendation": "培養成本較低的平民減防角色",
-    "skillOrder": ["(視素材量選擇性升級)EX3", "EX5", "技二Lv7", "技二Lv10", "技一Lv7", "技三Lv7", "技一Lv10", "技三Lv10", "Max"]
+    "skillOrder": [
+      "(視素材量選擇性升級)EX3",
+      "EX5",
+      "技二Lv7",
+      "技二Lv10",
+      "技一Lv7",
+      "技三Lv7",
+      "技一Lv10",
+      "技三Lv10",
+      "Max"
+    ]
   },
-   {
+  {
     "id": 10008,
     "fullname": "美甘 寧瑠",
     "name": "寧瑠",
@@ -3768,7 +3788,7 @@
       ]
     }
   },
-     {
+  {
     "id": 10012,
     "fullname": "乙花 堇",
     "name": "堇",
@@ -3839,7 +3859,7 @@
       ]
     }
   },
-       {
+  {
     "id": 13010,
     "fullname": "早瀨 優香",
     "name": "優香",
@@ -3888,16 +3908,7 @@
     },
     "uniqueWeaponRecommendedSummary": "靠掩體格擋增加等效血量，<blue>競技場至少專3起</blue>",
     "overallRecommendation": "萌新過渡前中期戰神閃避坦",
-    "skillOrder": [
-      "(後期用)EX3",
-      "技一.二.三Lv4",
-      "技一Lv7",
-      "技二Lv7",
-      "技一Lv10",
-      "技二Lv10",      
-      "EX5",
-      "Max"
-    ],
+    "skillOrder": ["(後期用)EX3", "技一.二.三Lv4", "技一Lv7", "技二Lv7", "技一Lv10", "技二Lv10", "EX5", "Max"],
     "favoriteItem": {
       "name": "優香的函數計算器",
       "recommendedLevel": [5, 0, 0],
@@ -3908,7 +3919,7 @@
       ]
     }
   },
-    {
+  {
     "id": 16001,
     "fullname": "一之瀨 明日奈",
     "name": "明日奈",
@@ -3957,7 +3968,18 @@
     },
     "uniqueWeaponRecommendedSummary": "暴傷增加提高輸出上限、<green>有餘力/有愛可刷取</green>",
     "overallRecommendation": "萌新過渡前中期神秘輸出，老玩家視情況培養",
-    "skillOrder": ["EX3", "技一.二.三Lv4", "技二Lv7", "技三Lv7", "技一Lv7", "EX5", "技二Lv7", "技一Lv10", "技三Lv10", "Max"]
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "技二Lv7",
+      "技三Lv7",
+      "技一Lv7",
+      "EX5",
+      "技二Lv7",
+      "技一Lv10",
+      "技三Lv10",
+      "Max"
+    ]
   },
   {
     "id": 16002,
@@ -4008,11 +4030,7 @@
     },
     "uniqueWeaponRecommendedSummary": "主要拉高面板，提高護盾血量、<green>使用建議至少5星專1</green>",
     "overallRecommendation": "功能性輔助有需要可培養、總力高難度多刀可選",
-    "skillOrder": [
-      "EX3", 
-      "EX5",
-      "Max"
-    ],
+    "skillOrder": ["EX3", "EX5", "Max"],
     "favoriteItem": {
       "name": "滴淚眼鏡",
       "recommendedLevel": [3, 0, 0],
@@ -4023,7 +4041,7 @@
       ]
     }
   },
-    {
+  {
     "id": 20000,
     "fullname": "貓塚 響",
     "name": "響",
@@ -4075,7 +4093,7 @@
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
-      "EX5",      
+      "EX5",
       "技一Lv7",
       "技二Lv7",
       "技三Lv7",
@@ -4094,7 +4112,7 @@
       ]
     }
   },
-    {
+  {
     "id": 23003,
     "fullname": "小鉤 晴",
     "name": "晴",
@@ -4143,16 +4161,7 @@
     },
     "uniqueWeaponRecommendedSummary": "加成無用僅面板提升，廚力刷取",
     "overallRecommendation": "霍德多刀可選，其他模式應對群控機制時可選",
-    "skillOrder": [
-      "(可不點高除EX外技能)EX3",
-      "技一.三Lv4",
-      "技三Lv7",
-      "技一Lv7",
-      "EX5",
-      "技三Lv10",
-      "技一Lv10",
-      "Max"
-    ],
+    "skillOrder": ["(可不點高除EX外技能)EX3", "技一.三Lv4", "技三Lv7", "技一Lv7", "EX5", "技三Lv10", "技一Lv10", "Max"],
     "favoriteItem": {
       "name": "雅典娜3號",
       "recommendedLevel": [1, 0, 0],
@@ -4163,7 +4172,7 @@
       ]
     }
   },
-    {
+  {
     "id": 23004,
     "fullname": "白石 詠葉",
     "name": "詠葉",
@@ -4225,13 +4234,10 @@
       "name": "大師的工具組",
       "recommendedLevel": [5, 0, 0],
       "materials": ["10", "mandragora"],
-      "effects": [
-        "攻速<red>2000</red>",
-        "召喚小炮臺增加<red>兩座</red>"
-      ]
+      "effects": ["攻速<red>2000</red>", "召喚小炮臺增加<red>兩座</red>"]
     }
   },
-   {
+  {
     "id": 20001,
     "fullname": "角楯 花凜",
     "name": "花凜",
@@ -4282,7 +4288,7 @@
     "overallRecommendation": "重甲BOSS可選培養、LU難多隊可選",
     "skillOrder": ["EX3", "技一.二.三Lv4", "技三Lv7", "技三Lv10", "EX5", "技二Lv10", "技一Lv7", "Max"]
   },
-     {
+  {
     "id": 26001,
     "fullname": "音瀨 小玉",
     "name": "小玉",
@@ -4333,7 +4339,7 @@
     "overallRecommendation": "平民泛用群加攻輔助、建議先兌換至三星開技能。後續視個人需求培養",
     "skillOrder": ["EX3", "技三Lv7", "EX5", "技三Lv10", "技一Lv10", "Max"]
   },
-      {
+  {
     "id": 10015,
     "fullname": "天童 愛麗絲",
     "name": "愛麗絲",
@@ -4384,7 +4390,7 @@
     "overallRecommendation": "凹分/廚力培養、演習、高難需要可選",
     "skillOrder": ["EX3", "技一.二.三Lv4", "技二Lv7", "技一Lv7", "技三Lv7", "EX5", "技二Lv10", "技一.三Lv10", "Max"]
   },
-       {
+  {
     "id": 13011,
     "fullname": "才羽 桃井",
     "name": "桃井",
@@ -4435,7 +4441,7 @@
     "overallRecommendation": "可在商店兌換的平民泛用貫穿清雜",
     "skillOrder": ["EX3", "技二.三Lv4", "技三Lv7", "技二Lv7", "EX5", "技三Lv10", "技二Lv10", "Max"]
   },
-       {
+  {
     "id": 10018,
     "fullname": "花岡 柚子",
     "name": "柚子",
@@ -4484,9 +4490,20 @@
     },
     "uniqueWeaponRecommendedSummary": "暴傷和基礎面板增加、主輸出必專三。商店兌換高專",
     "overallRecommendation": "可在商店兌換的平民貫通輸出，備戰LU重甲培養",
-    "skillOrder": ["EX3", "技一.二.三Lv4", "技二Lv7", "技三Lv7", "技一Lv7", "EX5", "技二Lv10", "技三Lv10", "技一Lv10", "Max"]
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "技二Lv7",
+      "技三Lv7",
+      "技一Lv7",
+      "EX5",
+      "技二Lv10",
+      "技三Lv10",
+      "技一Lv10",
+      "Max"
+    ]
   },
-         {
+  {
     "id": 10026,
     "fullname": "美甘 寧瑠(兔女郎)",
     "name": "寧瑠(兔女郎)",
@@ -4535,9 +4552,20 @@
     },
     "uniqueWeaponRecommendedSummary": "增加存活能力，本身血少容易暴斃，競技場建議專二起",
     "overallRecommendation": "除總力/大決戰外較為泛用的多功能坦，競技場玩家視個人需求培養。",
-    "skillOrder": ["EX3", "技一.二.三Lv4", "EX5", "技一Lv7", "技二Lv7", "技三Lv7", "技一Lv10", "技二Lv10", "技三Lv10", "Max"]
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "EX5",
+      "技一Lv7",
+      "技二Lv7",
+      "技三Lv7",
+      "技一Lv10",
+      "技二Lv10",
+      "技三Lv10",
+      "Max"
+    ]
   },
-   {
+  {
     "id": 10027,
     "fullname": "角楯 花凜(兔女郎)",
     "name": "花凜(兔女郎)",
@@ -4586,9 +4614,20 @@
     },
     "uniqueWeaponRecommendedSummary": "提高輸出下限，備戰雞斯拉LU難/卷分考慮高專",
     "overallRecommendation": "雞斯拉對策輸出，視個人情況培養",
-    "skillOrder": ["技一.二.三Lv4", "EX3", "技二Lv7", "技三Lv7", "技一Lv7", "EX5", "技二Lv10", "技一Lv10", "技三Lv10", "Max"]
+    "skillOrder": [
+      "技一.二.三Lv4",
+      "EX3",
+      "技二Lv7",
+      "技三Lv7",
+      "技一Lv7",
+      "EX5",
+      "技二Lv10",
+      "技一Lv10",
+      "技三Lv10",
+      "Max"
+    ]
   },
-    {
+  {
     "id": 10028,
     "fullname": "一之瀨 明日奈(兔女郎)",
     "name": "明日奈(兔女郎)",
@@ -4643,7 +4682,7 @@
       "EX5",
       "技一Lv7",
       "技二Lv7",
-      "技三Lv7",      
+      "技三Lv7",
       "技一Lv10",
       "技二Lv10",
       "技三Lv10",
@@ -4659,7 +4698,7 @@
       ]
     }
   },
-    {
+  {
     "id": 20013,
     "fullname": "各務 千尋",
     "name": "千尋",
@@ -4710,7 +4749,7 @@
     "overallRecommendation": "霍德、氣墊船P1多刀可選群控對策",
     "skillOrder": ["EX3", "技一.三Lv4", "技一.三Lv10", "EX5", "Max"]
   },
-     {
+  {
     "id": 10051,
     "fullname": "白石 詠葉(應援團)",
     "name": "詠葉(應援團)",
@@ -4759,9 +4798,20 @@
     },
     "uniqueWeaponRecommendedSummary": "強化攻速，提升輸出下限，對策凹分需專二起",
     "overallRecommendation": "神秘BOSS多刀可選輸出，特甲賽特可選對策輸出",
-    "skillOrder": ["EX3", "技一.二.三Lv4", "技一Lv7", "技二Lv7", "EX5", "技三Lv7", "技一Lv10", "技二Lv10", "技三Lv10", "Max"]
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "技一Lv7",
+      "技二Lv7",
+      "EX5",
+      "技三Lv7",
+      "技一Lv10",
+      "技二Lv10",
+      "技三Lv10",
+      "Max"
+    ]
   },
-    {
+  {
     "id": 10052,
     "fullname": "生鹽 乃愛",
     "name": "乃愛",
@@ -4810,9 +4860,20 @@
     },
     "uniqueWeaponRecommendedSummary": "主要為了拉高生存能力，視軸情況開專",
     "overallRecommendation": "高防BOSS可選輔助坦，長降防時間視軸可選",
-    "skillOrder": ["EX3", "技一.二.三Lv4", "技二Lv7", "技三Lv7", "EX5", "技三Lv10", "技二Lv10", "技一Lv7", "技一Lv10", "Max"]
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "技二Lv7",
+      "技三Lv7",
+      "EX5",
+      "技三Lv10",
+      "技二Lv10",
+      "技一Lv7",
+      "技一Lv10",
+      "Max"
+    ]
   },
-      {
+  {
     "id": 16010,
     "fullname": "貓塚 響(應援團)",
     "name": "響(應援團)",
@@ -4861,9 +4922,20 @@
     },
     "uniqueWeaponRecommendedSummary": "攻擊力增加，提高輸出下限，廚力培養，熟練證書商店兌換",
     "overallRecommendation": "廚力培養、演習、高難需要可選",
-    "skillOrder": ["EX3", "技一.二.三Lv4", "技一Lv7", "技二Lv7", "EX5", "技三Lv7", "技二Lv10", "技一Lv10", "技三Lv10", "Max"]
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "技一Lv7",
+      "技二Lv7",
+      "EX5",
+      "技三Lv7",
+      "技二Lv10",
+      "技一Lv10",
+      "技三Lv10",
+      "Max"
+    ]
   },
-      {
+  {
     "id": 20019,
     "fullname": "室笠 朱音(兔女郎)",
     "name": "朱音(兔女郎)",
@@ -4912,6 +4984,17 @@
     },
     "uniqueWeaponRecommendedSummary": "掛件使軸情況開專，競技場建議專二起",
     "overallRecommendation": "室內賽季競技場可選後排對策，神秘總力可選掛件",
-    "skillOrder": ["(只當掛件不點EX)EX3", "技一.二.三Lv4", "技二Lv7", "技三Lv7", "技一Lv7", "EX5", "技三Lv7", "技二Lv10", "技一Lv10", "Max"]
-  },
+    "skillOrder": [
+      "(只當掛件不點EX)EX3",
+      "技一.二.三Lv4",
+      "技二Lv7",
+      "技三Lv7",
+      "技一Lv7",
+      "EX5",
+      "技三Lv7",
+      "技二Lv10",
+      "技一Lv10",
+      "Max"
+    ]
+  }
 ]
