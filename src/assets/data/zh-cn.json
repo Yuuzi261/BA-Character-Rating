@@ -4161,7 +4161,16 @@
     },
     "uniqueWeaponRecommendedSummary": "加成无用仅面板提升，厨力刷取",
     "overallRecommendation": "霍德多刀可选，其他模式应对群控机制时可选",
-    "skillOrder": ["EX3（可不点高除EX外技能）", "技一.三Lv4", "技三Lv7", "技一Lv7", "EX5", "技三Lv10", "技一Lv10", "Max"],
+    "skillOrder": [
+      "EX3（可不点高除EX外技能）",
+      "技一.三Lv4",
+      "技三Lv7",
+      "技一Lv7",
+      "EX5",
+      "技三Lv10",
+      "技一Lv10",
+      "Max"
+    ],
     "favoriteItem": {
       "name": "雅典娜3号",
       "recommendedLevel": [1, 0, 0],

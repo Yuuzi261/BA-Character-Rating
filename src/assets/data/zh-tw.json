@@ -3696,9 +3696,9 @@
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "高防BOSS可選降防承傷輔助，如大蛇、蓋布拉",
+      "totalAssault": "高防BOSS可選降防承傷輔助，如大蛇、葛夫拉",
       "pvp": "跑速隊可選學生之一",
-      "grandAssault": "高防BOSS可選降防承傷輔助，如大蛇、蓋布拉",
+      "grandAssault": "高防BOSS可選降防承傷輔助，如大蛇、葛夫拉",
       "limitBreakAssault": "缺人或機制使用",
       "jointFiringDrill": "射擊/護衛演習可選",
       "eventChallenge": "可選降防承傷輔助"
@@ -3953,7 +3953,7 @@
       "overall": 21
     },
     "skillsSummary": {
-      "ex": "2Cost向指定方向位移期間<red>短暫</red>獲得閃避<blue>43.4%</blue>，隨後提高自身攻速<blue>57.3%</blue><teal>（30秒）</teal>", 
+      "ex": "2Cost向指定方向位移期間<red>短暫</red>獲得閃避<blue>43.4%</blue>，隨後提高自身攻速<blue>57.3%</blue><teal>（30秒）</teal>",
       "ns": "毎20秒對一名敵方造成<blue>416%</blue>傷害",
       "ss": "使用EX技時提高攻速<blue>38.3%</blue><teal>（30秒）</teal>"
     },
@@ -4081,9 +4081,9 @@
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "LU難蓋布拉、格裡高利可選後排輸出",
+      "totalAssault": "LU難葛夫拉、格裡高利可選後排輸出",
       "pvp": "多賽季可選大範圍無視掩體傷害",
-      "grandAssault": "LU難蓋布拉、格裡高利可選後排輸出",
+      "grandAssault": "LU難葛夫拉、格裡高利可選後排輸出",
       "limitBreakAssault": "缺人或機制使用",
       "jointFiringDrill": "射擊/防禦/突破/護衛演習可選",
       "eventChallenge": "需要清雜可選"
@@ -4161,7 +4161,16 @@
     },
     "uniqueWeaponRecommendedSummary": "加成無用僅面板提升，廚力刷取",
     "overallRecommendation": "霍德多刀可選，其他模式應對群控機制時可選",
-    "skillOrder": ["EX3（可不點高除EX外技能）", "技一.三Lv4", "技三Lv7", "技一Lv7", "EX5", "技三Lv10", "技一Lv10", "Max"],
+    "skillOrder": [
+      "EX3（可不點高除EX外技能）",
+      "技一.三Lv4",
+      "技三Lv7",
+      "技一Lv7",
+      "EX5",
+      "技三Lv10",
+      "技一Lv10",
+      "Max"
+    ],
     "favoriteItem": {
       "name": "雅典娜3號",
       "recommendedLevel": [1, 0, 0],
@@ -4854,9 +4863,9 @@
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "格茲可選集火對策，高防BOSS可選降防承傷坦 ",
+      "totalAssault": "高茲可選集火對策，高防BOSS可選降防承傷坦 ",
       "pvp": "暫時無組合搭配",
-      "grandAssault": "格茲可選集火對策，高防BOSS可選降防承傷坦 ",
+      "grandAssault": "高茲可選集火對策，高防BOSS可選降防承傷坦 ",
       "limitBreakAssault": "缺人或機制使用",
       "jointFiringDrill": "射擊/護衛演習可選",
       "eventChallenge": "需要集火或降防選用"
@@ -4978,9 +4987,9 @@
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "格茲、特甲球清雜可選，神秘隊掛件",
+      "totalAssault": "高茲、特甲球清雜可選，神秘隊掛件",
       "pvp": "高命中針對閃避坦或黑子可選",
-      "grandAssault": "格茲、特甲球清雜可選，神秘隊掛件",
+      "grandAssault": "高茲、特甲球清雜可選，神秘隊掛件",
       "limitBreakAssault": "缺人或機制使用",
       "jointFiringDrill": "射擊/防禦/突破/護衛演習可選",
       "eventChallenge": "清雜可選"
