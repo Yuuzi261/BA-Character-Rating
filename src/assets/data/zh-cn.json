@@ -5009,7 +5009,7 @@
       "Max"
     ]
   },
-    {
+  {
     "id": 20023,
     "fullname": "尾刃 康娜",
     "name": "康娜",
@@ -5060,7 +5060,7 @@
     "overallRecommendation": "贯通真伤输出、重甲BOSS卷分可选",
     "skillOrder": ["EX3", "技一.二.三Lv4", "技二Lv7", "技三Lv7", "技一Lv7", "技三Lv10", "EX5", "技一.二Lv10", "Max"]
   },
-    {
+  {
     "id": 13012,
     "fullname": "中务 桐乃",
     "name": "桐乃",
@@ -5109,9 +5109,20 @@
     },
     "uniqueWeaponRecommendedSummary": "攻速增加没什么提升，竞技场建议拉高面板，厨力培养",
     "overallRecommendation": "玩具角色，有需要功能性可选，凑活动奖励加成",
-    "skillOrder": ["EX3", "技一.二.三Lv4", "技一Lv7", "技二Lv7", "技三Lv7", "EX5", "技一Lv10", "技二Lv10", "技三Lv10", "Max"]
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "技一Lv7",
+      "技二Lv7",
+      "技三Lv7",
+      "EX5",
+      "技一Lv10",
+      "技二Lv10",
+      "技三Lv10",
+      "Max"
+    ]
   },
-    {
+  {
     "id": 16008,
     "fullname": "合欢垣 吹雪",
     "name": "吹雪",
@@ -5146,7 +5157,7 @@
     },
     "skillsSummary": {
       "ex": "4Cost提高自身攻击力<blue>69.4%</blue><teal>(46秒)</teal>",
-      "ns": "<red>剩余子弹≤3时触发</red>，对一名敌方造成<blue>361%</blue>伤害并<purple>眩晕2.5秒</purple>"
+      "ns": "<red>剩余子弹≤3时触发</red>，对一名敌方造成<blue>361%</blue>伤害并<purple>眩晕2.5秒</purple>",
       "ss": "<red>队友每次使用EX技时</red.，提高自身攻击力<blue>33.5%</blue><teal>(10秒)</teal>"
     },
     "ratingsSummary": {
@@ -5160,9 +5171,20 @@
     },
     "uniqueWeaponRecommendedSummary": "暴击收益较小，打气垫船TM难以下2星够用、打霍德和气垫船LU难建议专一拉生存或更高",
     "overallRecommendation": "平民可选群控对策，霍德、气垫船P1多刀可选",
-    "skillOrder": ["(EX不参与技能循环可不点、打TM船2星点满技一二即可)技一.二.三Lv4", "技一Lv7", "技二Lv7", "技三Lv7", "技一Lv10", "技二Lv10", "技三Lv10", "EX3", "EX5", "Max"]
+    "skillOrder": [
+      "(EX不参与技能循环可不点、打TM船2星点满技一二即可)技一.二.三Lv4",
+      "技一Lv7",
+      "技二Lv7",
+      "技三Lv7",
+      "技一Lv10",
+      "技二Lv10",
+      "技三Lv10",
+      "EX3",
+      "EX5",
+      "Max"
+    ]
   },
-    {
+  {
     "id": 10096,
     "fullname": "尾刃 康娜（泳装）",
     "name": "康娜(泳装)",
@@ -5211,9 +5233,20 @@
     },
     "uniqueWeaponRecommendedSummary": "减益时间增加，看轴情况开",
     "overallRecommendation": "新一代降防承伤辅助，大蛇、盖布拉卷分培养",
-    "skillOrder": ["(不开专二视轴情况点技二)EX3", "技一.二.三Lv4", "技一Lv7", "技三Lv7", "技二Lv7", "EX5", "技一Lv10", "技三Lv10",  "技二Lv10" ,"Max"]
+    "skillOrder": [
+      "(不开专二视轴情况点技二)EX3",
+      "技一.二.三Lv4",
+      "技一Lv7",
+      "技三Lv7",
+      "技二Lv7",
+      "EX5",
+      "技一Lv10",
+      "技三Lv10",
+      "技二Lv10",
+      "Max"
+    ]
   },
-     {
+  {
     "id": 20037,
     "fullname": "合欢垣 吹雪（泳装）",
     "name": "吹雪(泳装)",
@@ -5262,9 +5295,20 @@
     },
     "uniqueWeaponRecommendedSummary": "根据盖布拉难度或轴来决定开专",
     "overallRecommendation": "盖布拉破冰主对策输出，爆发属攻挂件",
-    "skillOrder": ["(当光环用优先技三)EX3", "技一.二.三Lv4", "技一Lv7", "技二Lv7", "技三Lv7", "EX5", "技一Lv10", "技二Lv10",  "技三Lv10" ,"Max"]
+    "skillOrder": [
+      "(当光环用优先技三)EX3",
+      "技一.二.三Lv4",
+      "技一Lv7",
+      "技二Lv7",
+      "技三Lv7",
+      "EX5",
+      "技一Lv10",
+      "技二Lv10",
+      "技三Lv10",
+      "Max"
+    ]
   },
-     {
+  {
     "id": 26012,
     "fullname": "中务 桐乃（泳装）",
     "name": "桐乃(泳装)",
@@ -5313,9 +5357,20 @@
     },
     "uniqueWeaponRecommendedSummary": "提高掩体血量，三星够用，打高层火龙塔建议专一起",
     "overallRecommendation": "黑白可选掩体对策，火龙塔掩体对策",
-    "skillOrder": ["EX3", "技一.二.三Lv4", "技三Lv7", "技一Lv7", "技二Lv7", "EX5", "技三Lv10", "技一Lv10", "技二Lv10" ,"Max"]
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "技三Lv7",
+      "技一Lv7",
+      "技二Lv7",
+      "EX5",
+      "技三Lv10",
+      "技一Lv10",
+      "技二Lv10",
+      "Max"
+    ]
   },
-       {
+  {
     "id": 10111,
     "fullname": "美甘 妮露 (制服)",
     "name": "妮露(制服)",
@@ -5364,9 +5419,20 @@
     },
     "uniqueWeaponRecommendedSummary": "FES主输出默认专三，推荐自备有，和未花不同场地竞赛",
     "overallRecommendation": "推荐自备，改变市街重甲环境，默认必有主输出",
-    "skillOrder": ["EX3", "技一.二.三Lv4", "技三Lv7", "技一Lv7", "技二Lv7", "EX5", "技三Lv10", "技一Lv10", "技二Lv10" ,"Max"]
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "技三Lv7",
+      "技一Lv7",
+      "技二Lv7",
+      "EX5",
+      "技三Lv10",
+      "技一Lv10",
+      "技二Lv10",
+      "Max"
+    ]
   },
-         {
+  {
     "id": 20041,
     "fullname": "调月 莉音",
     "name": "莉音",
@@ -5415,6 +5481,17 @@
     },
     "uniqueWeaponRecommendedSummary": "视轴情况开专，提升支援面板或攻击拐时间",
     "overallRecommendation": "推荐自备，默认必有功能人权",
-    "skillOrder": ["(无专二优先技一再点技二)EX3", "技一.二.三Lv4", "技三Lv7", "技二Lv7", "技一Lv7", "EX5", "技三Lv10", "技二Lv10", "技一Lv10" ,"Max"]
+    "skillOrder": [
+      "(无专二优先技一再点技二)EX3",
+      "技一.二.三Lv4",
+      "技三Lv7",
+      "技二Lv7",
+      "技一Lv7",
+      "EX5",
+      "技三Lv10",
+      "技二Lv10",
+      "技一Lv10",
+      "Max"
+    ]
   }
 ]

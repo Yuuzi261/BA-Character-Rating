@@ -7,9 +7,9 @@
             <div class="header-title">
               <h2>{{ t('ratingCriteriaModal.title') }}</h2>
             </div>
-            <button @click="closeModal" class="close-button">×</button>
+            <button class="close-button" @click="closeModal">×</button>
           </div>
-          
+
           <div class="modal-body">
             <div class="modal-body-content">
               <!-- 特殊星級 -->
@@ -18,7 +18,7 @@
                   <h3>{{ t('starRatingSpecial.title') }}</h3>
                   <div class="section-divider"></div>
                 </div>
-                
+
                 <div class="star-explanation">
                   <div class="star-type blue-star">
                     <div class="star-icon">★</div>
@@ -27,7 +27,7 @@
                       <span>{{ t('starRatingSpecial.blueDesc') }}</span>
                     </div>
                   </div>
-                  
+
                   <div class="star-type red-star">
                     <div class="star-icon">★</div>
                     <div class="star-desc">
@@ -64,7 +64,7 @@
                   <h3>{{ t('ratingDimensions.title') }}</h3>
                   <div class="section-divider"></div>
                 </div>
-                
+
                 <div class="dimensions-grid">
                   <div v-for="dim in dimensions" :key="dim" class="dimension-card">
                     <div class="dimension-header">
@@ -418,29 +418,26 @@
     opacity: 0;
   }
 
-  /* 響應式設計 */
   @media (max-width: 768px) {
     .modal-content {
       width: 95%;
       max-height: 90vh;
     }
-    
-    
-    
+
     .star-explanation {
       flex-direction: column;
       gap: 12px;
     }
-    
+
     .star-type {
       min-width: unset;
     }
-    
+
     .rating-grid,
     .dimensions-grid {
       grid-template-columns: 1fr;
     }
-    
+
     .header-title h2 {
       font-size: 1.5rem;
     }

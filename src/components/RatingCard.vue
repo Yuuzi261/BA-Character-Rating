@@ -129,7 +129,7 @@
 
         <RatingSection :title="t('ratingCard.starRating')">
           <template #extra>
-            <button @click="isRatingCriteriaModalVisible = true" class="criteria-btn">
+            <button class="criteria-btn" @click="isRatingCriteriaModalVisible = true">
               <QuestionIcon />
             </button>
           </template>
