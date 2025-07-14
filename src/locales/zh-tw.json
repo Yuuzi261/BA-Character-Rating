@@ -177,5 +177,34 @@
   "dataSource": {
     "text": "資料來源：賽博夜貓攻略組",
     "title": "前往賽博夜貓攻略組 Bilibili 頻道"
-  }
+  },
+  "ratingCriteria": "評分準則",
+  "starRating": {
+    "title": "星級評價準則",
+    "blueStar": "藍星為對策分，可能因為場地、環境而導致變動",
+    "redStar": "紅星為某領域特別突出，在某領域中屬人權卡，屬於沒有就打不了高難",
+    "5": "泛用強、整體偏強、遊戲體驗佳",
+    "4": "一定程度有過高光、泛用可選替補",
+    "3": "整體堪用、一般強度、可上可不上",
+    "2": "一般不太會使用、堆屍替補、倉管",
+    "1": "需後續拯救或創造環境、現有環境下完全用不上"
+  },
+  "ratingDimensions": {
+    "title": "評價維度與權重",
+    "novice": "新手期",
+    "noviceDesc": "以新手開荒到逐漸後期養成階段(推圖、日常本等)為基準",
+    "totalWarfare": "總力戰",
+    "totalWarfareDesc": "以當前總力生態為主，覆蓋INS~LU影響評價",
+    "grandAssault": "大決戰",
+    "grandAssaultDesc": "以當前大決戰生態為主，覆蓋INS~TM影響評價",
+    "tacticalChallenge": "戰術對抗戰",
+    "tacticalChallengeDesc": "針對主流(多場地環境)及最近有什麼陣容、思路去評分",
+    "restrictedEngagement": "制約作戰",
+    "restrictedEngagementDesc": "以99+層生態為主，重點高星專用對策學生",
+    "jointPractice": "演習考試",
+    "jointPracticeDesc": "三場地主環境為主、根據上場率及對策率調整評分",
+    "eventChallenge": "活動高難",
+    "eventChallengeDesc": "覆蓋活動挑戰、聯合作戰、佔領戰這種環境選、泛用性評分"
+  },
+  "na": "不適用"
 }

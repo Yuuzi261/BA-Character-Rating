@@ -128,6 +128,11 @@
         <EvaluationGrid :character-data="character" />
 
         <RatingSection :title="t('ratingCard.starRating')">
+          <template #extra>
+            <button @click="isRatingCriteriaModalVisible = true" class="criteria-btn">
+              <QuestionIcon />
+            </button>
+          </template>
           <div v-for="category in ratingCategories" :key="category.key" class="rating-row">
             <strong>{{ category.label }}</strong>
             <StarRating :rating="character.ratings[category.key]" :star="Boolean(character.id)" />
@@ -185,6 +190,7 @@
     @close="isFavoriteItemVisible = false"
   />
   <SettingsModal :is-visible="isSettingsModalVisible" @close="isSettingsModalVisible = false" />
+  <RatingCriteriaModal :is-visible="isRatingCriteriaModalVisible" @close="isRatingCriteriaModalVisible = false" />
 </template>
 
 <script setup>
@@ -201,9 +207,11 @@
   import InfoTooltip from './ui/InfoTooltip.vue'
   import HintTooltip from './ui/HintTooltip.vue'
   import InfoIcon from './ui/InfoIcon.vue'
+  import QuestionIcon from './ui/QuestionIcon.vue'
   import FavoriteItemSection from './FavoriteItemSection.vue'
   import FavoriteItemModal from './modal/FavoriteItemModal.vue'
   import SettingsModal from './modal/SettingsModal.vue'
+  import RatingCriteriaModal from './modal/RatingCriteriaModal.vue'
   import CardFooter from './CardFooter.vue'
   import { useSettingStore } from '@/store/setting'
   import { storeToRefs } from 'pinia'
@@ -253,6 +261,7 @@
   const isSettingsIconRotating = ref(false)
   const isSettingsModalVisible = ref(false)
   const isFavoriteItemVisible = ref(false)
+  const isRatingCriteriaModalVisible = ref(false)
 
   const handleSettingsClick = () => {
     isSettingsIconRotating.value = true
@@ -569,6 +578,16 @@
   .dark-mode .highlight {
     background: rgba(0, 174, 239, 0.2);
     color: #87ceeb;
+  }
+
+  .criteria-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
   }
 
   @media (max-width: 768px) {

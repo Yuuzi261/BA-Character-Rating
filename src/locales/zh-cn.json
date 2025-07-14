@@ -177,5 +177,34 @@
   "dataSource": {
     "text": "资料来源：赛博夜猫攻略组",
     "title": "前往赛博夜猫攻略组 Bilibili 频道"
-  }
+  },
+  "ratingCriteria": "评分准则",
+  "starRating": {
+    "title": "星级评价准则",
+    "blueStar": "蓝星为对策分，可能因为场地、环境而导致变动",
+    "redStar": "红星为某领域特别突出，在某领域中属人权卡，属于没有就打不了高难",
+    "5": "泛用强、整体偏强、游戏体验佳",
+    "4": "一定程度有过高光、泛用可选替补",
+    "3": "整体堪用、一般强度、可上可不上",
+    "2": "一般不太会使用、堆尸替补、仓管",
+    "1": "需后续拯救或创造环境、现有环境下完全用不上"
+  },
+  "ratingDimensions": {
+    "title": "评价维度与权重",
+    "novice": "新手期",
+    "noviceDesc": "以新手开荒到逐渐后期养成阶段(推图、日常本等)为基准",
+    "totalWarfare": "总力战",
+    "totalWarfareDesc": "以当前总力生态为主，覆盖INS~LU影响评价",
+    "grandAssault": "大决战",
+    "grandAssaultDesc": "以当前大决战生态为主，覆盖INS~TM影响评价",
+    "tacticalChallenge": "战术对抗战",
+    "tacticalChallengeDesc": "针对主流(多场地环境)及最近有什么阵容、思路去评分",
+    "restrictedEngagement": "制约作战",
+    "restrictedEngagementDesc": "以99+层生态为主，重点高星专用对策学生",
+    "jointPractice": "演习考试",
+    "jointPracticeDesc": "三场地主环境为主、根据上场率及对策率调整评分",
+    "eventChallenge": "活动高难",
+    "eventChallengeDesc": "覆盖活动挑战、联合作战、占领战这种环境选、泛用性评分"
+  },
+  "na": "不适用"
 }

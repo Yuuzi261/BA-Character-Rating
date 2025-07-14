@@ -1,6 +1,11 @@
 <template>
   <div class="rating-section">
-    <div class="rating-title">{{ title }}</div>
+    <div class="title-container">
+      <div class="rating-title">{{ title }}</div>
+      <div class="title-extra">
+        <slot name="extra"></slot>
+      </div>
+    </div>
     <div class="rating-details">
       <slot></slot>
       <!-- 預設 slot 用於插入內容 -->
@@ -66,5 +71,14 @@
 
   .dark-mode .rating-details {
     color: #c0c8d0;
+  }
+
+  .title-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .title-extra {
+    margin-bottom: 10px;
   }
 </style>
