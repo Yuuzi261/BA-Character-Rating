@@ -67,7 +67,7 @@
                   </div>
                   
                   <div class="rating-item">
-                    <div class="rating-stars">★ / {{ t('na') }}</div>
+                    <div class="rating-stars">★ / {{ t('common.notApplicable') }}</div>
                     <div class="rating-text">{{ t('starRatingBase.1') }}</div>
                   </div>
                 </div>
@@ -83,10 +83,18 @@
                 <div class="dimensions-grid">
                   <div class="dimension-card">
                     <div class="dimension-header">
-                      <h4>{{ t('ratingDimensions.totalWarfare.title') }}</h4>
-                      <span class="weight-badge">{{ t('ratingDimensions.totalWarfare.weight') }}</span>
+                      <h4>{{ t('ratingDimensions.newbie.title') }}</h4>
+                      <span class="weight-badge">{{ t('ratingDimensions.newbie.weight') }}</span>
                     </div>
-                    <p>{{ t('ratingDimensions.totalWarfare.desc') }}</p>
+                    <p>{{ t('ratingDimensions.newbie.desc') }}</p>
+                  </div>
+
+                  <div class="dimension-card">
+                    <div class="dimension-header">
+                      <h4>{{ t('ratingDimensions.totalAssault.title') }}</h4>
+                      <span class="weight-badge">{{ t('ratingDimensions.totalAssault.weight') }}</span>
+                    </div>
+                    <p>{{ t('ratingDimensions.totalAssault.desc') }}</p>
                   </div>
                   
                   <div class="dimension-card">
@@ -99,34 +107,26 @@
                   
                   <div class="dimension-card">
                     <div class="dimension-header">
-                      <h4>{{ t('ratingDimensions.tacticalChallenge.title') }}</h4>
-                      <span class="weight-badge">{{ t('ratingDimensions.tacticalChallenge.weight') }}</span>
+                      <h4>{{ t('ratingDimensions.pvp.title') }}</h4>
+                      <span class="weight-badge">{{ t('ratingDimensions.pvp.weight') }}</span>
                     </div>
-                    <p>{{ t('ratingDimensions.tacticalChallenge.desc') }}</p>
+                    <p>{{ t('ratingDimensions.pvp.desc') }}</p>
                   </div>
                   
                   <div class="dimension-card">
                     <div class="dimension-header">
-                      <h4>{{ t('ratingDimensions.restrictedEngagement.title') }}</h4>
-                      <span class="weight-badge">{{ t('ratingDimensions.restrictedEngagement.weight') }}</span>
+                      <h4>{{ t('ratingDimensions.limitBreakAssault.title') }}</h4>
+                      <span class="weight-badge">{{ t('ratingDimensions.limitBreakAssault.weight') }}</span>
                     </div>
-                    <p>{{ t('ratingDimensions.restrictedEngagement.desc') }}</p>
+                    <p>{{ t('ratingDimensions.limitBreakAssault.desc') }}</p>
                   </div>
                   
                   <div class="dimension-card">
                     <div class="dimension-header">
-                      <h4>{{ t('ratingDimensions.jointPractice.title') }}</h4>
-                      <span class="weight-badge">{{ t('ratingDimensions.jointPractice.weight') }}</span>
+                      <h4>{{ t('ratingDimensions.jointFiringDrill.title') }}</h4>
+                      <span class="weight-badge">{{ t('ratingDimensions.jointFiringDrill.weight') }}</span>
                     </div>
-                    <p>{{ t('ratingDimensions.jointPractice.desc') }}</p>
-                  </div>
-                  
-                  <div class="dimension-card">
-                    <div class="dimension-header">
-                      <h4>{{ t('ratingDimensions.novice.title') }}</h4>
-                      <span class="weight-badge">{{ t('ratingDimensions.novice.weight') }}</span>
-                    </div>
-                    <p>{{ t('ratingDimensions.novice.desc') }}</p>
+                    <p>{{ t('ratingDimensions.jointFiringDrill.desc') }}</p>
                   </div>
                   
                   <div class="dimension-card">
