@@ -648,7 +648,7 @@
       "materials": ["24", "phaistos"],
       "effects": [
         "攻擊力<red>1000</red>",
-        "<red>【新增】</red><blue>場上有小桃時（普通/女僕均可）</blue>額外對小桃進行<red>治癒力165%</red>的追加回復，且小桃的攻擊力<red>增加41.7%</red><teal>（25秒）</teal>"
+        "回復<blue>147%</blue>提升至<blue>160%</blue>，<red>【新增】</red><blue>場上有小桃時（普通/女僕均可）</blue>額外對小桃進行<red>治癒力165%</red>的追加回復，且小桃的攻擊力<red>增加41.7%</red><teal>（25秒）</teal>"
       ]
     }
   },
@@ -3561,9 +3561,9 @@
       "overall": 53
     },
     "skillsSummary": {
-      "ex": "4Cost賦予自身治癒力<blue>16.4%</blue>+<red>已損失生命3.4%<red>的持續恢復<teal>(20秒)</teal>",
-      "ns": "毎15秒對扇形範圍內敵方造成<blue>290%</blue>傷害",
-      "ss": "血量低於50%時群控抵抗力提升<blue>38.3%</blue>，<green>愛用品提升自身續航和存活</green>"
+      "ex": "4Cost賦予自身治癒力<blue>16.4%</blue>+<red>已損失生命3.4%</red>的持續恢復<teal>（20秒）</teal>",
+      "ns": "毎15秒對扇形範圍內敵方造成<blue>564%</blue>傷害",
+      "ss": "血量低於50%時群控抵抗力提升<blue>38.3%</blue>。<green>愛用品提升自身續航和存活</green>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -3578,11 +3578,11 @@
     "overallRecommendation": "商店可兌換的平民輕甲坦，儲備角。備戰各種情況",
     "skillOrder": [
       "EX3",
-      "技一.二.三Lv4",
+      "技一.二Lv4",
       "技一.二Lv7",
       "EX5",
       "技一.二Lv10",
-      "技三Lv10 (面對競技場群控角色選擇性升級)",
+      "技三Lv10（面對競技場群控角色選擇性升級）",
       "Max"
     ],
     "favoriteItem": {
@@ -3629,9 +3629,9 @@
       "overall": 68
     },
     "skillsSummary": {
-      "ex": "5Cost對一名敵方造成<blue>1081%</blue>傷害且提高自身攻擊力<blue>54.5%</blue>。",
-      "ns": "每25秒使一名敵方降防<blue>34.8%</blue>並施加<purple>漆彈標記</purple><teal>(15秒)</teal>",
-      "ss": "攻擊有<purple>漆彈標記的敵方時造成<blue>28.3%</blue>追加傷害"
+      "ex": "5Cost對一名敵方造成<blue>1081%</blue>傷害且提高自身攻擊力<blue>54.5%</blue><teal>（30秒）</teal>",
+      "ns": "每25秒使一名敵方降防<blue>34.8%</blue>並施加<purple>漆彈標記</purple><teal>（15秒）</teal>",
+      "ss": "攻擊有<purple>漆彈標記</purple>的敵方時造成<blue>28.3%</blue>追加傷害"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -3645,7 +3645,7 @@
     "uniqueWeaponRecommendedSummary": "提高攻速增加技能組持續期間輸出能力、<red>商店可換至少專3</red>",
     "overallRecommendation": "默認必培養的平民貫通輸出、多模式泛用降防輔助",
     "skillOrder": [
-      "(技一拉滿就能上場當破防掛件)技一Lv10",
+      "技一Lv10（技一拉滿就能上場當破防掛件）",
       "EX3",
       "技二.三Lv4",
       "技三Lv7",
@@ -3690,9 +3690,9 @@
       "overall": 56
     },
     "skillsSummary": {
-      "ex": "2Cost對一名敵方造成<blue>876%</blue>傷害且降防<blue>37.7%</blue><teal>(30秒)</teal>。",
+      "ex": "2Cost對一名敵方造成<blue>876%</blue>傷害且降防<blue>37.7%</blue><teal>（30秒）</teal>",
       "ns": "毎40秒對一名敵方造成<blue>753%</blue>傷害",
-      "ss": "攻擊時有10%機率降低敵方閃避<blue>12.7%</blue><teal>(30秒)<teal><purple>(冷卻時間5秒)</purple>"
+      "ss": "攻擊時有10%機率降低敵方閃避<blue>12.7%</blue><teal>（30秒）</teal><purple>（冷卻時間5秒）</purple>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -3706,11 +3706,11 @@
     "uniqueWeaponRecommendedSummary": "提高生存能力，<blue>推薦商店至5星專2拉生存</blue>",
     "overallRecommendation": "培養成本較低的平民減防角色",
     "skillOrder": [
-      "(視素材量選擇性升級)EX3",
+      "EX3",
       "EX5",
       "技二Lv7",
       "技二Lv10",
-      "技一Lv7",
+      "技一Lv7（之後視素材量選擇性升級）",
       "技三Lv7",
       "技一Lv10",
       "技三Lv10",
@@ -3752,8 +3752,8 @@
     },
     "skillsSummary": {
       "ex": "2Cost對一名敵方造成<blue>762%</blue>傷害，擁有<purple>「憤怒」</purple>時為<red>1.7<red>倍傷害",
-      "ns": "賦予<purple>「憤怒」</purple>狀態，並且提高自身閃避<blue>33.9%</blue><teal>(20秒)</teal>",
-      "ss": "擁有<purple>「憤怒」</purple>時提高自身攻擊力<blue>31.9%</blue><teal>(30秒)</teal>，<green>愛用品提升輸出</green>"
+      "ns": "賦予<purple>「憤怒」</purple>狀態，並且提高自身閃避<blue>33.9%</blue><teal>（20秒）</teal>",
+      "ss": "擁有<purple>「憤怒」</purple>時提高自身攻擊力<blue>31.9%</blue><teal>（30秒）</teal>。<green>愛用品提升輸出</green>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -3779,7 +3779,7 @@
       "Max"
     ],
     "favoriteItem": {
-      "name": "妮露的刺繡夾克",
+      "name": "寧瑠的絲卡將",
       "recommendedLevel": [4, 0, 0],
       "materials": ["18", "antikythera"],
       "effects": [
@@ -3822,14 +3822,14 @@
       "overall": 47
     },
     "skillsSummary": {
-      "ex": "3Cost對扇形範圍內敵方造成<blue>1410%</blue>傷害<purple>(會向前翻滾、較吃站位及角度)</purple>",
-      "ns": "毎40秒提高自身攻擊力<blue>47.9%</blue><teal>(20秒)</teal>",
-      "ss": "自身未擁有群控效果時防禦力提升<blue>25.5%</blue>，<green>愛用品提升輸出跟生存</green>"
+      "ex": "3Cost對扇形範圍內敵方造成<blue>1410%</blue>傷害<purple>（會向前翻滾、較吃站位及角度）</purple>",
+      "ns": "毎40秒提高自身攻擊力<blue>47.9%</blue><teal>（20秒）</teal>",
+      "ss": "自身未擁有群控效果時防禦力提升<blue>25.5%</blue>。<green>愛用品提升輸出跟生存</green>"
     },
     "ratingsSummary": {
       "newbie": null,
       "totalAssault": "球、GOZ、重甲多刀清雜可選",
-      "pvp": "內可搭配多種陣容針對重/特甲坦或輸出，使用上較吃站位理解",
+      "pvp": "室內可搭配多種陣容針對重/特甲坦或輸出，使用上較吃站位理解",
       "grandAssault": "球、GOZ、重甲多刀清雜可選",
       "limitBreakAssault": "缺人或機制使用",
       "jointFiringDrill": "防禦/突破/射擊演習或機制可選",
@@ -3855,7 +3855,7 @@
       "materials": ["16", "antikythera"],
       "effects": [
         "攻擊力<red>1000</red>",
-        "攻擊力提高<blue>47.9%</blue>提升至<blue>52.2%</blue>，<red>新增防禦力增加20.9%</red><teal>(20秒)</teal>"
+        "攻擊力提高<blue>47.9%</blue>提升至<blue>52.2%</blue>，<red>新增防禦力增加20.9%</red><teal>（20秒）</teal>"
       ]
     }
   },
@@ -3893,9 +3893,9 @@
       "overall": 47
     },
     "skillsSummary": {
-      "ex": "3Cost賦予自身治癒力<blue>248%</blue>護盾<teal>(25秒)</teal>",
+      "ex": "3Cost賦予自身治癒力<blue>248%</blue>護盾<teal>（25秒）</teal>",
       "ns": "毎15秒對一名敵方造成<blue>573%</blue>傷害",
-      "ss": "進入掩體時回復治癒力<blue>142%</blue>血量<purple>(冷卻10秒)</purple>，<green>愛用品增強了防禦和閃避，生存能力提升顯著</green>"
+      "ss": "進入掩體時回復治癒力<blue>142%</blue>血量<purple>（冷卻10秒）</purple>。<green>愛用品增強了防禦和閃避，生存能力提升顯著</green>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -3908,14 +3908,14 @@
     },
     "uniqueWeaponRecommendedSummary": "靠掩體格擋增加等效血量，<blue>競技場至少專3起</blue>",
     "overallRecommendation": "萌新過渡前中期戰神閃避坦",
-    "skillOrder": ["(後期用)EX3", "技一.二.三Lv4", "技一Lv7", "技二Lv7", "技一Lv10", "技二Lv10", "EX5", "Max"],
+    "skillOrder": ["EX3（後期用）", "技一.二.三Lv4", "技一Lv7", "技二Lv7", "技一Lv10", "技二Lv10", "EX5", "Max"],
     "favoriteItem": {
-      "name": "優香的函數計算器",
+      "name": "優香的函數計算機",
       "recommendedLevel": [5, 0, 0],
       "materials": ["25", "antikythera"],
       "effects": [
         "防禦力<red>500</red>",
-        "傷害<blue>573%</blue>提升至<blue>625%</blue>，<red>新增閃避增加33.8%</red><teal>(10秒)</teal>"
+        "傷害<blue>573%</blue>提升至<blue>625%</blue>，<red>新增閃避增加33.8%</red><teal>（10秒）</teal>"
       ]
     }
   },
@@ -3953,9 +3953,9 @@
       "overall": 21
     },
     "skillsSummary": {
-      "ex": "2Cost向指定方向位移期間<red>短暫</red>獲得閃避<blue>43.4%</blue>，隨後提高自身攻速<blue>57.3%</blue><teal>(30秒)</teal>",
+      "ex": "2Cost向指定方向位移期間<red>短暫</red>獲得閃避<blue>43.4%</blue>，隨後提高自身攻速<blue>57.3%</blue><teal>（30秒）</teal>", 
       "ns": "毎20秒對一名敵方造成<blue>416%</blue>傷害",
-      "ss": "使用EX技時提高攻速<blue>38.3%</blue><teal>(30秒)</teal>"
+      "ss": "使用EX技時提高攻速<blue>38.3%</blue><teal>（30秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -3975,7 +3975,7 @@
       "技三Lv7",
       "技一Lv7",
       "EX5",
-      "技二Lv7",
+      "技二Lv10",
       "技一Lv10",
       "技三Lv10",
       "Max"
@@ -4015,9 +4015,9 @@
       "overall": 33
     },
     "skillsSummary": {
-      "ex": "4Cost使圓形範圍內友方4人位移到指定位置並賦予治癒力<blue>334%</blue>的護盾<green>(13秒)</green>",
+      "ex": "4Cost使圓形範圍內友方4人位移到指定位置並賦予治癒力<blue>334%</blue>的護盾<green>（13秒）</green>",
       "ns": "毎35秒對扇形範圍內敵方造成<blue>511%</blue>傷害",
-      "ss": "擊敗敵方時增加自身暴傷<blue>38.3</blue>，<green>愛用品提高護盾效果和輸出</green>"
+      "ss": "擊敗敵方時增加自身暴傷<blue>38.3%</blue><teal>（13秒）</teal>，<green>愛用品提高護盾效果和輸出</green>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -4032,7 +4032,7 @@
     "overallRecommendation": "功能性輔助有需要可培養、總力高難度多刀可選",
     "skillOrder": ["EX3", "EX5", "Max"],
     "favoriteItem": {
-      "name": "滴淚眼鏡",
+      "name": "淚珠眼鏡",
       "recommendedLevel": [3, 0, 0],
       "materials": ["32", "antikythera"],
       "effects": [
@@ -4075,9 +4075,9 @@
       "overall": 70
     },
     "skillsSummary": {
-      "ex": "4Cost對5個圓形範圍內敵方造成<blue>591%</blue>傷害<red>(可疊圈判定)<red>",
-      "ns": "毎20秒以血量最低的敵方為中心對圓形範圍內造成<blue>275%</blue>傷害",
-      "ss": "<blue>17.3%</blue>暴傷光環，<green>愛用品加強命中期望，NS技能質變成小EX技</green>"
+      "ex": "4Cost對5個圓形範圍內敵方造成<blue>591%</blue>傷害<red>（可疊圈判定）</red>",
+      "ns": "毎20秒以<red>血量最低的敵方為中心</red>對圓形範圍內造成<blue>275%</blue>傷害",
+      "ss": "<blue>17.3%</blue>暴傷光環。<green>愛用品加強命中期望，NS技能質變成小EX技</green>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -4103,12 +4103,12 @@
       "Max"
     ],
     "favoriteItem": {
-      "name": "大師的護目鏡",
+      "name": "巨匠的護目鏡",
       "recommendedLevel": [5, 0, 0],
       "materials": ["2", "wolfsegg"],
       "effects": [
         "攻擊力<red>200</red>、命中值<red>400</red>",
-        "NS技<red>變為5個圓形區域</red>，依目標當前血量提升1~2倍傷害，血量越低，傷害越高，<red>對相同目標造成傷害時，後續傷害衰減45%，最多衰減至10%</red>"
+        "NS技傷害<blue>275%</blue>提升至<blue>300%</blue>，<red>變為5個圓形區域</red>，依目標當前血量提升1~2倍傷害，血量越低，傷害越高，<red>對相同目標造成傷害時，後續傷害衰減45%，最多衰減至10%</red>"
       ]
     }
   },
@@ -4146,9 +4146,9 @@
       "overall": 20
     },
     "skillsSummary": {
-      "ex": "4Cost對圓形範圍內敵方造成<blue>435%</blue>傷害並<purple>眩暈3.5秒</purple>。",
-      "ns": "毎30秒使一名敵方受回復率減少<blue>50.7%</blue><teal>(15秒)</teal>",
-      "ss": "<blue>17.3%</blue>閃避光環。"
+      "ex": "4Cost對圓形範圍內敵方造成<blue>435%</blue>傷害並<purple>眩暈3.5秒</purple>",
+      "ns": "毎30秒使一名敵方受回復率減少<blue>50.7%</blue><teal>（15秒）</teal>",
+      "ss": "<blue>17.3%</blue>閃避光環"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -4161,7 +4161,7 @@
     },
     "uniqueWeaponRecommendedSummary": "加成無用僅面板提升，廚力刷取",
     "overallRecommendation": "霍德多刀可選，其他模式應對群控機制時可選",
-    "skillOrder": ["(可不點高除EX外技能)EX3", "技一.三Lv4", "技三Lv7", "技一Lv7", "EX5", "技三Lv10", "技一Lv10", "Max"],
+    "skillOrder": ["EX3（可不點高除EX外技能）", "技一.三Lv4", "技三Lv7", "技一Lv7", "EX5", "技三Lv10", "技一Lv10", "Max"],
     "favoriteItem": {
       "name": "雅典娜3號",
       "recommendedLevel": [1, 0, 0],
@@ -4206,32 +4206,35 @@
       "overall": 62
     },
     "skillsSummary": {
-      "ex": "Cost召喚一座<purple>炮臺</purple>到指定位置輸出<teal>(30秒)</teal>，<purple>炮臺</purple>擁有歌原<blue>154%</blue>攻擊力",
-      "ns": "毎30秒會召喚1座<purple>小炮臺</purple>入場輸出，<purple>小炮臺</purple>擁有歌原<blue>72.6</blue>攻擊力",
-      "ss": "<blue>17.3%</blue>生命值光環，<green>愛用品NS質變成三座小炮臺</green>"
+      "ex": "4Cost召喚一座<purple>炮臺</purple>到指定位置輸出<teal>（30秒）</teal>，<purple>炮臺</purple>擁有詠葉<blue>154%</blue>攻擊力",
+      "ns": "毎30秒會召喚1座<purple>小炮臺</purple>入場輸出，<purple>小炮臺</purple>擁有詠葉<blue>72.6%</blue>攻擊力",
+      "ss": "<blue>17.3%</blue>生命值光環。<green>愛用品NS質變成三座小炮臺</green>"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "船P2HIT機制主對策，也可用炮臺承傷逃課，如雞、大蛇等",
+      "totalAssault": "船P2 HIT機制主對策，也可用炮臺承傷逃課，如雞、大蛇等",
       "pvp": "干擾對方目標選擇和殘局收坦等",
-      "grandAssault": "船P2HIT機制主對策，也可用炮臺承傷逃課，如雞、大蛇等",
+      "grandAssault": "船P2 HIT機制主對策，也可用炮臺承傷逃課，如雞、大蛇等",
       "limitBreakAssault": "缺人或機制使用",
       "jointFiringDrill": "射擊/防禦演習可選",
       "eventChallenge": "應對HIT機制時可選"
     },
-    "uniqueWeaponRecommendedSummary": "拉高炮臺血量和輸出 競技場和氣墊船卷分高專",
+    "uniqueWeaponRecommendedSummary": "拉高炮臺血量和輸出，競技場和氣墊船卷分高專",
     "overallRecommendation": "特殊對策選用、競技場前排儲備角、氣墊船主對策",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
-      "技一.二Lv7",
+      "技一Lv7",
+      "技二Lv7",
+      "技三Lv7",
       "EX5",
-      "技一.二Lv10",
-      "技三Lv10 (面對競技場群控角色選擇性升級)",
+      "技一Lv10",
+      "技二Lv10",
+      "技三Lv10",
       "Max"
     ],
     "favoriteItem": {
-      "name": "大師的工具組",
+      "name": "巨匠的工具組",
       "recommendedLevel": [5, 0, 0],
       "materials": ["10", "mandragora"],
       "effects": ["攻速<red>2000</red>", "召喚小炮臺增加<red>兩座</red>"]
@@ -4272,7 +4275,7 @@
     },
     "skillsSummary": {
       "ex": "4Cost對一名敵方造成<blue>1099%</blue>傷害，如目標為超大體型則再造成<blue>625%</blue>追加傷害",
-      "ns": "毎40秒對一名敵方造成<blue>424%</blue>傷害，且有50%概率施加眩暈3.1秒",
+      "ns": "毎40秒對一名敵方造成<blue>424%</blue>傷害，且有50%概率施加<purple>眩暈</purple>3.1秒",
       "ss": "<blue>17.3%</blue>攻擊光環"
     },
     "ratingsSummary": {
@@ -4322,8 +4325,8 @@
       "overall": 55
     },
     "skillsSummary": {
-      "ex": "3Cost使圓形範圍友方攻擊力提高<blue>47.7%</blue><teal>(30秒)</teal>",
-      "ns": "毎30秒對一名敵方造成<blue>450%</blue>傷害，且降低攻擊力<blue>18.9%</blue><teal>(20秒)</teal>",
+      "ex": "3Cost使圓形範圍友方攻擊力提高<blue>47.7%</blue><teal>（30秒）</teal>",
+      "ns": "毎30秒對一名敵方造成<blue>450%</blue>傷害，且降低攻擊力<blue>18.9%</blue><teal>（20秒）</teal>",
       "ss": "<blue>17.3%</blue>攻擊力光環"
     },
     "ratingsSummary": {
@@ -4373,9 +4376,9 @@
       "overall": 31
     },
     "skillsSummary": {
-      "ex": "6Cost對直線範圍內敵方造成<blue>591%</blue>傷害，根據<purple>「充能」</purple>提升1.5~2倍傷害，<red>發射後清空充能<red>。",
-      "ns": "毎25秒提高自身暴擊值<blue>32.3%</blue><teal>(20秒)</teal>並使<purple>充能<purple>提升1階段。",
-      "ss": "使用EX技時提高自身暴擊值<blue>22.9%</blue><teal>(20秒)</teal>，基於<purple>「充能」</purple>提升效果至1.5~2倍。"
+      "ex": "6Cost對直線範圍內敵方造成<blue>591%</blue>傷害，根據<purple>「充能」</purple>提升1.5~2倍傷害，<red>發射後清空充能</red>",
+      "ns": "毎25秒提高自身暴擊值<blue>32.3%</blue><teal>（20秒）</teal>並使<purple>「充能」</purple>提升1階段",
+      "ss": "使用EX技時提高自身暴擊值<blue>22.9%</blue><teal>（20秒）</teal>，基於<purple>「充能」</purple>提升效果至1.5~2倍"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -4424,9 +4427,9 @@
       "overall": 47
     },
     "skillsSummary": {
-      "ex": "3Cost對扇形範圍內敵方造成<blue>541%</blue>傷害，編隊內有<purple>小綠</purple>時則額外造成<blue>93.6%</blue>燒傷<teal>(20秒)</teal>。",
-      "ns": "毎30秒提高自身命中<blue>42.3%</blue><teal>(20秒)</teal>。",
-      "ss": "攻擊提升<blue>28.7%</blue>。編隊內有<purple>小綠</purple>時則提升至<blue>34.4%</blue>"
+      "ex": "3Cost對扇形範圍內敵方造成<blue>541%</blue>傷害，<purple>編隊內有小綠時</purple>則額外造成<blue>93.6%</blue>燒傷<teal>（20秒）</teal>",
+      "ns": "毎30秒提高自身命中<blue>42.3%</blue><teal>（20秒）</teal>",
+      "ss": "攻擊提升<blue>28.7%</blue>。<purple>編隊內有小綠時</purple>則提升至<blue>34.4%</blue>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -4477,7 +4480,7 @@
     "skillsSummary": {
       "ex": "4Cost以指定目標為中心對圓形範圍內敵方造成<blue>594%</blue>傷害",
       "ns": "毎25秒鎖定<red>攻擊最高</red>的目標，對圓形範圍內敵方造成<blue>266%</blue>傷害",
-      "ss": "使用EX技，或NS技時，提高自身暴傷<blue>42.4%</blue><teal>(16秒)</teal>"
+      "ss": "使用EX技，或NS技時，提高自身暴傷<blue>42.4%</blue><teal>（16秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -4505,8 +4508,8 @@
   },
   {
     "id": 10026,
-    "fullname": "美甘 寧瑠(兔女郎)",
-    "name": "寧瑠(兔女郎)",
+    "fullname": "美甘 寧瑠（兔女郎）",
+    "name": "寧瑠（兔女郎）",
     "nicknames": ["紅兔"],
     "school": "Millennium",
     "attackType": "Explosive",
@@ -4519,8 +4522,8 @@
     "skillSubOparts": "antikythera",
     "l2dUnlock": 3,
     "city": "B",
-    "outdoor": "D",
-    "indoor": "S",
+    "outdoor": "S",
+    "indoor": "D",
     "equipments": ["shoes", "bag", "amulet"],
     "uniqueWeaponStar2": "生命值增加",
     "uniqueWeaponStar3": ["outdoor", "SS"],
@@ -4537,8 +4540,8 @@
       "overall": 45
     },
     "skillsSummary": {
-      "ex": "4Cost賦予自身治癒力<blue>401%</blue>護盾<teal>(20秒)</teal>並移動到指定位置，對落地點範圍內敵方造成<blue>531%</blue>傷害，同時施加<purple>嘲諷</purple><teal>(3秒)</teal>。",
-      "ns": "每隔30秒提高自身閃避值<blue>41.9%</blue><teal>(23秒)</teal>",
+      "ex": "4Cost賦予自身治癒力<blue>401%</blue>護盾<teal>（20秒）</teal>並移動到指定位置，對落地點範圍內敵方造成<blue>531%</blue>傷害，同時施加<purple>嘲諷</purple><teal>（3秒）</teal>",
+      "ns": "每隔30秒提高自身閃避值<blue>41.9%</blue><teal>（23秒）</teal>",
       "ss": "如果敵方為<red>中型體型<red>，則會造成額外<blue>6.2%</blue>的追加傷害"
     },
     "ratingsSummary": {
@@ -4551,7 +4554,7 @@
       "eventChallenge": "HIT機制可選"
     },
     "uniqueWeaponRecommendedSummary": "增加存活能力，本身血少容易暴斃，競技場建議專二起",
-    "overallRecommendation": "除總力/大決戰外較為泛用的多功能坦，競技場玩家視個人需求培養。",
+    "overallRecommendation": "除總力/大決戰外較為泛用的多功能坦，競技場玩家視個人需求培養",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
@@ -4567,8 +4570,8 @@
   },
   {
     "id": 10027,
-    "fullname": "角楯 花凜(兔女郎)",
-    "name": "花凜(兔女郎)",
+    "fullname": "角楯 花凜（兔女郎）",
+    "name": "花凜（兔女郎）",
     "nicknames": ["黑兔"],
     "school": "Millennium",
     "attackType": "Mystic",
@@ -4580,12 +4583,12 @@
     "skillMainOparts": "mandragora",
     "skillSubOparts": "phaistos",
     "l2dUnlock": 2,
-    "city": "B",
-    "outdoor": "D",
+    "city": "D",
+    "outdoor": "B",
     "indoor": "S",
-    "equipments": ["shoes", "bag", "amulet"],
-    "uniqueWeaponStar2": "生命值增加",
-    "uniqueWeaponStar3": ["outdoor", "SS"],
+    "equipments": ["hat", "hairpin", "watch"],
+    "uniqueWeaponStar2": "攻擊力增加",
+    "uniqueWeaponStar3": ["indoor", "SS"],
     "ratingVersion": "7.0",
     "ratingDate": "2025/07/13",
     "ratings": {
@@ -4599,9 +4602,9 @@
       "overall": 36
     },
     "skillsSummary": {
-      "ex": "7Cost對扇形範圍內敵方造成<blue>521%</blue>傷害且無視<blue>48%</blue>防禦力。",
+      "ex": "7Cost對扇形範圍內敵方造成<blue>521%</blue>傷害且無視<blue>48%</blue>防禦力",
       "ns": "毎25秒對圓形範圍內敵方造成<blue>192%</blue>傷害且無視<blue>32%</blue>防禦力",
-      "ss": "使用EX技時提高自身暴擊值<blue>24.5%</blue><teal>(40秒)</teal>"
+      "ss": "使用EX技時提高自身暴擊值<blue>24.5%</blue><teal>（40秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -4629,8 +4632,8 @@
   },
   {
     "id": 10028,
-    "fullname": "一之瀨 明日奈(兔女郎)",
-    "name": "明日奈(兔女郎)",
+    "fullname": "一之瀨 明日奈（兔女郎）",
+    "name": "明日奈（兔女郎）",
     "nicknames": ["藍兔"],
     "school": "Millennium",
     "attackType": "Mystic",
@@ -4661,9 +4664,9 @@
       "overall": 21
     },
     "skillsSummary": {
-      "ex": "5Cost對圓形範圍內敵方造成<blue>438%</blue>傷害同時降防<blue>24.6%</blue><teal>(40秒)</teal>",
-      "ns": "毎35秒提高自身攻擊力<blue>29.5%</blue><teal>(23秒)</teal>",
-      "ss": "使用EX技後提高自身攻速<blue>38.3%</blue><teal>(30秒)，<green>提高掛件輔助能力</green>"
+      "ex": "5Cost對圓形範圍內敵方造成<blue>438%</blue>傷害同時降防<blue>24.6%</blue><teal>（40秒）</teal>",
+      "ns": "毎35秒提高自身攻擊力<blue>29.5%</blue><teal>（23秒）</teal>",
+      "ss": "使用EX技後提高自身攻速<blue>38.3%</blue><teal>（30秒）</teal>。<green>愛用品提高掛件輔助能力</green>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -4694,7 +4697,7 @@
       "materials": ["26", "nebra"],
       "effects": [
         "攻擊力<red>200</red>",
-        "攻擊傷害增加<blue>29.5%</blue>提升至<blue>40.25%</blue>，<red>獲得1.35技能COST</red>"
+        "攻擊力增加<blue>29.5%</blue>提升至<blue>40.25%</blue>，<red>獲得1.35技能COST</red>"
       ]
     }
   },
@@ -4716,7 +4719,7 @@
     "city": "S",
     "outdoor": "D",
     "indoor": "B",
-    "equipments": ["hat", "hairpin", "necklace"],
+    "equipments": ["hat", "badge", "necklace"],
     "uniqueWeaponStar2": "暴擊傷害增加",
     "uniqueWeaponStar3": ["city", "SS"],
     "ratingVersion": "7.0",
@@ -4732,8 +4735,8 @@
       "overall": 41
     },
     "skillsSummary": {
-      "ex": "3Cost對一名敵方造成<blue>412%</blue>傷害，目標為<red>重甲</red>時則額外<purple>眩暈7.5秒</purple>。",
-      "ns": "毎30秒對一名<red>攻擊最高</red>的敵方降低攻擊力<blue>32.2%</blue><teal>(23秒)</teal>",
+      "ex": "3Cost對一名敵方造成<blue>412%</blue>傷害，<red>目標為重甲時</red>則額外<purple>眩暈7.5秒</purple>",
+      "ns": "毎30秒對一名<red>攻擊最高</red>的敵方降低攻擊力<blue>32.2%</blue><teal>（23秒）</teal>",
       "ss": "<blue>17.3%</blue>群控強化力光環"
     },
     "ratingsSummary": {
@@ -4751,8 +4754,8 @@
   },
   {
     "id": 10051,
-    "fullname": "白石 詠葉(應援團)",
-    "name": "詠葉(應援團)",
+    "fullname": "白石 詠葉（應援團）",
+    "name": "詠葉（應援團）",
     "nicknames": ["拉拉炮"],
     "school": "Millennium",
     "attackType": "Mystic",
@@ -4783,9 +4786,9 @@
       "overall": 35
     },
     "skillsSummary": {
-      "ex": "5Cost強化普通攻擊倍率為<blue>146%</blue><teal>90秒</teal>，並更改<red>NS技觸發條件</red>。",
-      "ns": "每30秒/<red>(強化後)每6次</red>普攻對1名敵方造成<blue>315%</blue>/<red>(強化後)539%</red>傷害",
-      "ss": "攻擊擁有減益效果的敵人時額外造成<blue>9.7%</blue>追加傷害"
+      "ex": "5Cost<purple>強化普通攻擊</purple>倍率為<blue>146%</blue><teal>（90秒）</teal>，並更改<red>NS技觸發條件</red>",
+      "ns": "每30秒/<red>（強化後）每6次普攻</red>對1名敵方造成<blue>315%</blue>/<red>（強化後）539%</red>傷害",
+      "ss": "攻擊<red>擁有減益效果</red>的敵人時額外造成<blue>9.7%</blue>追加傷害"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -4845,9 +4848,9 @@
       "overall": 43
     },
     "skillsSummary": {
-      "ex": "3Cost對一名敵方造成<purple>「集火」</purple>和降防<blue>40.5%</blue><teal>(40秒)</teal>",
+      "ex": "3Cost對一名敵方造成<purple>「集火」</purple>和降防<blue>40.5%</blue><teal>（40秒）</teal>",
       "ns": "毎30秒對一名敵方造成<blue>758%</blue>傷害",
-      "ss": "NS技發動後使減益效果延長<blue>32.1%</blue><teal>(13秒)</teal>"
+      "ss": "NS技發動後使減益效果延長<blue>32.1%</blue><teal>（13秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -4875,8 +4878,8 @@
   },
   {
     "id": 16010,
-    "fullname": "貓塚 響(應援團)",
-    "name": "響(應援團)",
+    "fullname": "貓塚 響（應援團）",
+    "name": "響（應援團）",
     "nicknames": ["拉拉響"],
     "school": "Millennium",
     "attackType": "Explosive",
@@ -4885,7 +4888,7 @@
     "position": [0, "範圍輸出"],
     "uniqueWeaponRecommended": "廚力有愛培養",
     "acquisitionMethod": "活動獎勵",
-    "skillMainOparts": "crystalhaniwaq",
+    "skillMainOparts": "crystalhaniwa",
     "skillSubOparts": "wolfsegg",
     "l2dUnlock": 3,
     "city": "B",
@@ -4907,9 +4910,9 @@
       "overall": 25
     },
     "skillsSummary": {
-      "ex": "7Cost對圓形範圍內敵方造成<blue>140%</blue>傷害，和<blue>47.9%</blue>應援熱氣持續傷害<teal>(120秒)</teal>。",
-      "ns": "毎40秒使<red>攻擊最高<red>的我方和自身攻擊力提高<blue>22.5%</blue><teal>(30秒)</teal>",
-      "ss": "攻擊時根據<red>自身與目標的距離</red>造成<blue>6.4%×2倍(遠)~0.5倍(近)</blue>的追加傷害。"
+      "ex": "7Cost對圓形範圍內敵方造成<blue>140%</blue>傷害，和<blue>47.9%</blue>應援熱氣持續傷害<teal>（120秒）</teal>",
+      "ns": "毎40秒使<red>攻擊最高<red>的我方和自身攻擊力提高<blue>22.5%</blue><teal>（30秒）</teal>",
+      "ss": "攻擊時根據<red>自身與目標的距離</red>造成<red><blue>6.4%</blue>×2倍（遠）~0.5倍（近）</red>的追加傷害"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -4936,9 +4939,9 @@
     ]
   },
   {
-    "id": 20019,
-    "fullname": "室笠 朱音(兔女郎)",
-    "name": "朱音(兔女郎)",
+    "id": 20020,
+    "fullname": "室笠 朱音（兔女郎）",
+    "name": "朱音（兔女郎）",
     "nicknames": ["白兔"],
     "school": "Millennium",
     "attackType": "Mystic",
@@ -4953,7 +4956,7 @@
     "city": "B",
     "outdoor": "D",
     "indoor": "S",
-    "equipments": ["hat", "hairpin", "shoes"],
+    "equipments": ["hat", "hairpin", "watch"],
     "uniqueWeaponStar2": "攻擊力增加",
     "uniqueWeaponStar3": ["indoor", "SS"],
     "ratingVersion": "7.0",
@@ -4969,7 +4972,7 @@
       "overall": 46
     },
     "skillsSummary": {
-      "ex": "3Cost設置一枚進入圓形範圍內會自動造成<blue>667%</blue>傷害的<purple>地雷</purple><teal>(90秒)</teal>。",
+      "ex": "3Cost設置一枚進入圓形範圍內會自動造成<blue>667%</blue>傷害的<purple>地雷</purple><teal>（90秒）</teal>",
       "ns": "毎30秒對圓形範圍內敵方造成<blue>411%</blue>傷害",
       "ss": "我方神秘屬攻單位攻擊力增加<blue>24.2%</blue>"
     },
@@ -4982,10 +4985,10 @@
       "jointFiringDrill": "射擊/防禦/突破/護衛演習可選",
       "eventChallenge": "清雜可選"
     },
-    "uniqueWeaponRecommendedSummary": "掛件使軸情況開專，競技場建議專二起",
+    "uniqueWeaponRecommendedSummary": "掛件視軸情況開專，競技場建議專二起",
     "overallRecommendation": "室內賽季競技場可選後排對策，神秘總力可選掛件",
     "skillOrder": [
-      "(只當掛件不點EX)EX3",
+      "EX3（只當掛件不點EX）",
       "技一.二.三Lv4",
       "技二Lv7",
       "技三Lv7",
