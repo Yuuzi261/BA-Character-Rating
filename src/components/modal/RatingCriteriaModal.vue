@@ -46,26 +46,11 @@
                 </div>
 
                 <div class="rating-grid">
-                  <div class="rating-item">
-                    <div class="rating-stars">★★★★★</div>
-                    <div class="rating-text">{{ t('starRatingBase.5') }}</div>
+                  <div v-for="star in starRatings" :key="star" class="rating-item">
+                    <div class="rating-stars">{{ '★'.repeat(star) }}</div>
+                    <div class="rating-text">{{ t(`starRatingBase.${star}`) }}</div>
                   </div>
-                  
-                  <div class="rating-item">
-                    <div class="rating-stars">★★★★</div>
-                    <div class="rating-text">{{ t('starRatingBase.4') }}</div>
-                  </div>
-                  
-                  <div class="rating-item">
-                    <div class="rating-stars">★★★</div>
-                    <div class="rating-text">{{ t('starRatingBase.3') }}</div>
-                  </div>
-                  
-                  <div class="rating-item">
-                    <div class="rating-stars">★★</div>
-                    <div class="rating-text">{{ t('starRatingBase.2') }}</div>
-                  </div>
-                  
+
                   <div class="rating-item">
                     <div class="rating-stars">★ / {{ t('common.notApplicable') }}</div>
                     <div class="rating-text">{{ t('starRatingBase.1') }}</div>
@@ -81,60 +66,12 @@
                 </div>
                 
                 <div class="dimensions-grid">
-                  <div class="dimension-card">
+                  <div v-for="dim in dimensions" :key="dim" class="dimension-card">
                     <div class="dimension-header">
-                      <h4>{{ t('ratingDimensions.newbie.title') }}</h4>
-                      <span class="weight-badge">{{ t('ratingDimensions.newbie.weight') }}</span>
+                      <h4>{{ t(`ratingDimensions.${dim}.title`) }}</h4>
+                      <span class="weight-badge">{{ t(`ratingDimensions.${dim}.weight`) }}</span>
                     </div>
-                    <p>{{ t('ratingDimensions.newbie.desc') }}</p>
-                  </div>
-
-                  <div class="dimension-card">
-                    <div class="dimension-header">
-                      <h4>{{ t('ratingDimensions.totalAssault.title') }}</h4>
-                      <span class="weight-badge">{{ t('ratingDimensions.totalAssault.weight') }}</span>
-                    </div>
-                    <p>{{ t('ratingDimensions.totalAssault.desc') }}</p>
-                  </div>
-                  
-                  <div class="dimension-card">
-                    <div class="dimension-header">
-                      <h4>{{ t('ratingDimensions.grandAssault.title') }}</h4>
-                      <span class="weight-badge">{{ t('ratingDimensions.grandAssault.weight') }}</span>
-                    </div>
-                    <p>{{ t('ratingDimensions.grandAssault.desc') }}</p>
-                  </div>
-                  
-                  <div class="dimension-card">
-                    <div class="dimension-header">
-                      <h4>{{ t('ratingDimensions.pvp.title') }}</h4>
-                      <span class="weight-badge">{{ t('ratingDimensions.pvp.weight') }}</span>
-                    </div>
-                    <p>{{ t('ratingDimensions.pvp.desc') }}</p>
-                  </div>
-                  
-                  <div class="dimension-card">
-                    <div class="dimension-header">
-                      <h4>{{ t('ratingDimensions.limitBreakAssault.title') }}</h4>
-                      <span class="weight-badge">{{ t('ratingDimensions.limitBreakAssault.weight') }}</span>
-                    </div>
-                    <p>{{ t('ratingDimensions.limitBreakAssault.desc') }}</p>
-                  </div>
-                  
-                  <div class="dimension-card">
-                    <div class="dimension-header">
-                      <h4>{{ t('ratingDimensions.jointFiringDrill.title') }}</h4>
-                      <span class="weight-badge">{{ t('ratingDimensions.jointFiringDrill.weight') }}</span>
-                    </div>
-                    <p>{{ t('ratingDimensions.jointFiringDrill.desc') }}</p>
-                  </div>
-                  
-                  <div class="dimension-card">
-                    <div class="dimension-header">
-                      <h4>{{ t('ratingDimensions.eventChallenge.title') }}</h4>
-                      <span class="weight-badge">{{ t('ratingDimensions.eventChallenge.weight') }}</span>
-                    </div>
-                    <p>{{ t('ratingDimensions.eventChallenge.desc') }}</p>
+                    <p>{{ t(`ratingDimensions.${dim}.desc`) }}</p>
                   </div>
                 </div>
               </div>
@@ -161,6 +98,18 @@
   const emit = defineEmits(['close'])
 
   const { t } = useI18n()
+
+  const dimensions = [
+    'newbie',
+    'totalAssault',
+    'grandAssault',
+    'pvp',
+    'limitBreakAssault',
+    'jointFiringDrill',
+    'eventChallenge',
+  ]
+
+  const starRatings = [5, 4, 3, 2]
 
   const closeModal = () => {
     emit('close')
