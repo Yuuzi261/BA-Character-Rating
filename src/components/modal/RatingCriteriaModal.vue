@@ -5,7 +5,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <div class="header-title">
-              <h2>{{ t('ratingCriteria.title') }}</h2>
+              <h2>{{ t('ratingCriteriaModal.title') }}</h2>
             </div>
             <button @click="closeModal" class="close-button">×</button>
           </div>
