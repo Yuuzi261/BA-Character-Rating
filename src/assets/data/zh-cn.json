@@ -682,7 +682,7 @@
       "grandAssault": [1, 0, 0],
       "limitBreakAssault": [4, 0, 0],
       "jointFiringDrill": [2, 0, 0],
-      "eventChallenge": [1, 1, 0],
+      "eventChallenge": [1, 0, 0],
       "overall": 39
     },
     "skillsSummary": {
