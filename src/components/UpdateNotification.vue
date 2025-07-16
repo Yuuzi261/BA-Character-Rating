@@ -15,8 +15,12 @@
           <button :disabled="isRefreshing" class="refresh-btn" @click="handleRefresh">
             {{ refreshButtonText }}
           </button>
-          <button v-if="!showFallbackError" class="later-btn" @click="handleLater">稍後</button>
-          <button v-if="showFallbackError" class="force-btn" @click="handleForceRefresh">強制重新載入</button>
+          <button v-if="!showFallbackError" class="later-btn" @click="handleLater">
+            {{ t('updateNotification.laterButton') }}
+          </button>
+          <button v-if="showFallbackError" class="force-btn" @click="handleForceRefresh">
+            {{ t('updateNotification.forceRefreshButton') }}
+          </button>
         </div>
       </div>
     </div>
@@ -26,27 +30,29 @@
 <script setup>
   import { ref, watch, computed } from 'vue'
   import { usePWAUpdate } from '@/composables/usePWAUpdate'
+  import { useI18n } from '@/composables/useI18n'
 
+  const { t } = useI18n()
   const { updateAvailable, isRefreshing, showFallbackError, refreshApp, forceRefresh } = usePWAUpdate()
   const showNotification = ref(false)
   const laterCount = ref(0)
 
   // 計算通知內容
   const notificationTitle = computed(() => {
-    return showFallbackError.value ? '載入失敗' : '有新版本可用'
+    return showFallbackError.value ? t('updateNotification.loadErrorTitle') : t('updateNotification.newVersionTitle')
   })
 
   const notificationMessage = computed(() => {
     if (showFallbackError.value) {
-      return '部分資源載入失敗，建���更新到最新版本以修復問題'
+      return t('updateNotification.loadErrorMessage')
     }
-    return '發現新版本，請重新整理頁面以獲得最新功能'
+    return t('updateNotification.newVersionMessage')
   })
 
   const refreshButtonText = computed(() => {
-    if (isRefreshing.value) return '更新中...'
-    if (showFallbackError.value) return '嘗試修復'
-    return '立即更新'
+    if (isRefreshing.value) return t('updateNotification.refreshingButton')
+    if (showFallbackError.value) return t('updateNotification.fixButton')
+    return t('updateNotification.updateButton')
   })
 
   // 監聽更新狀態
