@@ -2,12 +2,14 @@
   <Teleport to="body">
     <div v-if="showNotification" class="update-notification" :class="{ 'error-mode': showFallbackError }">
       <div class="notification-content">
-        <div class="notification-icon">
-          {{ showFallbackError ? '⚠️' : '🔄' }}
-        </div>
-        <div class="notification-text">
-          <h3>{{ notificationTitle }}</h3>
-          <p>{{ notificationMessage }}</p>
+        <div class="notification-main">
+          <div class="notification-icon">
+            {{ showFallbackError ? '⚠️' : '🔄' }}
+          </div>
+          <div class="notification-text">
+            <h3>{{ notificationTitle }}</h3>
+            <p>{{ notificationMessage }}</p>
+          </div>
         </div>
         <div class="notification-actions">
           <button :disabled="isRefreshing" class="refresh-btn" @click="handleRefresh">
@@ -36,7 +38,7 @@
 
   const notificationMessage = computed(() => {
     if (showFallbackError.value) {
-      return '部分資源載入失敗，建議更新到最新版本以修復問題'
+      return '部分資源載入失敗，建���更新到最新版本以修復問題'
     }
     return '發現新版本，請重新整理頁面以獲得最新功能'
   })
@@ -109,6 +111,12 @@
 
   .notification-content {
     display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .notification-main {
+    display: flex;
     align-items: flex-start;
     gap: 12px;
   }
@@ -138,8 +146,8 @@
   .notification-actions {
     display: flex;
     gap: 8px;
-    margin-top: 12px;
     flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .refresh-btn,
