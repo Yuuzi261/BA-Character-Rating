@@ -17,25 +17,54 @@
   Cache-Control: max-age=0, no-cache, must-revalidate
 
 # ----------------------------------------------------------------
-# Strategy 3: Set long-term cache for images and icons that do not change frequently
+# Strategy 3: Version checking file
+# ----------------------------------------------------------------
+/version.json
+  Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+  CF-Cache-Level: bypass
+  Pragma: no-cache
+  Expires: 0
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, OPTIONS
+  Access-Control-Allow-Headers: *
+
+# ----------------------------------------------------------------
+# Strategy 4: Set long-term cache for images and icons that do not change frequently
 # ----------------------------------------------------------------
 /img/*
   Cache-Control: public, max-age=604800
+  CF-Cache-Level: cache_everything
 /og_image.webp
   Cache-Control: public, max-age=604800
+  CF-Cache-Level: cache_everything
 /pyroxenes.webp
   Cache-Control: public, max-age=604800
+  CF-Cache-Level: cache_everything
 /vite.svg
   Cache-Control: public, max-age=604800
+  CF-Cache-Level: cache_everything
+/favicon.ico
+  Cache-Control: public, max-age=604800
+  CF-Cache-Level: cache_everything
 
 # ----------------------------------------------------------------
-# Strategy 4: Ensure entry points and configuration files are always up-to-date
+# Strategy 5: Ensure entry points and configuration files are always up-to-date
 # ----------------------------------------------------------------
 /index.html
-  Cache-Control: no-cache
+  Cache-Control: no-cache, no-store, must-revalidate
+  CF-Cache-Level: bypass
+  Pragma: no-cache
+  Expires: 0
 /manifest.json
-  Cache-control: no-cache
+  Cache-Control: no-cache, no-store, must-revalidate
+  CF-Cache-Level: bypass
+  Pragma: no-cache
+  Expires: 0
 /manifest.webmanifest
-  Cache-Control: no-cache
+  Cache-Control: no-cache, no-store, must-revalidate
+  CF-Cache-Level: bypass
+  Pragma: no-cache
+  Expires: 0
 /robots.txt
-  Cache-Control: no-cache
+  Cache-Control: public, max-age=3600
+  CF-Cache-Level: cache_everything
