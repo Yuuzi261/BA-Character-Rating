@@ -238,7 +238,7 @@
     "loadErrorTitle": "载入失败",
     "newVersionTitle": "有新版本可用",
     "loadErrorMessage": "部分资源载入失败，建议更新到最新版本以修复问题",
-    "newVersionMessage": "发现新版本，请重新整理页面以获得最新功能",
+    "newVersionMessage": "发现新版本，请立即更新以获得最新功能",
     "refreshingButton": "更新中...",
     "fixButton": "尝试修复",
     "updateButton": "立即更新",
