@@ -15,6 +15,7 @@
       @close="isSelectorVisible = false"
     />
     <BackToTopButton />
+    <UpdateNotification />
   </div>
 </template>
 
@@ -29,6 +30,7 @@
   import RatingCard from '@/components/RatingCard.vue'
   import CharacterSelector from '@/components/modal/CharacterSelector.vue'
   import BackToTopButton from '@/components/ui/BackToTopButton.vue'
+  import UpdateNotification from '@/components/UpdateNotification.vue'
   import NProgress from 'nprogress'
   import '@/style/nprogress/nprogress.css'
 

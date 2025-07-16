@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node scripts/generate-version.js",
     "build": "vite build && node minify-json.js",
     "preview": "vite preview",
     "format": "prettier --write src/",

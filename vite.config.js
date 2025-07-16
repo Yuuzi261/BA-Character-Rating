@@ -23,10 +23,10 @@ export default defineConfig(({ mode }) => ({
       filename: "stats.html",
     }),
     VitePWA({ 
-      registerType: 'autoUpdate',
+      registerType: 'prompt',
       workbox: {
-        skipWaiting: true,
-        clientsClaim: true,
+        skipWaiting: false,
+        clientsClaim: false,
         navigateFallback: '/index.html',
         navigateFallbackAllowlist: [/.*/],
       },
