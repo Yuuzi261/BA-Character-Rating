@@ -29,6 +29,44 @@ export default defineConfig(({ mode }) => ({
         clientsClaim: false,
         navigateFallback: '/index.html',
         navigateFallbackAllowlist: [/.*/],
+        // 優化快取策略
+        runtimeCaching: [
+          {
+            urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'google-fonts-cache',
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365 // 1年
+              }
+            }
+          },
+          {
+            urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp)$/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'images-cache',
+              expiration: {
+                maxEntries: 60,
+                maxAgeSeconds: 60 * 60 * 24 * 30 // 30天
+              }
+            }
+          },
+          {
+            urlPattern: /\.(?:js|css)$/,
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'static-resources'
+            }
+          }
+        ],
+        // 確保核心文件被快取
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,json}'],
+        // 排除可能造成問題的文件
+        globIgnores: ['**/node_modules/**/*'],
+        // 清理過期快取
+        cleanupOutdatedCaches: true
       },
       devOptions: {
         enabled: true,

@@ -1,26 +1,36 @@
 <template>
   <div :class="{ 'dark-mode': isDarkMode }">
-    <RatingCard
-      v-if="currentCharacter"
-      :character="currentCharacter"
-      :theme="settingStore.theme"
-      :locale="settingStore.locale"
-      @open-selector="isSelectorVisible = true"
-      @toggle-dark-mode="settingStore.toggleTheme"
-    />
-    <CharacterSelector
-      :is-visible="isSelectorVisible"
-      :characters="selectableCharacters"
-      @select="handleCharacterSelect"
-      @close="isSelectorVisible = false"
-    />
-    <BackToTopButton />
+    <div v-if="!loadingError">
+      <RatingCard
+        v-if="currentCharacter"
+        :character="currentCharacter"
+        :theme="settingStore.theme"
+        :locale="settingStore.locale"
+        @open-selector="isSelectorVisible = true"
+        @toggle-dark-mode="settingStore.toggleTheme"
+      />
+      <CharacterSelector
+        :is-visible="isSelectorVisible"
+        :characters="selectableCharacters"
+        @select="handleCharacterSelect"
+        @close="isSelectorVisible = false"
+      />
+      <BackToTopButton />
+    </div>
+
+    <!-- 載入錯誤提示 -->
+    <div v-else class="loading-error">
+      <h2>載入失敗</h2>
+      <p>應用程式載入時發生錯誤，請嘗試重新整理頁面</p>
+      <button class="retry-btn" @click="handleRetry">重新載入</button>
+    </div>
+
     <UpdateNotification />
   </div>
 </template>
 
 <script setup>
-  import { ref, onMounted, watch, computed } from 'vue'
+  import { ref, onMounted, watch, computed, onErrorCaptured } from 'vue'
   import { runIPGeolocation } from '@/utils/ipGeolocation'
   import { fetchData } from '@/utils/fetchData'
   import { getAssetsFile } from '@/utils/getAssetsFile'
@@ -40,6 +50,7 @@
   const allCharacters = ref([])
   const currentCharacter = ref(null)
   const isSelectorVisible = ref(false)
+  const loadingError = ref(false)
 
   // Add a computed property to filter out roles with id=0 (easter egg character)
   const selectableCharacters = computed(() => {
@@ -59,6 +70,18 @@
     const id = params.get('id')
     return id ? parseInt(id) : null
   }
+
+  const handleRetry = () => {
+    loadingError.value = false
+    window.location.reload()
+  }
+
+  // Catching component errors
+  onErrorCaptured((error) => {
+    console.error('Component error:', error)
+    loadingError.value = true
+    return false
+  })
 
   onMounted(async () => {
     NProgress.configure({ showSpinner: false })
@@ -95,7 +118,7 @@
       await Promise.all(fonts.map((path) => loadFontCSS(getAssetsFile(path))))
     } catch (error) {
       console.error('載入資源失敗:', error)
-      alert('載入資源失敗，請檢查網路或稍後再試。')
+      loadingError.value = true
     } finally {
       NProgress.done()
     }
@@ -166,5 +189,42 @@
   html.modal-open,
   body.modal-open {
     overflow-y: hidden;
+  }
+
+  /* Loading failure prompt style */
+  .loading-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .loading-error h2 {
+    color: var(--color-red);
+    margin-bottom: 16px;
+  }
+
+  .loading-error p {
+    color: var(--text-color-default);
+    margin-bottom: 24px;
+    max-width: 400px;
+  }
+
+  .retry-btn {
+    background: var(--color-blue);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s;
+  }
+
+  .retry-btn:hover {
+    background: var(--color-teal);
   }
 </style>

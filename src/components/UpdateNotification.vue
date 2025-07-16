@@ -1,17 +1,20 @@
 <template>
   <Teleport to="body">
-    <div v-if="showNotification" class="update-notification">
+    <div v-if="showNotification" class="update-notification" :class="{ 'error-mode': showFallbackError }">
       <div class="notification-content">
-        <div class="notification-icon">🔄</div>
+        <div class="notification-icon">
+          {{ showFallbackError ? '⚠️' : '🔄' }}
+        </div>
         <div class="notification-text">
-          <h3>有新版本可用</h3>
-          <p>發現新版本，請重新整理頁面以獲得最新功能</p>
+          <h3>{{ notificationTitle }}</h3>
+          <p>{{ notificationMessage }}</p>
         </div>
         <div class="notification-actions">
-          <button @click="handleRefresh" :disabled="isRefreshing" class="refresh-btn">
-            {{ isRefreshing ? '更新中...' : '立即更新' }}
+          <button :disabled="isRefreshing" class="refresh-btn" @click="handleRefresh">
+            {{ refreshButtonText }}
           </button>
-          <button @click="handleLater" class="later-btn">稍後</button>
+          <button v-if="!showFallbackError" class="later-btn" @click="handleLater">稍後</button>
+          <button v-if="showFallbackError" class="force-btn" @click="handleForceRefresh">強制重新載入</button>
         </div>
       </div>
     </div>
@@ -19,142 +22,185 @@
 </template>
 
 <script setup>
-import { ref, watch } from 'vue'
-import { usePWAUpdate } from '@/composables/usePWAUpdate'
+  import { ref, watch, computed } from 'vue'
+  import { usePWAUpdate } from '@/composables/usePWAUpdate'
 
-const { updateAvailable, isRefreshing, refreshApp } = usePWAUpdate()
-const showNotification = ref(false)
+  const { updateAvailable, isRefreshing, showFallbackError, refreshApp, forceRefresh } = usePWAUpdate()
+  const showNotification = ref(false)
+  const laterCount = ref(0)
 
-// 監聽更新狀態
-watch(updateAvailable, (newValue) => {
-  if (newValue) {
-    showNotification.value = true
-  }
-})
+  // 計算通知內容
+  const notificationTitle = computed(() => {
+    return showFallbackError.value ? '載入失敗' : '有新版本可用'
+  })
 
-const handleRefresh = () => {
-  refreshApp()
-}
+  const notificationMessage = computed(() => {
+    if (showFallbackError.value) {
+      return '部分資源載入失敗，建議更新到最新版本以修復問題'
+    }
+    return '發現新版本，請重新整理頁面以獲得最新功能'
+  })
 
-const handleLater = () => {
-  showNotification.value = false
-  // 10分鐘後再次提醒
-  setTimeout(() => {
-    if (updateAvailable.value) {
+  const refreshButtonText = computed(() => {
+    if (isRefreshing.value) return '更新中...'
+    if (showFallbackError.value) return '嘗試修復'
+    return '立即更新'
+  })
+
+  // 監聽更新狀態
+  watch([updateAvailable, showFallbackError], ([newUpdateAvailable, newFallbackError]) => {
+    if (newUpdateAvailable || newFallbackError) {
       showNotification.value = true
     }
-  }, 10 * 60 * 1000)
-}
+  })
+
+  const handleRefresh = () => {
+    refreshApp()
+  }
+
+  const handleForceRefresh = () => {
+    forceRefresh()
+  }
+
+  const handleLater = () => {
+    laterCount.value++
+    showNotification.value = false
+
+    // 每次點擊稍後，間隔時間逐漸增加
+    const delay = Math.min(laterCount.value * 5, 30) * 60 * 1000 // 5分鐘到30分鐘
+
+    setTimeout(() => {
+      if (updateAvailable.value && !showFallbackError.value) {
+        showNotification.value = true
+      }
+    }, delay)
+  }
 </script>
 
 <style scoped>
-.update-notification {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 10000;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  padding: 20px;
-  max-width: 350px;
-  border-left: 4px solid #4a90e2;
-  animation: slideIn 0.3s ease-out;
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
+  .update-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    max-width: 350px;
+    border-left: 4px solid #4a90e2;
+    animation: slideIn 0.3s ease-out;
   }
-  to {
-    transform: translateX(0);
-    opacity: 1;
+
+  .update-notification.error-mode {
+    border-left-color: #d32f2f;
   }
-}
 
-.notification-content {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-}
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
-.notification-icon {
-  font-size: 24px;
-  flex-shrink: 0;
-}
+  .notification-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
 
-.notification-text {
-  flex: 1;
-}
+  .notification-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+  }
 
-.notification-text h3 {
-  margin: 0 0 8px 0;
-  font-size: 16px;
-  color: #2c3e50;
-}
+  .notification-text {
+    flex: 1;
+  }
 
-.notification-text p {
-  margin: 0;
-  font-size: 14px;
-  color: #7f8c8d;
-  line-height: 1.4;
-}
+  .notification-text h3 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: #2c3e50;
+  }
 
-.notification-actions {
-  display: flex;
-  gap: 8px;
-  margin-top: 12px;
-}
+  .notification-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #7f8c8d;
+    line-height: 1.4;
+  }
 
-.refresh-btn, .later-btn {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: all 0.2s;
-}
+  .notification-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
 
-.refresh-btn {
-  background: #4a90e2;
-  color: white;
-}
+  .refresh-btn,
+  .later-btn,
+  .force-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
 
-.refresh-btn:hover:not(:disabled) {
-  background: #357abd;
-}
+  .refresh-btn {
+    background: #4a90e2;
+    color: white;
+  }
 
-.refresh-btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
+  .refresh-btn:hover:not(:disabled) {
+    background: #357abd;
+  }
 
-.later-btn {
-  background: #ecf0f1;
-  color: #7f8c8d;
-}
+  .refresh-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
 
-.later-btn:hover {
-  background: #d5dbdb;
-}
+  .later-btn {
+    background: #ecf0f1;
+    color: #7f8c8d;
+  }
 
-/* 暗色模式 */
-.dark-mode .update-notification {
-  background: #2c3e50;
-  color: #e0e6ed;
-}
+  .later-btn:hover {
+    background: #d5dbdb;
+  }
 
-.dark-mode .notification-text h3 {
-  color: #e0e6ed;
-}
+  .force-btn {
+    background: #d32f2f;
+    color: white;
+  }
 
-.dark-mode .later-btn {
-  background: #34495e;
-  color: #bdc3c7;
-}
+  .force-btn:hover {
+    background: #b71c1c;
+  }
 
-.dark-mode .later-btn:hover {
-  background: #4a5f7a;
-}
+  /* 暗色模式 */
+  .dark-mode .update-notification {
+    background: #2c3e50;
+    color: #e0e6ed;
+  }
+
+  .dark-mode .notification-text h3 {
+    color: #e0e6ed;
+  }
+
+  .dark-mode .later-btn {
+    background: #34495e;
+    color: #bdc3c7;
+  }
+
+  .dark-mode .later-btn:hover {
+    background: #4a5f7a;
+  }
 </style>
