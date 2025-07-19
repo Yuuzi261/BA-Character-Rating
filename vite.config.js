@@ -28,9 +28,8 @@ export default defineConfig(({ mode }) => ({
         skipWaiting: true,
         clientsClaim: true,
         navigateFallback: '/index.html',
-        // Use a denylist instead of an allowlist to avoid conflicts
         navigateFallbackDenylist: [/^\/assets\//, /^\/img\//, /^\/sw\.js$/, /^\/workbox-.*\.js$/],
-        // 優化快取策略
+        // Optimize caching strategy
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
@@ -39,7 +38,7 @@ export default defineConfig(({ mode }) => ({
               cacheName: 'google-fonts-cache',
               expiration: {
                 maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365 // 1年
+                maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
               }
             }
           },
@@ -50,7 +49,7 @@ export default defineConfig(({ mode }) => ({
               cacheName: 'images-cache',
               expiration: {
                 maxEntries: 60,
-                maxAgeSeconds: 60 * 60 * 24 * 30 // 30天
+                maxAgeSeconds: 60 * 60 * 24 * 30 // 30 days
               }
             }
           },
@@ -62,11 +61,11 @@ export default defineConfig(({ mode }) => ({
             }
           }
         ],
-        // 確保核心文件被快取
+        // Ensure core files are cached
         globPatterns: ['**/*.{js,css,html,ico,png,svg,json}'],
-        // 排除可能造成問題的文件
+        // Exclude files that might cause issues
         globIgnores: ['**/node_modules/**/*'],
-        // 清理過期快取
+        // Clean up outdated caches
         cleanupOutdatedCaches: true
       },
       devOptions: {
