@@ -25,8 +25,8 @@ export default defineConfig(({ mode }) => ({
     VitePWA({ 
       registerType: 'prompt',
       workbox: {
-        skipWaiting: false,
-        clientsClaim: false,
+        skipWaiting: true,
+        clientsClaim: true,
         navigateFallback: '/index.html',
         // Use a denylist instead of an allowlist to avoid conflicts
         navigateFallbackDenylist: [/^\/assets\//, /^\/img\//, /^\/sw\.js$/, /^\/workbox-.*\.js$/],
