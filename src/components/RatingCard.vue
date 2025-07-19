@@ -89,7 +89,7 @@
           @avatar-click="$emit('open-selector')"
         />
 
-        <div class="overall-rating-section">
+        <div class="overall-rating-section" @click="$emit('open-overall-rating-info')">
           <div class="overall-score">
             <span
               :key="character.id"
@@ -228,7 +228,7 @@
     theme: { type: String, default: 'system' },
     locale: { type: String, default: 'zh-tw' },
   })
-  defineEmits(['open-selector', 'toggle-dark-mode', 'update-locale'])
+  defineEmits(['open-selector', 'toggle-dark-mode', 'update-locale', 'open-overall-rating-info'])
 
   const settingStore = useSettingStore()
   const { enableColoredText } = storeToRefs(settingStore)

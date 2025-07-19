@@ -14,12 +14,17 @@
         :locale="settingStore.locale"
         @open-selector="isSelectorVisible = true"
         @toggle-dark-mode="settingStore.toggleTheme"
+        @open-overall-rating-info="isOverallRatingInfoModalVisible = true"
       />
       <CharacterSelector
         :is-visible="isSelectorVisible"
         :characters="selectableCharacters"
         @select="handleCharacterSelect"
         @close="isSelectorVisible = false"
+      />
+      <OverallRatingInfoModal
+        :is-visible="isOverallRatingInfoModalVisible"
+        @close="isOverallRatingInfoModalVisible = false"
       />
       <BackToTopButton />
     </div>
@@ -31,7 +36,7 @@
       <button class="retry-btn" @click="handleRetry">重新載入</button>
     </div>
 
-    <UpdateNotification />
+    
   </div>
 </template>
 
@@ -46,8 +51,9 @@
   import { storeToRefs } from 'pinia'
   import RatingCard from '@/components/RatingCard.vue'
   import CharacterSelector from '@/components/modal/CharacterSelector.vue'
+  import OverallRatingInfoModal from '@/components/modal/OverallRatingInfoModal.vue'
   import BackToTopButton from '@/components/ui/BackToTopButton.vue'
-  import UpdateNotification from '@/components/UpdateNotification.vue'
+  
   import TutorialHint from '@/components/ui/TutorialHint.vue'
   import NProgress from 'nprogress'
   import '@/style/nprogress/nprogress.css'
@@ -59,6 +65,7 @@
   const allCharacters = ref([])
   const currentCharacter = ref(null)
   const isSelectorVisible = ref(false)
+  const isOverallRatingInfoModalVisible = ref(false)
   const loadingError = ref(false)
   const tutorialHintStyle = ref({})
   const hintIsReady = ref(false)
