@@ -2,8 +2,8 @@
   <div class="tutorial-overlay" @click="dismiss">
     <div class="tutorial-hint" :style="hintStyle" :class="{ 'start-animation': isReady }" @click.stop>
       <div class="tutorial-content">
-        <p>{{ t('tutorial.clickAvatar') }}</p>
-        <button @click="dismiss">{{ t('tutorial.gotIt') }}</button>
+        <p>點擊角色頭像可以切換角色</p>
+        <button @click="dismiss">我知道了</button>
       </div>
       <div class="tutorial-arrow"></div>
     </div>
@@ -11,10 +11,6 @@
 </template>
 
 <script setup>
-  import { useI18n } from '@/composables/useI18n'
-
-  const { t } = useI18n()
-
   defineProps({
     hintStyle: {
       type: Object,
