@@ -29,7 +29,11 @@ export default defineConfig(({ mode }) => ({
         clientsClaim: false,
         navigateFallback: '/index.html',
         navigateFallbackDenylist: [/^\/assets\//, /^\/img\//, /^\/sw\.js$/, /^\/workbox-.*\.js$/],
-        // Optimize caching strategy
+        
+        // 關鍵修復：添加自定義的導航處理
+        navigateFallbackAllowlist: [/^(?!\/__).*/],
+        
+        // 修復重定向問題的運行時快取策略
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
@@ -59,8 +63,26 @@ export default defineConfig(({ mode }) => ({
             options: {
               cacheName: 'static-resources'
             }
+          },
+          // 新增：處理 SPA 路由的特殊策略
+          {
+            urlPattern: ({ request }) => request.mode === 'navigate',
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'pages-cache',
+              networkTimeoutSeconds: 3,
+              plugins: [
+                {
+                  cacheKeyWillBeUsed: async ({ request }) => {
+                    // 對於導航請求，統一使用 index.html 作為快取鍵
+                    return new URL('/', request.url).href
+                  }
+                }
+              ]
+            }
           }
         ],
+        
         // Ensure core files are cached
         globPatterns: ['**/*.{js,css,html,ico,png,svg,json}'],
         // Exclude files that might cause issues

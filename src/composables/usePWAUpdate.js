@@ -73,7 +73,14 @@ export function usePWAUpdate() {
           // 監聽 service worker 控制變更
           navigator.serviceWorker.addEventListener('controllerchange', () => {
             if (!isRefreshing.value) {
-              window.location.reload()
+              // 修復：更新後重新載入到根路徑，避免查詢參數問題
+              const currentUrl = new URL(window.location)
+              if (currentUrl.search) {
+                // 如果有查詢參數，先跳轉到根路徑再重新載入
+                window.location.href = currentUrl.origin + currentUrl.pathname
+              } else {
+                window.location.reload()
+              }
             }
           })
 
@@ -89,7 +96,13 @@ export function usePWAUpdate() {
   const refreshApp = async () => {
     if (!registration.value?.waiting) {
       // 如果沒有等待中的 SW，直接重新載入
-      window.location.reload()
+      // 修復：確保重新載入時處理查詢參數
+      const currentUrl = new URL(window.location)
+      if (currentUrl.search) {
+        window.location.href = currentUrl.origin + currentUrl.pathname + currentUrl.search
+      } else {
+        window.location.reload()
+      }
       return
     }
 
@@ -97,36 +110,57 @@ export function usePWAUpdate() {
     showFallbackError.value = false
 
     try {
-      // 清除所有快取
+      // 修復：更謹慎的快取清理
       if ('caches' in window) {
         const cacheNames = await caches.keys()
-        await Promise.all(cacheNames.map((cacheName) => caches.delete(cacheName)))
+        // 只清理應用相關的快取，保留系統快取
+        const appCaches = cacheNames.filter(
+          (name) => name.includes('workbox') || name.includes('pages-cache') || name.includes('static-resources')
+        )
+        await Promise.all(appCaches.map((cacheName) => caches.delete(cacheName)))
       }
 
       // 告訴等待中的 service worker 跳過等待
       registration.value.waiting.postMessage({ type: 'SKIP_WAITING' })
 
-      // 設定超時，如果5秒內沒有更新就強制重新載入
+      // 修復：增加超時時間並改善重載邏輯
       setTimeout(() => {
-        window.location.reload()
-      }, 5000)
+        const currentUrl = new URL(window.location)
+        // 重新載入當前頁面，包括查詢參數
+        window.location.href = currentUrl.href
+      }, 3000) // 增加到3秒
     } catch (error) {
       console.error('Error during app refresh:', error)
-      window.location.reload()
+      // 修復：錯誤時也要處理查詢參數
+      const currentUrl = new URL(window.location)
+      window.location.href = currentUrl.href
     }
   }
 
   // 強制更新函數
-  const forceRefresh = () => {
-    // 清除所有快取並重新載入
-    if ('caches' in window) {
-      caches.keys().then((cacheNames) => {
-        Promise.all(cacheNames.map((cacheName) => caches.delete(cacheName))).then(() => {
-          window.location.reload()
-        })
-      })
-    } else {
-      window.location.reload()
+  const forceRefresh = async () => {
+    // 修復：更完整的快取清理和重載
+    try {
+      if ('caches' in window) {
+        const cacheNames = await caches.keys()
+        await Promise.all(cacheNames.map((cacheName) => caches.delete(cacheName)))
+      }
+
+      // 清理 localStorage 中的版本信息
+      localStorage.removeItem('app-version')
+
+      // 取消註冊所有 service worker
+      if ('serviceWorker' in navigator) {
+        const registrations = await navigator.serviceWorker.getRegistrations()
+        await Promise.all(registrations.map((reg) => reg.unregister()))
+      }
+
+      // 強制重新載入
+      const currentUrl = new URL(window.location)
+      window.location.href = currentUrl.href + (currentUrl.href.includes('?') ? '&' : '?') + '_refresh=' + Date.now()
+    } catch (error) {
+      console.error('Error during force refresh:', error)
+      window.location.reload(true)
     }
   }
 
