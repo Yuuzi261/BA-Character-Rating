@@ -37,46 +37,19 @@
 
   .tutorial-hint {
     position: absolute;
-    background-color: var(--color-blue);
-    color: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    max-width: 220px;
+    background: #f8f9fa;
+    color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+    max-width: 280px;
     text-align: center;
     animation: fadeIn 0.3s ease-out;
   }
 
-  .tutorial-content p {
-    margin: 0 0 10px;
-    font-size: 16px;
-  }
-
-  .tutorial-content button {
-    background-color: white;
-    color: var(--color-blue);
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.2s;
-  }
-
-  .tutorial-content button:hover {
-    background-color: #f0f0f0;
-  }
-
-  .tutorial-arrow {
-    position: absolute;
-    top: -10px; /* Pointing upwards */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid var(--color-blue); /* Arrow points up */
+  .dark-mode .tutorial-hint {
+    background: #1a2b40;
+    color: #e0e6ed;
   }
 
   @keyframes fadeIn {
@@ -88,5 +61,54 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  .tutorial-content p {
+    margin: 0 0 15px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .tutorial-content button {
+    background: linear-gradient(45deg, #87ceeb, #6495ed);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    min-width: 100px;
+  }
+
+  .dark-mode .tutorial-content button {
+    background: linear-gradient(45deg, #2a7fff, #00aeef);
+  }
+
+  .tutorial-content button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(100, 149, 237, 0.3);
+  }
+
+  .dark-mode .tutorial-content button:hover {
+    box-shadow: 0 4px 15px rgba(0, 174, 239, 0.3);
+  }
+
+  .tutorial-arrow {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #f8f9fa;
+  }
+
+  .dark-mode .tutorial-arrow {
+    border-bottom-color: #1a2b40;
   }
 </style>
