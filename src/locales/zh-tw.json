@@ -244,5 +244,9 @@
     "updateButton": "立即更新",
     "laterButton": "稍後",
     "forceRefreshButton": "強制重新載入"
+  },
+  "tutorial": {
+    "clickAvatar": "點擊角色頭像可以切換角色",
+    "gotIt": "我知道了"
   }
 }
