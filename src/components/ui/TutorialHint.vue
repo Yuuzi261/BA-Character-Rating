@@ -1,6 +1,6 @@
 <template>
   <div class="tutorial-overlay" @click="dismiss">
-    <div class="tutorial-hint" :style="hintStyle" :class="{ 'start-animation': isReady }" @click.stop>
+    <div class="tutorial-hint" :style="hintStyle" @click.stop>
       <div class="tutorial-content">
         <p>點擊角色頭像可以切換角色</p>
         <button @click="dismiss">我知道了</button>
@@ -15,10 +15,6 @@
     hintStyle: {
       type: Object,
       default: () => ({}),
-    },
-    isReady: {
-      type: Boolean,
-      default: false,
     },
   })
   const emit = defineEmits(['close'])
@@ -48,12 +44,7 @@
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
     max-width: 280px;
     text-align: center;
-    opacity: 0; /* Initially hidden */
-    transform: translateX(-50%); /* Center horizontally */
-  }
-
-  .tutorial-hint.start-animation {
-    animation: fadeIn 0.3s ease-out forwards;
+    animation: fadeIn 0.3s ease-out;
   }
 
   .dark-mode .tutorial-hint {
@@ -64,11 +55,11 @@
   @keyframes fadeIn {
     from {
       opacity: 0;
-      transform: translateX(-50%) translateY(-10px); /* Animate from slightly above */
+      transform: translateY(-10px); /* Animate from slightly above */
     }
     to {
       opacity: 1;
-      transform: translateX(-50%) translateY(0);
+      transform: translateY(0);
     }
   }
 
