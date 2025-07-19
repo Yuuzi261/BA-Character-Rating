@@ -68,9 +68,3 @@
 /robots.txt
   Cache-Control: public, max-age=3600
   CF-Cache-Level: cache_everything
-
-# ----------------------------------------------------------------
-# Strategy 6: SPA Fallback for client-side routing
-# ----------------------------------------------------------------
-/*
-  /index.html 200
