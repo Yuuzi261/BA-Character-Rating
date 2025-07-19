@@ -9,7 +9,6 @@ export const useSettingStore = defineStore(
     const osPrefersDark = ref(window.matchMedia('(prefers-color-scheme: dark)').matches)
     const locale = ref(null)
     const enableColoredText = ref(true)
-    const tutorialShown = ref(false)
 
     // Getters (Computed)
     const isDarkMode = computed(() => {
@@ -34,10 +33,6 @@ export const useSettingStore = defineStore(
       locale.value = newLocale
     }
 
-    function markTutorialAsShown() {
-      tutorialShown.value = true
-    }
-
     function initThemeListener() {
       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
         osPrefersDark.value = e.matches
@@ -49,11 +44,9 @@ export const useSettingStore = defineStore(
       locale,
       isDarkMode,
       enableColoredText,
-      tutorialShown,
       toggleTheme,
       toggleColoredText,
       setLocale,
-      markTutorialAsShown,
       initThemeListener,
     }
   },
