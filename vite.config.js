@@ -25,8 +25,8 @@ export default defineConfig(({ mode }) => ({
     VitePWA({ 
       registerType: 'prompt',
       workbox: {
-        skipWaiting: true,
-        clientsClaim: true,
+        skipWaiting: false,
+        clientsClaim: false,
         navigateFallback: '/index.html',
         navigateFallbackDenylist: [/^\/assets\//, /^\/img\//, /^\/sw\.js$/, /^\/workbox-.*\.js$/],
         // Optimize caching strategy
