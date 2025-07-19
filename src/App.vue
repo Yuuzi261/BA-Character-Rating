@@ -1,7 +1,12 @@
 <template>
   <div :class="{ 'dark-mode': isDarkMode }">
     <div v-if="!loadingError">
-      <TutorialHint v-if="showTutorial" :hint-style="tutorialHintStyle" @close="dismissTutorial" />
+      <TutorialHint
+        v-if="showTutorial"
+        :hint-style="tutorialHintStyle"
+        :is-ready="hintIsReady"
+        @close="dismissTutorial"
+      />
       <RatingCard
         v-if="currentCharacter"
         :character="currentCharacter"
@@ -56,6 +61,7 @@
   const isSelectorVisible = ref(false)
   const loadingError = ref(false)
   const tutorialHintStyle = ref({})
+  const hintIsReady = ref(false)
 
   // Add a computed property to filter out roles with id=0 (easter egg character)
   const selectableCharacters = computed(() => {
@@ -92,8 +98,8 @@
       tutorialHintStyle.value = {
         top: `${rect.bottom + 10}px`, // Position below the avatar
         left: `${rect.left + rect.width / 2}px`, // Center horizontally
-        transform: 'translateX(-50%)', // Center the hint
       }
+      hintIsReady.value = true // Trigger the animation
     }
   }
 
