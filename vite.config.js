@@ -28,7 +28,8 @@ export default defineConfig(({ mode }) => ({
         skipWaiting: false,
         clientsClaim: false,
         navigateFallback: '/index.html',
-        navigateFallbackAllowlist: [/.*/],
+        // Use a denylist instead of an allowlist to avoid conflicts
+        navigateFallbackDenylist: [/^\/assets\//, /^\/img\//, /^\/sw\.js$/, /^\/workbox-.*\.js$/],
         // 優化快取策略
         runtimeCaching: [
           {
