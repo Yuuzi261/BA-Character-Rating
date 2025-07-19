@@ -1,6 +1,7 @@
 <template>
   <div :class="{ 'dark-mode': isDarkMode }">
     <div v-if="!loadingError">
+      <TutorialHint v-if="showTutorial" :hint-style="tutorialHintStyle" @close="dismissTutorial" />
       <RatingCard
         v-if="currentCharacter"
         :character="currentCharacter"
@@ -30,27 +31,31 @@
 </template>
 
 <script setup>
-  import { ref, onMounted, watch, computed, onErrorCaptured } from 'vue'
+  import { ref, onMounted, watch, computed, onErrorCaptured, nextTick } from 'vue'
   import { runIPGeolocation } from '@/utils/ipGeolocation'
   import { fetchData } from '@/utils/fetchData'
   import { getAssetsFile } from '@/utils/getAssetsFile'
   import { loadFontCSS } from '@/utils/loadFontCSS'
   import { useSettingStore } from '@/store/setting'
+  import { useTutorial } from '@/composables/useTutorial'
   import { storeToRefs } from 'pinia'
   import RatingCard from '@/components/RatingCard.vue'
   import CharacterSelector from '@/components/modal/CharacterSelector.vue'
   import BackToTopButton from '@/components/ui/BackToTopButton.vue'
   import UpdateNotification from '@/components/UpdateNotification.vue'
+  import TutorialHint from '@/components/ui/TutorialHint.vue'
   import NProgress from 'nprogress'
   import '@/style/nprogress/nprogress.css'
 
   const settingStore = useSettingStore()
   const { isDarkMode } = storeToRefs(settingStore) // Maintaining responsiveness with storeToRefs
+  const { showTutorial, dismissTutorial } = useTutorial()
 
   const allCharacters = ref([])
   const currentCharacter = ref(null)
   const isSelectorVisible = ref(false)
   const loadingError = ref(false)
+  const tutorialHintStyle = ref({})
 
   // Add a computed property to filter out roles with id=0 (easter egg character)
   const selectableCharacters = computed(() => {
@@ -74,6 +79,22 @@
   const handleRetry = () => {
     loadingError.value = false
     window.location.reload()
+  }
+
+  const calculateHintPosition = async () => {
+    if (!showTutorial.value) return
+
+    await nextTick() // Wait for the DOM to update
+
+    const target = document.getElementById('tutorial-avatar-target')
+    if (target) {
+      const rect = target.getBoundingClientRect()
+      tutorialHintStyle.value = {
+        top: `${rect.bottom + 10}px`, // Position below the avatar
+        left: `${rect.left + rect.width / 2}px`, // Center horizontally
+        transform: 'translateX(-50%)', // Center the hint
+      }
+    }
   }
 
   // Catching component errors
@@ -112,6 +133,9 @@
       }
 
       console.log('數據已載入並設定完成。')
+
+      // Calculate hint position after data is loaded and character is set
+      calculateHintPosition()
 
       // Load the font CSS
       const fonts = ['fonts/NEXONFootballGothic/result.css']
