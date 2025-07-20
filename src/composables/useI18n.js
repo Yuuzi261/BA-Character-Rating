@@ -37,9 +37,20 @@ export function useI18n() {
   // Watch for changes in the setting store's locale
   watch(
     () => settingStore.locale,
-    (newLocale) => loadMessages(newLocale),
-    { immediate: true }
+    (newLocale) => {
+      if (newLocale) {
+        loadMessages(newLocale)
+      }
+    }
   )
+
+  // Initial load
+  if (settingStore.locale) {
+    loadMessages(settingStore.locale)
+  } else {
+    // If locale is not set, you might want to load a default
+    loadMessages('zh-tw')
+  }
 
   return { t, currentLocale: settingStore.locale } // Expose settingStore.locale for reactivity
 }

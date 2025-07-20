@@ -170,7 +170,10 @@ export function usePWAUpdate() {
       const controller = new AbortController()
       const timeoutId = setTimeout(() => controller.abort(), 10000) // 10秒超時
 
-      const response = await fetch('/version.json?' + Date.now(), {
+      const baseUrl = import.meta.env.BASE_URL
+      const versionUrl = `${baseUrl}version.json?${Date.now()}`
+
+      const response = await fetch(versionUrl, {
         cache: 'no-store',
         signal: controller.signal,
       })
