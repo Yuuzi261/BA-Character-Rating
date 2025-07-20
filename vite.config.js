@@ -25,8 +25,7 @@ export default defineConfig(({ mode }) => ({
     VitePWA({ 
       registerType: 'prompt',
       workbox: {
-        skipWaiting: false,
-        clientsClaim: false,
+        clientsClaim: true,
         navigateFallback: '/index.html',
         navigateFallbackAllowlist: [/.*/],
         // 優化快取策略
