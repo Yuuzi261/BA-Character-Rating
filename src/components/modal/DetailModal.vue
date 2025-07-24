@@ -7,7 +7,7 @@
           <h3 class="modal-title">{{ title }}</h3>
           <div class="modal-body">
             <img v-if="imageUrl" :src="imageUrl" alt="Detail Image" class="modal-image" />
-            <div v-if="text" class="modal-text">{{ text }}</div>
+            <div v-if="text" class="modal-text" v-html="text"></div>
           </div>
         </div>
       </div>
@@ -210,6 +210,14 @@
     margin: 0;
     white-space: pre-wrap;
     line-height: 1.5;
+  }
+
+  .modal-text :deep(.nexon-font) {
+    font-family: 'NEXON Football Gothic', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    top: 2px;
+    position: relative;
   }
 
   /* Transition for the backdrop */

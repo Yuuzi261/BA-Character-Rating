@@ -1,6 +1,6 @@
 <template>
   <!-- eslint-disable-next-line vue/no-v-html -->
-  <span v-html="processedText"></span>
+  <span :style="customStyle" v-html="processedText"></span>
 </template>
 
 <script setup>
@@ -15,6 +15,10 @@
       type: Boolean,
       default: true,
     },
+    customStyle: {
+      type: Object,
+      default: () => ({}),
+    },
   })
 
   // Define a keyword-to-CSS class mapping to facilitate future expansion
@@ -24,6 +28,7 @@
     teal: 'text-teal',
     red: 'text-red',
     purple: 'text-purple',
+    sth: 'skill-tag-highlight',
     bold: 'text-bold',
     italic: 'text-italic',
   }
@@ -42,7 +47,7 @@
 
     // Define the processing order to ensure that styles can be correctly superimposed
     // Usually, processing color first, then bold/italic, allows the internal tags to be styled correctly
-    const processingOrder = ['blue', 'green', 'teal', 'red', 'purple', 'bold', 'italic']
+    const processingOrder = ['blue', 'green', 'teal', 'red', 'purple', 'sth', 'bold', 'italic']
 
     for (const key of processingOrder) {
       const className = colorClassMap[key]
@@ -82,6 +87,10 @@
 
   :deep(.text-purple) {
     color: var(--color-purple);
+  }
+
+  :deep(.skill-tag-highlight) {
+    color: var(--color-skill-tag-highlight);
   }
 
   :deep(.text-bold) {

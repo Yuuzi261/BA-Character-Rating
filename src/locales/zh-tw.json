@@ -79,11 +79,14 @@
     "equipment": "裝備",
     "uniqueWeapon2": "專武2",
     "uniqueWeapon3": "專武3",
+    "uniqueWeapon4": "專武4",
+    "uw4StrikerBonus": "屬攻+10%",
+    "uw4SpecialBonus": "增加0.5費上限",
     "mainMaterial": "主素材",
     "subMaterial": "副素材",
     "l2dBond": "L2D羈絆",
     "ratingVersion": "角評版本",
-    "ratingVersionDetail": "當前最高版本：7.0",
+    "ratingVersionDetail": "當前最高版本：7.1",
     "ratingDate": "角評日期："
   },
   "equipmentNames": {
@@ -177,6 +180,15 @@
   "ratingCriteriaModal": {
     "title": "評分準則"
   },
+  "overallGradeModal": {
+    "title": "綜合泛用推薦說明",
+    "description": "該版塊為<span style=\"color: red;\">泛用</span>推薦，結合星級評價去做是否要抽、是否需要盡力培養、首抽推薦...等評分參考",
+    "ss_a": "人權或半人權，有資源就練，必練",
+    "b": "多泛用角，可練，多環境對策",
+    "c": "一般泛用角，可練，部分環境對策",
+    "d_e": "一般常規角，可作為替補上場，或者部分環境非最佳/下位對策",
+    "f": "目前缺環境/退環境角色，完全偏科的角色，倉管"
+  },
   "starRatingSpecial": {
     "title": "特殊星級",
     "blueTitle": "藍星評分",
@@ -233,5 +245,15 @@
   "dataSource": {
     "text": "資料來源：賽博夜貓攻略組",
     "title": "前往賽博夜貓攻略組 Bilibili 頻道"
+  },
+  "updateNotification": {
+    "loadErrorTitle": "載入失敗",
+    "newVersionTitle": "有新版本可用",
+    "loadErrorMessage": "部分資源載入失敗，建議更新到最新版本以修復問題",
+    "refreshingMessage": "更新中..."
+  },
+  "tutorial": {
+    "clickAvatar": "點擊角色頭像可以切換角色",
+    "gotIt": "我知道了"
   }
 }

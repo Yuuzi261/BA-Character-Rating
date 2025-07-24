@@ -1,10 +1,12 @@
 <template>
   <div class="skill-tag">
-    <span class="skill-name">{{ skill }}</span>
+    <ColoredText :text="skill" :enabled="true" />
   </div>
 </template>
 
 <script setup>
+  import ColoredText from './ColoredText.vue'
+
   defineProps({
     skill: {
       type: String,

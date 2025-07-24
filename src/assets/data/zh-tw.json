@@ -181,15 +181,8 @@
     },
     "uniqueWeaponRecommendedSummary": "增加自身續航和存活能力、<blue>平民備戰高難度推薦開</blue>",
     "overallRecommendation": "商店可兌換的平民輕甲坦，儲備角。備戰各種情況",
-    "skillOrder": [
-      "EX3",
-      "技一.二Lv4",
-      "技一.二Lv7",
-      "EX5",
-      "技一.二Lv10",
-      "技三Lv10（面對競技場群控角色選擇性升級）",
-      "Max"
-    ],
+    "skillOrder": ["EX3", "技一.二Lv4", "技一.二Lv7", "EX5", "技一.二Lv10", "<sth>技三Lv10</sth>", "Max"],
+    "skillExtraDesc": "面對競技場群控角色選擇性升級",
     "favoriteItem": {
       "name": "超冷卻電風扇",
       "recommendedLevel": [4, 0, 0],
@@ -309,17 +302,8 @@
     },
     "uniqueWeaponRecommendedSummary": "提高攻速增加技能組持續期間輸出能力、<red>商店可換至少專3</red>",
     "overallRecommendation": "默認必培養的平民貫通輸出、多模式泛用降防輔助",
-    "skillOrder": [
-      "技一Lv10（技一拉滿就能上場當破防掛件）",
-      "EX3",
-      "技二.三Lv4",
-      "技三Lv7",
-      "技二Lv7",
-      "EX5",
-      "技三Lv10",
-      "技二Lv10",
-      "Max"
-    ]
+    "skillOrder": ["技一Lv10", "EX3", "技二.三Lv4", "技三Lv7", "技二Lv7", "EX5", "技三Lv10", "技二Lv10", "Max"],
+    "skillExtraDesc": "技一拉滿就能上場當破防掛件"
   },
   {
     "id": 9,
@@ -585,12 +569,13 @@
       "EX5",
       "技二Lv7",
       "技二Lv10",
-      "技一Lv7（之後視素材量選擇性升級）",
-      "技三Lv7",
-      "技一Lv10",
-      "技三Lv10",
-      "Max"
-    ]
+      "<sth>技一Lv7</sth>",
+      "<sth>技三Lv7</sth>",
+      "<sth>技一Lv10</sth>",
+      "<sth>技三Lv10</sth>",
+      "<sth>Max</sth>"
+    ],
+    "skillExtraDesc": "視素材量選擇性升級"
   },
   {
     "id": 18,
@@ -1144,16 +1129,8 @@
     },
     "uniqueWeaponRecommendedSummary": "加成無用僅面板提升，廚力刷取",
     "overallRecommendation": "霍德多刀可選，其他模式應對群控機制時可選",
-    "skillOrder": [
-      "EX3（可不點高除EX外技能）",
-      "技一.三Lv4",
-      "技三Lv7",
-      "技一Lv7",
-      "EX5",
-      "技三Lv10",
-      "技一Lv10",
-      "Max"
-    ],
+    "skillOrder": ["EX3", "技一.三Lv4", "技三Lv7", "技一Lv7", "EX5", "技三Lv10", "技一Lv10", "Max"],
+    "skillExtraDesc": "可不點高除EX外技能",
     "favoriteItem": {
       "name": "雅典娜3號",
       "recommendedLevel": [1, 0, 0],
@@ -2011,6 +1988,77 @@
     "skillOrder": ["EX3", "技一.二.三Lv4", "技二Lv7", "技一Lv7", "技二Lv10", "EX5", "技一Lv10", "Max"]
   },
   {
+    "id": 83,
+    "fullname": "狐阪 若藻",
+    "name": "狐阪 若藻",
+    "nicknames": ["若藻"],
+    "school": "Hyakkiyako",
+    "attackType": "Mystic",
+    "defenseType": "Light",
+    "weapon": "SR",
+    "position": [0, "輸出"],
+    "uniqueWeaponRecommended": "推薦專三",
+    "acquisitionMethod": "FES限定池",
+    "skillMainOparts": "baghdad",
+    "skillSubOparts": "crystalhaniwa",
+    "l2dUnlock": 2,
+    "city": "A",
+    "outdoor": "D",
+    "indoor": "S",
+    "equipments": ["hat", "hairpin", "watch"],
+    "uniqueWeaponStar2": "攻擊力增加",
+    "uniqueWeaponStar3": ["indoor", "SS"],
+    "ratingVersion": "7.0",
+    "ratingDate": "2025/07/23",
+    "ratings": {
+      "newbie": [3, 0, 0],
+      "totalAssault": [5, 0, 1],
+      "pvp": null,
+      "grandAssault": [5, 0, 1],
+      "limitBreakAssault": null,
+      "jointFiringDrill": [3, 0, 0],
+      "eventChallenge": [2, 0, 0],
+      "overall": 79
+    },
+    "skillsSummary": {
+      "ex": "4Cost造成<blue>325%</blue>傷害並施加<purple>積蓄</purple>（<teal>10秒</teal>，<red>需累計</red>）最大造成<blue>1322%</blue>的<red>真傷</red>",
+      "ns": "每25秒對一名敵方造成<blue>369%</blue>傷害",
+      "ss": "攻擊BOSS級別的敵方時，造成<blue>29.7%</blue>追加傷害。<green>愛用品大幅度增強，破萬面板及NS輸出傷害，神秘真傷大C</green>"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "室內神秘BOSS特化輸出，特甲高防高減傷BOSS對策",
+      "pvp": "暫時無搭配組合",
+      "grandAssault": "室內神秘BOSS特化輸出，特甲高防高減傷BOSS對策",
+      "limitBreakAssault": "缺人或機制使用",
+      "jointFiringDrill": "射擊/護衛演習可選",
+      "eventChallenge": "高防高減傷對策輸出"
+    },
+    "uniqueWeaponRecommendedSummary": "提高基礎面板，<red>建議高專提升EX真傷積蓄值</red>",
+    "overallRecommendation": "對BOSS單體特化、高減傷BOSS環境采用",
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "EX5",
+      "技一Lv7",
+      "技二Lv7",
+      "技三Lv7",
+      "技一Lv10",
+      "技二Lv10",
+      "技三Lv10",
+      "Max"
+    ],
+    "favoriteItem": {
+      "name": "隱藏祕密的狐狸面具",
+      "recommendedLevel": [5, 0, 0],
+      "materials": ["20", "baghdad"],
+      "effects": [
+        "攻擊力<red>2000</red>",
+        "NS傷害<blue>369%</blue>提升至<blue>645%</blue>，該技能從<red>1hit</red>提升至<red>3hit</red>"
+      ]
+    }
+  },
+  {
     "id": 84,
     "fullname": "合歡垣 吹雪",
     "name": "吹雪",
@@ -2067,10 +2115,11 @@
       "技一Lv10",
       "技二Lv10",
       "技三Lv10",
-      "EX3（EX不參與技能循環可不點、打TM船2星點滿技一二即可）",
-      "EX5",
+      "<sth>EX3</sth>",
+      "<sth>EX5</sth>",
       "Max"
-    ]
+    ],
+    "skillExtraDesc": "EX不參與技能循環可不點、打TM船2星點滿技一二即可"
   },
   {
     "id": 86,
@@ -2180,10 +2229,11 @@
       "EX5",
       "技三LV7",
       "技二Lv10",
-      "（愛用品後再考慮技一）技一Lv7",
-      "技一Lv10",
+      "<sth>技一Lv7</sth>",
+      "<sth>技一Lv10</sth>",
       "Max"
     ],
+    "skillExtraDesc": "愛用品後再考慮技一",
     "favoriteItem": {
       "name": "破舊的名牌",
       "recommendedLevel": [5, 0, 0],
@@ -2243,7 +2293,19 @@
     },
     "uniqueWeaponRecommendedSummary": "可考慮專一拉支援面板，<blue>競技場建議專二起</blue>",
     "overallRecommendation": "霍德多刀可選對策，S9對抗戰卷排位可選後排輸出",
-    "skillOrder": ["EX3", "技一.二.三Lv4", "技三Lv7", "技二Lv7", "EX5", "技三Lv10", "技二Lv10", "技一Lv7(10)", "Max"],
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "技三Lv7",
+      "技二Lv7",
+      "EX5",
+      "技三Lv10",
+      "技二Lv10",
+      "<sth>技一Lv7</sth>",
+      "<sth>技一Lv10</sth>",
+      "Max"
+    ],
+    "skillExtraDesc": "愛用品後再考慮技一",
     "favoriteItem": {
       "name": "SRT基礎教範",
       "recommendedLevel": [2, 0, 0],
@@ -2797,7 +2859,7 @@
     "uniqueWeaponStar2": "攻防雙增加",
     "uniqueWeaponStar3": ["city", "SS"],
     "ratingVersion": "7.0",
-    "ratingDate": "2025/04/27",
+    "ratingDate": "2025/07/23",
     "ratings": {
       "newbie": [4, 0, 0],
       "totalAssault": [5, 0, 1],
@@ -2815,15 +2877,15 @@
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "爆發多功能屬攻拐，活躍各大環境人權學生。領域增益效果可跟多數加攻疊加、回費過牌其他環境皆有適配",
+      "totalAssault": "爆發隊多功能屬攻拐，回費兼加攻其他BOSS也有極高上場率",
       "pvp": "多坦跑速隊可選450對位",
-      "grandAssault": "爆發多功能屬攻拐，活躍各大環境人權學生。領域增益效果可跟多數加攻疊加、回費過牌其他環境皆有適配",
-      "limitBreakAssault": "爆發多功能屬攻拐，活躍各大環境人權學生。領域增益效果可跟多數加攻疊加、回費過牌其他環境皆有適配",
-      "jointFiringDrill": "爆發多功能屬攻拐，活躍各大環境人權學生。領域增益效果可跟多數加攻疊加、回費過牌其他環境皆有適配",
-      "eventChallenge": "爆發多功能屬攻拐，活躍各大環境人權學生。領域增益效果可跟多數加攻疊加、回費過牌其他環境皆有適配"
+      "grandAssault": "爆發隊多功能屬攻拐，回費兼加攻其他BOSS也有極高上場率",
+      "limitBreakAssault": "賽特/提法塔選多功能輔助",
+      "jointFiringDrill": "幾乎無腦選的多功能輔助坦，領域加攻兼回費承傷",
+      "eventChallenge": "幾乎無腦選的多功能輔助坦，領域加攻兼回費承傷"
     },
     "uniqueWeaponRecommendedSummary": "攻防雙提升，<purple>看軸生存壓力再考慮專1至2</purple>",
-    "overallRecommendation": "多環境，多總力橫跨泛用人權。<red>FES限定角色默認必有，本地文件</red>",
+    "overallRecommendation": "除競技場外橫跨全模式的泛用人權輔助坦，<red>默認必有</red>",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
@@ -3206,17 +3268,18 @@
     "uniqueWeaponRecommendedSummary": "掛件視軸情況開專，競技場建議專二起",
     "overallRecommendation": "室內賽季競技場可選後排對策，神秘總力可選掛件",
     "skillOrder": [
-      "EX3（只當掛件不點EX）",
+      "<sth>EX3</sth>",
       "技一.二.三Lv4",
       "技二Lv7",
       "技三Lv7",
       "技一Lv7",
-      "EX5",
+      "<sth>EX5</sth>",
       "技三Lv7",
       "技二Lv10",
       "技一Lv10",
       "Max"
-    ]
+    ],
+    "skillExtraDesc": "只當掛件不點EX"
   },
   {
     "id": 116,
@@ -3273,9 +3336,72 @@
       "技一Lv7",
       "EX5",
       "技一Lv10",
+      "<sth>技二Lv7</sth>",
+      "<sth>技二Lv10</sth>",
+      "Max"
+    ],
+    "skillExtraDesc": "如果沒專二不點技二"
+  },
+  {
+    "id": 127,
+    "fullname": "聖園 彌香",
+    "name": "彌香",
+    "nicknames": ["彌香", "未花"],
+    "school": "Trinity",
+    "attackType": "Piercing",
+    "defenseType": "Light",
+    "weapon": "SMG",
+    "position": [0, "輸出坦"],
+    "uniqueWeaponRecommended": "推薦專三",
+    "acquisitionMethod": "FES限定池",
+    "skillMainOparts": "ether",
+    "skillSubOparts": "nimrud",
+    "l2dUnlock": 5,
+    "city": "D",
+    "outdoor": "A",
+    "indoor": "S",
+    "equipments": ["hat", "badge", "watch"],
+    "uniqueWeaponStar2": "貫穿特攻增加",
+    "uniqueWeaponStar3": ["indoor", "SS"],
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/07/23",
+    "ratings": {
+      "newbie": [3, 0, 0],
+      "totalAssault": [5, 0, 1],
+      "pvp": [3, 0, 0],
+      "grandAssault": [5, 0, 1],
+      "limitBreakAssault": [4, 0, 0],
+      "jointFiringDrill": [4, 0, 0],
+      "eventChallenge": [5, 0, 1],
+      "overall": 98
+    },
+    "skillsSummary": {
+      "ex": "6Cost對一名敵方造成<blue>1540%</blue>的傷害<red>（依目標當前血量提升1~2倍傷害，血量越高，傷害越高）</red>",
+      "ns": "每普攻5次造成1次<blue>169%</blue>傷害，<red>第3次觸發NS</red>會額外造成1次<blue>339%</blue>的追傷",
+      "ss": "<red>所有攻擊必定暴擊</red>且擁有<blue>24.2%</blue>傷害提高<red>（獨立乘區）</red>以及<blue>12.2%</blue>承傷減少"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "貫穿必備人權主C兼閃避輸出坦非常泛用",
+      "pvp": "多坦隊、萌新缺人可選",
+      "grandAssault": "貫穿必備人權主C兼閃避輸出坦非常泛用",
+      "limitBreakAssault": "重甲火龍塔可選輸出",
+      "jointFiringDrill": "射擊/護衛演習選用",
+      "eventChallenge": "可無視屬性輸出"
+    },
+    "uniqueWeaponRecommendedSummary": "多泛用人權，拉面板血量和攻擊，<red>屬攻專武推薦專三</red>",
+    "overallRecommendation": "默認必有貫通人權、TM難度重甲BOSS按該角色設計",
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
       "技二Lv7",
+      "技一Lv7",
+      "技三Lv7",
+      "EX5",
       "技二Lv10",
-      "Max（如果沒專二不點技二）"
+      "技一Lv10",
+      "技三Lv10",
+      "Max"
     ]
   },
   {
@@ -3437,10 +3563,11 @@
       "EX5",
       "技一Lv7",
       "技一Lv10",
-      "技二Lv7",
-      "技二Lv10",
-      "Max（不開專二不需點技二）"
-    ]
+      "<sth>技二Lv7</sth>",
+      "<sth>技二Lv10</sth>",
+      "Max"
+    ],
+    "skillExtraDesc": "不開專二不需點技二"
   },
   {
     "id": 146,
@@ -3554,6 +3681,68 @@
     "uniqueWeaponRecommendedSummary": "提升攻擊力，<purple>掛件可至少5星專1-2/卷競技場專3起跳</purple>",
     "overallRecommendation": "<green>等同後排瞬+輪椅，新套路主對策競技場</green>，競技場鐵打不動先發；競技場保前排建議抽取、可跟新角搭配（如紅薯莉音），適配PVE多環境多難度",
     "skillOrder": ["EX3", "技一.二.三Lv4", "技三Lv7(10)", "技二Lv7", "技一Lv7", "EX5", "技二Lv10", "技一Lv10", "Max"]
+  },
+  {
+    "id": 151,
+    "fullname": "浦和 花子（泳裝）",
+    "name": "花子（泳裝）",
+    "nicknames": ["水花"],
+    "school": "Trinity",
+    "attackType": "Sonic",
+    "defenseType": "Heavy",
+    "weapon": "AR",
+    "position": [0, "AOE輸出"],
+    "uniqueWeaponRecommended": "建議自備專三",
+    "acquisitionMethod": "FES限定池",
+    "skillMainOparts": "wolfsegg",
+    "skillSubOparts": "antikythera",
+    "l2dUnlock": 3,
+    "city": "S",
+    "outdoor": "A",
+    "indoor": "D",
+    "equipments": ["hat", "hairpin", "watch"],
+    "uniqueWeaponStar2": "攻&暴傷增加",
+    "uniqueWeaponStar3": ["city", "SS"],
+    "ratingVersion": "7.0",
+    "ratingDate": "2025/07/23",
+    "ratings": {
+      "newbie": [5, 0, 1],
+      "totalAssault": [5, 0, 1],
+      "pvp": [5, 0, 1],
+      "grandAssault": [5, 0, 1],
+      "limitBreakAssault": [4, 0, 0],
+      "jointFiringDrill": [5, 0, 1],
+      "eventChallenge": [5, 0, 1],
+      "overall": 100
+    },
+    "skillsSummary": {
+      "ex": "2Cost對扇形範圍內敵方造成<blue>642%</blue>傷害，<red>釋放EX時擁有1層計數，則會重新抓取EX</red>",
+      "ns": "對圓形範圍內敵方造成<blue>225%</blue>傷害並減少<blue>20.7%</blue>防禦<teal>（20秒）</teal><red>（區域降防可和其他NS降防疊加）</red>",
+      "ss": "<red>友方使用EX技時</red><purple>會為水花的計數條增加40%</purple>，<red>累積至100%獲得1層計數</red>並提高自身攻擊力<blue>38.3%</blue><teal>（20秒）</teal><red>（最多2層）</red>"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "貓鬼主對策，四甲球清雜對策，彈/特甲BOSS清雜/對群可選",
+      "pvp": "對牌序要求極低，速轉EX隊可以穩定先手，市街三甲通吃",
+      "grandAssault": "貓鬼主對策，四甲球清雜對策，彈/特甲BOSS清雜/對群可選",
+      "limitBreakAssault": "提法塔百層以下可選對群輸出",
+      "jointFiringDrill": "突破/防禦/護衛演習可選",
+      "eventChallenge": "多挑戰泛用清雜可選"
+    },
+    "uniqueWeaponRecommendedSummary": "攻擊暴傷提升對花子提升足，<red>建議環境自備專三</red>",
+    "overallRecommendation": "FES清雜/對群含金量極高，震動中最泛用多模式戰神",
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "技三Lv7",
+      "技二Lv7",
+      "技一Lv7",
+      "EX5",
+      "技三Lv10",
+      "技二Lv10",
+      "技一Lv10",
+      "Max"
+    ]
   },
   {
     "id": 154,
@@ -3808,16 +3997,70 @@
     },
     "uniqueWeaponRecommendedSummary": "破甲時間增加，<purple>可以考慮開，看軸情況</purple>",
     "overallRecommendation": "貓鬼降防主對策，振動輔助兼機制降費",
+    "skillOrder": ["EX3", "技一.二.三Lv4", "技一Lv7", "技三Lv7", "EX5", "技一Lv10", "技三Lv10", "技二Lv10", "Max"],
+    "skillExtraDesc": "低配5M11即可"
+  },
+  {
+    "id": 172,
+    "fullname": "空崎 陽奈（禮服）",
+    "name": "陽奈（禮服）",
+    "nicknames": ["禮奈"],
+    "school": "Gehenna",
+    "attackType": "Explosive",
+    "defenseType": "Elastic",
+    "weapon": "MG",
+    "position": [0, "輸出"],
+    "uniqueWeaponRecommended": "使用推薦專三",
+    "acquisitionMethod": "FES限定池",
+    "skillMainOparts": "phaistos",
+    "skillSubOparts": "winnistone",
+    "l2dUnlock": 5,
+    "city": "D",
+    "outdoor": "A",
+    "indoor": "S",
+    "equipments": ["hat", "badge", "watch"],
+    "uniqueWeaponStar2": "攻&暴擊增加",
+    "uniqueWeaponStar3": ["indoor", "SS"],
+    "uniqueWeaponStar4": "爆發屬性10%",
+    "ratingVersion": "7.0",
+    "ratingDate": "2025/07/23",
+    "ratings": {
+      "newbie": [3, 0, 0],
+      "totalAssault": [5, 0, 1],
+      "pvp": [3, 0, 0],
+      "grandAssault": [5, 0, 1],
+      "limitBreakAssault": [3, 0, 0],
+      "jointFiringDrill": [4, 0, 0],
+      "eventChallenge": [5, 0, 1],
+      "overall": 95
+    },
+    "skillsSummary": {
+      "ex": "6Cost切換<purple>「集中射擊」</purple><teal>10秒</teal><red>（無法普攻和移動，中了群控則會解除）</red>，並<purple>刷新3張0Cost的武器牌至卡槽內</purple><red>（不會進入循環）</red>，可對直線範圍內敵方造成<blue>618%</blue>/<blue>618%</blue>/<blue>1288%</blue>傷害且<red>不受安定影響</red>（<red>每次使用武器牌會重置</red><purple>集中射擊</purple><teal>持續時間</teal>），<red>第三次使用則會解除</red>（該傷害每貫穿1名敵方會衰減<blue>45%</blue>傷害，最多衰減<blue>90%</blue>）",
+      "ns": "戰鬥開始時，提高自身爆發屬性攻擊<blue>64.91%</blue>和命中<blue>451</blue><red>（僅觸發一次）</red>",
+      "ss": "處於<purple>集中射擊</purple>時，提高自身爆發屬性攻擊<blue>63.51%</blue>且<red>無視嘲諷</red>。<green>面板自帶無視防禦</green>"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "新一代爆發人權數值怪，對單對群皆可，以至於LU難和新BOSS需要針對禮奈",
+      "pvp": "開局拉人、射程特殊，對策陣容選",
+      "grandAssault": "新一代爆發人權數值怪，對單對群皆可，以至於LU難和新BOSS需要針對禮奈",
+      "limitBreakAssault": "輕甲賽特普攻輸出掛件，破紅球可選",
+      "jointFiringDrill": "多演習可選擇使用輸出，注意EX衰減",
+      "eventChallenge": "專治各種輕甲血牛和各種繁瑣機制"
+    },
+    "uniqueWeaponRecommendedSummary": "攻暴雙數值增加，<red>FES限定使用推薦專二至專三自備</red>",
+    "overallRecommendation": "改變了整個總力/大決戰爆發BOSS環境，默認為必有人權輸出",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
       "技一Lv7",
       "技三Lv7",
+      "技二Lv7",
       "EX5",
       "技一Lv10",
       "技三Lv10",
       "技二Lv10",
-      "Max（低配5M11即可）"
+      "Max"
     ]
   },
   {
@@ -3936,13 +4179,14 @@
       "技一.二.三Lv4",
       "技一Lv7",
       "技三Lv7",
-      "技二Lv7（不開專二視軸情況點技二）",
+      "<sth>技二Lv7</sth>",
       "EX5",
       "技一Lv10",
       "技三Lv10",
-      "技二Lv10",
+      "<sth>技二Lv10</sth>",
       "Max"
-    ]
+    ],
+    "skillExtraDesc": "不開專二視軸情況點技二"
   },
   {
     "id": 186,
@@ -3998,13 +4242,14 @@
       "技一.二.三Lv4",
       "技一Lv7",
       "技二Lv7",
-      "技三Lv7（當光環用優先技三）",
+      "<sth>技三Lv7</sth>",
       "EX5",
       "技一Lv10",
       "技二Lv10",
-      "技三Lv10",
+      "<sth>技三Lv10</sth>",
       "Max"
-    ]
+    ],
+    "skillExtraDesc": "當光環用優先技三"
   },
   {
     "id": 187,
@@ -4614,7 +4859,7 @@
     "uniqueWeaponRecommendedSummary": "視軸情況開專，<blue>提升支援面板或攻擊拐時間</blue>",
     "overallRecommendation": "推薦自備，默認必有功能人權",
     "skillOrder": [
-      "EX3（無專二優先技一再點技二）",
+      "EX3",
       "技一.二.三Lv4",
       "技三Lv7",
       "技二Lv7",
@@ -4624,7 +4869,8 @@
       "技二Lv10",
       "技一Lv10",
       "Max"
-    ]
+    ],
+    "skillExtraDesc": "無專二優先技一再點技二"
   },
   {
     "id": 210,
@@ -5491,6 +5737,192 @@
       "技一Lv10",
       "技三Lv10",
       "技二Lv10",
+      "Max"
+    ]
+  },
+  {
+    "id": 227,
+    "fullname": "仲正 一花（泳裝）",
+    "name": "一花（泳裝）",
+    "nicknames": ["水一花"],
+    "school": "Trinity",
+    "attackType": "Sonic",
+    "defenseType": "Special",
+    "weapon": "AR",
+    "position": [1, "輔助"],
+    "uniqueWeaponRecommended": "活動有愛刷取",
+    "acquisitionMethod": "活動獎勵",
+    "skillMainOparts": "kikuko",
+    "skillSubOparts": "totempole",
+    "l2dUnlock": 5,
+    "city": "A",
+    "outdoor": "B",
+    "indoor": "C",
+    "equipments": ["gloves", "bag", "watch"],
+    "uniqueWeaponStar2": "攻擊力增加",
+    "uniqueWeaponStar3": ["indoor", "B"],
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/07/23",
+    "ratings": {
+      "newbie": [1, 0, 0],
+      "totalAssault": [2, 0, 0],
+      "pvp": null,
+      "grandAssault": [2, 0, 0],
+      "limitBreakAssault": null,
+      "jointFiringDrill": [2, 0, 0],
+      "eventChallenge": [1, 0, 0],
+      "overall": 33
+    },
+    "skillsSummary": {
+      "ex": "2Cost對一名敵方造成<blue>242%</blue>傷害，並降低暴傷抗性<blue>35.3%</blue>、施加<purple>集火</purple><teal>（30秒）</teal>",
+      "ns": "每35秒對一名敵方造成<blue>103%</blue>傷害，並降低暴傷抗性<blue>20.5%</blue>、暴擊抗性<blue>15.2%</blue><teal>（20秒）</teal>",
+      "ss": "<blue>17.3%</blue>攻速光環"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "葛利果減益、高茲集火、氣墊船攻速光環堆屍選用",
+      "pvp": "暫時無組合搭配",
+      "grandAssault": "葛利果減益、高茲集火、氣墊船攻速光環堆屍選用",
+      "limitBreakAssault": "缺人或機制使用",
+      "jointFiringDrill": "高雙暴抗敵人可選",
+      "eventChallenge": "高雙暴抗敵人可選"
+    },
+    "uniqueWeaponRecommendedSummary": "攻擊力增加，有愛活動刷取高專",
+    "overallRecommendation": "備戰多刀的功能性輔助後排，她很可愛~有愛刷取",
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "EX5",
+      "技一Lv7",
+      "技三Lv7",
+      "技二Lv7",
+      "技一Lv10",
+      "技三Lv10",
+      "技二Lv10",
+      "Max"
+    ]
+  },
+  {
+    "id": 228,
+    "fullname": "羽川 蓮實（泳裝）",
+    "name": "蓮實（泳裝）",
+    "nicknames": ["水蓮實", "水蓮見"],
+    "school": "Trinity",
+    "attackType": "Piercing",
+    "defenseType": "Light",
+    "weapon": "SR",
+    "position": [0, "範圍輸出"],
+    "uniqueWeaponRecommended": "看情況開",
+    "acquisitionMethod": "限定池",
+    "skillMainOparts": "ether",
+    "skillSubOparts": "goldenfleece",
+    "l2dUnlock": 3,
+    "city": "D",
+    "outdoor": "S",
+    "indoor": "B",
+    "equipments": ["hat", "hairpin", "watch"],
+    "uniqueWeaponStar2": "攻擊力增加",
+    "uniqueWeaponStar3": ["outdoor", "SS"],
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/07/23",
+    "ratings": {
+      "newbie": [3, 0, 0],
+      "totalAssault": [3, 0, 0],
+      "pvp": [3, 0, 0],
+      "grandAssault": [3, 0, 0],
+      "limitBreakAssault": [4, 0, 0],
+      "jointFiringDrill": [2, 0, 0],
+      "eventChallenge": [1, 0, 0],
+      "overall": 59
+    },
+    "skillsSummary": {
+      "ex": "對扇形範圍內敵方造成<blue>866%</blue>傷害",
+      "ns": "NS技每35秒提高自身暴傷<blue>24.4%</blue>，每有一層<purple>西瓜</purple>增加暴擊率<blue>8.9%</blue><teal>（30秒）</teal>",
+      "ss": "使用EX技時，<red>每造成4次傷害</red><purple><purple>獲得一層西瓜</purple><teal>（43秒）</teal>，每有一層<purple>西瓜</purple>使暴傷提高<blue>6.2%</blue><red>（西瓜最多4層）</red>"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "球清雜可選、野外重甲雞斯拉對策輸出",
+      "pvp": "針對重甲坦、遠距EX清屏，吃陣容站位、高攻擊怕瞬",
+      "grandAssault": "球清雜可選、野外重甲雞斯拉對策輸出",
+      "limitBreakAssault": "重甲火龍塔可選對群輸出",
+      "jointFiringDrill": "防禦/突破/護衛演習可選",
+      "eventChallenge": "清雜/對群可選"
+    },
+    "uniqueWeaponRecommendedSummary": "攻擊力增加，主輸出使用至少專二起",
+    "overallRecommendation": "備戰大決戰野外重甲雞斯拉，視個人情況培養",
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "EX5",
+      "技一Lv7",
+      "技二Lv7",
+      "技三Lv7",
+      "技一Lv10",
+      "技二Lv10",
+      "技三Lv10",
+      "Max"
+    ]
+  },
+  {
+    "id": 229,
+    "fullname": "百合園 聖婭（泳裝）",
+    "name": "聖婭（泳裝）",
+    "nicknames": ["水聖婭"],
+    "school": "Trinity",
+    "attackType": "Piercing",
+    "defenseType": "Special",
+    "weapon": "HG",
+    "position": [0, "輔助"],
+    "uniqueWeaponRecommended": "看情況開",
+    "acquisitionMethod": "限定池",
+    "skillMainOparts": "nebra",
+    "skillSubOparts": "discocolgante",
+    "l2dUnlock": 2,
+    "city": "S",
+    "outdoor": "B",
+    "indoor": "D",
+    "equipments": ["gloves", "hairpin", "necklace"],
+    "uniqueWeaponStar2": "增益時間增加",
+    "uniqueWeaponStar3": ["city", "SS"],
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/07/23",
+    "ratings": {
+      "newbie": null,
+      "totalAssault": [5, 0, 1],
+      "pvp": null,
+      "grandAssault": [5, 0, 1],
+      "limitBreakAssault": [3, 0, 0],
+      "jointFiringDrill": [5, 0, 1],
+      "eventChallenge": [5, 0, 1],
+      "overall": 90
+    },
+    "skillsSummary": {
+      "ex": "3Cost使一名友方EX技傷害提高<blue>74.1%</blue><teal>（25秒）</teal>",
+      "ns": "<red>每普攻12次</red>為自身和<red>血量最低</red>的一名友方回復治愈力<blue>103%</blue>血量",
+      "ss": "<red>使用EX技後</red>使自身攻速提高<blue>31%</blue><teal>（26秒）</teal>"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "泛用人權EX技輔助、解放後排位置，靈活配隊",
+      "pvp": "暫時無組合搭配",
+      "grandAssault": "泛用人權EX技輔助、解放後排位置，靈活配隊",
+      "limitBreakAssault": "火龍塔搭配降攻可選輔助",
+      "jointFiringDrill": "提高友方EX輸出能力，快速清屏",
+      "eventChallenge": "提高友方EX輸出能力，快速清屏"
+    },
+    "uniqueWeaponRecommendedSummary": "增益時間增加，看生存壓力或軸的情況，考慮專二起",
+    "overallRecommendation": "人權輔助，前排版本的妃姬，增益生效很快可以反手拐",
+    "skillOrder": [
+      "EX3",
+      "EX5",
+      "技一.二.三Lv4",
+      "技一Lv7",
+      "技二Lv7",
+      "技三LV7",
+      "技一Lv10",
+      "技二Lv10",
+      "技三Lv10",
       "Max"
     ]
   }

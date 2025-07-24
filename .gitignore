@@ -24,4 +24,5 @@ dist-ssr
 *.sw?
 
 .env
+public/version.json
 dev-dist/

@@ -68,7 +68,7 @@
       <span v-else>N/A</span>
     </EvaluationItem>
     <EvaluationItem :header="t('evaluation.l2dBond')" color="pink" data-item="l2d" @item-click="handleItemClick">
-      {{ characterData.l2dUnlock }}
+      {{ characterData.l2dUnlock === -1 ? '--' : characterData.l2dUnlock }}
     </EvaluationItem>
 
     <EvaluationItem
@@ -159,6 +159,12 @@
         }
         break
       }
+
+      case dataItem === 'uw2' || dataItem === 'uw3':
+        modalTitle.value = t('evaluation.uniqueWeapon4')
+        modalText.value = `<div style="display: grid; grid-template-columns: auto 1fr; gap: 0.5rem; align-items: center;"><span class='nexon-font' style='color: #cc1a25'>STRIKER</span><span>${t('evaluation.uw4StrikerBonus')}</span><span class='nexon-font' style='color: #006bff'>SPECIAL</span><span>${t('evaluation.uw4SpecialBonus')}</span></div>`
+        isModalVisible.value = true
+        break
 
       case dataItem === 'version':
         modalTitle.value = t('evaluation.ratingVersion')

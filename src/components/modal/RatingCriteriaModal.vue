@@ -220,6 +220,41 @@
     overflow-y: auto;
     font-size: 1rem;
     mask-image: linear-gradient(to bottom, transparent, black 15px);
+    /* Custom Scrollbar for Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #bdc3c7 #fff;
+  }
+
+  .dark-mode .modal-body {
+    scrollbar-color: #7f8c8d #1f3048;
+  }
+
+  /* Custom Scrollbar for Webkit browsers (Chrome, Safari, Edge) */
+  .modal-body::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  .modal-body::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .modal-body::-webkit-scrollbar-thumb {
+    background-color: #bdc3c7;
+    border-radius: 10px;
+    border: 3px solid #fff;
+  }
+
+  .dark-mode .modal-body::-webkit-scrollbar-thumb {
+    background-color: #7f8c8d;
+    border-color: #1f3048;
+  }
+
+  .modal-body::-webkit-scrollbar-thumb:hover {
+    background-color: #a9a9a9;
+  }
+
+  .dark-mode .modal-body::-webkit-scrollbar-thumb:hover {
+    background-color: #95a5a6;
   }
 
   .modal-body-content {

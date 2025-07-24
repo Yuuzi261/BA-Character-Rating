@@ -98,7 +98,7 @@
               :class="{ 'is-animating': triggerAnimation }"
             ></span>
           </div>
-          <div class="overall-grade">{{ overallGrade }}</div>
+          <div class="overall-grade" @click="isOverallGradeModalVisible = true">{{ overallGrade }}</div>
         </div>
 
         <CharacterAttributes
@@ -168,6 +168,11 @@
         </RatingSection>
 
         <RatingSection :title="t('ratingCard.skillOrder')">
+          <template #extra>
+            <InfoTooltip v-if="character.skillExtraDesc" :text="character.skillExtraDesc">
+              <InfoIcon />
+            </InfoTooltip>
+          </template>
           <div class="skill-order-container">
             <template v-for="(skill, index) in character.skillOrder" :key="skill">
               <SkillTag :skill="skill" />
@@ -191,6 +196,7 @@
   />
   <SettingsModal :is-visible="isSettingsModalVisible" @close="isSettingsModalVisible = false" />
   <RatingCriteriaModal :is-visible="isRatingCriteriaModalVisible" @close="isRatingCriteriaModalVisible = false" />
+  <OverallGradeModal :is-visible="isOverallGradeModalVisible" @close="isOverallGradeModalVisible = false" />
 </template>
 
 <script setup>
@@ -212,6 +218,7 @@
   import FavoriteItemModal from './modal/FavoriteItemModal.vue'
   import SettingsModal from './modal/SettingsModal.vue'
   import RatingCriteriaModal from './modal/RatingCriteriaModal.vue'
+  import OverallGradeModal from './modal/OverallGradeModal.vue'
   import CardFooter from './CardFooter.vue'
   import { useSettingStore } from '@/store/setting'
   import { storeToRefs } from 'pinia'
@@ -262,6 +269,7 @@
   const isSettingsModalVisible = ref(false)
   const isFavoriteItemVisible = ref(false)
   const isRatingCriteriaModalVisible = ref(false)
+  const isOverallGradeModalVisible = ref(false)
 
   const handleSettingsClick = () => {
     isSettingsIconRotating.value = true
@@ -470,6 +478,7 @@
     padding: 8px 18px 2px; /* Adjusted padding for vertical alignment */
     border-radius: 10px;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
   }
 
   .rating-row {

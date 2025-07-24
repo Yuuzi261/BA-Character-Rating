@@ -1,6 +1,6 @@
 <template>
   <div class="character-info">
-    <div class="character-avatar" @click="$emit('avatar-click')">
+    <div class="character-avatar" id="tutorial-avatar-target" @click="$emit('avatar-click')">
       <ImageWithLoader :src="getAvatarUrl(id)" :alt="name" class="avatar-image" />
       <div class="avatar-overlay">
         <svg

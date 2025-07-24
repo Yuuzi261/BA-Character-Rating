@@ -1,10 +1,11 @@
 {
   "name": "ba-character-rating",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node scripts/generate-version.js",
     "build": "vite build && node minify-json.js",
     "preview": "vite preview",
     "format": "prettier --write src/",
@@ -24,6 +25,7 @@
     "eslint": "^9.30.1",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-vue": "^10.3.0",
+    "globals": "^16.3.0",
     "jsonminify": "^0.4.2",
     "prettier": "^3.6.2",
     "rollup-plugin-external-globals": "^0.13.0",
@@ -31,6 +33,7 @@
     "terser": "^5.43.1",
     "vite": "^6.3.5",
     "vite-plugin-pwa": "^1.0.0",
-    "vite-plugin-vue-devtools": "^7.7.7"
+    "vite-plugin-vue-devtools": "^7.7.7",
+    "vue-eslint-parser": "^10.2.0"
   }
 }

@@ -79,11 +79,14 @@
     "equipment": "装备",
     "uniqueWeapon2": "专武2",
     "uniqueWeapon3": "专武3",
+    "uniqueWeapon4": "专武4",
+    "uw4StrikerBonus": "属攻+10%",
+    "uw4SpecialBonus": "增加0.5费上限",
     "mainMaterial": "主素材",
     "subMaterial": "副素材",
     "l2dBond": "L2D羁绊",
     "ratingVersion": "角评版本",
-    "ratingVersionDetail": "当前最高版本：7.0",
+    "ratingVersionDetail": "当前最高版本：7.1",
     "ratingDate": "角评日期："
   },
   "equipmentNames": {
@@ -177,6 +180,15 @@
   "ratingCriteriaModal": {
     "title": "评分准则"
   },
+  "overallGradeModal": {
+    "title": "综合泛用推荐说明",
+    "description": "该版块为<span style=\"color: red;\">泛用</span>推荐，结合星级评价去做是否要抽、是否需要尽力培养、首抽推荐...等评分参考",
+    "ss_a": "人权或半人权，有资源就练，必练",
+    "b": "多泛用角，可练，多环境对策",
+    "c": "一般泛用角，可练，部分环境对策",
+    "d_e": "一般常规角，可作为替补上场，或者部分环境非最佳/下位对策",
+    "f": "目前缺环境/退环境角色，完全偏科的角色，仓管"
+  },
   "starRatingSpecial": {
     "title": "特殊星级",
     "blueTitle": "蓝星评分",
@@ -233,5 +245,15 @@
   "dataSource": {
     "text": "资料来源：赛博夜猫攻略组",
     "title": "前往赛博夜猫攻略组 Bilibili 频道"
+  },
+  "updateNotification": {
+    "loadErrorTitle": "载入失败",
+    "newVersionTitle": "有新版本可用",
+    "loadErrorMessage": "部分资源载入失败，建议更新到最新版本以修复问题",
+    "refreshingMessage": "更新中..."
+  },
+  "tutorial": {
+    "clickAvatar": "点击角色头像可以切换角色",
+    "gotIt": "我知道了"
   }
 }

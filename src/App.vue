@@ -1,43 +1,67 @@
 <template>
   <div :class="{ 'dark-mode': isDarkMode }">
-    <RatingCard
-      v-if="currentCharacter"
-      :character="currentCharacter"
-      :theme="settingStore.theme"
-      :locale="settingStore.locale"
-      @open-selector="isSelectorVisible = true"
-      @toggle-dark-mode="settingStore.toggleTheme"
-    />
-    <CharacterSelector
-      :is-visible="isSelectorVisible"
-      :characters="selectableCharacters"
-      @select="handleCharacterSelect"
-      @close="isSelectorVisible = false"
-    />
-    <BackToTopButton />
+    <div v-if="!loadingError">
+      <TutorialHint
+        v-if="showTutorial"
+        :hint-style="tutorialHintStyle"
+        :is-ready="hintIsReady"
+        @close="dismissTutorial"
+      />
+      <RatingCard
+        v-if="currentCharacter"
+        :character="currentCharacter"
+        :theme="settingStore.theme"
+        :locale="settingStore.locale"
+        @open-selector="isSelectorVisible = true"
+        @toggle-dark-mode="settingStore.toggleTheme"
+      />
+      <CharacterSelector
+        :is-visible="isSelectorVisible"
+        :characters="selectableCharacters"
+        @select="handleCharacterSelect"
+        @close="isSelectorVisible = false"
+      />
+      <BackToTopButton />
+    </div>
+
+    <!-- 載入錯誤提示 -->
+    <div v-else class="loading-error">
+      <h2>載入失敗</h2>
+      <p>應用程式載入時發生錯誤，請嘗試重新整理頁面</p>
+      <button class="retry-btn" @click="handleRetry">重新載入</button>
+    </div>
+
+    <UpdateNotification />
   </div>
 </template>
 
 <script setup>
-  import { ref, onMounted, watch, computed } from 'vue'
+  import { ref, onMounted, watch, computed, onErrorCaptured, nextTick } from 'vue'
   import { runIPGeolocation } from '@/utils/ipGeolocation'
   import { fetchData } from '@/utils/fetchData'
   import { getAssetsFile } from '@/utils/getAssetsFile'
   import { loadFontCSS } from '@/utils/loadFontCSS'
   import { useSettingStore } from '@/store/setting'
+  import { useTutorial } from '@/composables/useTutorial'
   import { storeToRefs } from 'pinia'
   import RatingCard from '@/components/RatingCard.vue'
   import CharacterSelector from '@/components/modal/CharacterSelector.vue'
   import BackToTopButton from '@/components/ui/BackToTopButton.vue'
+  import UpdateNotification from '@/components/UpdateNotification.vue'
+  import TutorialHint from '@/components/ui/TutorialHint.vue'
   import NProgress from 'nprogress'
   import '@/style/nprogress/nprogress.css'
 
   const settingStore = useSettingStore()
   const { isDarkMode } = storeToRefs(settingStore) // Maintaining responsiveness with storeToRefs
+  const { showTutorial, dismissTutorial } = useTutorial()
 
   const allCharacters = ref([])
   const currentCharacter = ref(null)
   const isSelectorVisible = ref(false)
+  const loadingError = ref(false)
+  const tutorialHintStyle = ref({})
+  const hintIsReady = ref(false)
 
   // Add a computed property to filter out roles with id=0 (easter egg character)
   const selectableCharacters = computed(() => {
@@ -57,6 +81,34 @@
     const id = params.get('id')
     return id ? parseInt(id) : null
   }
+
+  const handleRetry = () => {
+    loadingError.value = false
+    window.location.reload()
+  }
+
+  const calculateHintPosition = async () => {
+    if (!showTutorial.value) return
+
+    await nextTick() // Wait for the DOM to update
+
+    const target = document.getElementById('tutorial-avatar-target')
+    if (target) {
+      const rect = target.getBoundingClientRect()
+      tutorialHintStyle.value = {
+        top: `${rect.bottom + 10}px`, // Position below the avatar
+        left: `${rect.left + rect.width / 2}px`, // Center horizontally
+      }
+      hintIsReady.value = true // Trigger the animation
+    }
+  }
+
+  // Catching component errors
+  onErrorCaptured((error) => {
+    console.error('Component error:', error)
+    loadingError.value = true
+    return false
+  })
 
   onMounted(async () => {
     NProgress.configure({ showSpinner: false })
@@ -88,12 +140,15 @@
 
       console.log('數據已載入並設定完成。')
 
+      // Calculate hint position after data is loaded and character is set
+      calculateHintPosition()
+
       // Load the font CSS
       const fonts = ['fonts/NEXONFootballGothic/result.css']
       await Promise.all(fonts.map((path) => loadFontCSS(getAssetsFile(path))))
     } catch (error) {
       console.error('載入資源失敗:', error)
-      alert('載入資源失敗，請檢查網路或稍後再試。')
+      loadingError.value = true
     } finally {
       NProgress.done()
     }
@@ -117,6 +172,7 @@
     --color-teal: #0097a7;
     --color-red: #d32f2f;
     --color-purple: #8e24aa;
+    --color-skill-tag-highlight: #ffe4b5;
     --text-color-default: #2c3e50;
     --background-color-default: #e0ffff;
     --background-default: linear-gradient(135deg, #e0ffff 0%, #add8e6 100%);
@@ -129,6 +185,7 @@
     --color-teal: #4dd0e1;
     --color-red: #ef5350;
     --color-purple: #ce93d8;
+    --color-skill-tag-highlight: #ffd54f;
     --text-color-default: #e0e6ed;
     --background-color-default: #0f1928;
     --background-default: linear-gradient(135deg, #0f1928 0%, #1a2b40 100%);
@@ -162,5 +219,42 @@
   html.modal-open,
   body.modal-open {
     overflow-y: hidden;
+  }
+
+  /* Loading failure prompt style */
+  .loading-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .loading-error h2 {
+    color: var(--color-red);
+    margin-bottom: 16px;
+  }
+
+  .loading-error p {
+    color: var(--text-color-default);
+    margin-bottom: 24px;
+    max-width: 400px;
+  }
+
+  .retry-btn {
+    background: var(--color-blue);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s;
+  }
+
+  .retry-btn:hover {
+    background: var(--color-teal);
   }
 </style>
