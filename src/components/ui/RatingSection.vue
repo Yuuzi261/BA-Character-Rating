@@ -39,6 +39,7 @@
     color: #2c3e50;
     position: relative;
     padding-left: 15px; /* Leave space for decorative moldings */
+    margin-right: 8px;
   }
 
   .dark-mode .rating-title {

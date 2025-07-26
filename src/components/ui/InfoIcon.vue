@@ -21,7 +21,6 @@
   .info-icon {
     cursor: help;
     color: #6495ed;
-    margin-left: 8px;
     transition: color 0.2s ease;
   }
   .info-icon:hover {
