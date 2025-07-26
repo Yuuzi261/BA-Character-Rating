@@ -99,7 +99,7 @@
                   class="character-item"
                   @click="selectCharacter(char.id)"
                 >
-                  <ImageWithLoader :src="getAvatarUrl(char.id)" :alt="char.name" class="item-avatar" />
+                  <ImageWithLoader :src="getAvatarUrl(char.id)" :alt="char.name" class="item-avatar" :lazy="true" />
                   <span class="item-name">{{ char.name }}</span>
                 </div>
                 <div v-if="filteredCharacters.length === 0" class="no-results">
