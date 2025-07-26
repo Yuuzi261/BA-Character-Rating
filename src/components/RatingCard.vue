@@ -135,7 +135,11 @@
           </template>
           <div v-for="category in ratingCategories" :key="category.key" class="rating-row">
             <strong>{{ category.label }}</strong>
-            <StarRating :rating="character.ratings[category.key]" :star="Boolean(character.id)" class="star-rating-margin"/>
+            <StarRating
+              :rating="character.ratings[category.key]"
+              :star="Boolean(character.id)"
+              class="star-rating-margin"
+            />
             <InfoTooltip v-if="character.ratingsSummary[category.key]" :text="character.ratingsSummary[category.key]">
               <InfoIcon />
             </InfoTooltip>
