@@ -99,7 +99,12 @@
                   class="character-item"
                   @click="selectCharacter(char.id)"
                 >
-                  <ImageWithLoader :src="getAvatarUrl(char.id)" :alt="char.name" class="item-avatar" :lazy="true" />
+                  <ImageWithLoader
+                    :src="getAvatarUrl(char.id)"
+                    :alt="char.name"
+                    class="item-avatar"
+                    :lazy="enableCharacterSelectorLazyLoad"
+                  />
                   <span class="item-name">{{ char.name }}</span>
                 </div>
                 <div v-if="filteredCharacters.length === 0" class="no-results">
@@ -125,6 +130,8 @@
   import ImageWithLoader from '../ui/ImageWithLoader.vue'
   import { useModal } from '@/composables/useModal.js'
   import filterOptions from '@/data/filterOptions.json'
+  import { useSettingStore } from '@/store/setting'
+  import { storeToRefs } from 'pinia'
 
   const { t } = useI18n()
   const props = defineProps({
@@ -136,6 +143,9 @@
   })
 
   const emit = defineEmits(['select', 'close'])
+
+  const settingStore = useSettingStore()
+  const { enableCharacterSelectorLazyLoad } = storeToRefs(settingStore)
 
   const searchTerm = ref('')
   const isFilterPanelOpen = ref(false)

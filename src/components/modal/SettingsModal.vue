@@ -47,6 +47,14 @@
                 }}</span>
               </div>
             </div>
+            <div class="setting-group">
+              <h4 class="setting-group-title">{{ t('settingsModal.characterSelectorLazyLoad') }}</h4>
+              <div class="toggle-switch">
+                <input id="lazyLoadToggle" type="checkbox" :checked="isLazyLoadEnabled" @change="toggleLazyLoad" />
+                <label for="lazyLoadToggle"></label>
+                <span class="toggle-label">{{ isLazyLoadEnabled ? t('common.enabled') : t('common.disabled') }}</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -75,7 +83,11 @@
   useModal(isVisible, closeModal)
 
   const settingStore = useSettingStore()
-  const { locale: currentLocale, enableColoredText: isColoredTextEnabled } = storeToRefs(settingStore)
+  const {
+    locale: currentLocale,
+    enableColoredText: isColoredTextEnabled,
+    enableCharacterSelectorLazyLoad: isLazyLoadEnabled,
+  } = storeToRefs(settingStore)
 
   const availableLanguages = [
     { code: 'zh-tw', name: '繁體中文' },
@@ -126,6 +138,10 @@
 
   const toggleColoredText = () => {
     settingStore.toggleColoredText()
+  }
+
+  const toggleLazyLoad = () => {
+    settingStore.toggleCharacterSelectorLazyLoad()
   }
 </script>
 

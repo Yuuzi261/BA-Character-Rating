@@ -1,7 +1,14 @@
 <template>
   <div class="image-loader-wrapper">
     <div v-if="isLoading" class="placeholder"></div>
-    <img :src="src" :alt="alt" :style="{ objectFit: objectFit }" @load="onLoad" @error="onError" :loading="lazy ? 'lazy' : 'eager'" />
+    <img
+      :src="src"
+      :alt="alt"
+      :style="{ objectFit: objectFit }"
+      @load="onLoad"
+      @error="onError"
+      :loading="lazy ? 'lazy' : 'eager'"
+    />
   </div>
 </template>
 
@@ -12,7 +19,7 @@
     src: { type: String, required: true },
     alt: { type: String, default: '' },
     objectFit: { type: String, default: 'cover' }, // 'cover', 'contain', 'fill', etc.
-    lazy: { type: Boolean, default: true }, // Whether to use lazy loading for the image
+    lazy: { type: Boolean, default: false }, // Whether to use lazy loading for the image
   })
 
   const isLoading = ref(true)

@@ -175,7 +175,8 @@
   },
   "settingsModal": {
     "language": "语言",
-    "enableColoredText": "文本高亮"
+    "enableColoredText": "文本高亮",
+    "characterSelectorLazyLoad": "角色选择器懒加载"
   },
   "ratingCriteriaModal": {
     "title": "评分准则"
