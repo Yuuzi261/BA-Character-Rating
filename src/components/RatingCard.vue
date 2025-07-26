@@ -135,7 +135,7 @@
           </template>
           <div v-for="category in ratingCategories" :key="category.key" class="rating-row">
             <strong>{{ category.label }}</strong>
-            <StarRating :rating="character.ratings[category.key]" :star="Boolean(character.id)" />
+            <StarRating :rating="character.ratings[category.key]" :star="Boolean(character.id)" class="star-rating-margin"/>
             <InfoTooltip v-if="character.ratingsSummary[category.key]" :text="character.ratingsSummary[category.key]">
               <InfoIcon />
             </InfoTooltip>
@@ -488,6 +488,10 @@
     gap: 8px;
   }
 
+  .star-rating-margin {
+    margin-right: 8px;
+  }
+
   .skills-summary p {
     margin-bottom: 8px;
   }
@@ -593,7 +597,6 @@
     background: none;
     border: none;
     padding: 0;
-    margin-left: 8px;
     cursor: pointer;
     display: flex;
     align-items: center;

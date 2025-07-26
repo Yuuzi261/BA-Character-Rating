@@ -21,7 +21,6 @@
   .question-icon {
     color: #6495ed;
     /* cursor: help; */
-    vertical-align: middle;
     transition: color 0.2s ease;
   }
   .question-icon:hover {
