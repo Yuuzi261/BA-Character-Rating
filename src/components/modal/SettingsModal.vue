@@ -48,7 +48,12 @@
               </div>
             </div>
             <div class="setting-group">
-              <h4 class="setting-group-title">{{ t('settingsModal.characterSelectorLazyLoad') }}</h4>
+              <div class="setting-group-title-wrapper">
+                <h4 class="setting-group-title">{{ t('settingsModal.characterSelectorLazyLoad') }}</h4>
+                <InfoTooltip :text="t('settingsModal.lazyLoadTooltip')" class="info-tooltip">
+                  <QuestionIcon />
+                </InfoTooltip>
+              </div>
               <div class="toggle-switch">
                 <input id="lazyLoadToggle" type="checkbox" :checked="isLazyLoadEnabled" @change="toggleLazyLoad" />
                 <label for="lazyLoadToggle"></label>
@@ -68,6 +73,8 @@
   import { storeToRefs } from 'pinia'
   import { useI18n } from '@/composables/useI18n.js'
   import { useModal } from '@/composables/useModal.js'
+  import QuestionIcon from '../ui/QuestionIcon.vue'
+  import InfoTooltip from '../ui/InfoTooltip.vue'
 
   const { t } = useI18n()
 
@@ -243,6 +250,16 @@
 
   .dark-mode .setting-group {
     border-bottom-color: #2a4a6e;
+  }
+
+  .setting-group-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .info-tooltip {
+    cursor: help;
   }
 
   .language-selector {

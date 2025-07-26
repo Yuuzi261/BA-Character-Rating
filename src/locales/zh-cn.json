@@ -176,7 +176,8 @@
   "settingsModal": {
     "language": "语言",
     "enableColoredText": "文本高亮",
-    "characterSelectorLazyLoad": "角色选择器懒加载"
+    "characterSelectorLazyLoad": "图片懒加载",
+    "lazyLoadTooltip": "懒加载角色选择器的图片，只动态加载出现在屏幕上的图片，对于第一次加载效率更高，但滚动时可能出现短暂加载画面"
   },
   "ratingCriteriaModal": {
     "title": "评分准则"
