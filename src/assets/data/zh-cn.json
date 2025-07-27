@@ -284,7 +284,7 @@
       "limitBreakAssault": null,
       "jointFiringDrill": [3, 0, 0],
       "eventChallenge": [2, 0, 0],
-      "overall": 68
+      "overall": 72
     },
     "skillsSummary": {
       "ex": "5Cost对一名敌方造成<blue>1081%</blue>伤害且提高自身攻击力<blue>54.5%</blue><teal>（30秒）</teal>",
@@ -1990,7 +1990,7 @@
   {
     "id": 83,
     "fullname": "狐坂 若藻",
-    "name": "狐坂 若藻",
+    "name": "若藻",
     "nicknames": ["若藻"],
     "school": "Hyakkiyako",
     "attackType": "Mystic",
@@ -6399,17 +6399,17 @@
     "equipments": ["hat", "hairpin", "watch"],
     "uniqueWeaponStar2": "攻击力增加",
     "uniqueWeaponStar3": ["city", "S"],
-    "ratingVersion": "7.0",
-    "ratingDate": "2025/06/26",
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/07/26",
     "ratings": {
       "newbie": [1, 0, 0],
       "totalAssault": [1, 0, 0],
-      "pvp": null,
+      "pvp": [2, 1, 0],
       "grandAssault": [1, 0, 0],
       "limitBreakAssault": null,
       "jointFiringDrill": [1, 0, 0],
       "eventChallenge": [1, 0, 0],
-      "overall": 20
+      "overall": 28
     },
     "skillsSummary": {
       "ex": "3Cost对1名敌方造成<blue>540%</blue>伤害，消耗1层<purple>「水压」</purple>可额外造成<blue>108%</blue>追加伤害",
@@ -6419,14 +6419,14 @@
     "ratingsSummary": {
       "newbie": null,
       "totalAssault": "特甲BOSS多刀可选",
-      "pvp": "暂时无组合搭配",
+      "pvp": "S9针对黑子/大瞬防守，高攻击特甲可以骗大瞬索敌",
       "grandAssault": "特/弹甲BOSS多刀可选输出",
       "limitBreakAssault": "缺人或机制使用",
       "jointFiringDrill": "射击/护卫演习可选",
       "eventChallenge": "平民可选振动单体"
     },
-    "uniqueWeaponRecommendedSummary": "攻击力增加，备战振动多刀考虑开专",
-    "overallRecommendation": "特/弹甲BOSS多刀可选输出",
+    "uniqueWeaponRecommendedSummary": "攻击力增加，备战振动多刀考虑开专，竞技场考虑",
+    "overallRecommendation": "特/弹甲BOSS多刀可选输出，竞技场前排玩具",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",

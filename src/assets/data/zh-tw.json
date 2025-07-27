@@ -284,7 +284,7 @@
       "limitBreakAssault": null,
       "jointFiringDrill": [3, 0, 0],
       "eventChallenge": [2, 0, 0],
-      "overall": 68
+      "overall": 72
     },
     "skillsSummary": {
       "ex": "5Cost對一名敵方造成<blue>1081%</blue>傷害且提高自身攻擊力<blue>54.5%</blue><teal>（30秒）</teal>",
@@ -1990,7 +1990,7 @@
   {
     "id": 83,
     "fullname": "狐阪 若藻",
-    "name": "狐阪 若藻",
+    "name": "若藻",
     "nicknames": ["若藻"],
     "school": "Hyakkiyako",
     "attackType": "Mystic",
@@ -6399,12 +6399,12 @@
     "equipments": ["hat", "hairpin", "watch"],
     "uniqueWeaponStar2": "攻擊力增加",
     "uniqueWeaponStar3": ["city", "S"],
-    "ratingVersion": "7.0",
-    "ratingDate": "2025/06/26",
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/07/26",
     "ratings": {
       "newbie": [1, 0, 0],
       "totalAssault": [1, 0, 0],
-      "pvp": null,
+      "pvp": [2, 1, 0],
       "grandAssault": [1, 0, 0],
       "limitBreakAssault": null,
       "jointFiringDrill": [1, 0, 0],
@@ -6419,14 +6419,14 @@
     "ratingsSummary": {
       "newbie": null,
       "totalAssault": "特甲BOSS多刀可選",
-      "pvp": "暫時無組合搭配",
+      "pvp": "S9針對大瞬/黑子防守，高攻擊特甲可騙大瞬索敵",
       "grandAssault": "特/彈甲BOSS多刀可選輸出",
       "limitBreakAssault": "缺人或機制使用",
       "jointFiringDrill": "射擊/護衛演習可選",
       "eventChallenge": "平民可選振動單體"
     },
-    "uniqueWeaponRecommendedSummary": "攻擊力增加，備戰振動多刀考慮開專",
-    "overallRecommendation": "特/彈甲BOSS多刀可選輸出",
+    "uniqueWeaponRecommendedSummary": "攻擊力增加，備戰振動多刀考慮開專，對抗戰可考慮",
+    "overallRecommendation": "特/彈甲BOSS多刀可選輸出，對抗戰前排玩具",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
