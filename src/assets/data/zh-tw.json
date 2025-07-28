@@ -274,8 +274,8 @@
     "equipments": ["gloves", "hairpin", "watch"],
     "uniqueWeaponStar2": "攻速增加",
     "uniqueWeaponStar3": ["outdoor", "SS"],
-    "ratingVersion": "7.0",
-    "ratingDate": "2025/07/13",
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/07/26",
     "ratings": {
       "newbie": [2, 0, 0],
       "totalAssault": [5, 0, 0],
@@ -6688,7 +6688,7 @@
       "Max"
     ]
   },
-    {
+  {
     "id": 26001,
     "fullname": "和樂 知世",
     "name": "知世",
@@ -6722,15 +6722,15 @@
       "overall": 35
     },
     "skillsSummary": {
-      "ex": "4Cost對圓形範圍內造成<blue>106%</blue>傷害<teal>(10秒)</teal><blue>(合計1166%)</blue>",
+      "ex": "4Cost對圓形範圍內造成<blue>106%</blue>傷害（<teal>10秒</teal>，合計<blue>1166%</blue>）",
       "ns": "毎25秒對圓形範圍敵人造成<blue>416%</blue>傷害",
-      "ss": "普攻時有10%機率造成<blue>102%</blue>燒傷<teal>(20秒)</teal>。<green>愛用品小幅度提升傷害</green>"
+      "ss": "普攻時有10%機率造成<blue>102%</blue>燒傷<teal>（20秒）</teal>。<green>愛用品小幅度提升傷害</green>"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "雞斯拉、格茲範圍輸出替補、缺乏神秘角可培養",
+      "totalAssault": "雞斯拉、高茲範圍輸出替補、缺乏神秘角可培養",
       "pvp": "暫時無搭配組合",
-      "grandAssault": "雞斯拉、格茲範圍輸出替補、缺乏神秘角可培養",
+      "grandAssault": "雞斯拉、高茲範圍輸出替補、缺乏神秘角可培養",
       "limitBreakAssault": "缺人或機制使用",
       "jointFiringDrill": "範圍傷害或DOT機制可選",
       "eventChallenge": "範圍傷害或DOT機制可選"
@@ -6750,16 +6750,13 @@
       "Max"
     ],
     "favoriteItem": {
-      "name": "風到來之音",
+      "name": "風吹來的聲音",
       "recommendedLevel": [2, 0, 0],
       "materials": ["23", "crystalhaniwa"],
-      "effects": [
-        "攻擊力<red>500</red>",
-        "傷害<blue>416%</blue>提升至<blue>567%</blue>"
-      ]
+      "effects": ["攻擊力<red>500</red>", "NS技傷害<blue>416%</blue>提升至<blue>567%</blue>"]
     }
   },
-    {
+  {
     "id": 26002,
     "fullname": "春日 椿",
     "name": "椿",
@@ -6793,27 +6790,27 @@
       "overall": 68
     },
     "skillsSummary": {
-      "ex": "4Cost提升自身防禦力<blue>44.9%</blue><teal>(30秒)</teal>，且對自身圓形範圍內敵方造成<purple>嘲諷效果持續6.2秒</purple>",
-      "ns": "自身血量低於30%時，回復自身治癒力<blue>663%</blue>血量<red>(一次)</red>",
+      "ex": "4Cost提升自身防禦力<blue>44.9%</blue><teal>（30秒）</teal>，且對自身圓形範圍內敵方造成<purple>嘲諷效果持續6.2秒</purple>",
+      "ns": "自身血量低於30%時，回復自身治癒力<blue>663%</blue>血量<red>（一次）</red>",
       "ss": "換彈時使自身受到的傷害減少<blue>45.6%</blue>"
     },
     "ratingsSummary": {
       "newbie": null,
       "totalAssault": "不被克制時基本可選，低配作業或群控機制時選用",
-      "pvp": "萌新可選特甲坦，或功能選用嘲諷斷技能、拉人出掩體調位等。",
+      "pvp": "萌新可選特甲坦，或功能選用嘲諷斷技能、拉人出掩體調位等",
       "grandAssault": "不被克制時基本可選，低配作業或群控機制時選用",
       "limitBreakAssault": "不被克制時基本可選，低配作業或群控機制時選用",
       "jointFiringDrill": "不被克制時基本可選，低配作業或群控機制時選用",
       "eventChallenge": "不被克制時基本可選，低配作業或群控機制時選用"
     },
-    "uniqueWeaponRecommendedSummary": "攻速影響NS觸發速度，最少專1起、競技場有需求可高專",
+    "uniqueWeaponRecommendedSummary": "攻速影響SS觸發速度，最少專1起、競技場有需求可高專",
     "overallRecommendation": "萌新戰神、新人唯一指定多功能閃避坦，後期競技場使用，有回避外加背包提供防禦坦度極高",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
       "技二Lv7",
       "技一Lv7",
-      "技二Lv7",
+      "技三Lv7",
       "技二Lv10",
       "技三Lv10",
       "技一Lv10",
@@ -6821,7 +6818,7 @@
       "Max"
     ]
   },
-    {
+  {
     "id": 26003,
     "fullname": "朝比奈 菲娜",
     "name": "菲娜",
@@ -6840,7 +6837,7 @@
     "outdoor": "B",
     "indoor": "D",
     "equipments": ["gloves", "hairpin", "watch"],
-    "uniqueWeaponStar2": "攻擊速度增加",
+    "uniqueWeaponStar2": "暴擊值增加",
     "uniqueWeaponStar3": ["indoor", "B"],
     "ratingVersion": "7.1",
     "ratingDate": "2025/07/26",
@@ -6855,9 +6852,9 @@
       "overall": 28
     },
     "skillsSummary": {
-      "ex": "4Cost立刻換彈並提升自身攻擊力<blue>46.6%</blue><teal>(30秒)</teal>之後無視五次普攻間隔",
-      "ns": "自身血量低於20%時，回復自身治癒力<blue>674%</blue>血量<red>(一次)</red>",
-      "ss": "<purple>停止移動10秒後</blue>攻速增加<blue>38.3%</blue>"
+      "ex": "4Cost<red>立刻換彈</red>並提升自身攻擊力<blue>46.6%</blue><teal>（30秒）</teal>之後無視五次普攻間隔",
+      "ns": "自身血量低於20%時，回復自身治癒力<blue>674%</blue>血量<red>（一次）</red>",
+      "ss": "<red>停止移動10秒後</red>攻速增加<blue>38.3%</blue>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -6870,19 +6867,9 @@
     },
     "uniqueWeaponRecommendedSummary": "暴擊值提升較微小，可刷碎片至專一備戰高難度",
     "overallRecommendation": "看個人需求，重甲總力/大決戰對單場合多隊可選",
-    "skillOrder": [
-      "EX3",
-      "技一.二.三Lv4",
-      "技三Lv7",
-      "技二Lv7",
-      "EX5",      
-      "技二Lv10",
-      "技三Lv10",
-      "技一Lv10",
-      "Max"
-    ]
+    "skillOrder": ["EX3", "技一.二.三Lv4", "技三Lv7", "技二Lv7", "EX5", "技二Lv10", "技三Lv10", "技一Lv10", "Max"]
   },
-    {
+  {
     "id": 26004,
     "fullname": "久田 伊樹菜",
     "name": "伊樹菜",
@@ -6916,9 +6903,9 @@
       "overall": 52
     },
     "skillsSummary": {
-      "ex": "3Cost移動到指定位置並給予自身攻速<blue>52.1%</blue>提升<teal>(30秒)</teal>",
+      "ex": "3Cost移動到指定位置並給予自身攻速<blue>52.1%</blue>提升<teal>（30秒）</teal>",
       "ns": "每6次普攻對圓形範圍敵人造成<blue>845%</blue>範圍傷害",
-      "ss": "使用EX技後自身攻擊提升<blue>38.3%</blue><teal>(30秒)</teal>"
+      "ss": "使用EX技後自身攻擊提升<blue>38.3%</blue><teal>（30秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
