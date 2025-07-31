@@ -120,7 +120,7 @@
 </template>
 
 <script setup>
-  import { ref, computed, toRefs, onMounted, onBeforeUnmount, reactive } from 'vue'
+  import { ref, computed, toRefs, onMounted, onBeforeUnmount, reactive, watch } from 'vue'
   import { nextTick } from 'vue'
   import { useI18n } from '@/composables/useI18n'
   import { getAssetsFile } from '@/utils/getAssetsFile'
@@ -188,6 +188,13 @@
 
   const { isVisible } = toRefs(props)
   useModal(isVisible, closeModal)
+
+  // 確保關閉 Modal 後重啟，Filter 依然可以滑動（如果需要的話）
+  watch(isVisible, (newValue) => {
+    if (newValue && isFilterPanelOpen.value) {
+      adjustFilterHeight()
+    }
+  })
 
   // 動態調整 filter-controls 高度的函數
   const adjustFilterHeight = () => {

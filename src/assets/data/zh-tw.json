@@ -108,7 +108,7 @@
       "jointFiringDrill": "全演習均可選",
       "eventChallenge": "平民可選爆發C"
     },
-    "uniqueWeaponRecommendedSummary": "提供大量爆傷、攻擊力，<red>重點培養專2/專3起跳</red>",
+    "uniqueWeaponRecommendedSummary": "提供大量暴傷、攻擊力，<red>重點培養專2/專3起跳</red>",
     "overallRecommendation": "市街可選爆發輸出，老玩家後期刷困難開高專",
     "skillOrder": [
       "EX3",
@@ -274,8 +274,8 @@
     "equipments": ["gloves", "hairpin", "watch"],
     "uniqueWeaponStar2": "攻速增加",
     "uniqueWeaponStar3": ["outdoor", "SS"],
-    "ratingVersion": "7.0",
-    "ratingDate": "2025/07/13",
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/07/26",
     "ratings": {
       "newbie": [2, 0, 0],
       "totalAssault": [5, 0, 0],
@@ -423,7 +423,7 @@
       "jointFiringDrill": "有紅甲/機制/過牌需要時可選",
       "eventChallenge": "有紅甲/機制/過牌需要時可選"
     },
-    "uniqueWeaponRecommendedSummary": "爆傷提升，一般。<green>有愛刷Hard高專</green>",
+    "uniqueWeaponRecommendedSummary": "暴傷提升，一般。<green>有愛刷Hard高專</green>",
     "overallRecommendation": "可碎片合，2費平民回轉用、壽司破盾過牌用",
     "skillOrder": [
       "EX3",
@@ -576,6 +576,74 @@
       "<sth>Max</sth>"
     ],
     "skillExtraDesc": "視素材量選擇性升級"
+  },
+  {
+    "id": 16,
+    "fullname": "和樂 知世",
+    "name": "知世",
+    "nicknames": ["芝士"],
+    "school": "Hyakkiyako",
+    "attackType": "Mystic",
+    "defenseType": "Heavy",
+    "weapon": "GL",
+    "position": [0, "範圍輸出"],
+    "uniqueWeaponRecommended": "有需可刷Hard",
+    "acquisitionMethod": "常駐/困難",
+    "skillMainOparts": "crystalhaniwa",
+    "skillSubOparts": "nimrud",
+    "l2dUnlock": 5,
+    "city": "A",
+    "outdoor": "D",
+    "indoor": "A",
+    "equipments": ["gloves", "hairpin", "watch"],
+    "uniqueWeaponStar2": "攻擊力增加",
+    "uniqueWeaponStar3": ["outdoor", "B"],
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/07/26",
+    "ratings": {
+      "newbie": [4, 0, 0],
+      "totalAssault": [2, 0, 0],
+      "pvp": null,
+      "grandAssault": [2, 0, 0],
+      "limitBreakAssault": null,
+      "jointFiringDrill": [2, 0, 0],
+      "eventChallenge": [2, 0, 0],
+      "overall": 35
+    },
+    "skillsSummary": {
+      "ex": "4Cost對圓形範圍內造成<blue>106%</blue>傷害（<teal>10秒</teal>，合計<blue>1166%</blue>）",
+      "ns": "毎25秒對圓形範圍敵人造成<blue>416%</blue>傷害",
+      "ss": "普攻時有10%機率造成<blue>102%</blue>燒傷<teal>（20秒）</teal>。<green>愛用品小幅度提升傷害</green>"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "雞斯拉、高茲範圍輸出替補、缺乏神秘角可培養",
+      "pvp": "暫時無搭配組合",
+      "grandAssault": "雞斯拉、高茲範圍輸出替補、缺乏神秘角可培養",
+      "limitBreakAssault": "缺人或機制使用",
+      "jointFiringDrill": "範圍傷害或DOT機制可選",
+      "eventChallenge": "範圍傷害或DOT機制可選"
+    },
+    "uniqueWeaponRecommendedSummary": "拉高了基礎面板提升不錯，<green>有需要可困難圖刷取</green>",
+    "overallRecommendation": "萌新戰神多模式低配作業主選，平民推圖主選神秘範圍輸出",
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "技一Lv7",
+      "技二Lv7",
+      "技三LV7",
+      "EX5",
+      "技二Lv10",
+      "技一Lv10",
+      "技三Lv10",
+      "Max"
+    ],
+    "favoriteItem": {
+      "name": "風吹來的聲音",
+      "recommendedLevel": [2, 0, 0],
+      "materials": ["23", "crystalhaniwa"],
+      "effects": ["攻擊力<red>500</red>", "NS技傷害<blue>416%</blue>提升至<blue>567%</blue>"]
+    }
   },
   {
     "id": 18,
@@ -777,6 +845,68 @@
     }
   },
   {
+    "id": 24,
+    "fullname": "春日 椿",
+    "name": "椿",
+    "nicknames": ["狗盾"],
+    "school": "Hyakkiyako",
+    "attackType": "Piercing",
+    "defenseType": "Special",
+    "weapon": "SMG",
+    "position": [0, "多功能坦"],
+    "uniqueWeaponRecommended": "至少五星專1",
+    "acquisitionMethod": "常駐/困難",
+    "skillMainOparts": "crystalhaniwa",
+    "skillSubOparts": "crystalhaniwa",
+    "l2dUnlock": 6,
+    "city": "A",
+    "outdoor": "A",
+    "indoor": "D",
+    "equipments": ["shoes", "bag", "amulet"],
+    "uniqueWeaponStar2": "攻擊速度增加",
+    "uniqueWeaponStar3": ["indoor", "B"],
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/07/26",
+    "ratings": {
+      "newbie": [5, 0, 1],
+      "totalAssault": [4, 0, 0],
+      "pvp": [4, 0, 0],
+      "grandAssault": [3, 0, 0],
+      "limitBreakAssault": null,
+      "jointFiringDrill": [3, 0, 0],
+      "eventChallenge": [5, 0, 0],
+      "overall": 68
+    },
+    "skillsSummary": {
+      "ex": "4Cost提升自身防禦力<blue>44.9%</blue><teal>（30秒）</teal>，且對自身圓形範圍內敵方造成<purple>嘲諷效果持續6.2秒</purple>",
+      "ns": "自身血量低於30%時，回復自身治癒力<blue>663%</blue>血量<red>（一次）</red>",
+      "ss": "換彈時使自身受到的傷害減少<blue>45.6%</blue>"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "不被克制時基本可選，低配作業或群控機制時選用",
+      "pvp": "萌新可選特甲坦，或功能選用嘲諷斷技能、拉人出掩體調位等",
+      "grandAssault": "不被克制時基本可選，低配作業或群控機制時選用",
+      "limitBreakAssault": "不被克制時基本可選，低配作業或群控機制時選用",
+      "jointFiringDrill": "不被克制時基本可選，低配作業或群控機制時選用",
+      "eventChallenge": "不被克制時基本可選，低配作業或群控機制時選用"
+    },
+    "uniqueWeaponRecommendedSummary": "攻速影響SS觸發速度，最少專1起、競技場有需求可高專",
+    "overallRecommendation": "萌新戰神、新人唯一指定多功能閃避坦，後期競技場使用，有回避外加背包提供防禦坦度極高",
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "技二Lv7",
+      "技一Lv7",
+      "技三Lv7",
+      "技二Lv10",
+      "技三Lv10",
+      "技一Lv10",
+      "EX5",
+      "Max"
+    ]
+  },
+  {
     "id": 25,
     "fullname": "早瀨 優香",
     "name": "優香",
@@ -957,6 +1087,57 @@
         "傷害<blue>511%</blue>提升至<blue>697%</blue>，<red>從20hit提升至40hit</red>"
       ]
     }
+  },
+  {
+    "id": 30,
+    "fullname": "朝比奈 菲娜",
+    "name": "菲娜",
+    "nicknames": ["大盤雞"],
+    "school": "Hyakkiyako",
+    "attackType": "Piercing",
+    "defenseType": "Light",
+    "weapon": "MG",
+    "position": [0, "輸出"],
+    "uniqueWeaponRecommended": "有需可刷Hard",
+    "acquisitionMethod": "常駐/困難",
+    "skillMainOparts": "crystalhaniwa",
+    "skillSubOparts": "nimrud",
+    "l2dUnlock": 6,
+    "city": "A",
+    "outdoor": "B",
+    "indoor": "D",
+    "equipments": ["gloves", "hairpin", "watch"],
+    "uniqueWeaponStar2": "暴擊值增加",
+    "uniqueWeaponStar3": ["indoor", "B"],
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/07/26",
+    "ratings": {
+      "newbie": [2, 0, 0],
+      "totalAssault": [2, 0, 0],
+      "pvp": null,
+      "grandAssault": [1, 0, 0],
+      "limitBreakAssault": null,
+      "jointFiringDrill": [2, 0, 0],
+      "eventChallenge": [1, 0, 0],
+      "overall": 28
+    },
+    "skillsSummary": {
+      "ex": "4Cost<red>立刻換彈</red>並提升自身攻擊力<blue>46.6%</blue><teal>（30秒）</teal>之後無視五次普攻間隔",
+      "ns": "自身血量低於20%時，回復自身治癒力<blue>674%</blue>血量<red>（一次）</red>",
+      "ss": "<red>停止移動10秒後</red>攻速增加<blue>38.3%</blue>"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "重甲BOSS高難多刀可選，氣墊船P2可選HIT機制對策",
+      "pvp": "暫時無搭配組合",
+      "grandAssault": "重甲BOSS高難多刀可選，氣墊船P2可選HIT機制對策",
+      "limitBreakAssault": "缺人或機制使用",
+      "jointFiringDrill": "HIT機制可選對策",
+      "eventChallenge": "HIT機制可選對策"
+    },
+    "uniqueWeaponRecommendedSummary": "暴擊值提升較微小，可刷碎片至專一備戰高難度",
+    "overallRecommendation": "看個人需求，重甲總力/大決戰對單場合多隊可選",
+    "skillOrder": ["EX3", "技一.二.三Lv4", "技三Lv7", "技二Lv7", "EX5", "技二Lv10", "技三Lv10", "技一Lv10", "Max"]
   },
   {
     "id": 31,
@@ -1381,6 +1562,68 @@
     "uniqueWeaponRecommendedSummary": "專二命中無用，<blue>商店可兌換5星專1提高面板</blue>",
     "overallRecommendation": "平民泛用群加攻輔助、建議先兌換至三星開技能。後續視個人需求培養",
     "skillOrder": ["EX3", "技三Lv7", "EX5", "技三Lv10", "技一Lv10", "Max"]
+  },
+  {
+    "id": 47,
+    "fullname": "久田 伊樹菜",
+    "name": "伊樹菜",
+    "nicknames": ["忍忍", "小狐狸"],
+    "school": "Hyakkiyako",
+    "attackType": "Mystic",
+    "defenseType": "Light",
+    "weapon": "SMG",
+    "position": [0, "輸出坦"],
+    "uniqueWeaponRecommended": "卷分建議專三",
+    "acquisitionMethod": "常駐/困難",
+    "skillMainOparts": "wolfsegg",
+    "skillSubOparts": "mandragora",
+    "l2dUnlock": 6,
+    "city": "S",
+    "outdoor": "B",
+    "indoor": "D",
+    "equipments": ["gloves", "hairpin", "watch"],
+    "uniqueWeaponStar2": "暴擊傷害增加",
+    "uniqueWeaponStar3": ["city", "SS"],
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/07/26",
+    "ratings": {
+      "newbie": null,
+      "totalAssault": [4, 0, 0],
+      "pvp": null,
+      "grandAssault": [3, 0, 0],
+      "limitBreakAssault": null,
+      "jointFiringDrill": [3, 0, 0],
+      "eventChallenge": [3, 0, 0],
+      "overall": 52
+    },
+    "skillsSummary": {
+      "ex": "3Cost移動到指定位置並給予自身攻速<blue>52.1%</blue>提升<teal>（30秒）</teal>",
+      "ns": "每6次普攻對圓形範圍敵人造成<blue>845%</blue>範圍傷害",
+      "ss": "使用EX技後自身攻擊提升<blue>38.3%</blue><teal>（30秒）</teal>"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "黑白主對策輸出，其他神秘BOSS多隊可選",
+      "pvp": "暫時無搭配組合",
+      "grandAssault": "黑白主對策輸出，其他神秘BOSS多隊可選",
+      "limitBreakAssault": "缺人或機制使用",
+      "jointFiringDrill": "防禦/射擊/突破演習可選輸出坦",
+      "eventChallenge": "市街可選神秘輸出坦"
+    },
+    "uniqueWeaponRecommendedSummary": "拉高基礎面板和提供大幅暴傷，<blue>黑白卷分培養，困難關刷至高專</blue>",
+    "overallRecommendation": "卷分自備專三、對單持續輸出兼承傷",
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "EX5",
+      "技一Lv7",
+      "技二Lv7",
+      "技三Lv7",
+      "技一Lv10",
+      "技二Lv10",
+      "技三Lv10",
+      "Max"
+    ]
   },
   {
     "id": 49,
@@ -1972,7 +2215,7 @@
     "skillsSummary": {
       "ex": "3Cost對扇形範圍敵人造成<blue>395%</blue>傷害，並且減少敵方暴傷<blue>27.7%</blue><teal>（30秒）</teal>。",
       "ns": "毎40秒提升圓形範圍內我方角色攻擊力<blue>16.4%</blue><teal>（30秒）</teal>",
-      "ss": "我方爆傷抵抗率增加<blue>17.3%</blue>"
+      "ss": "我方暴傷抵抗率增加<blue>17.3%</blue>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -2811,7 +3054,7 @@
     "skillsSummary": {
       "ex": "4Cost召喚<purple>雨雲號</purple>進入戰場<teal>（30秒）</teal>，<purple>雨雲號</purple>額外擁有綾音<blue>47.5%</blue>攻擊力跟<blue>32.6%</blue>暴擊值。<purple>雨雲號</purple>毎12秒會對一名敵方單位造成<blue>401%</blue>傷害<red>且無視84%防禦</red>",
       "ns": "毎30秒對一名敵人造成<blue>215%</blue>傷害<red>且無視84%防禦</red>",
-      "ss": "<blue>17.3%</blue>爆傷光環"
+      "ss": "<blue>17.3%</blue>暴傷光環"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -3006,7 +3249,7 @@
     "skillsSummary": {
       "ex": "4Cost對矩形範圍內敵方造成<blue>489%</blue>傷害並造成<blue>66.2%</blue><purple>燒傷</purple><teal>（20秒）</teal>",
       "ns": "毎40秒對五名敵方造成<blue>160%</blue>傷害並<purple>眩暈</purple>1.6秒",
-      "ss": "<blue>17.3%</blue>爆傷光環"
+      "ss": "<blue>17.3%</blue>暴傷光環"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -3995,7 +4238,7 @@
     "skillsSummary": {
       "ex": "5Cost對矩形範圍內敵方造成<blue>737%</blue><red>必定暴擊</red>傷害",
       "ns": "每70秒對扇形範圍內敵方造成<blue>702%</blue>傷害",
-      "ss": "<blue>17.3%</blue>爆傷光環"
+      "ss": "<blue>17.3%</blue>暴傷光環"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -4737,7 +4980,7 @@
     "skillsSummary": {
       "ex": "6Cost對圓形範圍造成<blue>1210%傷害</blue>（半徑300範圍）",
       "ns": "毎35秒對圓形範圍內敵方造成<blue>187%</blue>傷害",
-      "ss": "<blue>17.3%</blue>爆傷光環"
+      "ss": "<blue>17.3%</blue>暴傷光環"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -5670,7 +5913,7 @@
     "skillsSummary": {
       "ex": "4Cost對一名敵方造成攻擊力<blue>1642%</blue>的傷害<purple>（該傷害無視護盾）</purple>",
       "ns": "每45秒賦予自身爆發屬攻<blue>53.2%</blue><teal>（25秒）</teal>",
-      "ss": "我方爆傷增加<blue>17.3%</blue>"
+      "ss": "我方暴傷增加<blue>17.3%</blue>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -5715,7 +5958,7 @@
     "outdoor": "D",
     "indoor": "S",
     "equipments": ["hat", "hairpin", "watch"],
-    "uniqueWeaponStar2": "爆傷增加",
+    "uniqueWeaponStar2": "暴傷增加",
     "uniqueWeaponStar3": ["indoor", "SS"],
     "ratingVersion": "7.0",
     "ratingDate": "2025/06/22",
@@ -5793,7 +6036,7 @@
     },
     "skillsSummary": {
       "ex": "3Cost對一名敵人造成<blue>402%</blue>傷害並且給予<purple>「弱點掌握」</purple><teal>（20秒）</teal>（我方攻擊時根據hit都會附加堇<blue>13.2%</blue>攻擊力額外傷害）",
-      "ns": "我方累計造成100次暴擊，使我方四人爆傷提高<blue>15.1%</blue><teal>（21秒）</teal><purple>（冷卻25秒）</purple>",
+      "ns": "我方累計造成100次暴擊，使我方四人暴傷提高<blue>15.1%</blue><teal>（21秒）</teal><purple>（冷卻25秒）</purple>",
       "ss": "我方貫通屬攻單位暴擊傷害增加<blue>24.2%</blue>"
     },
     "ratingsSummary": {
@@ -5963,7 +6206,7 @@
     "outdoor": "B",
     "indoor": "S",
     "equipments": ["hat", "hairpin", "watch"],
-    "uniqueWeaponStar2": "爆傷增加",
+    "uniqueWeaponStar2": "暴傷增加",
     "uniqueWeaponStar3": ["indoor", "SS"],
     "ratingVersion": "7.0",
     "ratingDate": "2025/07/10",
@@ -6409,7 +6652,7 @@
       "limitBreakAssault": null,
       "jointFiringDrill": [1, 0, 0],
       "eventChallenge": [1, 0, 0],
-      "overall": 20
+      "overall": 28
     },
     "skillsSummary": {
       "ex": "3Cost對1名敵方造成<blue>540%</blue>傷害，消耗1層<purple>「水壓」</purple>可額外造成<blue>108%</blue>追加傷害",
@@ -6476,7 +6719,7 @@
     "skillsSummary": {
       "ex": "4Cost召喚自身至場上<teal>（30秒）</teal>，<purple>吊床</purple>擁有桔梗<blue>45.1%</blue>生命值。以<purple>吊床</purple>為中心的圓形範圍內賦予友方暴擊值增加<blue>30.8%</blue>、暴傷增加<blue>45.1%</blue><red>（領域增益）</red>",
       "ns": "<purple>吊床</purple><red>在場上存在24秒後發動</red>，賦予以<purple>吊床</purple>為中心的圓形範圍內友方暴傷增加<blue>15.1%</blue><teal>（36秒）</teal>",
-      "ss": "<blue>17.3%</blue>爆傷光環"
+      "ss": "<blue>17.3%</blue>暴傷光環"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -6607,7 +6850,7 @@
       "totalAssault": "球清雜可選、野外重甲雞斯拉對策輸出",
       "pvp": "針對重甲坦、遠距EX清屏，吃陣容站位、高攻擊怕瞬",
       "grandAssault": "球清雜可選、野外重甲雞斯拉對策輸出",
-      "limitBreakAssault": "重甲火龍塔可選對群輸出",
+      "limitBreakAssault": "重甲提法塔可選對群輸出",
       "jointFiringDrill": "防禦/突破/護衛演習可選",
       "eventChallenge": "清雜/對群可選"
     },
@@ -6688,259 +6931,128 @@
       "Max"
     ]
   },
-    {
-    "id": 26001,
-    "fullname": "和樂 知世",
-    "name": "知世",
-    "nicknames": ["芝士"],
-    "school": "Hyakkiyako",
-    "attackType": "Mystic",
-    "defenseType": "Heavy",
-    "weapon": "GL",
-    "position": [0, "範圍輸出"],
-    "uniqueWeaponRecommended": "有需可刷Hard",
-    "acquisitionMethod": "常駐/困難",
-    "skillMainOparts": "crystalhaniwa",
-    "skillSubOparts": "nimrud",
-    "l2dUnlock": 5,
-    "city": "A",
-    "outdoor": "D",
-    "indoor": "A",
-    "equipments": ["gloves", "hairpin", "watch"],
-    "uniqueWeaponStar2": "攻擊力增加",
-    "uniqueWeaponStar3": ["outdoor", "B"],
-    "ratingVersion": "7.1",
-    "ratingDate": "2025/07/26",
-    "ratings": {
-      "newbie": [4, 0, 0],
-      "totalAssault": [2, 0, 0],
-      "pvp": null,
-      "grandAssault": [2, 0, 0],
-      "limitBreakAssault": null,
-      "jointFiringDrill": [2, 0, 0],
-      "eventChallenge": [2, 0, 0],
-      "overall": 35
-    },
-    "skillsSummary": {
-      "ex": "4Cost對圓形範圍內造成<blue>106%</blue>傷害<teal>(10秒)</teal><blue>(合計1166%)</blue>",
-      "ns": "毎25秒對圓形範圍敵人造成<blue>416%</blue>傷害",
-      "ss": "普攻時有10%機率造成<blue>102%</blue>燒傷<teal>(20秒)</teal>。<green>愛用品小幅度提升傷害</green>"
-    },
-    "ratingsSummary": {
-      "newbie": null,
-      "totalAssault": "雞斯拉、格茲範圍輸出替補、缺乏神秘角可培養",
-      "pvp": "暫時無搭配組合",
-      "grandAssault": "雞斯拉、格茲範圍輸出替補、缺乏神秘角可培養",
-      "limitBreakAssault": "缺人或機制使用",
-      "jointFiringDrill": "範圍傷害或DOT機制可選",
-      "eventChallenge": "範圍傷害或DOT機制可選"
-    },
-    "uniqueWeaponRecommendedSummary": "拉高了基礎面板提升不錯，<green>有需要可困難圖刷取</green>",
-    "overallRecommendation": "萌新戰神多模式低配作業主選，平民推圖主選神秘範圍輸出",
-    "skillOrder": [
-      "EX3",
-      "技一.二.三Lv4",
-      "技一Lv7",
-      "技二Lv7",
-      "技三LV7",
-      "EX5",
-      "技二Lv10",
-      "技一Lv10",
-      "技三Lv10",
-      "Max"
-    ],
-    "favoriteItem": {
-      "name": "風到來之音",
-      "recommendedLevel": [2, 0, 0],
-      "materials": ["23", "crystalhaniwa"],
-      "effects": [
-        "攻擊力<red>500</red>",
-        "傷害<blue>416%</blue>提升至<blue>567%</blue>"
-      ]
-    }
-  },
-    {
-    "id": 26002,
-    "fullname": "春日 椿",
-    "name": "椿",
-    "nicknames": ["狗盾"],
-    "school": "Hyakkiyako",
-    "attackType": "Piercing",
-    "defenseType": "Special",
-    "weapon": "SMG",
-    "position": [0, "多功能坦"],
-    "uniqueWeaponRecommended": "至少五星專1",
-    "acquisitionMethod": "常駐/困難",
-    "skillMainOparts": "crystalhaniwa",
-    "skillSubOparts": "crystalhaniwa",
-    "l2dUnlock": 6,
-    "city": "A",
+  {
+    "id": 230,
+    "fullname": "桐藤 渚（泳裝）",
+    "name": "渚（泳裝）",
+    "nicknames": ["水渚"],
+    "school": "Trinity",
+    "attackType": "Sonic",
+    "defenseType": "Elastic",
+    "weapon": "HG",
+    "position": [1, "輔助"],
+    "uniqueWeaponRecommended": "看情況開",
+    "acquisitionMethod": "FES限定池",
+    "skillMainOparts": "wolfsegg",
+    "skillSubOparts": "rocket",
+    "l2dUnlock": -1,
+    "city": "S",
     "outdoor": "A",
     "indoor": "D",
-    "equipments": ["shoes", "bag", "amulet"],
-    "uniqueWeaponStar2": "攻擊速度增加",
-    "uniqueWeaponStar3": ["indoor", "B"],
+    "equipments": ["shoes", "bag", "watch"],
+    "uniqueWeaponStar2": "增益時間增加",
+    "uniqueWeaponStar3": ["city", "SS"],
     "ratingVersion": "7.1",
-    "ratingDate": "2025/07/26",
-    "ratings": {
-      "newbie": [5, 0, 1],
-      "totalAssault": [4, 0, 0],
-      "pvp": [4, 0, 0],
-      "grandAssault": [3, 0, 0],
-      "limitBreakAssault": null,
-      "jointFiringDrill": [3, 0, 0],
-      "eventChallenge": [5, 0, 0],
-      "overall": 68
-    },
-    "skillsSummary": {
-      "ex": "4Cost提升自身防禦力<blue>44.9%</blue><teal>(30秒)</teal>，且對自身圓形範圍內敵方造成<purple>嘲諷效果持續6.2秒</purple>",
-      "ns": "自身血量低於30%時，回復自身治癒力<blue>663%</blue>血量<red>(一次)</red>",
-      "ss": "換彈時使自身受到的傷害減少<blue>45.6%</blue>"
-    },
-    "ratingsSummary": {
-      "newbie": null,
-      "totalAssault": "不被克制時基本可選，低配作業或群控機制時選用",
-      "pvp": "萌新可選特甲坦，或功能選用嘲諷斷技能、拉人出掩體調位等。",
-      "grandAssault": "不被克制時基本可選，低配作業或群控機制時選用",
-      "limitBreakAssault": "不被克制時基本可選，低配作業或群控機制時選用",
-      "jointFiringDrill": "不被克制時基本可選，低配作業或群控機制時選用",
-      "eventChallenge": "不被克制時基本可選，低配作業或群控機制時選用"
-    },
-    "uniqueWeaponRecommendedSummary": "攻速影響NS觸發速度，最少專1起、競技場有需求可高專",
-    "overallRecommendation": "萌新戰神、新人唯一指定多功能閃避坦，後期競技場使用，有回避外加背包提供防禦坦度極高",
-    "skillOrder": [
-      "EX3",
-      "技一.二.三Lv4",
-      "技二Lv7",
-      "技一Lv7",
-      "技二Lv7",
-      "技二Lv10",
-      "技三Lv10",
-      "技一Lv10",
-      "EX5",
-      "Max"
-    ]
-  },
-    {
-    "id": 26003,
-    "fullname": "朝比奈 菲娜",
-    "name": "菲娜",
-    "nicknames": ["大盤雞"],
-    "school": "Hyakkiyako",
-    "attackType": "Piercing",
-    "defenseType": "Light",
-    "weapon": "MG",
-    "position": [0, "輸出"],
-    "uniqueWeaponRecommended": "有需可刷Hard",
-    "acquisitionMethod": "常駐/困難",
-    "skillMainOparts": "crystalhaniwa",
-    "skillSubOparts": "nimrud",
-    "l2dUnlock": 6,
-    "city": "A",
-    "outdoor": "B",
-    "indoor": "D",
-    "equipments": ["gloves", "hairpin", "watch"],
-    "uniqueWeaponStar2": "攻擊速度增加",
-    "uniqueWeaponStar3": ["indoor", "B"],
-    "ratingVersion": "7.1",
-    "ratingDate": "2025/07/26",
+    "ratingDate": "2025/07/30",
     "ratings": {
       "newbie": [2, 0, 0],
-      "totalAssault": [2, 0, 0],
+      "totalAssault": [5, 0, 1],
       "pvp": null,
-      "grandAssault": [1, 0, 0],
-      "limitBreakAssault": null,
-      "jointFiringDrill": [2, 0, 0],
-      "eventChallenge": [1, 0, 0],
-      "overall": 28
+      "grandAssault": [5, 0, 1],
+      "limitBreakAssault": [5, 0, 0],
+      "jointFiringDrill": [5, 0, 1],
+      "eventChallenge": [5, 0, 1],
+      "overall": 95
     },
     "skillsSummary": {
-      "ex": "4Cost立刻換彈並提升自身攻擊力<blue>46.6%</blue><teal>(30秒)</teal>之後無視五次普攻間隔",
-      "ns": "自身血量低於20%時，回復自身治癒力<blue>674%</blue>血量<red>(一次)</red>",
-      "ss": "<purple>停止移動10秒後</blue>攻速增加<blue>38.3%</blue>"
+      "ex": "3Cost賦予一名友方<purple>cost溢出</purple>並提高暴傷<blue>78.6%</blue>（<teal>26秒</teal>/<red>專二30.94秒</red>）",
+      "ns": "每35秒降低一名敵方暴傷抵抗<blue>38.2%</blue><teal>（27秒）</teal>並造成<blue>376%</blue>傷害",
+      "ss": "<blue>17.3%</blue>暴傷光環"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "重甲BOSS高難多刀可選，氣墊船P2可選HIT機制對策",
+      "totalAssault": "泛用人權輔助。注意要求有較高的cost回覆力才能貸款",
       "pvp": "暫時無搭配組合",
-      "grandAssault": "重甲BOSS高難多刀可選，氣墊船P2可選HIT機制對策",
-      "limitBreakAssault": "缺人或機制使用",
-      "jointFiringDrill": "HIT機制可選對策",
-      "eventChallenge": "HIT機制可選對策"
+      "grandAssault": "泛用人權輔助。注意要求有較高的cost回覆力才能貸款",
+      "limitBreakAssault": "後排單拐暴傷輔助，多保一爆破關卡",
+      "jointFiringDrill": "後排單拐暴傷輔助，多保一爆破關卡",
+      "eventChallenge": "後排單拐暴傷輔助，多保一爆破關卡"
     },
-    "uniqueWeaponRecommendedSummary": "暴擊值提升較微小，可刷碎片至專一備戰高難度",
-    "overallRecommendation": "看個人需求，重甲總力/大決戰對單場合多隊可選",
+    "uniqueWeaponRecommendedSummary": "增益時間增加，看軸情況考慮專二或專四",
+    "overallRecommendation": "連發機制角色的專屬輔助，沫花、水日和、水花等...",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
+      "EX5",
       "技三Lv7",
+      "技一Lv7",
       "技二Lv7",
-      "EX5",      
-      "技二Lv10",
       "技三Lv10",
       "技一Lv10",
+      "技二Lv10",
       "Max"
-    ]
+    ],
+    "skillExtraDesc": "無專二可不點技二"
   },
-    {
-    "id": 26004,
-    "fullname": "久田 伊樹菜",
-    "name": "伊樹菜",
-    "nicknames": ["忍忍", "小狐狸"],
-    "school": "Hyakkiyako",
-    "attackType": "Mystic",
-    "defenseType": "Light",
+  {
+    "id": 231,
+    "fullname": "聖園 彌香（泳裝）",
+    "name": "彌香（泳裝）",
+    "nicknames": ["沫花"],
+    "school": "Trinity",
+    "attackType": "Sonic",
+    "defenseType": "Special",
     "weapon": "SMG",
-    "position": [0, "輸出坦"],
-    "uniqueWeaponRecommended": "卷分建議專三",
-    "acquisitionMethod": "常駐/困難",
-    "skillMainOparts": "wolfsegg",
-    "skillSubOparts": "mandragora",
-    "l2dUnlock": 6,
+    "position": [0, "輸出"],
+    "uniqueWeaponRecommended": "建議自備專三",
+    "acquisitionMethod": "FES限定池",
+    "skillMainOparts": "nimrud",
+    "skillSubOparts": "winnistone",
+    "l2dUnlock": -1,
     "city": "S",
-    "outdoor": "B",
+    "outdoor": "A",
     "indoor": "D",
-    "equipments": ["gloves", "hairpin", "watch"],
+    "equipments": ["hat", "hairpin", "watch"],
     "uniqueWeaponStar2": "暴擊傷害增加",
     "uniqueWeaponStar3": ["city", "SS"],
     "ratingVersion": "7.1",
-    "ratingDate": "2025/07/26",
+    "ratingDate": "2025/07/30",
     "ratings": {
       "newbie": null,
-      "totalAssault": [4, 0, 0],
+      "totalAssault": [4, 1, 0],
       "pvp": null,
-      "grandAssault": [3, 0, 0],
-      "limitBreakAssault": null,
-      "jointFiringDrill": [3, 0, 0],
-      "eventChallenge": [3, 0, 0],
-      "overall": 52
+      "grandAssault": [5, 0, 1],
+      "limitBreakAssault": [3, 0, 0],
+      "jointFiringDrill": [4, 0, 0],
+      "eventChallenge": [5, 0, 1],
+      "overall": 81
     },
     "skillsSummary": {
-      "ex": "3Cost移動到指定位置並給予自身攻速<blue>52.1%</blue>提升<teal>(30秒)</teal>",
-      "ns": "每6次普攻對圓形範圍敵人造成<blue>845%</blue>範圍傷害",
-      "ss": "使用EX技後自身攻擊提升<blue>38.3%</blue><teal>(30秒)</teal>"
+      "ex": "①<red>（對自己）</red>2Cost立即抽取EX技並進入<purple>連射狀態</purple><teal>（30秒）</teal>，處於<purple>連射狀態</purple>時，立即抽取EX技，<red>對敵方使用時</red>會根據使用次數改變EX技的基礎消耗，<red>第1~2次：</red><blue>4cost</blue> / <red>第3~4次：</red><blue>6cost</blue> / <red>第5次及以後：</red><blue>10cost</blue>，<red>再次對自己使用</red><blue>（0cost）</blue>則提前解除<purple>連射狀態</purple>，連射結束時將EX技移至牌組末並重置基礎費用 ②<red>（對敵人）</red>4Cost對一名敵人造成<blue>1571%</blue>傷害",
+      "ns": "每40秒提高自身振動屬攻<blue>59.8%</blue><teal>（33秒）</teal>",
+      "ss": "所有攻擊<red>必定暴擊</red>，追加<blue>49.25%</blue>振動屬攻"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "黑白主對策輸出，其他神秘BOSS多隊可選",
+      "totalAssault": "未來可期，特甲BOSS多刀可選",
       "pvp": "暫時無搭配組合",
-      "grandAssault": "黑白主對策輸出，其他神秘BOSS多隊可選",
-      "limitBreakAssault": "缺人或機制使用",
-      "jointFiringDrill": "防禦/射擊/突破演習可選輸出坦",
-      "eventChallenge": "市街可選神秘輸出坦"
+      "grandAssault": "市街/野外彈甲BOSS主對策輸出",
+      "limitBreakAssault": "中低層彈甲提法塔可選輸出",
+      "jointFiringDrill": "射擊/護衛演習可選",
+      "eventChallenge": "特甲/彈甲對單可選輸出"
     },
-    "uniqueWeaponRecommendedSummary": "拉高基礎面板和提供大幅暴傷，<blue>黑白卷分培養，困難關刷至高專</blue>",
-    "overallRecommendation": "卷分自備專三、對單持續輸出兼承傷",
+    "uniqueWeaponRecommendedSummary": "FES限定人權輸出，拉面板血量和攻擊，建議自備專三/專四",
+    "overallRecommendation": "<red>現階段泛用性較弱，但環境會適應FES。</red>總力等新boss，大決戰包攬市街/野外振動單體",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
-      "EX5",
-      "技一Lv7",
-      "技二Lv7",
       "技三Lv7",
-      "技一Lv10",
-      "技二Lv10",
+      "技二Lv7",
+      "技一Lv7",
+      "EX5",
       "技三Lv10",
+      "技二Lv10",
+      "技一Lv10",
       "Max"
     ]
   }
