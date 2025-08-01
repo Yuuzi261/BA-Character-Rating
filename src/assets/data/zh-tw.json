@@ -7056,11 +7056,11 @@
       "Max"
     ]
   },
-    {
+  {
     "id": 31001,
     "fullname": "黑舘 羽留奈",
     "name": "羽留奈",
-    "nicknames": ["羽留奈"],
+    "nicknames": ["羽留奈", "神秘狙"],
     "school": "Gehenna",
     "attackType": "Mystic",
     "defenseType": "Heavy",
@@ -7090,9 +7090,9 @@
       "overall": 28
     },
     "skillsSummary": {
-      "ex": "3Cost<red>(滿級)</red>對直線範圍內敵方造成<blue>887%</blue>傷害，毎貫穿一名目標則會使傷害減少<blue>10%</blue><purple>(最多減少30%)</purple>",
+      "ex": "3Cost<red>（滿級）</red>對直線範圍內敵方造成<blue>887%</blue>傷害，毎貫穿一名目標則會使傷害減少<blue>10%</blue><purple>（最多減少30%）</purple>",
       "ns": "毎30秒對一名敵方造成<blue>380%</blue>傷害",
-      "ss": "不移動時，提高自身攻擊力<blue>19.1%</blue>。"
+      "ss": "不移動時，提高自身攻擊力<blue>19.1%</blue>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -7103,8 +7103,8 @@
       "jointFiringDrill": "射擊/突破/護衛演習可選",
       "eventChallenge": "缺人或機制使用"
     },
-    "uniqueWeaponRecommendedSummary": "血量特化、競技場對策，逆屬性/地形吃範圍傷害大概率存活",
-    "overallRecommendation": "萌新初期過渡神秘輸出，成型和培養成本較低，沒有也可等困難刷，平民可選市街輸出。",
+    "uniqueWeaponRecommendedSummary": "<purple>血量特化、競技場對策</purple>，逆屬性/地形吃範圍傷害大概率存活",
+    "overallRecommendation": "萌新初期過渡神秘輸出，成型和培養成本較低，沒有也可等困難刷，平民可選市街輸出",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
@@ -7154,7 +7154,7 @@
     },
     "skillsSummary": {
       "ex": "7Cost對扇形範圍內敵方造成<blue>1208%</blue>傷害",
-      "ns": "彈藥耗盡時觸發提高自身攻擊力<blue>39.9%</blue><teal>(16秒)</teal><red>並完成換彈</red>",
+      "ns": "<red>彈藥耗盡時觸發</red>提高自身攻擊力<blue>39.9%</blue><teal>（16秒）</teal><red>並完成換彈</red>。<green>愛用品小提輸出能力</green>",
       "ss": "攻擊未處於掩體的敵方會額外造成<blue>5.2%</blue>追加傷害"
     },
     "ratingsSummary": {
@@ -7166,8 +7166,8 @@
       "jointFiringDrill": "防禦/突破/護衛演習可選",
       "eventChallenge": "HIT機制或範圍輸出可選"
     },
-    "uniqueWeaponRecommendedSummary": "廚力培養，<blue>建議五星拉高羈絆給禮服提供攻擊力</blue>",
-    "overallRecommendation": "萌新初期可選副C、爆發範圍儲備角色，特殊情況選用。",
+    "uniqueWeaponRecommendedSummary": "廚力培養，<red>建議五星拉高羈絆給禮服提供攻擊力</red>",
+    "overallRecommendation": "萌新初期可選副C、爆發範圍儲備角色，特殊情況選用",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
@@ -7181,7 +7181,7 @@
       "Max"
     ],
     "favoriteItem": {
-      "name": "日奈的風紀委員會袖章",
+      "name": "陽奈的風紀委員會臂章",
       "recommendedLevel": [3, 0, 0],
       "materials": ["19", "voynich"],
       "effects": [
@@ -7190,7 +7190,7 @@
       ]
     }
   },
-    {
+  {
     "id": 31003,
     "fullname": "銀鏡 伊織",
     "name": "伊織",
@@ -7224,7 +7224,7 @@
       "overall": 77
     },
     "skillsSummary": {
-      "ex": "3Cost發射3發子彈，每發對目標及身後扇形範圍內敵方造成<blue>666%</blue>傷害<red>(合計1998%)</red><purple>(目標死亡自動切換目標)</purple>",
+      "ex": "3Cost發射3發子彈，每發對目標及身後扇形範圍內敵方造成<blue>666%</blue>傷害<red>（合計1998%）</red><purple>（目標死亡自動切換目標）</purple>",
       "ns": "毎25秒對一名敵方造成<blue>436%</blue>傷害",
       "ss": "自身在未進掩體攻擊時額外造成<blue>43.1%</blue>追加傷害"
     },
@@ -7253,7 +7253,7 @@
     ],
     "skillExtraDesc": "競技場點高技能二"
   },
-    {
+  {
     "id": 31004,
     "fullname": "獅子堂 泉",
     "name": "泉",
@@ -7287,9 +7287,9 @@
       "overall": 31
     },
     "skillsSummary": {
-      "ex": "3Cost恢復自身治癒力<blue>254%</blue>的生命值，且攻速增加<blue>38.4%</blue><teal>(21秒)</teal>",
-      "ns": "普攻時，有20%機率對一名敵方造成<blue>523%</blue>傷害<purple>(冷卻10秒)</purple>",
-      "ss": "攻擊時，根據生命值百分比額外造成<blue>0.7%</blue>至<blue>4.1%</blue>追傷，<green>愛用品攻速提高增加NS釋放概率穩定輸出</green>"
+      "ex": "3Cost恢復自身治癒力<blue>254%</blue>的生命值，且攻速增加<blue>38.4%</blue><teal>（21秒）</teal>",
+      "ns": "普攻時，有20%機率對一名敵方造成<blue>523%</blue>傷害<purple>（冷卻10秒）</purple>",
+      "ss": "攻擊時，根據生命值百分比額外造成<blue>0.7%</blue>至<blue>4.1%</blue>追傷。<green>愛用品攻速提高增加NS釋放概率穩定輸出</green>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -7315,16 +7315,13 @@
       "Max"
     ],
     "favoriteItem": {
-      "name": "幸運熱狗模型",
-      "recommendedLevel": [3, 0, 0],
+      "name": "幸運的熱狗模型",
+      "recommendedLevel": [1, 0, 0],
       "materials": ["13", "mandragora"],
-      "effects": [
-        "攻速<red>3000</red>",
-        "傷害<blue>523%</blue>提升至<blue>820%</blue>"
-      ]
+      "effects": ["攻速<red>3000</red>", "傷害<blue>523%</blue>提升至<blue>820%</blue>"]
     }
   },
-    {
+  {
     "id": 31006,
     "fullname": "鬼方 佳世子",
     "name": "佳世子",
@@ -7358,8 +7355,8 @@
       "overall": 57
     },
     "skillsSummary": {
-      "ex": "6Cost對圓形範圍內的敵方造成<blue>558%</blue>傷害並<purple>恐懼5.1秒</purple>",
-      "ns": "毎20秒對一名敵方造成<blue>252%</blue>傷害，且有30%概率造成<purple>恐懼3.6秒</purple>",
+      "ex": "6Cost對圓形範圍內的敵方造成<blue>558%</blue>傷害並<purple>恐懼</purple><teal>5.1秒</teal>",
+      "ns": "毎20秒對一名敵方造成<blue>252%</blue>傷害，且有30%概率造成<purple>恐懼</purple><teal>3.6秒</teal>",
       "ss": "攻擊被群控效果敵方時，可額外造成<blue>142%</blue>追加傷害"
     },
     "ratingsSummary": {
@@ -7371,18 +7368,11 @@
       "jointFiringDrill": "群控機制可選",
       "eventChallenge": "群控機制可選"
     },
-    "uniqueWeaponRecommendedSummary": "增強群控時間和NS技命中概率，<red>建議專二</red><blue>(專二且裝備T8項鍊的情況下NS命中概率為62.7%)</blue>",
+    "uniqueWeaponRecommendedSummary": "增強群控時間和NS技命中概率，<red>建議專二</red><blue>（專二且裝備T8項鍊的情況下NS命中概率為62.7%）</blue>",
     "overallRecommendation": "可培養、霍德水藻凹分必備、特別列入選用",
-    "skillOrder": [
-      "EX3",
-      "技二Lv4",
-      "技二Lv7",
-      "EX5",
-      "技二Lv10",
-      "Max"
-    ]
+    "skillOrder": ["EX3", "技二Lv4", "技二Lv7", "EX5", "技二Lv10", "Max"]
   },
-      {
+  {
     "id": 31005,
     "fullname": "鱷渕 亞伽里",
     "name": "亞伽里",
@@ -7417,8 +7407,8 @@
     },
     "skillsSummary": {
       "ex": "4Cost對圓形範圍敵方造成<blue>744%</blue>傷害",
-      "ns": "普攻時，有10%機率使攻擊力增加<blue>73.6%</blue><teal>(20秒)</teal><purple>(冷卻15秒)</purple>",
-      "ss": "普攻時，有10%機率使攻擊力增加<blue>65.5%</blue><teal>(26秒)</teal><purple>(冷卻18秒)</purple>"
+      "ns": "普攻時，有10%機率使攻擊力增加<blue>73.6%</blue><teal>(20秒)</teal><purple>（冷卻15秒）</purple>",
+      "ss": "普攻時，有10%機率使攻擊力增加<blue>65.5%</blue><teal>（26秒）</teal><purple>（冷卻18秒）</purple>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -7431,15 +7421,6 @@
     },
     "uniqueWeaponRecommendedSummary": "拉生存用，廚力培養",
     "overallRecommendation": "前期缺人用、總力多隊替補、新手平民爆發",
-    "skillOrder": [
-      "EX3",
-      "技一.二.三Lv4",
-      "技一Lv7",
-      "技三Lv7",
-      "EX5",
-      "技一Lv10",
-      "技三Lv10",
-      "Max"
-    ]
+    "skillOrder": ["EX3", "技一.二.三Lv4", "技一Lv7", "技三Lv7", "EX5", "技一Lv10", "技三Lv10", "Max"]
   }
 ]

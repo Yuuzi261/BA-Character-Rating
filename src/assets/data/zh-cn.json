@@ -7056,11 +7056,11 @@
       "Max"
     ]
   },
-    {
+  {
     "id": 31001,
     "fullname": "黑馆 晴奈",
     "name": "晴奈",
-    "nicknames": ["晴奈"],
+    "nicknames": ["晴奈", "神秘狙"],
     "school": "Gehenna",
     "attackType": "Mystic",
     "defenseType": "Heavy",
@@ -7090,9 +7090,9 @@
       "overall": 28
     },
     "skillsSummary": {
-      "ex": "3Cost<red>(满级)</red>对直线范围内敌方造成<blue>887%</blue>伤害，毎贯穿一名目标则会使伤害减少<blue>10%</blue><purple>(最多减少30%)</purple>",
+      "ex": "3Cost<red>（满级）</red>对直线范围内敌方造成<blue>887%</blue>伤害，毎贯穿一名目标则会使伤害减少<blue>10%</blue><purple>（最多减少30%）</purple>",
       "ns": "毎30秒对一名敌方造成<blue>380%</blue>伤害",
-      "ss": "不移动时，提高自身攻击力<blue>19.1%</blue>。"
+      "ss": "不移动时，提高自身攻击力<blue>19.1%</blue>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -7103,8 +7103,8 @@
       "jointFiringDrill": "射击/突破/护卫演习可选",
       "eventChallenge": "缺人或机制使用"
     },
-    "uniqueWeaponRecommendedSummary": "血量特化、竞技场对策，逆属性/地形吃范围伤害大概率存活",
-    "overallRecommendation": "萌新初期过渡神秘输出，成型和培养成本较低，没有也可等困难刷，平民可选市街输出。",
+    "uniqueWeaponRecommendedSummary": "<purple>血量特化、竞技场对策</purple>，逆属性/地形吃范围伤害大概率存活",
+    "overallRecommendation": "萌新初期过渡神秘输出，成型和培养成本较低，没有也可等困难刷，平民可选市街输出",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
@@ -7154,7 +7154,7 @@
     },
     "skillsSummary": {
       "ex": "7Cost对扇形范围内敌方造成<blue>1208%</blue>伤害",
-      "ns": "弹药耗尽时触发提高自身攻击力<blue>39.9%</blue><teal>(16秒)</teal><red>并完成换弹</red>",
+      "ns": "<red>弹药耗尽时触发</red>提高自身攻击力<blue>39.9%</blue><teal>（16秒）</teal><red>并完成换弹</red>。<green>爱用品小提输出能力</green>",
       "ss": "攻击未处于掩体的敌方会额外造成<blue>5.2%</blue>追加伤害"
     },
     "ratingsSummary": {
@@ -7166,8 +7166,8 @@
       "jointFiringDrill": "防御/突破/护卫演习可选",
       "eventChallenge": "HIT机制或范围输出可选"
     },
-    "uniqueWeaponRecommendedSummary": "厨力培养，<blue>建议五星拉高羁绊给礼服提供攻击力</blue>",
-    "overallRecommendation": "萌新初期可选副C、爆发范围储备角色，特殊情况选用。",
+    "uniqueWeaponRecommendedSummary": "厨力培养，<red>建议五星拉高羁绊给礼服提供攻击力</red>",
+    "overallRecommendation": "萌新初期可选副C、爆发范围储备角色，特殊情况选用",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
@@ -7190,7 +7190,7 @@
       ]
     }
   },
-    {
+  {
     "id": 31003,
     "fullname": "银镜 伊织",
     "name": "伊织",
@@ -7224,7 +7224,7 @@
       "overall": 77
     },
     "skillsSummary": {
-      "ex": "3Cost发射3发子弹，每发对目标及身后扇形范围内敌方造成<blue>666%</blue>伤害<red>(合计1998%)</red><purple>(目标死亡自动切换目标)</purple>",
+      "ex": "3Cost发射3发子弹，每发对目标及身后扇形范围内敌方造成<blue>666%</blue>伤害<red>（合计1998%）</red><purple>（目标死亡自动切换目标）</purple>",
       "ns": "毎25秒对一名敌方造成<blue>436%</blue>伤害",
       "ss": "自身在未进掩体攻击时额外造成<blue>43.1%</blue>追加伤害"
     },
@@ -7253,7 +7253,7 @@
     ],
     "skillExtraDesc": "竞技场点高技能二"
   },
-    {
+  {
     "id": 31004,
     "fullname": "狮子堂 泉",
     "name": "泉",
@@ -7287,9 +7287,9 @@
       "overall": 31
     },
     "skillsSummary": {
-      "ex": "3Cost恢复自身治愈力<blue>254%</blue>的生命值，且攻速增加<blue>38.4%</blue><teal>(21秒)</teal>",
-      "ns": "普攻时，有20%机率对一名敌方造成<blue>523%</blue>伤害<purple>(冷却10秒)</purple>",
-      "ss": "攻击时，根据生命值百分比额外造成<blue>0.7%</blue>至<blue>4.1%</blue>追伤，<green>爱用品攻速提高增加NS释放概率稳定输出</green>"
+      "ex": "3Cost恢复自身治愈力<blue>254%</blue>的生命值，且攻速增加<blue>38.4%</blue><teal>（21秒）</teal>",
+      "ns": "普攻时，有20%机率对一名敌方造成<blue>523%</blue>伤害<purple>（冷却10秒）</purple>",
+      "ss": "攻击时，根据生命值百分比额外造成<blue>0.7%</blue>至<blue>4.1%</blue>追伤。<green>爱用品攻速提高增加NS释放概率稳定输出</green>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -7315,16 +7315,13 @@
       "Max"
     ],
     "favoriteItem": {
-      "name": "幸运热狗模型",
-      "recommendedLevel": [3, 0, 0],
+      "name": "幸运的热狗模型",
+      "recommendedLevel": [1, 0, 0],
       "materials": ["13", "mandragora"],
-      "effects": [
-        "攻速<red>3000</red>",
-        "伤害<blue>523%</blue>提升至<blue>820%</blue>"
-      ]
+      "effects": ["攻速<red>3000</red>", "伤害<blue>523%</blue>提升至<blue>820%</blue>"]
     }
   },
-    {
+  {
     "id": 31006,
     "fullname": "鬼方 佳代子",
     "name": "佳代子",
@@ -7358,8 +7355,8 @@
       "overall": 57
     },
     "skillsSummary": {
-      "ex": "6Cost对圆形范围内的敌方造成<blue>558%</blue>伤害并<purple>恐惧5.1秒</purple>",
-      "ns": "毎20秒对一名敌方造成<blue>252%</blue>伤害，且有30%概率造成<purple>恐惧3.6秒</purple>",
+      "ex": "6Cost对圆形范围内的敌方造成<blue>558%</blue>伤害并<purple>恐惧</purple><teal>5.1秒</teal>",
+      "ns": "毎20秒对一名敌方造成<blue>252%</blue>伤害，且有30%概率造成<purple>恐惧</purple><teal>3.6秒</teal>",
       "ss": "攻击被群控效果敌方时，可额外造成<blue>142%</blue>追加伤害"
     },
     "ratingsSummary": {
@@ -7371,18 +7368,11 @@
       "jointFiringDrill": "群控机制可选",
       "eventChallenge": "群控机制可选"
     },
-    "uniqueWeaponRecommendedSummary": "增强群控时间和NS技命中概率，<red>建议专二</red><blue>(专二且装备T8项链的情况下NS命中概率为62.7%)</blue>",
+    "uniqueWeaponRecommendedSummary": "增强群控时间和NS技命中概率，<red>建议专二</red><blue>（专二且装备T8项链的情况下NS命中概率为62.7%）</blue>",
     "overallRecommendation": "可培养、霍德水藻凹分必备、特别列入选用",
-    "skillOrder": [
-      "EX3",
-      "技二Lv4",
-      "技二Lv7",
-      "EX5",
-      "技二Lv10",
-      "Max"
-    ]
+    "skillOrder": ["EX3", "技二Lv4", "技二Lv7", "EX5", "技二Lv10", "Max"]
   },
-      {
+  {
     "id": 31005,
     "fullname": "鳄渕 明里",
     "name": "明里",
@@ -7417,8 +7407,8 @@
     },
     "skillsSummary": {
       "ex": "4Cost对圆形范围敌方造成<blue>744%</blue>伤害",
-      "ns": "普攻时，有10%机率使攻击力增加<blue>73.6%</blue><teal>(20秒)</teal><purple>(冷却15秒)</purple>",
-      "ss": "普攻时，有10%机率使攻击力增加<blue>65.5%</blue><teal>(26秒)</teal><purple>(冷却18秒)</purple>"
+      "ns": "普攻时，有10%机率使攻击力增加<blue>73.6%</blue><teal>(20秒)</teal><purple>（冷却15秒）</purple>",
+      "ss": "普攻时，有10%机率使攻击力增加<blue>65.5%</blue><teal>（26秒）</teal><purple>（冷却18秒）</purple>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -7431,15 +7421,6 @@
     },
     "uniqueWeaponRecommendedSummary": "拉生存用，厨力培养",
     "overallRecommendation": "前期缺人用、总力多队替补、新手平民爆发",
-    "skillOrder": [
-      "EX3",
-      "技一.二.三Lv4",
-      "技一Lv7",
-      "技三Lv7",
-      "EX5",
-      "技一Lv10",
-      "技三Lv10",
-      "Max"
-    ]
+    "skillOrder": ["EX3", "技一.二.三Lv4", "技一Lv7", "技三Lv7", "EX5", "技一Lv10", "技三Lv10", "Max"]
   }
 ]
