@@ -429,7 +429,7 @@
       "newbie": null,
       "totalAssault": "重甲BOSS多刀可選",
       "pvp": "多賽季可選對坦輸出，小扇形可同時送走後排輸出",
-      "grandAssault": "重甲雞、格裡高利範圍輸出主對策",
+      "grandAssault": "重甲雞、葛利果範圍輸出主對策",
       "limitBreakAssault": "缺人或機制使用",
       "jointFiringDrill": "重甲可選主/副輸出",
       "eventChallenge": "重甲可選主/副輸出"
@@ -1546,9 +1546,9 @@
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "LU難葛夫拉、格裡高利可選後排輸出",
+      "totalAssault": "LU難葛夫拉、葛利果可選後排輸出",
       "pvp": "多賽季可選大範圍無視掩體傷害",
-      "grandAssault": "LU難葛夫拉、格裡高利可選後排輸出",
+      "grandAssault": "LU難葛夫拉、葛利果可選後排輸出",
       "limitBreakAssault": "缺人或機制使用",
       "jointFiringDrill": "射擊/防禦/突破/護衛演習可選",
       "eventChallenge": "需要清雜可選"
@@ -2719,7 +2719,16 @@
       "技一Lv10",
       "技二Lv10",
       "Max"
-    ]
+    ],
+    "favoriteItem": {
+      "name": "洗澡輔佐官",
+      "recommendedLevel": [1, 0, 0],
+      "materials": ["17", "wolfsegg"],
+      "effects": [
+        "攻擊力<red>1000</red>",
+        "傷害<blue>259%</blue>提升至<blue>283%</blue>對<red>圓形範圍敵人造成<blue>49.6%</blue>持續傷害<teal>（5秒）</teal></red>"
+      ]
+    }
   },
   {
     "id": 78,
@@ -3168,7 +3177,7 @@
     "skillsSummary": {
       "ex": "3Cost對一名敵方造成<blue>545%</blue>傷害並<purple>眩暈</purple>5.5秒",
       "ns": "毎40秒對扇形範圍內<purple>飛射5枚破片</purple>，每枚碎片造成<blue>160%</blue>傷害",
-      "ss": "<red>使用EX技後</red>使自身承受的傷害降低<blue>36.1%</blue><teal>）16秒）</teal>，<green>愛用品減少敵方群控抵抗力，可減少群控計量表的時間需求</green>"
+      "ss": "<red>使用EX技後</red>使自身承受的傷害降低<blue>36.1%</blue><teal>（16秒）</teal>，<green>愛用品減少敵方群控抵抗力，可減少群控計量表的時間需求</green>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -3214,7 +3223,7 @@
     "defenseType": "Special",
     "weapon": "MG",
     "position": [1, "控場輸出"],
-    "uniqueWeaponRecommended": "至少5星專1",
+    "uniqueWeaponRecommended": "推薦至少專1",
     "acquisitionMethod": "常駐池",
     "skillMainOparts": "wolfsegg",
     "skillSubOparts": "baghdad",
@@ -3958,14 +3967,14 @@
       "totalAssault": [2, 0, 0],
       "pvp": [1, 0, 0],
       "grandAssault": [1, 0, 0],
-      "limitBreakAssault": [1, 0, 0],
+      "limitBreakAssault": null,
       "jointFiringDrill": [1, 0, 0],
       "eventChallenge": [1, 0, 0],
-      "overall": 27
+      "overall": 26
     },
     "skillsSummary": {
       "ex": "4Cost對矩形範圍內敵方造成<blue>489%</blue>傷害並造成<blue>66.2%</blue><purple>燒傷</purple><teal>（20秒）</teal>",
-      "ns": "毎40秒對五名敵方造成<blue>160%</blue>傷害並<purple>眩暈</purple>1.6秒",
+      "ns": "毎40秒對五名敵方造成<blue>160%</blue>傷害並<purple>眩暈</purple><teal>1.6秒</teal>",
       "ss": "<blue>17.3%</blue>暴傷光環"
     },
     "ratingsSummary": {
@@ -4901,9 +4910,9 @@
       "overall": 59
     },
     "skillsSummary": {
-      "ex": "2Cost對一名敵方造成<blue>487%</blue>傷害並降低暴傷抵抗<blue>20.3%</blue><teal>（50秒）</teal>。",
+      "ex": "2Cost對一名敵方造成<blue>487%</blue>傷害並降低暴傷抵抗<blue>20.3%</blue><teal>（50秒）</teal>",
       "ns": "每30秒提高自身閃避值<blue>35%</blue><teal>（25秒）</teal>",
-      "ss": "自身每閃避50次攻擊，自身Cost回復力增加<blue>630</blue><teal>（10秒）</teal>"
+      "ss": "自身每閃避50次攻擊，提高Cost回復力<blue>630</blue><teal>（10秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -4953,8 +4962,8 @@
     },
     "skillsSummary": {
       "ex": "4Cost對一名敵方造成<blue>552%</blue>傷害，並使防禦/攻擊/暴抗降低<blue>20.8%</blue><teal>（50秒）</teal>",
-      "ns": "每普攻15次對扇形範圍內敵方造成<blue>371%</blue>傷害，對<red>中型體型</red>的敵人額外造成<blue>185%</blue>追加傷害",
-      "ss": "自身及後排學生（SPECIAL）的攻擊力提高<blue>30.6%</blue>"
+      "ns": "<red>每普攻15次</red>對扇形範圍內敵方造成<blue>371%</blue>傷害，對<red>中型體型</red>的敵人額外造成<blue>185%</blue>追加傷害",
+      "ss": "自身及支援學生的攻擊力提高<blue>30.6%</blue>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -4966,7 +4975,7 @@
       "eventChallenge": "限定後排機制時可選輔助"
     },
     "uniqueWeaponRecommendedSummary": "當輔助用無生存壓力3星足夠，<purple>卷分至少專一起</purple>",
-    "overallRecommendation": "格裡高利機制對策，前排輸出兼輔助，視個人需求培養",
+    "overallRecommendation": "葛利果機制對策，前排輸出兼輔助，視個人需求培養",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
@@ -5299,7 +5308,7 @@
     "defenseType": "Special",
     "weapon": "GL",
     "position": [1, "奶媽"],
-    "uniqueWeaponRecommended": "建議專一至二",
+    "uniqueWeaponRecommended": "看情況開",
     "acquisitionMethod": "常駐池",
     "skillMainOparts": "ether",
     "skillSubOparts": "totempole",
@@ -5319,25 +5328,25 @@
       "grandAssault": [3, 0, 0],
       "limitBreakAssault": [5, 0, 1],
       "jointFiringDrill": [2, 0, 0],
-      "eventChallenge": [2, 0, 0],
+      "eventChallenge": [1, 0, 0],
       "overall": 60
     },
     "skillsSummary": {
-      "ex": "5Cost<red>（滿級）<red>4秒1次治愈<blue>40.4%</blue>範圍群奶<purple>（合計8次）</purple>回復",
-      "ns": "50秒一次我方血量最低的4名隊友<blue>128%</blue>治癒回復血量",
+      "ex": "5Cost<red>（滿級）</red>對圓形範圍內我方<teal>每4秒</teal>回復一次治癒力<blue>40.4%</blue>血量<teal>（30秒）</teal>",
+      "ns": "50秒一次我方<red>血量最低</red>的4名我方回復治癒力<blue>128%</blue>血量",
       "ss": "<blue>17.3%</blue>暴傷光環"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "貓鬼LU/TM可選對策、多總力通用奶",
-      "pvp": "多坦體系可選群補玩具",
-      "grandAssault": "貓鬼LU/TM可選對策、多總力通用奶",
-      "limitBreakAssault": "賽特塔、提法塔高壓生存環境可選，高層剛需",
+      "totalAssault": "貓鬼LU/TM可選對策、有生存壓力可選奶",
+      "pvp": "暫無組合搭配",
+      "grandAssault": "貓鬼LU/TM可選對策、有生存壓力可選奶",
+      "limitBreakAssault": "賽特塔、提法塔高壓生存可選，高層剛需",
       "jointFiringDrill": "特殊回血機制可選",
-      "eventChallenge": null
+      "eventChallenge": "特殊回血機制可選"
     },
-    "uniqueWeaponRecommendedSummary": "治癒力增加，增強奶量<blue>使用建議開專2起跳</blue>",
-    "overallRecommendation": "貓鬼LU/TM多刀可選對策、對抗賽多坦隊玩具、爬塔主對策奶媽，其他高壓環境可考慮選擇",
+    "uniqueWeaponRecommendedSummary": "增強奶量，看軸或個人選擇，三星至專二及以上都有軸",
+    "overallRecommendation": "貓鬼LU/TM多刀可選對策、爬塔主對策奶媽，其他有生存壓力情況可選",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",

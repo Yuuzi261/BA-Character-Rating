@@ -2719,7 +2719,16 @@
       "技一Lv10",
       "技二Lv10",
       "Max"
-    ]
+    ],
+    "favoriteItem": {
+      "name": "洗澡辅佐官",
+      "recommendedLevel": [1, 0, 0],
+      "materials": ["17", "wolfsegg"],
+      "effects": [
+        "攻击力<red>1000</red>",
+        "伤害<blue>259%</blue>提升至<blue>283%</blue>对<red>圆形范围敌人造成<blue>49.6%</blue>持续伤害<teal>（5秒）</teal></red>"
+      ]
+    }
   },
   {
     "id": 78,
@@ -3214,7 +3223,7 @@
     "defenseType": "Special",
     "weapon": "MG",
     "position": [1, "群控输出"],
-    "uniqueWeaponRecommended": "至少5星专1",
+    "uniqueWeaponRecommended": "推荐至少专1",
     "acquisitionMethod": "常驻池",
     "skillMainOparts": "wolfsegg",
     "skillSubOparts": "baghdad",
@@ -3958,14 +3967,14 @@
       "totalAssault": [2, 0, 0],
       "pvp": [1, 0, 0],
       "grandAssault": [1, 0, 0],
-      "limitBreakAssault": [1, 0, 0],
+      "limitBreakAssault": null,
       "jointFiringDrill": [1, 0, 0],
       "eventChallenge": [1, 0, 0],
-      "overall": 27
+      "overall": 26
     },
     "skillsSummary": {
       "ex": "4Cost对矩形范围内敌方造成<blue>489%</blue>伤害并造成<blue>66.2%</blue><purple>烧伤</purple><teal>（20秒）</teal>",
-      "ns": "毎40秒对五名敌方造成<blue>160%</blue>伤害并<purple>眩晕</purple>1.6秒",
+      "ns": "毎40秒对五名敌方造成<blue>160%</blue>伤害并<purple>眩晕</purple><teal>1.6秒</teal>",
       "ss": "<blue>17.3%</blue>暴伤光环"
     },
     "ratingsSummary": {
@@ -4901,9 +4910,9 @@
       "overall": 59
     },
     "skillsSummary": {
-      "ex": "2Cost对一名敌方造成<blue>487%</blue>伤害并降低暴伤抵抗<blue>20.3%</blue><teal>（50秒）</teal>。",
+      "ex": "2Cost对一名敌方造成<blue>487%</blue>伤害并降低暴伤抵抗<blue>20.3%</blue><teal>（50秒）</teal>",
       "ns": "每30秒提高自身闪避值<blue>35%</blue><teal>（25秒）</teal>",
-      "ss": "自身每闪避50次攻击，自身Cost回复力增加<blue>630</blue><teal>（10秒）</teal>"
+      "ss": "自身每闪避50次攻击，提高Cost回复力<blue>630</blue><teal>（10秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -4953,8 +4962,8 @@
     },
     "skillsSummary": {
       "ex": "4Cost对一名敌方造成<blue>552%</blue>伤害，并使防御/攻击/暴抗降低<blue>20.8%</blue><teal>（50秒）</teal>",
-      "ns": "每普攻15次对扇形范围内敌方造成<blue>371%</blue>伤害，对<red>中型体型</red>的敌人额外造成<blue>185%</blue>追加伤害",
-      "ss": "自身及后排学生（SPECIAL）的攻击力提高<blue>30.6%</blue>"
+      "ns": "<red>每普攻15次</red>对扇形范围内敌方造成<blue>371%</blue>伤害，对<red>中型体型</red>的敌人额外造成<blue>185%</blue>追加伤害",
+      "ss": "自身及支援学生的攻击力提高<blue>30.6%</blue>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -5299,7 +5308,7 @@
     "defenseType": "Special",
     "weapon": "GL",
     "position": [1, "奶妈"],
-    "uniqueWeaponRecommended": "建议专一至二",
+    "uniqueWeaponRecommended": "看情况开",
     "acquisitionMethod": "常驻池",
     "skillMainOparts": "ether",
     "skillSubOparts": "totempole",
@@ -5319,25 +5328,25 @@
       "grandAssault": [3, 0, 0],
       "limitBreakAssault": [5, 0, 1],
       "jointFiringDrill": [2, 0, 0],
-      "eventChallenge": [2, 0, 0],
+      "eventChallenge": [1, 0, 0],
       "overall": 60
     },
     "skillsSummary": {
-      "ex": "5Cost<red>（满级）<red>4秒1次治愈<blue>40.4%</blue>范围群奶<purple>（合计8次）</purple>回复",
-      "ns": "50秒一次我方血量最低的4名队友<blue>128%</blue>治愈回复血量",
+      "ex": "5Cost<red>（满级）</red>对圆形范围内我方<teal>每4秒</teal>回复一次治癒力<blue>40.4%</blue>血量<teal>（30秒）</teal>",
+      "ns": "50秒一次我方<red>血量最低</red>的4名我方回复治癒力<blue>128%</blue>血量",
       "ss": "<blue>17.3%</blue>暴伤光环"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "猫鬼LU/TM可选对策、多总力通用奶",
-      "pvp": "多坦体系可选群补玩具",
-      "grandAssault": "猫鬼LU/TM可选对策、多总力通用奶",
-      "limitBreakAssault": "赛特塔、提法塔高压生存环境可选，高层刚需",
+      "totalAssault": "猫鬼LU/TM可选对策、有生存压力可选奶",
+      "pvp": "暫無組合搭配",
+      "grandAssault": "猫鬼LU/TM可选对策、有生存压力可选奶",
+      "limitBreakAssault": "赛特塔、提法塔高压生存可选，高层刚需",
       "jointFiringDrill": "特殊回血机制可选",
-      "eventChallenge": null
+      "eventChallenge": "特殊回血机制可选"
     },
-    "uniqueWeaponRecommendedSummary": "治愈力增加，增强奶量<blue>使用建议开专2起跳</blue>",
-    "overallRecommendation": "猫鬼LU/TM多刀可选对策、对抗赛多坦队玩具、爬塔主对策奶妈，其他高压环境可考虑选择",
+    "uniqueWeaponRecommendedSummary": "增强奶量，看轴或个人选择，三星至专二及以上都有轴",
+    "overallRecommendation": "猫鬼LU/TM多刀可选对策、爬塔主对策奶妈，其他有生存压力情况可选",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
