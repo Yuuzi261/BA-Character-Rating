@@ -361,14 +361,14 @@
       "overall": 56
     },
     "skillsSummary": {
-      "ex": "4Cost对扇形范围内敌方造成<blue>697%</blue>伤害且每段攻击<purple>(EX3)施加眩晕</purple><red>(EX5)1.4秒</red>",
+      "ex": "4Cost对扇形范围内敌方造成<blue>697%</blue>伤害且每段攻击<purple>（EX3）施加眩晕</purple><red>（EX5）1.4秒</red>",
       "ns": "<red>自身血量低于30%时</red>赋予治愈力<blue>191%</blue>回复<teal>（每场战斗限1次）</teal>",
       "ss": "使用EX技时赋予自身治愈力<blue>205%</blue>的护盾。<green>爱用品降低暴毙概率，加强竞技场残局收尾能力</green>"
     },
     "ratingsSummary": {
       "newbie": null,
       "totalAssault": "霍德可选群控坦，鸡斯拉可选承伤坦",
-      "pvp": "重甲防御坦，速攻降闪赛季(S8 / S9)主选承伤坦",
+      "pvp": "重甲防御坦，速攻降闪赛季（S8/S9）主选承伤坦",
       "grandAssault": "霍德可选群控坦，鸡斯拉可选承伤坦",
       "limitBreakAssault": "缺人或机制使用",
       "jointFiringDrill": "需要群控或承伤时选用",
@@ -662,8 +662,8 @@
     "equipments": ["hat", "hairpin", "watch"],
     "uniqueWeaponStar2": "暴击值增加",
     "uniqueWeaponStar3": ["city", "SS"],
-    "ratingVersion": "7.0",
-    "ratingDate": "2025/07/11",
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/08/01",
     "ratings": {
       "newbie": [3, 0, 0],
       "totalAssault": [2, 0, 0],
@@ -675,7 +675,7 @@
       "overall": 34
     },
     "skillsSummary": {
-      "ex": "2Cost对一名敌方造成<blue>760%</blue>伤害<purple>(目标死亡后会找准最近目标)</purple>",
+      "ex": "2Cost对一名敌方造成<blue>760%</blue>伤害<purple>（目标死亡后会找准最近目标）</purple>",
       "ns": "毎25秒对圆形范围内敌方造成<blue>368%</blue>伤害",
       "ss": "普攻时有20%机率提升自身攻速<blue>57.4%</blue><teal>（30秒）</teal>，<green>爱用品增强输出</green>"
     },
@@ -688,8 +688,8 @@
       "jointFiringDrill": "对轻甲/机制时可选",
       "eventChallenge": "对轻甲/机制时可选"
     },
-    "uniqueWeaponRecommendedSummary": "暴击提升不大，主要看面板提升。<blue>有爱刷Hard高专</blue>",
-    "overallRecommendation": "萌新过度用爆发输出，INS寿司破盾/过牌选用",
+    "uniqueWeaponRecommendedSummary": "暴击提升不大，主要看面板提升。<green>有爱刷Hard高专</green>",
+    "overallRecommendation": "萌新过渡用爆发输出，INS寿司破盾/过牌选用",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
@@ -1791,8 +1791,8 @@
       "overall": 20
     },
     "skillsSummary": {
-      "ex": "4Cost使圆形范围内友方恢复治愈力<blue>224%</blue>的血量",
-      "ns": "毎30秒使圆形范围友方暴抗增加<blue>29.4%</blue><teal>(20秒)</teal>",
+      "ex": "4Cost使圆形范围内友方回复治愈力<blue>224%</blue>的血量",
+      "ns": "毎30秒使圆形范围友方暴抗增加<blue>29.4%</blue><teal>（20秒）</teal>",
       "ss": "<blue>17.3%</blue>血量光环"
     },
     "ratingsSummary": {
@@ -2889,7 +2889,7 @@
     },
     "skillsSummary": {
       "ex": "4Cost对圆形范围内敌方造成<blue>666%</blue>伤害并<purple>眩晕5.1秒</purple>",
-      "ns": "每35秒对<red>血量最低</red>的一名敌方造成<blue>343%</blue>伤害<blue>并造成<blue>56%</blue><purple>烧伤</purple><teal>（20秒）</teal>。",
+      "ns": "每35秒对<red>血量最低</red>的一名敌方造成<blue>343%</blue>伤害<blue>并造成<blue>56%</blue><purple>烧伤</purple><teal>（20秒）</teal>",
       "ss": "我方攻击力增加<blue>17.3%</blue>。<green>爱用品备战LU难霍德，竞技场稳定压低黑子血量/收佐仓</green>"
     },
     "ratingsSummary": {
@@ -4898,8 +4898,8 @@
     "equipments": ["shoes", "badge", "necklace"],
     "uniqueWeaponStar2": "治愈力增加",
     "uniqueWeaponStar3": ["indoor", "SS"],
-    "ratingVersion": "7.0",
-    "ratingDate": "2025/04/27",
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/08/01",
     "ratings": {
       "newbie": [2, 0, 0],
       "totalAssault": [4, 0, 0],
@@ -4911,7 +4911,7 @@
       "overall": 60
     },
     "skillsSummary": {
-      "ex": "5Cost<red>(满级)<red>4秒1次治愈<blue>40.4%</blue>范围群奶<purple>(合计8次)</purple>回复",
+      "ex": "5Cost<red>（满级）<red>4秒1次治愈<blue>40.4%</blue>范围群奶<purple>（合计8次）</purple>回复",
       "ns": "50秒一次我方血量最低的4名队友<blue>128%</blue>治愈回复血量",
       "ss": "<blue>17.3%</blue>暴伤光环"
     },
