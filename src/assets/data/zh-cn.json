@@ -7844,7 +7844,7 @@
       "Max"
     ]
   },
-    {
+  {
     "id": 40001,
     "fullname": "春原 瞬",
     "name": "瞬",
@@ -7878,8 +7878,8 @@
       "overall": 100
     },
     "skillsSummary": {
-      "ex": "3Cost<red>形态转换</red>普攻强化至<blue>153%</blue><purple>(优先索敌高攻击敌方)</purple>，射程增加<blue>24.4%</blue>、暴击值增加<blue>50%</blue>，<red>但攻速降低18.8%</red><teal>(30秒)</teal>",
-      "ns": "战斗开始时获得<blue>3.8</blue>Cost<red>(每场战斗仅一次)</red>",
+      "ex": "3Cost<red>形态转换</red>普攻强化至<blue>153%</blue><purple>（优先索敌高攻击敌方）</purple>，射程增加<blue>24.4%</blue>、暴击值增加<blue>50%</blue>，<red>但攻速降低18.8%</red><teal>（30秒）</teal>",
+      "ns": "战斗开始时获得<blue>3.8</blue>Cost<red>（每场战斗仅一次）</red>",
       "ss": "对<red>中等体型</red>目标额外造成<blue>96.4%</blue>追伤"
     },
     "ratingsSummary": {
@@ -7891,7 +7891,7 @@
       "jointFiringDrill": "爆费加快EX循环",
       "eventChallenge": "爆费加快EX循环"
     },
-    "uniqueWeaponRecommendedSummary": "加攻击力，PVP玩家考虑<purple>(特殊组合存在压攻组合)</purple>",
+    "uniqueWeaponRecommendedSummary": "加攻击力，PVP玩家考虑<purple>（特殊组合存在压攻组合）</purple>",
     "overallRecommendation": "<red>本游戏唯一的开局爆费角色</red>，竞技场必备人权，总力/大决战短轴或收尾、调轴/提速可选",
     "skillOrder": [
       "技一.二.三Lv4",
@@ -7918,7 +7918,7 @@
     "weapon": "HG",
     "position": [1, "范围输出"],
     "uniqueWeaponRecommended": "有爱开专",
-    "acquisitionMethod": "商店/档案池",
+    "acquisitionMethod": "档案池/商店",
     "skillMainOparts": "ether",
     "skillSubOparts": "nebra",
     "l2dUnlock": 8,
@@ -7941,8 +7941,8 @@
       "overall": 34
     },
     "skillsSummary": {
-      "ex": "6Cost对圆形范围内敌方造成<blue>239%</blue>持续伤害<teal>(8秒)</teal>",
-      "ns": "每20秒对圆形范围内敌方造成<blue>69.3%</blue><purple>中毒</purple>并减少暴击值<blue>12.1%</blue><teal>(20秒)</teal>",
+      "ex": "6Cost对圆形范围内敌方造成<blue>239%</blue>持续伤害<teal>（8秒）</teal>",
+      "ns": "每20秒对圆形范围内敌方造成<blue>69.3%</blue><purple>中毒</purple>并减少暴击值<blue>12.1%</blue><teal>（20秒）</teal>",
       "ss": "<blue>17.3%</blue>暴击光环"
     },
     "ratingsSummary": {
@@ -8003,9 +8003,9 @@
       "overall": 20
     },
     "skillsSummary": {
-      "ex": "5Cost对一名敌方造成<blue>803%</blue>伤害<purple>(无视44%防御)</purple>",
-      "ns": "每25秒对一名敌方造成<blue>346%</blue>伤害<blue>(无视44%防御)</blue>",
-      "ss": "<red>使用EX技</red>后攻击减少<blue>21.7%</blue><teal>(20秒)</teal>，<red>20秒后提高自身攻击<blue>65.7%</blue><teal>(20秒)</teal>"
+      "ex": "5Cost对一名敌方造成<blue>803%</blue>伤害<purple>（无视44%防御）</purple>",
+      "ns": "每25秒对一名敌方造成<blue>346%</blue>伤害",
+      "ss": "<red>使用EX技后</red>攻击减少<blue>21.7%</blue><teal>（20秒）</teal>，<red>20秒后</red>提高自身攻击<blue>65.7%</blue><teal>（20秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -8040,7 +8040,7 @@
       ]
     }
   },
-    {
+  {
     "id": 40004,
     "fullname": "药子 纱绫（私服）",
     "name": "纱绫（私服）",
@@ -8050,10 +8050,10 @@
     "defenseType": "Special",
     "weapon": "HG",
     "position": [0, "范围输出"],
-    "uniqueWeaponRecommended": "有爱开专",
-    "acquisitionMethod": "常驻/困难",
+    "uniqueWeaponRecommended": "竞技场推荐专二",
+    "acquisitionMethod": "档案池/困难",
     "skillMainOparts": "ether",
-    "skillSubOparts": "voynich",
+    "skillSubOparts": "nebra",
     "l2dUnlock": 5,
     "city": "D",
     "outdoor": "S",
@@ -8074,7 +8074,7 @@
       "overall": 48
     },
     "skillsSummary": {
-      "ex": "5Cost对矩形范围内敌方造成<blue>75.9%</blue>持续伤害<teal>(20秒)</teal>",
+      "ex": "5Cost对矩形范围内敌方造成<blue>75.9%</blue>持续伤害<teal>（20秒）</teal>",
       "ns": "毎30秒对圆形范围内敌方造成<blue>389%</blue>伤害",
       "ss": "<blue>17.3%</blue>暴伤光环。<green>爱用品提高输出、且NS增加中毒效果</green>"
     },
@@ -8107,7 +8107,7 @@
       "materials": ["18", "ether"],
       "effects": [
         "攻击力<red>1000</red>",
-        "伤害<blue>389%</blue>提升至<blue>425%</blue>，<red>附加</red><purple>中毒</purple><red>50.1%</red><teal>(20秒)</teal>"
+        "伤害<blue>389%</blue>提升至<blue>425%</blue>，<red>附加</red><purple>中毒</purple><red>50.1%</red><teal>（20秒）</teal>"
       ]
     }
   },
@@ -8147,7 +8147,7 @@
     "skillsSummary": {
       "ex": "2Cost对除自身外一名我方回复治愈力<blue>290%</blue>血量，且自身回复治愈力<blue>101%</blue>血量并获得一层<purple>「印记」</purple>",
       "ns": "我方每造成100次暴击，对除自身外<red>血量最低</red>的一名我方回复治愈力<blue>107%</blue>血量并获得一层<purple>「印记」</purple>",
-      "ss": "累计5层<purple>「印记」</purple>时，对除自身外我方EX技Cost-1<red>(1次)</red>，并清空印记层数且回复自身治愈力<blue>108%</blue>血量"
+      "ss": "累计5层<purple>「印记」</purple>时，对除自身外我方EX技Cost-1<red>（1次）</red>，并清空印记层数且回复自身治愈力<blue>108%</blue>血量"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -8179,7 +8179,7 @@
     "name": "瑠海",
     "nicknames": ["炒饭"],
     "school": "Shanhaijing",
-    "attackType": "Piercing",
+    "attackType": "Explosive",
     "defenseType": "Heavy",
     "weapon": "SMG",
     "position": [0, "奶妈"],
@@ -8207,9 +8207,9 @@
       "overall": 40
     },
     "skillsSummary": {
-      "ex": "4Cost对除自身外一名我方投掷炒饭，<red>按照弹跳顺序触发效果</red> (<red>1&4位</red>:回复治愈力<blue>223%</blue>血量并解除一个减益，<red>2&3位</red>:回复治愈力<blue>156%</blue>血量) ",
+      "ex": "4Cost对除自身外一名我方投掷炒饭，<red>按照弹跳顺序触发效果</red>（<red>1&4位</red>：回复治愈力<blue>223%</blue>血量并解除一个减益，<red>2&3位</red>：回复治愈力<blue>156%</blue>血量）",
       "ns": "每30秒对扇形范围内敌方造成<blue>430%</blue>伤害",
-      "ss": "使用EX技时赋予自身治愈力<blue>3.3%</blue>持续回复血量<teal>(60秒)</teal>"
+      "ss": "使用EX技时赋予自身治愈力<blue>3.3%</blue>持续回复血量<teal>（60秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -8222,17 +8222,7 @@
     },
     "uniqueWeaponRecommendedSummary": "提高奶量和自身生存、看轴情况专一起，有压力建议专二",
     "overallRecommendation": "鸡斯拉对策奶、格里总力、猫鬼、盖布拉可使用对策补",
-    "skillOrder": [
-      "EX3",
-      "技一.二.三Lv4",
-      "技三Lv7",
-      "技二Lv7",
-      "技一Lv7",
-      "EX5",
-      "技三Lv10",
-      "技二Lv10",
-      "Max"
-    ]
+    "skillOrder": ["EX3", "技一.二.三Lv4", "技三Lv7", "技二Lv7", "技一Lv7", "EX5", "技三Lv10", "技二Lv10", "Max"]
   },
   {
     "id": 40007,
@@ -8240,7 +8230,7 @@
     "name": "南",
     "nicknames": ["发哥"],
     "school": "Shanhaijing",
-    "attackType": "Piercing",
+    "attackType": "Explosive",
     "defenseType": "Heavy",
     "weapon": "HG",
     "position": [0, "辅助输出"],
@@ -8268,9 +8258,9 @@
       "overall": 43
     },
     "skillsSummary": {
-      "ex": "3Cost对一名敌方造成<blue>359%</blue>伤害，并降低攻击、闪避<red>(EX2)</red>、命中<red>(EX4)</red><blue>30.2%</blue><teal>(50秒)</teal>",
-      "ns": "<blue>每普攻8次</blue>自身立即换弹，并对一名敌方造成<blue>423%</blue>伤害，同时根据减益数量额外造成追加伤害<blue>(3个:846% 4个:1269% ≥5个:1693%)</blue>",
-      "ss": "使用EX技时提高自身攻击、闪避、命中<blue>35.8%</blue><teal>(20秒)</teal>"
+      "ex": "3Cost对一名敌方造成<blue>359%</blue>伤害，并降低攻击、闪避<red>（EX2）</red>、命中<red>（EX4）</red><blue>30.2%</blue><teal>（50秒）</teal>",
+      "ns": "<red>每普攻8次</red>自身立即换弹，并对一名敌方造成<blue>423%</blue>伤害，同时<red>根据减益数量</red>额外造成追加伤害<blue>（3个：846%，4个：1269%，≥5个：1693%）</blue>",
+      "ss": "使用EX技时提高自身攻击、闪避、命中<blue>35.8%</blue><teal>（20秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -8309,7 +8299,7 @@
     "uniqueWeaponRecommended": "看情况开",
     "acquisitionMethod": "常驻池",
     "skillMainOparts": "voynich",
-    "skillSubOparts": "winniestone",
+    "skillSubOparts": "winnistone",
     "l2dUnlock": 2,
     "city": "D",
     "outdoor": "S",
@@ -8330,9 +8320,9 @@
       "overall": 38
     },
     "skillsSummary": {
-      "ex": "3Cost对一名敌方造成<blue>116%</blue>伤害，并赋予<purple>「恶寒/中毒强化」</purple><teal>(15秒)</teal>。<purple>恶寒强化</purple>:持续伤害<red>触发时间缩短</red><blue>31.8%</blue>；<purple>中毒强化</purple>:毎2秒对目标造成<red>中毒倍率×53%追伤</red><teal> (最多6次) </teal>",
-      "ns": "毎30秒提高自身攻击力<blue>45%</blue><teal>(20秒</teal> ",
-      "ss": "使用EX技后，使自身Cost回复力增加<blue>1861</blue><teal>(5秒)</teal>"
+      "ex": "3Cost对一名敌方造成<blue>116%</blue>伤害，并赋予<purple>「恶寒/中毒强化」</purple><teal>（15秒）</teal>。<purple>恶寒强化</purple>：持续伤害<red>触发时间缩短</red><blue>31.8%</blue>；<purple>中毒强化</purple>：毎2秒对目标造成<red>中毒倍率×53%追伤</red><teal>（最多6次）</teal>",
+      "ns": "毎30秒提高自身攻击力<blue>45%</blue><teal>（20秒）</teal> ",
+      "ss": "使用EX技后，使自身Cost回复力增加<blue>1861</blue><teal>（5秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -8362,7 +8352,7 @@
     "id": 40009,
     "fullname": "龙华 妃咲",
     "name": "妃咲",
-    "nicknames": ["KSK"],
+    "nicknames": ["KSK", "妃咲"],
     "school": "Shanhaijing",
     "attackType": "Sonic",
     "defenseType": "Elastic",
@@ -8371,7 +8361,7 @@
     "uniqueWeaponRecommended": "卷分推荐专二",
     "acquisitionMethod": "常驻池",
     "skillMainOparts": "rocket",
-    "skillSubOparts": "kikuko0",
+    "skillSubOparts": "kikuko",
     "l2dUnlock": 6,
     "city": "B",
     "outdoor": "D",
@@ -8392,21 +8382,21 @@
       "overall": 100
     },
     "skillsSummary": {
-      "ex": "3Cost提高一名我方EX技能伤害<blue>80.7%</blue><teal>(15秒/</teal><red>专二17.85秒)</red>",
-      "ns": "毎35秒对血量最低的一名我方赋予治愈力<blue>131%</blue>护盾<teal>(17秒/</teal><red>专二20.23秒)</red>",
+      "ex": "3Cost提高一名我方EX技能伤害<blue>80.7%</blue>（<teal>15秒</teal>/<red>专二17.85秒</red>）",
+      "ns": "毎35秒对<red>血量最低</red>的一名我方赋予治愈力<blue>131%</blue>护盾（<teal>17秒</teal>/<red>专二20.23秒</red>）",
       "ss": "20.2%<blue>回费光环</blue>"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "人权辅助，进一步提高上限(反手拐生效较慢要注意)",
+      "totalAssault": "人权辅助，进一步提高上限（反手拐生效较慢要注意）",
       "pvp": "暂时无组合搭配",
-      "grandAssault": "人权辅助，进一步提高上限(反手拐生效较慢要注意)",
+      "grandAssault": "人权辅助，进一步提高上限（反手拐生效较慢要注意）",
       "limitBreakAssault": "火龙、提法塔必带人权辅助",
       "jointFiringDrill": "快速清屏或蒸发BOSS",
       "eventChallenge": "快速清屏或蒸发BOSS"
     },
     "uniqueWeaponRecommendedSummary": "平民三星即可，<blue>卷分建议专二及以上提供支援面板</blue>",
-    "overallRecommendation": "首个EX技增伤辅助，默认必有的人权辅助",
+    "overallRecommendation": "首个EX技增伤辅助，<red>默认必有的人权辅助</red>",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",

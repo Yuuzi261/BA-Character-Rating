@@ -7844,7 +7844,7 @@
       "Max"
     ]
   },
-    {
+  {
     "id": 40001,
     "fullname": "春原 旬",
     "name": "旬",
@@ -7878,8 +7878,8 @@
       "overall": 100
     },
     "skillsSummary": {
-      "ex": "3Cost<red>形態轉換</red>普攻強化至<blue>153%</blue><purple>(優先索敵高攻擊敵方)</purple>，射程增加<blue>24.4%</blue>、暴擊值增加<blue>50%</blue>，<red>但攻速降低18.8%</red><teal>(30秒)</teal>",
-      "ns": "戰鬥開始時獲得<blue>3.8</blue>Cost<red>(每場戰鬥僅一次)</red>",
+      "ex": "3Cost<red>形態轉換</red>普攻強化至<blue>153%</blue><purple>（優先索敵高攻擊敵方）</purple>，射程增加<blue>24.4%</blue>、暴擊值增加<blue>50%</blue>，<red>但攻速降低18.8%</red><teal>（30秒）</teal>",
+      "ns": "戰鬥開始時獲得<blue>3.8</blue>Cost<red>（每場戰鬥僅一次）</red>",
       "ss": "對<red>中等體型</red>目標額外造成<blue>96.4%</blue>追傷"
     },
     "ratingsSummary": {
@@ -7891,7 +7891,7 @@
       "jointFiringDrill": "爆費加快EX循環",
       "eventChallenge": "爆費加快EX循環"
     },
-    "uniqueWeaponRecommendedSummary": "加攻擊力，PVP玩家考慮<purple>(特殊組合存在壓攻組合)</purple>",
+    "uniqueWeaponRecommendedSummary": "加攻擊力，PVP玩家考慮<purple>（特殊組合存在壓攻組合）</purple>",
     "overallRecommendation": "<red>本遊戲唯一的開局爆費角色</red>，競技場必備人權，總力/大決戰短軸或收尾、調軸/提速可選",
     "skillOrder": [
       "技一.二.三Lv4",
@@ -7918,7 +7918,7 @@
     "weapon": "HG",
     "position": [1, "範圍輸出"],
     "uniqueWeaponRecommended": "有愛開專",
-    "acquisitionMethod": "商店/檔案池",
+    "acquisitionMethod": "檔案池/商店",
     "skillMainOparts": "ether",
     "skillSubOparts": "nebra",
     "l2dUnlock": 8,
@@ -7941,8 +7941,8 @@
       "overall": 34
     },
     "skillsSummary": {
-      "ex": "6Cost對圓形範圍內敵方造成<blue>239%</blue>持續傷害<teal>(8秒)</teal>",
-      "ns": "每20秒對圓形範圍內敵方造成<blue>69.3%</blue><purple>中毒</purple>並減少暴擊值<blue>12.1%</blue><teal>(20秒)</teal>",
+      "ex": "6Cost對圓形範圍內敵方造成<blue>239%</blue>持續傷害<teal>（8秒）</teal>",
+      "ns": "每20秒對圓形範圍內敵方造成<blue>69.3%</blue><purple>中毒</purple>並減少暴擊值<blue>12.1%</blue><teal>（20秒）</teal>",
       "ss": "<blue>17.3%</blue>暴擊光環"
     },
     "ratingsSummary": {
@@ -7955,7 +7955,7 @@
       "eventChallenge": "對群或DOT機制可選"
     },
     "uniqueWeaponRecommendedSummary": "攻擊力提升，有愛商店可兌換開專",
-    "overallRecommendation": "玩具角色，火龍塔低配、格裡高利堆屍可選",
+    "overallRecommendation": "玩具角色，火龍塔低配、葛利果堆屍可選",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
@@ -8003,9 +8003,9 @@
       "overall": 20
     },
     "skillsSummary": {
-      "ex": "5Cost對一名敵方造成<blue>803%</blue>傷害<purple>(無視44%防禦)</purple>",
-      "ns": "每25秒對一名敵方造成<blue>346%</blue>傷害<blue>(無視44%防禦)</blue>",
-      "ss": "<red>使用EX技</red>後攻擊減少<blue>21.7%</blue><teal>(20秒)</teal>，<red>20秒後提高自身攻擊<blue>65.7%</blue><teal>(20秒)</teal>"
+      "ex": "5Cost對一名敵方造成<blue>803%</blue>傷害<purple>（無視44%防禦）</purple>",
+      "ns": "每25秒對一名敵方造成<blue>346%</blue>傷害",
+      "ss": "<red>使用EX技後</red>攻擊減少<blue>21.7%</blue><teal>（20秒）</teal>，<red>20秒後</red>提高自身攻擊<blue>65.7%</blue><teal>（20秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -8040,7 +8040,7 @@
       ]
     }
   },
-    {
+  {
     "id": 40004,
     "fullname": "藥子 沙耶（私服）",
     "name": "沙耶（私服）",
@@ -8050,10 +8050,10 @@
     "defenseType": "Special",
     "weapon": "HG",
     "position": [0, "範圍輸出"],
-    "uniqueWeaponRecommended": "有愛開專",
-    "acquisitionMethod": "常駐/困難",
+    "uniqueWeaponRecommended": "競技場推薦專二",
+    "acquisitionMethod": "檔案池/困難",
     "skillMainOparts": "ether",
-    "skillSubOparts": "voynich",
+    "skillSubOparts": "nebra",
     "l2dUnlock": 5,
     "city": "D",
     "outdoor": "S",
@@ -8074,14 +8074,14 @@
       "overall": 48
     },
     "skillsSummary": {
-      "ex": "5Cost對矩形範圍內敵方造成<blue>75.9%</blue>持續傷害<teal>(20秒)</teal>",
+      "ex": "5Cost對矩形範圍內敵方造成<blue>75.9%</blue>持續傷害<teal>（20秒）</teal>",
       "ns": "毎30秒對圓形範圍內敵方造成<blue>389%</blue>傷害",
       "ss": "<blue>17.3%</blue>暴傷光環。<green>愛用品提高輸出、且NS增加中毒效果</green>"
     },
     "ratingsSummary": {
       "newbie": null,
       "totalAssault": "雙地形球道中可選清雜對策",
-      "pvp": "針對重甲坦的同時收重甲輸出、瞬、炮臺 ",
+      "pvp": "針對重甲坦的同時收重甲輸出、旬、炮臺 ",
       "grandAssault": "雙地形球道中可選清雜對策",
       "limitBreakAssault": "雙甲火龍塔低配可選DOT機制對策",
       "jointFiringDrill": "防禦/突破/護衛演習可選",
@@ -8107,7 +8107,7 @@
       "materials": ["18", "ether"],
       "effects": [
         "攻擊力<red>1000</red>",
-        "傷害<blue>389%</blue>提升至<blue>425%</blue>，<red>附加</red><purple>中毒</purple><red>50.1%</red><teal>(20秒)</teal>"
+        "傷害<blue>389%</blue>提升至<blue>425%</blue>，<red>附加</red><purple>中毒</purple><red>50.1%</red><teal>（20秒）</teal>"
       ]
     }
   },
@@ -8147,7 +8147,7 @@
     "skillsSummary": {
       "ex": "2Cost對除自身外一名我方回復治癒力<blue>290%</blue>血量，且自身回復治癒力<blue>101%</blue>血量並獲得一層<purple>「印記」</purple>",
       "ns": "我方每造成100次暴擊，對除自身外<red>血量最低</red>的一名我方回復治癒力<blue>107%</blue>血量並獲得一層<purple>「印記」</purple>",
-      "ss": "累計5層<purple>「印記」</purple>時，對除自身外我方EX技Cost-1<red>(1次)</red>，並清空印記層數且回復自身治癒力<blue>108%</blue>血量"
+      "ss": "累計5層<purple>「印記」</purple>時，對除自身外我方EX技Cost-1<red>（1次）</red>，並清空印記層數且回復自身治癒力<blue>108%</blue>血量"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -8179,7 +8179,7 @@
     "name": "瑠美",
     "nicknames": ["炒飯"],
     "school": "Shanhaijing",
-    "attackType": "Piercing",
+    "attackType": "Explosive",
     "defenseType": "Heavy",
     "weapon": "SMG",
     "position": [0, "奶媽"],
@@ -8207,32 +8207,22 @@
       "overall": 40
     },
     "skillsSummary": {
-      "ex": "4Cost對除自身外一名我方投擲炒飯，<red>按照彈跳順序觸發效果</red> (<red>1&4位</red>:回復治癒力<blue>223%</blue>血量並解除一個減益，<red>2&3位</red>:回復治癒力<blue>156%</blue>血量) ",
+      "ex": "4Cost對除自身外一名我方投擲炒飯，<red>按照彈跳順序觸發效果</red>（<red>1&4位</red>：回復治癒力<blue>223%</blue>血量並解除一個減益，<red>2&3位</red>：回復治癒力<blue>156%</blue>血量）",
       "ns": "每30秒對扇形範圍內敵方造成<blue>430%</blue>傷害",
-      "ss": "使用EX技時賦予自身治癒力<blue>3.3%</blue>持續回復血量<teal>(60秒)</teal>"
+      "ss": "使用EX技時賦予自身治癒力<blue>3.3%</blue>持續回復血量<teal>（60秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "雞斯拉對策奶，格裡高利、貓鬼、蓋布拉多刀/堆屍可選",
+      "totalAssault": "雞斯拉對策奶，葛利果、貓鬼、葛夫拉多刀/堆屍可選",
       "pvp": "暫時無組合搭配",
-      "grandAssault": "雞斯拉對策奶，格裡高利、貓鬼、蓋布拉多刀/堆屍可選",
+      "grandAssault": "雞斯拉對策奶，葛利果、貓鬼、葛夫拉多刀/堆屍可選",
       "limitBreakAssault": "缺人或機制使用",
       "jointFiringDrill": "需要奶媽時可選",
       "eventChallenge": "需要奶媽時可選"
     },
     "uniqueWeaponRecommendedSummary": "提高奶量和自身生存、看軸情況專一起，有壓力建議專二",
-    "overallRecommendation": "雞斯拉對策奶、格裡總力、貓鬼、蓋布拉可使用對策補",
-    "skillOrder": [
-      "EX3",
-      "技一.二.三Lv4",
-      "技三Lv7",
-      "技二Lv7",
-      "技一Lv7",
-      "EX5",
-      "技三Lv10",
-      "技二Lv10",
-      "Max"
-    ]
+    "overallRecommendation": "雞斯拉對策奶、葛利果總力、貓鬼、葛夫拉可使用對策補",
+    "skillOrder": ["EX3", "技一.二.三Lv4", "技三Lv7", "技二Lv7", "技一Lv7", "EX5", "技三Lv10", "技二Lv10", "Max"]
   },
   {
     "id": 40007,
@@ -8240,7 +8230,7 @@
     "name": "美奈",
     "nicknames": ["發哥"],
     "school": "Shanhaijing",
-    "attackType": "Piercing",
+    "attackType": "Explosive",
     "defenseType": "Heavy",
     "weapon": "HG",
     "position": [0, "輔助輸出"],
@@ -8268,9 +8258,9 @@
       "overall": 43
     },
     "skillsSummary": {
-      "ex": "3Cost對一名敵方造成<blue>359%</blue>傷害，並降低攻擊、閃避<red>(EX2)</red>、命中<red>(EX4)</red><blue>30.2%</blue><teal>(50秒)</teal>",
-      "ns": "<blue>每普攻8次</blue>自身立即換彈，並對一名敵方造成<blue>423%</blue>傷害，同時根據減益數量額外造成追加傷害<blue>(3個:846% 4個:1269% ≥5個:1693%)</blue>",
-      "ss": "使用EX技時提高自身攻擊、閃避、命中<blue>35.8%</blue><teal>(20秒)</teal>"
+      "ex": "3Cost對一名敵方造成<blue>359%</blue>傷害，並降低攻擊、閃避<red>（EX2）</red>、命中<red>（EX4）</red><blue>30.2%</blue><teal>（50秒）</teal>",
+      "ns": "<red>每普攻8次</red>自身立即換彈，並對一名敵方造成<blue>423%</blue>傷害，同時<red>根據減益數量</red>額外造成追加傷害<blue>（3個：846%，4個：1269%，≥5個：1693%）</blue>",
+      "ss": "使用EX技時提高自身攻擊、閃避、命中<blue>35.8%</blue><teal>（20秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -8282,7 +8272,7 @@
       "eventChallenge": "減益層數機制可選"
     },
     "uniqueWeaponRecommendedSummary": "應對機制三星即可，看生存情況或卷分補傷害考慮專一起",
-    "overallRecommendation": "格裡高利減益層數機制對策輔助",
+    "overallRecommendation": "葛利果減益層數機制對策輔助",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
@@ -8309,7 +8299,7 @@
     "uniqueWeaponRecommended": "看情況開",
     "acquisitionMethod": "常駐池",
     "skillMainOparts": "voynich",
-    "skillSubOparts": "winniestone",
+    "skillSubOparts": "winnistone",
     "l2dUnlock": 2,
     "city": "D",
     "outdoor": "S",
@@ -8330,9 +8320,9 @@
       "overall": 38
     },
     "skillsSummary": {
-      "ex": "3Cost對一名敵方造成<blue>116%</blue>傷害，並賦予<purple>「惡寒/中毒強化」</purple><teal>(15秒)</teal>。<purple>惡寒強化</purple>:持續傷害<red>觸發時間縮短</red><blue>31.8%</blue>；<purple>中毒強化</purple>:毎2秒對目標造成<red>中毒倍率×53%追傷</red><teal> (最多6次) </teal>",
-      "ns": "毎30秒提高自身攻擊力<blue>45%</blue><teal>(20秒</teal> ",
-      "ss": "使用EX技後，使自身Cost回復力增加<blue>1861</blue><teal>(5秒)</teal>"
+      "ex": "3Cost對一名敵方造成<blue>116%</blue>傷害，並賦予<purple>「惡寒/中毒強化」</purple><teal>（15秒）</teal>。<purple>惡寒強化</purple>：持續傷害<red>觸發時間縮短</red><blue>31.8%</blue>；<purple>中毒強化</purple>：毎2秒對目標造成<red>中毒倍率×53%追傷</red><teal>（最多6次）</teal>",
+      "ns": "毎30秒提高自身攻擊力<blue>45%</blue><teal>（20秒）</teal> ",
+      "ss": "使用EX技後，使自身Cost回復力增加<blue>1861</blue><teal>（5秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -8371,7 +8361,7 @@
     "uniqueWeaponRecommended": "卷分推薦專二",
     "acquisitionMethod": "常駐池",
     "skillMainOparts": "rocket",
-    "skillSubOparts": "kikuko0",
+    "skillSubOparts": "kikuko",
     "l2dUnlock": 6,
     "city": "B",
     "outdoor": "D",
@@ -8392,21 +8382,21 @@
       "overall": 100
     },
     "skillsSummary": {
-      "ex": "3Cost提高一名我方EX技能傷害<blue>80.7%</blue><teal>(15秒/</teal><red>專二17.85秒)</red>",
-      "ns": "毎35秒對血量最低的一名我方賦予治癒力<blue>131%</blue>護盾<teal>(17秒/</teal><red>專二20.23秒)</red>",
+      "ex": "3Cost提高一名我方EX技能傷害<blue>80.7%</blue>（<teal>15秒</teal>/<red>專二17.85秒</red>）",
+      "ns": "毎35秒對<red>血量最低</red>的一名我方賦予治癒力<blue>131%</blue>護盾（<teal>17秒</teal>/<red>專二20.23秒</red>）",
       "ss": "20.2%<blue>回費光環</blue>"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "人權輔助，進一步提高上限(反手拐生效較慢要注意)",
+      "totalAssault": "人權輔助，進一步提高上限（反手拐生效較慢要注意）",
       "pvp": "暫時無組合搭配",
-      "grandAssault": "人權輔助，進一步提高上限(反手拐生效較慢要注意)",
+      "grandAssault": "人權輔助，進一步提高上限（反手拐生效較慢要注意）",
       "limitBreakAssault": "火龍、提法塔必帶人權輔助",
       "jointFiringDrill": "快速清屏或蒸發BOSS",
       "eventChallenge": "快速清屏或蒸發BOSS"
     },
     "uniqueWeaponRecommendedSummary": "平民三星即可，<blue>卷分建議專二及以上提供支援面板</blue>",
-    "overallRecommendation": "首個EX技增傷輔助，默認必有的人權輔助",
+    "overallRecommendation": "首個EX技增傷輔助，<red>默認必有的人權輔助</red>",
     "skillOrder": [
       "EX3",
       "技一.二.三Lv4",
