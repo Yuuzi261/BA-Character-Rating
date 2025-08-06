@@ -731,16 +731,16 @@
     "uniqueWeaponStar2": "攻击力增加",
     "uniqueWeaponStar3": ["city", "SS"],
     "ratingVersion": "7.1",
-    "ratingDate": "2025/08/03",
+    "ratingDate": "2025/08/05",
     "ratings": {
-      "newbie": [5, 0, 0],
-      "totalAssault": [5, 0, 0],
+      "newbie": [3, 0, 0],
+      "totalAssault": [4, 0, 0],
       "pvp": [5, 0, 1],
-      "grandAssault": [5, 0, 0],
-      "limitBreakAssault": [3, 0, 0],
+      "grandAssault": [4, 0, 0],
+      "limitBreakAssault": null,
       "jointFiringDrill": [5, 0, 1],
-      "eventChallenge": [5, 0, 1],
-      "overall": 100
+      "eventChallenge": [5, 0, 0],
+      "overall": 86
     },
     "skillsSummary": {
       "ex": "3Cost<red>形态转换</red>普攻强化至<blue>153%</blue><purple>（优先索敌高攻击敌方）</purple>，射程增加<blue>24.4%</blue>、暴击值增加<blue>50%</blue>，<red>但攻速降低18.8%</red><teal>（30秒）</teal>",
@@ -752,7 +752,7 @@
       "totalAssault": "短轴可选爆费辅助，或收尾刀选用",
       "pvp": "多赛季人权，开局爆费、射程远、EX锁对方输出",
       "grandAssault": "短轴可选爆费辅助，或收尾刀选用",
-      "limitBreakAssault": "提法塔固定轴提速可选",
+      "limitBreakAssault": "有空位提速可选",
       "jointFiringDrill": "爆费加快EX循环",
       "eventChallenge": "爆费加快EX循环"
     },
@@ -4290,7 +4290,7 @@
     "uniqueWeaponStar2": "回避增加",
     "uniqueWeaponStar3": ["city", "SS"],
     "ratingVersion": "7.1",
-    "ratingDate": "2025/08/03",
+    "ratingDate": "2025/08/05",
     "ratings": {
       "newbie": [5, 0, 0],
       "totalAssault": [5, 0, 0],
@@ -4311,7 +4311,7 @@
       "totalAssault": "泛用辅助奶妈，生存压力或功能选用",
       "pvp": "暂时无组合搭配",
       "grandAssault": "泛用辅助奶妈，生存压力或功能选用",
-      "limitBreakAssault": "缺人或机制使用",
+      "limitBreakAssault": "双甲赛特机制生存可选补师/奶妈",
       "jointFiringDrill": "有生存压力或需求减费时选用",
       "eventChallenge": "有生存压力或需求减费时选用"
     },
