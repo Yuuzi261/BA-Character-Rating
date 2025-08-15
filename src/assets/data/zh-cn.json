@@ -8466,42 +8466,35 @@
     "ratingVersion": "7.1",
     "ratingDate": "2025/08/11",
     "ratings": {
-        "newbie": null,
-        "totalAssault": [1, 0, 0],
-        "pvp": null,
-        "grandAssault": [1, 0, 0],
-        "limitBreakAssault": [5, 0, 0],
-        "jointFiringDrill": [2, 0, 0],
-        "eventChallenge": null,
-        "overall": 28
+      "newbie": null,
+      "totalAssault": [1, 0, 0],
+      "pvp": null,
+      "grandAssault": [1, 0, 0],
+      "limitBreakAssault": [5, 0, 0],
+      "jointFiringDrill": [2, 0, 0],
+      "eventChallenge": null,
+      "overall": 28
     },
     "skillsSummary": {
-        "ex": "5Cost在指定位置召唤初音未来，回复圆形范围内我方治愈力<blue>144%</blue>血量同时提高攻击力<blue>34%</blue><red>(领域增益)</red>",
-        "ns": "毎30秒提高圆形范围内我方暴击值<blue>37.7%</blue><teal>(20秒)</teal>",
-        "ss": "<blue>17.3%</blue>受回复率光环"
+      "ex": "5Cost在指定位置召唤初音未来，回复圆形范围内我方治愈力<blue>144%</blue>血量同时提高攻击力<blue>34%</blue><red>(领域增益)</red>",
+      "ns": "毎30秒提高圆形范围内我方暴击值<blue>37.7%</blue><teal>(20秒)</teal>",
+      "ss": "<blue>17.3%</blue>受回复率光环"
     },
     "ratingsSummary": {
-        "newbie": null,
-        "totalAssault": "堆尸选加攻辅助",
-        "pvp": "暂时无组合搭配",
-        "grandAssault": "堆尸选加攻辅助",
-        "limitBreakAssault": "轻甲赛特塔可选对策辅助",
-        "jointFiringDrill": "需要领域增益可选",
-        "eventChallenge": "需要领域增益可选"
+      "newbie": null,
+      "totalAssault": "堆尸选加攻辅助",
+      "pvp": "暂时无组合搭配",
+      "grandAssault": "堆尸选加攻辅助",
+      "limitBreakAssault": "轻甲赛特塔可选对策辅助",
+      "jointFiringDrill": "需要领域增益可选",
+      "eventChallenge": "需要领域增益可选"
     },
     "uniqueWeaponRecommendedSummary": "有爱开专、或爬塔看层数开专",
     "overallRecommendation": "联动吉祥物，轻甲赛特塔可选辅助",
-    "skillOrder": [
-        "EX3",
-        "技一.二.三Lv4",
-        "技二Lv7",
-        "技三Lv7",
-        "EX5",
-        "Max"
-    ],
+    "skillOrder": ["EX3", "技一.二.三Lv4", "技二Lv7", "技三Lv7", "EX5", "Max"],
     "skillExtraDesc": "需使用全部学校的大量BD跟笔记"
-},
-{
+  },
+  {
     "id": 59002,
     "fullname": "食蜂 操祈",
     "name": "食蜂操祈",
@@ -8525,46 +8518,46 @@
     "ratingVersion": "7.1",
     "ratingDate": "2025/08/11",
     "ratings": {
-        "newbie": null,
-        "totalAssault": [1, 0, 0],
-        "pvp": null,
-        "grandAssault": [1, 0, 0],
-        "limitBreakAssault": null,
-        "jointFiringDrill": [1, 0, 0],
-        "eventChallenge": [2, 0, 0],
-        "overall": 28
+      "newbie": null,
+      "totalAssault": [1, 0, 0],
+      "pvp": null,
+      "grandAssault": [1, 0, 0],
+      "limitBreakAssault": null,
+      "jointFiringDrill": [1, 0, 0],
+      "eventChallenge": [2, 0, 0],
+      "overall": 28
     },
     "skillsSummary": {
-        "ex": "5Cost对一名敌方和圆形范围内两名造成<blue>1468%</blue>伤害并赋予<purple>困惑</purple><teal>(7秒)</teal>",
-        "ns": "每30秒对圆形范围内敌方造成<blue>604%</blue>伤害",
-        "ss": "使用EX技成功施加<purple>困惑</purple>时，提高自身闪避、防御<blue>36.7%</blue><teal>(20秒)</teal>"
+      "ex": "5Cost对一名敌方和圆形范围内两名造成<blue>1468%</blue>伤害并赋予<purple>困惑</purple><teal>(7秒)</teal>",
+      "ns": "每30秒对圆形范围内敌方造成<blue>604%</blue>伤害",
+      "ss": "使用EX技成功施加<purple>困惑</purple>时，提高自身闪避、防御<blue>36.7%</blue><teal>(20秒)</teal>"
     },
     "ratingsSummary": {
-        "newbie": null,
-        "totalAssault": "霍德堆尸群控可选",
-        "pvp": "暂时无组合搭配",
-        "grandAssault": "霍德堆尸群控可选",
-        "limitBreakAssault": "缺人或机制使用",
-        "jointFiringDrill": "群控机制可选",
-        "eventChallenge": "群控机制或高数值关卡内讧选用"
+      "newbie": null,
+      "totalAssault": "霍德堆尸群控可选",
+      "pvp": "暂时无组合搭配",
+      "grandAssault": "霍德堆尸群控可选",
+      "limitBreakAssault": "缺人或机制使用",
+      "jointFiringDrill": "群控机制可选",
+      "eventChallenge": "群控机制或高数值关卡内讧选用"
     },
     "uniqueWeaponRecommendedSummary": "群控辅助不需要提高伤害，开专增加生存能力",
     "overallRecommendation": "联动吉祥物，霍德堆尸可选",
     "skillOrder": [
-        "EX3",
-        "技一.二.三Lv4",
-        "技三Lv7",
-        "技二Lv7",
-        "技一Lv7",
-        "EX5",
-        "技三Lv10",
-        "技二Lv10",
-        "技一Lv10",
-        "Max"
-    ]
+      "EX3",
+      "技一.二.三Lv4",
+      "技三Lv7",
+      "技二Lv7",
+      "技一Lv7",
+      "EX5",
+      "技三Lv10",
+      "技二Lv10",
+      "技一Lv10",
+      "Max"
+    ],
     "skillExtraDesc": "需使用全部学校的大量BD跟笔记"
-},
-{
+  },
+  {
     "id": 59003,
     "fullname": "御坂 美琴",
     "name": "御坂美琴",
@@ -8588,46 +8581,46 @@
     "ratingVersion": "7.1",
     "ratingDate": "2025/08/11",
     "ratings": {
-        "newbie": [3, 0, 0],
-        "totalAssault": [2, 0, 0],
-        "pvp": [2, 0, 0],
-        "grandAssault": [2, 0, 0],
-        "limitBreakAssault": null,
-        "jointFiringDrill": [3, 0, 0],
-        "eventChallenge": [1, 0, 0],
-        "overall": 40
+      "newbie": [3, 0, 0],
+      "totalAssault": [2, 0, 0],
+      "pvp": [2, 0, 0],
+      "grandAssault": [2, 0, 0],
+      "limitBreakAssault": null,
+      "jointFiringDrill": [3, 0, 0],
+      "eventChallenge": [1, 0, 0],
+      "overall": 40
     },
     "skillsSummary": {
-        "ex": "3Cost对直线范围内敌方造成<blue>1034%</blue>伤害",
-        "ns": "每50秒对圆形范围内敌方造成<blue>228%</blue>伤害和<blue>157%</blue><purple>感电</purple><teal>(40秒)</teal>，PS技免疫<red>食蜂操祈</red>的<purple>困惑</purple>",
-        "ss": "使用NS技时提高自身攻击力<blue>21.4%</blue><teal>(40秒)</teal>"
+      "ex": "3Cost对直线范围内敌方造成<blue>1034%</blue>伤害",
+      "ns": "每50秒对圆形范围内敌方造成<blue>228%</blue>伤害和<blue>157%</blue><purple>感电</purple><teal>(40秒)</teal>，PS技免疫<red>食蜂操祈</red>的<purple>困惑</purple>",
+      "ss": "使用NS技时提高自身攻击力<blue>21.4%</blue><teal>(40秒)</teal>"
     },
     "ratingsSummary": {
-        "newbie": null,
-        "totalAssault": "双地形球、重甲鸡可选输出",
-        "pvp": "跑速队可选范围输出",
-        "grandAssault": "双地形球、重甲鸡可选输出",
-        "limitBreakAssault": "缺人或机制使用",
-        "jointFiringDrill": "防御/突破/护卫演习可选",
-        "eventChallenge": "需要对群可选"
+      "newbie": null,
+      "totalAssault": "双地形球、重甲鸡可选输出",
+      "pvp": "跑速队可选范围输出",
+      "grandAssault": "双地形球、重甲鸡可选输出",
+      "limitBreakAssault": "缺人或机制使用",
+      "jointFiringDrill": "防御/突破/护卫演习可选",
+      "eventChallenge": "需要对群可选"
     },
     "uniqueWeaponRecommendedSummary": "攻击力增加，主输出卷分建议专二起或更高",
     "overallRecommendation": "球道中可选清杂对策、重甲对群大决战可选",
     "skillOrder": [
-        "EX3",
-        "技一.二.三Lv4",
-        "技三Lv7",
-        "技一Lv7",
-        "技二Lv7",
-        "EX5",
-        "技三Lv10",
-        "技一Lv10",
-        "技二Lv10",
-        "Max"
-    ]
+      "EX3",
+      "技一.二.三Lv4",
+      "技三Lv7",
+      "技一Lv7",
+      "技二Lv7",
+      "EX5",
+      "技三Lv10",
+      "技一Lv10",
+      "技二Lv10",
+      "Max"
+    ],
     "skillExtraDesc": "无开专优先技一再二 / 需使用全部学校的大量BD跟笔记"
-},
-{
+  },
+  {
     "id": 59004,
     "fullname": "佐天 泪子",
     "name": "佐天泪子",
@@ -8651,45 +8644,45 @@
     "ratingVersion": "7.1",
     "ratingDate": "2025/08/11",
     "ratings": {
-        "newbie": [2, 0, 0],
-        "totalAssault": [1, 0, 0],
-        "pvp": [3, 0, 0],
-        "grandAssault": [1, 0, 0],
-        "limitBreakAssault": null,
-        "jointFiringDrill": [1, 0, 0],
-        "eventChallenge": [1, 0, 0],
-        "overall": 29
+      "newbie": [2, 0, 0],
+      "totalAssault": [1, 0, 0],
+      "pvp": [3, 0, 0],
+      "grandAssault": [1, 0, 0],
+      "limitBreakAssault": null,
+      "jointFiringDrill": [1, 0, 0],
+      "eventChallenge": [1, 0, 0],
+      "overall": 29
     },
     "skillsSummary": {
-        "ex": "3Cost对圆形范围内敌方造成<blue>847%</blue>伤害",
-        "ns": "每45秒<purple>根据NS技使用次数</purple>提高<purple>X名</purple>我方攻击力<blue>20.6%</blue><red>(最多3人)</red>",
-        "ss": "<blue>17.3%</blue>攻击力光环"
+      "ex": "3Cost对圆形范围内敌方造成<blue>847%</blue>伤害",
+      "ns": "每45秒<purple>根据NS技使用次数</purple>提高<purple>X名</purple>我方攻击力<blue>20.6%</blue><red>(最多3人)</red>",
+      "ss": "<blue>17.3%</blue>攻击力光环"
     },
     "ratingsSummary": {
-        "newbie": null,
-        "totalAssault": "重甲或其他甲BOSS堆尸可选挂件",
-        "pvp": "野外赛季针对重甲可选输出",
-        "grandAssault": "重甲或其他甲BOSS堆尸可选挂件",
-        "limitBreakAssault": "缺人或机制使用",
-        "jointFiringDrill": "支援输出机制可选",
-        "eventChallenge": "支援输出机制可选"
+      "newbie": null,
+      "totalAssault": "重甲或其他甲BOSS堆尸可选挂件",
+      "pvp": "野外赛季针对重甲可选输出",
+      "grandAssault": "重甲或其他甲BOSS堆尸可选挂件",
+      "limitBreakAssault": "缺人或机制使用",
+      "jointFiringDrill": "支援输出机制可选",
+      "eventChallenge": "支援输出机制可选"
     },
     "uniqueWeaponRecommendedSummary": "攻击力增加，加强输出，活动可刷取",
     "overallRecommendation": "1500EX技距离、超远索敌，竞技场前排玩具",
     "skillOrder": [
-        "EX3",
-        "技一.二.三Lv4",
-        "技三Lv7",
-        "技一Lv7",
-        "技二Lv7",
-        "EX5",
-        "技三Lv10",
-        "技一Lv10",
-        "技二Lv10",
-        "Max"
-    ]
+      "EX3",
+      "技一.二.三Lv4",
+      "技三Lv7",
+      "技一Lv7",
+      "技二Lv7",
+      "EX5",
+      "技三Lv10",
+      "技一Lv10",
+      "技二Lv10",
+      "Max"
+    ],
     "skillExtraDesc": "需使用全部学校的大量BD跟笔记"
-},
+  },
   {
     "id": 59005,
     "fullname": "一之濑 明日奈(制服)",
@@ -8752,7 +8745,7 @@
       "Max"
     ]
   },
-    {
+  {
     "id": 59006,
     "fullname": "角楯 花凛(制服)",
     "name": "花凛(制服)",
@@ -8812,10 +8805,10 @@
       "技二Lv10",
       "技一Lv10",
       "Max"
-    ]
+    ],
     "skillExtraDesc": "无专二优先技一之后技二"
   },
-   {
+  {
     "id": 59007,
     "fullname": "河和 静子",
     "name": "静子",
@@ -8851,7 +8844,7 @@
     "skillsSummary": {
       "ex": "3Cost在指定位置部署<purple>掩体</purple>，<purple>掩体</purple>额外拥有静子<blue>46.8%</blue>血量，并提高圆形范围内我方命中<blue>21.3%</blue><teal>(30秒)</teal>",
       "ns": "毎25秒对一名敌方造成<blue>341%</blue>伤害，并降低攻击<blue>18.3%</blue><teal>(21秒)</teal>",
-      "ss": "<blue>17.3%</blue>暴击光环"
+      "ss": "<blue>17.3%</blue>暴击光环",
       "fi": "降攻增加，略微提高全队生存"
     },
     "ratingsSummary": {
@@ -8865,14 +8858,7 @@
     },
     "uniqueWeaponRecommendedSummary": "提高基础面板，拉高掩体血量，建议专一起",
     "overallRecommendation": "黑白、火龙塔等掩体机制对策",
-    "skillOrder": [
-      "EX3",
-      "EX5",
-      "技一Lv7",
-      "技三Lv10",
-      "技一Lv10",
-      "Max"
-    ],
+    "skillOrder": ["EX3", "EX5", "技一Lv7", "技三Lv10", "技一Lv10", "Max"],
     "favoriteItem": {
       "name": "回忆茶具套组",
       "recommendedLevel": [3, 0, 0],
@@ -8881,6 +8867,7 @@
         "血量<red>5000</red>",
         "伤害<blue>304%</blue>提升至<blue>466%</blue>，降低攻击<blue>18.3%</blue>提升至<blue>24.9%</blue><teal>（21秒）</teal>"
       ]
+    }
   },
   {
     "id": 59008,
@@ -8931,17 +8918,7 @@
     },
     "uniqueWeaponRecommendedSummary": "攻击力增加，堆尸备用、有爱开专",
     "overallRecommendation": "特/弹甲BOSS堆尸可选输出",
-    "skillOrder": [
-      "技一.二.三Lv4",
-      "EX3",
-      "技二Lv7",
-      "技一Lv7",
-      "技三LV7",
-      "EX5",
-      "技二Lv10",
-      "技一.三Lv10",
-      "Max"
-    ]
+    "skillOrder": ["技一.二.三Lv4", "EX3", "技二Lv7", "技一Lv7", "技三LV7", "EX5", "技二Lv10", "技一.三Lv10", "Max"]
   },
   {
     "id": 59009,
@@ -9165,7 +9142,7 @@
     "skillsSummary": {
       "ex": "6Cost按顺序对最多三名敌方及圆形范围内造成<blue>372%</blue>伤害，并<purple>眩晕</purple><blue>2.7秒</blue><red>(已经被</red><purple>群控</purple><red>则会使伤害提升至744%且眩晕变为5.3秒)</red>",
       "ns": "毎50秒对一名敌方造成<blue>451%</blue>伤害且<purple>眩晕</purple><blue>3.1秒</blue>",
-      "ss": "EX技会对目标施加攻击力<blue>57%</blue>的<purple>恶寒</purple><teal>(20秒)</teal>"
+      "ss": "EX技会对目标施加攻击力<blue>57%</blue>的<purple>恶寒</purple><teal>(20秒)</teal>",
       "fi": "加强群控时间"
     },
     "ratingsSummary": {
@@ -9179,14 +9156,7 @@
     },
     "uniqueWeaponRecommendedSummary": "辅助不太需要攻击力，需要面板拉生存时考虑",
     "overallRecommendation": "爱用品后摆烂刀可选群控对策，双技打满群控计量槽",
-    "skillOrder": [
-      "EX3",
-      "技一.二.三Lv4",
-      "技一Lv7",
-      "技一Lv10",
-      "EX5",
-      "Max"
-    ],
+    "skillOrder": ["EX3", "技一.二.三Lv4", "技一Lv7", "技一Lv10", "EX5", "Max"],
     "favoriteItem": {
       "name": "装满宝物的小包包",
       "recommendedLevel": [4, 0, 0],
@@ -9195,5 +9165,6 @@
         "CC强化力<red>55</red>",
         "伤害<blue>451%</blue>提升至<blue>649%</blue>，攻击力增加<blue>30.5%</blue><teal>（40秒）</teal>"
       ]
+    }
   }
 ]
