@@ -8476,8 +8476,8 @@
       "overall": 28
     },
     "skillsSummary": {
-      "ex": "5Cost在指定位置召喚初音未來，回復圓形範圍內我方治癒力<blue>144%</blue>血量同時提高攻擊力<blue>34%</blue><red>(領域增益)</red>",
-      "ns": "毎30秒提高圓形範圍內我方暴擊值<blue>37.7%</blue><teal>(20秒)</teal>",
+      "ex": "5Cost在指定位置召喚初音未來，回復圓形範圍內我方治癒力<blue>144%</blue>血量同時提高攻擊力<blue>34%</blue><red>（領域增益）</red>",
+      "ns": "毎30秒提高圓形範圍內我方暴擊值<blue>37.7%</blue><teal>（20秒）</teal>",
       "ss": "<blue>17.3%</blue>受回復率光環"
     },
     "ratingsSummary": {
@@ -8525,12 +8525,12 @@
       "limitBreakAssault": null,
       "jointFiringDrill": [1, 0, 0],
       "eventChallenge": [2, 0, 0],
-      "overall": 28
+      "overall": 21
     },
     "skillsSummary": {
-      "ex": "5Cost對一名敵方和圓形範圍內兩名造成<blue>1468%</blue>傷害並賦予<purple>困惑</purple><teal>(7秒)</teal>",
+      "ex": "5Cost對一名敵方和圓形範圍內兩名造成<blue>1468%</blue>傷害並賦予<purple>困惑</purple><teal>（7秒）</teal>",
       "ns": "每30秒對圓形範圍內敵方造成<blue>604%</blue>傷害",
-      "ss": "使用EX技成功施加<purple>困惑</purple>時，提高自身閃避、防禦<blue>36.7%</blue><teal>(20秒)</teal>"
+      "ss": "使用EX技成功施加<purple>困惑</purple>時，提高自身閃避、防禦<blue>36.7%</blue><teal>（20秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -8592,8 +8592,8 @@
     },
     "skillsSummary": {
       "ex": "3Cost對直線範圍內敵方造成<blue>1034%</blue>傷害",
-      "ns": "每50秒對圓形範圍內敵方造成<blue>228%</blue>傷害和<blue>157%</blue><purple>感電</purple><teal>(40秒)</teal>，PS技免疫<red>食蜂操祈</red>的<purple>困惑</purple>",
-      "ss": "使用NS技時提高自身攻擊力<blue>21.4%</blue><teal>(40秒)</teal>"
+      "ns": "每50秒對圓形範圍內敵方造成<blue>228%</blue>傷害和<blue>157%</blue><purple>感電</purple><teal>（40秒）</teal>，PS技免疫<red>食蜂操祈</red>的<purple>困惑</purple>",
+      "ss": "使用NS技時提高自身攻擊力<blue>21.4%</blue><teal>（40秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -8638,7 +8638,7 @@
     "city": "C",
     "outdoor": "A",
     "indoor": "B",
-    "equipments": ["hat", "bag", "hairpin"],
+    "equipments": ["hat", "bag", "necklace"],
     "uniqueWeaponStar2": "攻擊力增加",
     "uniqueWeaponStar3": ["indoor", "A"],
     "ratingVersion": "7.1",
@@ -8655,7 +8655,7 @@
     },
     "skillsSummary": {
       "ex": "3Cost對圓形範圍內敵方造成<blue>847%</blue>傷害",
-      "ns": "每45秒<purple>根據NS技使用次數</purple>提高<purple>X名</purple>我方攻擊力<blue>20.6%</blue><red>(最多3人)</red>",
+      "ns": "每45秒<purple>根據NS技使用次數</purple>提高<purple>X名</purple>我方攻擊力<blue>20.6%</blue><red>（最多3人）</red>",
       "ss": "<blue>17.3%</blue>攻擊力光環"
     },
     "ratingsSummary": {
@@ -8685,8 +8685,8 @@
   },
   {
     "id": 59005,
-    "fullname": "一之瀨 明日奈(制服)",
-    "name": "明日奈(制服)",
+    "fullname": "一之瀨 明日奈（制服）",
+    "name": "明日奈（制服）",
     "nicknames": ["JK明日奈"],
     "school": "Millennium",
     "attackType": "Explosive",
@@ -8695,7 +8695,7 @@
     "position": [0, "輔助"],
     "uniqueWeaponRecommended": "看情況開",
     "acquisitionMethod": "限定池",
-    "skillMainOparts": "winniestone",
+    "skillMainOparts": "winnistone",
     "skillSubOparts": "antikythera",
     "l2dUnlock": 5,
     "city": "B",
@@ -8717,9 +8717,9 @@
       "overall": 51
     },
     "skillsSummary": {
-      "ex": "3Cost提高自身及<red>後排(支援位)</red>攻擊力<blue>63.5%</blue><teal>(19秒</teal><red>/專二22.61秒)</red>",
+      "ex": "3Cost提高自身及<red>後排（支援位）</red>攻擊力<blue>63.5%</blue>（<teal>19秒</teal>/<red>專二22.61秒</red>）",
       "ns": "每40秒為除自身外圓形範圍內友方回復治癒力<blue>98.2%</blue>血量",
-      "ss": "提高自身及<red>後排(支援位)</red>攻擊力<blue>30.6%</blue>"
+      "ss": "提高自身及<red>後排（支援位）</red>攻擊力<blue>30.6%</blue>"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -8727,8 +8727,8 @@
       "pvp": "暫時無組合搭配",
       "grandAssault": "葛夫拉、葛利果後排刀體系主對策輔助",
       "limitBreakAssault": "缺人或機制使用",
-      "jointFiringDrill": "限定後排(支援位)輸出機制時可選",
-      "eventChallenge": "限定後排(支援位)輸出機制時可選"
+      "jointFiringDrill": "限定後排（支援位）輸出機制時可選",
+      "eventChallenge": "限定後排（支援位）輸出機制時可選"
     },
     "uniqueWeaponRecommendedSummary": "一般情況3星足夠，看軸是否需要再考慮開",
     "overallRecommendation": "後排輸出體系主對策輔助，葛夫拉、LU難葛利果對策",
@@ -8747,8 +8747,8 @@
   },
   {
     "id": 59006,
-    "fullname": "角楯 花凜(制服)",
-    "name": "花凜(制服)",
+    "fullname": "角楯 花凜（制服）",
+    "name": "花凜（制服）",
     "nicknames": ["JK花凜"],
     "school": "Millennium",
     "attackType": "Explosive",
@@ -8779,8 +8779,8 @@
       "overall": 38
     },
     "skillsSummary": {
-      "ex": "7Cost對一名敵方造成<blue>991%</blue>傷害(<red>依目標當前血量提升1~3倍傷害，血量越低，傷害越高</red>)；如果目標生命值低於20%，則會提高自身暴傷率<blue>40.2%</blue>、攻擊<blue>21.1%</blue>、無視防禦<blue>751</blue><teal>(30秒)</teal>",
-      "ns": "毎40秒對一名敵方造成<blue>224%</blue>傷害(<red>依目標當前血量提升1~3倍傷害，血量越低，傷害越高</red>)",
+      "ex": "7Cost對一名敵方造成<blue>991%</blue>傷害<red>（依目標當前血量提升1~3倍傷害，血量越低，傷害越高）</red>；<purple>如果目標生命值低於20%</purple>，則會提高自身暴傷率<blue>40.2%</blue>、攻擊<blue>21.1%</blue>、無視防禦<blue>751</blue><teal>（30秒）</teal>",
+      "ns": "毎40秒對一名敵方造成<blue>224%</blue>傷害<red>（依目標當前血量提升1~3倍傷害，血量越低，傷害越高）</red>",
       "ss": "<blue>17.3%</blue>攻擊力光環"
     },
     "ratingsSummary": {
@@ -8789,8 +8789,8 @@
       "pvp": "暫時無組合搭配",
       "grandAssault": "暫無對策BOSS，輕甲多刀可選",
       "limitBreakAssault": "缺人或機制使用",
-      "jointFiringDrill": "限定後排(支援位)輸出機制時可選",
-      "eventChallenge": "限定後排(支援位)輸出機制時可選"
+      "jointFiringDrill": "限定後排（支援位）輸出機制時可選",
+      "eventChallenge": "限定後排（支援位）輸出機制時可選"
     },
     "uniqueWeaponRecommendedSummary": "主輸出使用，建議活動刷取高專",
     "overallRecommendation": "LU/TM難度葛夫拉多刀可選對策輸出，其他BOSS多刀可選",
@@ -8813,7 +8813,7 @@
     "fullname": "河和 靜子",
     "name": "靜子",
     "nicknames": ["靜子"],
-    "school": "Hyakkaiyako",
+    "school": "Hyakkiyako",
     "attackType": "Mystic",
     "defenseType": "Special",
     "weapon": "SG",
@@ -8842,8 +8842,8 @@
       "overall": 34
     },
     "skillsSummary": {
-      "ex": "3Cost在指定位置部署<purple>掩體</purple>，<purple>掩體</purple>額外擁有靜子<blue>46.8%</blue>血量，並提高圓形範圍內我方命中<blue>21.3%</blue><teal>(30秒)</teal>",
-      "ns": "毎25秒對一名敵方造成<blue>341%</blue>傷害，並降低攻擊<blue>18.3%</blue><teal>(21秒)</teal>",
+      "ex": "3Cost在指定位置部署<purple>掩體</purple>，<purple>掩體</purple>額外擁有靜子<blue>46.8%</blue>血量，並提高圓形範圍內我方命中<blue>21.3%</blue><teal>（30秒）</teal>",
+      "ns": "毎25秒對一名敵方造成<blue>341%</blue>傷害，並降低攻擊<blue>18.3%</blue><teal>（21秒）</teal>",
       "ss": "<blue>17.3%</blue>暴擊光環",
       "fi": "降攻增加，略微提高全隊生存"
     },
@@ -8860,7 +8860,7 @@
     "overallRecommendation": "黑白、火龍塔等掩體機制對策",
     "skillOrder": ["EX3", "EX5", "技一Lv7", "技三Lv10", "技一Lv10", "Max"],
     "favoriteItem": {
-      "name": "回憶茶具套組",
+      "name": "充滿回憶的茶具套組",
       "recommendedLevel": [3, 0, 0],
       "materials": ["33", "mandragora"],
       "effects": [
@@ -8874,7 +8874,7 @@
     "fullname": "千鳥 三千留",
     "name": " 三千留",
     "nicknames": ["三千留"],
-    "school": "Hyakkaiyako",
+    "school": "Hyakkiyako",
     "attackType": "Mystic",
     "defenseType": "Light",
     "weapon": "SR",
@@ -8903,9 +8903,9 @@
       "overall": 20
     },
     "skillsSummary": {
-      "ex": "5Cost對直線範圍上第一名敵人造成<blue>803%</blue>傷害並施加<blue>194%</blue><purple>燒傷</purple><teal>(20秒)</teal>",
-      "ns": "毎40秒提高自身攻擊力<blue>40.6%</blue><teal>(20秒)</teal>",
-      "ss": "根據編隊中<red>忍術研究部學生</red>數量提高暴傷<blue>(1名:15.9%、2名:31.9%、3名:47.8%、≥4名:63.8%)</blue>"
+      "ex": "5Cost對直線範圍上第一名敵人造成<blue>803%</blue>傷害並施加<blue>194%</blue><purple>燒傷</purple><teal>（20秒）</teal>",
+      "ns": "毎40秒提高自身攻擊力<blue>40.6%</blue><teal>（20秒）</teal>",
+      "ss": "根據編隊中<red>忍術研究部學生</red>數量提高暴傷（1名：<blue>15.9%</blue>、2名：<blue>31.9%</blue>、3名：<blue>47.8%</blue>、≥4名：<blue>63.8%</blue>）"
     },
     "ratingsSummary": {
       "newbie": null,
@@ -8925,7 +8925,7 @@
     "fullname": "大野 月夜",
     "name": "月夜",
     "nicknames": ["巨型忍者"],
-    "school": "Hyakkaiyako",
+    "school": "Hyakkiyako",
     "attackType": "Mystic",
     "defenseType": "Light",
     "weapon": "SMG",
@@ -8954,8 +8954,8 @@
       "overall": 48
     },
     "skillsSummary": {
-      "ex": "3Cost賦予自身受擊回復<teal>(30秒)</teal>，受到敵方攻擊回復自身治癒力<blue>11.2%</blue>血量<purple>(最多100次)</purple>",
-      "ns": "<red>毎普攻7次</red>對一名敵方造成<blue>659%</blue>傷害，對<purple>中型體型目標</purple>額外降防<blue>51.6%</blue><teal>(20秒)</teal>",
+      "ex": "3Cost賦予自身受擊回復<teal>（30秒）</teal>，受到敵方攻擊回復自身治癒力<blue>11.2%</blue>血量<purple>（最多100次）</purple>",
+      "ns": "<red>毎普攻7次</red>對一名敵方造成<blue>659%</blue>傷害，對<purple>中型體型目標</purple>額外降防<blue>51.6%</blue><teal>（20秒）</teal>",
       "ss": "<red>受群控效果時</red>，回復治癒力<blue>185%</blue>血量"
     },
     "ratingsSummary": {
@@ -8967,7 +8967,7 @@
       "jointFiringDrill": "承傷、降防或機制選用",
       "eventChallenge": "承傷、降防或機制選用"
     },
-    "uniqueWeaponRecommendedSummary": "提高生存能力，看軸生存壓力開專",
+    "uniqueWeaponRecommendedSummary": "提高生存能力，<purple>看軸生存壓力開專</purple>",
     "overallRecommendation": "氣墊船、壽司P1卷高選用對策坦",
     "skillOrder": [
       "EX3",
@@ -8985,9 +8985,9 @@
   {
     "id": 59010,
     "fullname": "河和 靜子（泳裝）",
-    "name": "靜子(泳裝)",
+    "name": "靜子（泳裝）",
     "nicknames": ["水靜"],
-    "school": "Hyakkaiyako",
+    "school": "Hyakkiyako",
     "attackType": "Mystic",
     "defenseType": "Heavy",
     "weapon": "SG",
@@ -9016,15 +9016,15 @@
       "overall": 54
     },
     "skillsSummary": {
-      "ex": "3Cost使圓形範圍內4名我方移動到指定位置，並獲得<blue>145%</blue>護盾<teal>(30秒)</teal>",
-      "ns": "每45秒使一名暴傷最高我方增加暴傷<blue>39.5%</blue><teal>(36秒)</teal>",
+      "ex": "3Cost使圓形範圍內4名我方移動到指定位置，並獲得<blue>145%</blue>護盾<teal>（30秒）</teal>",
+      "ns": "每45秒使一名<red>暴傷最高</red>我方增加暴傷<blue>39.5%</blue><teal>（36秒）</teal>",
       "ss": "<blue>17.3%</blue>攻擊力光環"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "格茲、黑白可選護盾位移對策、蓋布拉堆屍可選",
+      "totalAssault": "高茲、黑白可選護盾位移對策、葛夫拉堆屍可選",
       "pvp": "暫時無組合搭配",
-      "grandAssault": "格茲、黑白可選護盾位移對策、蓋布拉堆屍可選",
+      "grandAssault": "高茲、黑白可選護盾位移對策、葛夫拉堆屍可選",
       "limitBreakAssault": "賽特、提法塔低配可選護盾角色",
       "jointFiringDrill": "需要護盾、位移時可選",
       "eventChallenge": "需要護盾、位移時可選"
@@ -9047,9 +9047,9 @@
   {
     "id": 59011,
     "fullname": "久田 伊樹菜（泳裝）",
-    "name": "伊樹菜(泳裝)",
+    "name": "伊樹菜（泳裝）",
     "nicknames": ["水忍忍", "水狐狸"],
-    "school": "Hyakkaiyako",
+    "school": "Hyakkiyako",
     "attackType": "Mystic",
     "defenseType": "Special",
     "weapon": "SMG",
@@ -9078,15 +9078,15 @@
       "overall": 70
     },
     "skillsSummary": {
-      "ex": "2Cost對一名敵方造成<blue>804%</blue>傷害並施加<purple>集火</purple><teal>(30秒)</teal>",
-      "ns": "<red>毎普攻6次</red>對1名敵方造成<blue>669%</blue>傷害且減少暴傷抗性<blue>38.9%</blue><teal>(20秒)</teal>",
-      "ss": "毎25次暴擊則會使自身攻速提升<blue>30.9%</blue><teal>(23秒)</teal>"
+      "ex": "2Cost對一名敵方造成<blue>804%</blue>傷害並施加<purple>集火</purple><teal>（30秒）</teal>",
+      "ns": "<red>毎普攻6次</red>對1名敵方造成<blue>669%</blue>傷害且減少暴傷抗性<blue>38.9%</blue><teal>（20秒）</teal>",
+      "ss": "毎25次暴擊則會使自身攻速提升<blue>30.9%</blue><teal>（23秒）</teal>"
     },
     "ratingsSummary": {
       "newbie": null,
-      "totalAssault": "格茲主對策功能輸出，其他BOSS可選降暴傷抗性掛件或特甲多刀使用",
+      "totalAssault": "高茲主對策功能輸出，其他BOSS可選降暴傷抗性掛件或特甲多刀使用",
       "pvp": "暫時無組合搭配",
-      "grandAssault": "格茲主對策功能輸出，其他BOSS可選降暴傷抗性掛件或特甲多刀使用",
+      "grandAssault": "高茲主對策功能輸出，其他BOSS可選降暴傷抗性掛件或特甲多刀使用",
       "limitBreakAssault": "特甲賽特可選副輸出兼打球",
       "jointFiringDrill": "射擊/突破演習/過牌可選",
       "eventChallenge": "需要集火或降暴傷抗可選"
@@ -9109,9 +9109,9 @@
   {
     "id": 59012,
     "fullname": "和樂 知世（泳裝）",
-    "name": "知世(泳裝)",
+    "name": "知世（泳裝）",
     "nicknames": ["水芝士"],
-    "school": "Hyakkaiyako",
+    "school": "Hyakkiyako",
     "attackType": "Mystic",
     "defenseType": "Light",
     "weapon": "GL",
@@ -9140,9 +9140,9 @@
       "overall": 49
     },
     "skillsSummary": {
-      "ex": "6Cost按順序對最多三名敵方及圓形範圍內造成<blue>372%</blue>傷害，並<purple>眩暈</purple><blue>2.7秒</blue><red>(已經被</red><purple>群控</purple><red>則會使傷害提升至744%且眩暈變為5.3秒)</red>",
-      "ns": "毎50秒對一名敵方造成<blue>451%</blue>傷害且<purple>眩暈</purple><blue>3.1秒</blue>",
-      "ss": "EX技會對目標施加攻擊力<blue>57%</blue>的<purple>惡寒</purple><teal>(20秒)</teal>",
+      "ex": "6Cost按順序對最多三名敵方及圓形範圍內造成<blue>372%</blue>傷害，並<purple>眩暈</purple><blue>2.7秒</blue><red>（已經被</red><purple>群控</purple><red>則會使傷害提升至744%且眩暈變為5.3秒）</red>",
+      "ns": "毎50秒對一名敵方造成<blue>451%</blue>傷害且<purple>眩暈</purple><teal>3.1秒</teal>",
+      "ss": "EX技會對目標施加攻擊力<blue>57%</blue>的<purple>惡寒</purple><teal>（20秒）</teal>",
       "fi": "加強群控時間"
     },
     "ratingsSummary": {
@@ -9158,12 +9158,12 @@
     "overallRecommendation": "愛用品後擺爛刀可選群控對策，雙技打滿群控計量槽",
     "skillOrder": ["EX3", "技一.二.三Lv4", "技一Lv7", "技一Lv10", "EX5", "Max"],
     "favoriteItem": {
-      "name": "裝滿寶物的小包包",
+      "name": "裝滿寶物的包包",
       "recommendedLevel": [4, 0, 0],
       "materials": ["23", "nimrud"],
       "effects": [
         "CC強化力<red>55</red>",
-        "傷害<blue>451%</blue>提升至<blue>649%</blue>，攻擊力增加<blue>30.5%</blue><teal>（40秒）</teal>"
+        "傷害<blue>451%</blue>提升至<blue>649%</blue>，<red>攻擊力增加<blue>30.5%</blue><teal>（40秒）</teal></red>"
       ]
     }
   }
