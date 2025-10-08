@@ -9630,5 +9630,68 @@
       "Max"
     ],
     "skillExtraDesc": "專二優先點技二"
+  },
+  {
+    "id": 237,
+    "fullname": "薄葉 律",
+    "name": "律",
+    "nicknames": ["律"],
+    "jpname": "薄葉 リツ",
+    "school": "WildHunt",
+    "attackType": "Mystic",
+    "defenseType": "Special",
+    "weapon": "SMG",
+    "position": [1, "輔助"],
+    "uniqueWeaponRecommended": "使用建議專二",
+    "acquisitionMethod": "常駐池",
+    "skillMainOparts": "totempole",
+    "skillSubOparts": "rohonc",
+    "l2dUnlock": 6,
+    "city": "S",
+    "outdoor": "D",
+    "indoor": "B",
+    "equipments": ["shoes", "hairpin", "necklace"],
+    "uniqueWeaponStar2": "增益時間增加",
+    "uniqueWeaponStar3": ["city", "SS"],
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/10/08",
+    "ratings": {
+      "newbie": [1, 0, 0],
+      "totalAssault": [3, 0, 0],
+      "pvp": null,
+      "grandAssault": [1, 0, 0],
+      "limitBreakAssault": [2, 0, 0],
+      "jointFiringDrill": [1, 0, 0],
+      "eventChallenge": [1, 0, 0],
+      "overall": 38
+    },
+    "skillsSummary": {
+      "ex": "3Cost提高一名我方攻速<blue>100%</blue>（<teal>24秒</teal>/<red>專二28.5秒</red>）",
+      "ns": "我方每暴擊200次對一名敵方造成<blue>361%</blue>傷害，並降防<blue>24.9%</blue><teal>（21秒）</teal>",
+      "ss": "<blue>17.3%</blue>暴傷光環"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "普攻隊專屬輔助，攻速兼降防，LU難主教多刀可選",
+      "pvp": "暫時無組合搭配",
+      "grandAssault": "普攻隊專屬輔助，攻速兼降防，LU難主教多刀可選",
+      "limitBreakAssault": "賽特塔可選攻速輔助",
+      "jointFiringDrill": "HIT或普攻機制可選攻速輔助",
+      "eventChallenge": "HIT或普攻機制可選攻速輔助"
+    },
+    "uniqueWeaponRecommendedSummary": "增加增益持續時間、以及支援面板，提高NS降防的覆蓋率",
+    "overallRecommendation": "普攻隊可選多功能輔助，LU難主教多刀可選，<red>或備戰新BOSS</red>",
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "EX5",
+      "技一Lv7",
+      "技三Lv7",
+      "技二Lv7",
+      "技一Lv10",
+      "技三Lv10",
+      "技二Lv10",
+      "Max"
+    ]
   }
 ]
