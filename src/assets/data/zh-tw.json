@@ -1963,7 +1963,7 @@
       "overall": 20
     },
     "skillsSummary": {
-      "ex": "4Cost使圓形範圍內友方回復治愈力<blue>224%</blue>的血量",
+      "ex": "4Cost使圓形範圍內友方回復治癒力<blue>224%</blue>的血量",
       "ns": "毎30秒使圓形範圍友方暴抗增加<blue>29.4%</blue><teal>（20秒） </teal>",
       "ss": "<blue>17.3%</blue>血量光環"
     },
@@ -3252,7 +3252,7 @@
     "outdoor": "D",
     "indoor": "S",
     "equipments": ["shoes", "hairpin", "necklace"],
-    "uniqueWeaponStar2": "治愈力增加",
+    "uniqueWeaponStar2": "治癒力增加",
     "uniqueWeaponStar3": ["indoor", "SS"],
     "ratingVersion": "7.1",
     "ratingDate": "2025/08/01",
@@ -3280,7 +3280,7 @@
       "jointFiringDrill": "突破/護衛演習可選",
       "eventChallenge": "有生存壓力可選"
     },
-    "uniqueWeaponRecommendedSummary": "召喚物機制中治愈力增加提升很高，<blue>有需求建議專一起</blue>",
+    "uniqueWeaponRecommendedSummary": "召喚物機制中治癒力增加提升很高，<blue>有需求建議專一起</blue>",
     "overallRecommendation": "商店白嫖持續緩奶，備戰主教新難度",
     "skillOrder": [
       "EX3",
@@ -9034,7 +9034,7 @@
     },
     "skillsSummary": {
       "ex": "3Cost使一名友方EX技傷害提高<blue>74.1%</blue><teal>（25秒）</teal>",
-      "ns": "<red>每普攻12次</red>為自身和<red>血量最低</red>的一名友方回復治愈力<blue>103%</blue>血量",
+      "ns": "<red>每普攻12次</red>為自身和<red>血量最低</red>的一名友方回復治癒力<blue>103%</blue>血量",
       "ss": "<red>使用EX技後</red>使自身攻速提高<blue>31%</blue><teal>（26秒）</teal>"
     },
     "ratingsSummary": {
@@ -9413,7 +9413,7 @@
       "overall": 57
     },
     "skillsSummary": {
-      "ex": "3Cost賦予自身治愈力<blue>96%</blue>的持續回復<teal>（20秒）</teal>並解除一個減益效果",
+      "ex": "3Cost賦予自身治癒力<blue>96%</blue>的持續回復<teal>（20秒）</teal>並解除一個減益效果",
       "ns": "每30秒對圓形範圍內敵方造成<blue>117%</blue>傷害，並降低暴擊抗性<blue>21.1%</blue><teal>（20秒）</teal>",
       "ss": "Cost回復力增加<blue>342</blue>，隊伍中每有一位<red>突擊位的重甲學生</red>Cost回復力增加<blue>85</blue><red>（最多三人）</red>"
     },
@@ -9690,6 +9690,132 @@
       "技二Lv7",
       "技一Lv10",
       "技三Lv10",
+      "技二Lv10",
+      "Max"
+    ]
+  },
+  {
+    "id": 238,
+    "fullname": "守月 鈴美（魔法少女）",
+    "name": "鈴美（魔法少女）",
+    "nicknames": ["魔法鈴美", "魔閃"],
+    "jpname": "守月 スズミ（マジカル）",
+    "school": "Trinity",
+    "attackType": "Sonic",
+    "defenseType": "Special",
+    "weapon": "AR",
+    "position": [0, "輔助"],
+    "uniqueWeaponRecommended": "看情況開",
+    "acquisitionMethod": "限定池",
+    "skillMainOparts": "baghdad",
+    "skillSubOparts": "antikythera",
+    "l2dUnlock": -1,
+    "city": "S",
+    "outdoor": "B",
+    "indoor": "D",
+    "equipments": ["gloves", "hairpin", "watch"],
+    "uniqueWeaponStar2": "增益時間增加",
+    "uniqueWeaponStar3": ["city", "SS"],
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/10/23",
+    "ratings": {
+      "newbie": [3, 0, 0],
+      "totalAssault": [4, 1, 0],
+      "pvp": null,
+      "grandAssault": [3, 0, 0],
+      "limitBreakAssault": [3, 0, 0],
+      "jointFiringDrill": [4, 0, 0],
+      "eventChallenge": [3, 0, 0],
+      "overall": 64
+    },
+    "skillsSummary": {
+      "ex": "5Cost使編隊內突擊位的我方以及我方召喚物攻擊力增加<blue>51.4%</blue>、<red>基礎熟練度</red>增加<blue>25.9%</blue><teal>（41秒）</teal>（<red>基礎熟練度</red>：<purple>增加普攻/NS/SS技能造成的傷害</purple>）",
+      "ns": "每35秒對一名敵方造成<blue>341%</blue>傷害，並降閃<blue>27.4%</blue><teal>（27秒）</teal>",
+      "ss": "使用EX技時，自身Cost恢復力提升<blue>690</blue><teal>（35秒）</teal>"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "LU難門檻預定，泛用加攻輔助，耶索德對策",
+      "pvp": "暫時無組合搭配",
+      "grandAssault": "LU難門檻預定，泛用加攻輔助，耶索德對策",
+      "limitBreakAssault": "特甲賽塔可選輔助",
+      "jointFiringDrill": "普攻機制或輔助NPC、召喚物時選用",
+      "eventChallenge": "普攻機制或輔助NPC、召喚物時選用"
+    },
+    "uniqueWeaponRecommendedSummary": "增益時間增加，視軸情況、如卷分送人等開專",
+    "overallRecommendation": "新概念輔助，除爆發環境外可當做小水星來用，建議抽取",
+    "skillOrder": [
+      "EX3",
+      "技一.二三Lv4",
+      "EX5",
+      "技三Lv7",
+      "技二Lv7",
+      "技一Lv7",
+      "技三Lv10",
+      "技二Lv10",
+      "技一Lv10",
+      "Max"
+    ]
+  },
+  {
+    "id": 239,
+    "fullname": "宇澤 玲紗（魔法少女）",
+    "name": "玲紗（魔法少女）",
+    "nicknames": ["魔法玲紗", "魔芋"],
+    "jpname": "宇沢 レイサ（マジカル）",
+    "school": "Trinity",
+    "attackType": "Sonic",
+    "defenseType": "Special",
+    "weapon": "SG",
+    "position": [1, "輔助"],
+    "uniqueWeaponRecommended": "看情況開",
+    "acquisitionMethod": "限定池",
+    "skillMainOparts": "voynich",
+    "skillSubOparts": "discocolgante",
+    "l2dUnlock": 8,
+    "city": "S",
+    "outdoor": "B",
+    "indoor": "D",
+    "equipments": ["shoes", "bag", "necklace"],
+    "uniqueWeaponStar2": "治癒力增加",
+    "uniqueWeaponStar3": ["city", "SS"],
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/10/23",
+    "ratings": {
+      "newbie": [2, 0, 0],
+      "totalAssault": [4, 0, 0],
+      "pvp": null,
+      "grandAssault": [2, 0, 0],
+      "limitBreakAssault": [4, 1, 0],
+      "jointFiringDrill": [2, 0, 0],
+      "eventChallenge": [1, 0, 0],
+      "overall": 52
+    },
+    "skillsSummary": {
+      "ex": "4Cost使<purple>召喚物</purple>到達指定位置<teal>（22秒）</teal>，<purple>召喚物</purple>擁有魔法玲紗<blue>55.7%</blue>血量、<blue>42.6%</blue>攻擊力、<blue>51.5%</blue>治癒力 <red>【召喚PS技】</red> 提高圓形範圍內我方攻擊力<blue>22.3%</blue>，每4秒回覆<purple>召喚物</purple>治癒力<blue>56.5%</blue>的血量",
+      "ns": "使用EX技能時<red>如有5層</red><purple>糖果魔法</purple>，則強化<purple>召喚PS技</purple>提高圓形範圍內我方暴傷<blue>16.3%</blue> |<red>【召喚】</red>每8秒對一名敵方造成<blue>265%</blue>傷害，並回覆<purple>召喚物</purple>治癒力54.5%的血量",
+      "ss": "<blue>17.3%</blue>攻擊光環 |<red>【召喚】</red>每使用<purple>召喚NS技</purple>獲得1層<purple>糖果魔法</purple><red>（最多5層）累計5層時減少自身費用3點（僅1次）</red>"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "耶索德可選對策奶媽，貓鬼、主教堆屍可選",
+      "pvp": "暫無組合搭配",
+      "grandAssault": "耶索德可選對策奶媽，貓鬼、主教堆屍可選",
+      "limitBreakAssault": "賽特/提法塔可選拐奶一體輔助",
+      "jointFiringDrill": "特珠回血機制可選",
+      "eventChallenge": "特珠回血機制可選"
+    },
+    "uniqueWeaponRecommendedSummary": "治癒力增加，看軸或個人選擇",
+    "overallRecommendation": "新時代拐奶一體輔助，算法特殊。耶索德對策奶媽，其他有生存壓力情況可選",
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "EX5",
+      "技三Lv7",
+      "技一Lv7",
+      "技二Lv7",
+      "技三Lv10",
+      "技一Lv10",
       "技二Lv10",
       "Max"
     ]
