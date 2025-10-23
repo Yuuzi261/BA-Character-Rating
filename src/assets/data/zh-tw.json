@@ -9819,5 +9819,68 @@
       "技二Lv10",
       "Max"
     ]
+  },
+  {
+    "id": 240,
+    "fullname": "河駒風 蘭舞",
+    "name": "蘭舞",
+    "nicknames": ["蘭舞"],
+    "jpname": "河駒風 ラブ",
+    "school": "Trinity",
+    "attackType": "Sonic",
+    "defenseType": "Special",
+    "weapon": "SMG",
+    "position": [0, "輸出坦"],
+    "uniqueWeaponRecommended": "活動有愛刷取",
+    "acquisitionMethod": "活動獎勵",
+    "skillMainOparts": "crystalhaniwa",
+    "skillSubOparts": "kikuko",
+    "l2dUnlock": -1,
+    "city": "A",
+    "outdoor": "B",
+    "indoor": "D",
+    "equipments": ["gloves", "hairpin", "watch"],
+    "uniqueWeaponStar2": "攻擊力增加",
+    "uniqueWeaponStar3": ["outdoor", "A"],
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/10/23",
+    "ratings": {
+      "newbie": [3, 0, 0],
+      "totalAssault": [3, 1, 0],
+      "pvp": [1, 0, 0],
+      "grandAssault": [1, 0, 0],
+      "limitBreakAssault": null,
+      "jointFiringDrill": [2, 0, 0],
+      "eventChallenge": [1, 0, 0],
+      "overall": 39
+    },
+    "skillsSummary": {
+      "ex": "①<red>（對自己）</red>2Cost召喚一名鋼盔團成員<teal>（40秒）</teal><red>（最多3人）</red>，擁有蘭舞一定比例的血量和攻擊力（SG: <blue>54.7%</blue>血量，<blue>14.6%</blue>攻擊；AR: <blue>32.8%</blue>血量，<blue>32.1%</blue>攻擊；SR: <blue>21.8%</blue>血量，<blue>61.2%</blue>攻擊）；②<red>（對敵人）</red>4Cost對一名敵方投擲手雷，造成<blue>735%</blue>傷害並<purple>眩暈6.1秒</purple>，且彈射至目標周圍敵方給予同樣效果<red>（最多彈射2次）</red>",
+      "ns": "每40秒使我方攻擊力提高<blue>15.8%</blue><teal>（30秒）</teal>，<red>若有兩個或以上的鋼盔團成員</red>，則額外提高鋼盔團成員攻擊<blue>31.9%</blue><teal>（30秒）</teal>",
+      "ss": "使用EX技能時，<purple>根據召喚的鋼盔團成員數量</purple>，提高自身和鋼盔團的暴傷<teal>（20秒）</teal>（1人：<blue>18%</blue>；2人：<blue>24%</blue>；3人：<blue>36%</blue>）"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "耶索德P2可選群控對策，霍德、壽司P1缺群控輔助可選",
+      "pvp": "450射程可選對位控制兼輸出",
+      "grandAssault": "耶索德P2可選群控對策，霍德、壽司P1缺群控輔助可選",
+      "limitBreakAssault": "缺人或機制使用",
+      "jointFiringDrill": "群控或HIT/武器種類機制可選",
+      "eventChallenge": "群控或HIT/武器種類機制可選"
+    },
+    "uniqueWeaponRecommendedSummary": "攻擊力增加，提高自身和鋼盔團的輸出，有愛或對策耶索德，建議活動刷取高專",
+    "overallRecommendation": "特殊對策選用，耶索德P2對策群控輸出，競技場前排儲備角",
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "EX5",
+      "技一Lv7",
+      "技三Lv7",
+      "技二Lv7",
+      "技一Lv10",
+      "技三Lv10",
+      "技二Lv10",
+      "Max"
+    ]
   }
 ]

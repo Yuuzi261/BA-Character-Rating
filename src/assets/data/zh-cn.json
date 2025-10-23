@@ -9819,5 +9819,68 @@
       "技二Lv10",
       "Max"
     ]
+  },
+  {
+    "id": 240,
+    "fullname": "河驹风 兰舞",
+    "name": "兰舞",
+    "nicknames": ["兰舞"],
+    "jpname": "河駒風 ラブ",
+    "school": "Trinity",
+    "attackType": "Sonic",
+    "defenseType": "Special",
+    "weapon": "SMG",
+    "position": [0, "输出坦"],
+    "uniqueWeaponRecommended": "活动有爱刷取",
+    "acquisitionMethod": "活动奖励",
+    "skillMainOparts": "crystalhaniwa",
+    "skillSubOparts": "kikuko",
+    "l2dUnlock": -1,
+    "city": "A",
+    "outdoor": "B",
+    "indoor": "D",
+    "equipments": ["gloves", "hairpin", "watch"],
+    "uniqueWeaponStar2": "攻击力增加",
+    "uniqueWeaponStar3": ["outdoor", "A"],
+    "ratingVersion": "7.1",
+    "ratingDate": "2025/10/23",
+    "ratings": {
+      "newbie": [3, 0, 0],
+      "totalAssault": [3, 1, 0],
+      "pvp": [1, 0, 0],
+      "grandAssault": [1, 0, 0],
+      "limitBreakAssault": null,
+      "jointFiringDrill": [2, 0, 0],
+      "eventChallenge": [1, 0, 0],
+      "overall": 39
+    },
+    "skillsSummary": {
+      "ex": "①<red>（对自己）</red>2Cost召唤一名钢盔团成员<teal>（40秒）</teal><red>（最多3人）</red>，拥有兰舞一定比例的血量和攻击力（SG: <blue>54.7%</blue>血量，<blue>14.6%</blue>攻击；AR: <blue>32.8%</blue>血量，<blue>32.1%</blue>攻击；SR: <blue>21.8%</blue>血量，<blue>61.2%</blue>攻击）；②<red>（对敌人）</red>4Cost对一名敌方投掷手雷，造成<blue>735%</blue>伤害并<purple>眩晕6.1秒</purple>，且弹射至目标周围敌方给予同样效果<red>（最多弹射2次）</red>",
+      "ns": "每40秒使我方攻击力提高<blue>15.8%</blue><teal>（30秒）</teal>，<red>若有两个或以上的钢盔团成员</red>，则额外提高钢盔团成员攻击<blue>31.9%</blue><teal>（30秒）</teal>",
+      "ss": "使用EX技能时，<purple>根据召唤的钢盔团成员数量</purple>，提高自身和钢盔团的暴伤<teal>（20秒）</teal>（1人：<blue>18%</blue>；2人：<blue>24%</blue>；3人：<blue>36%</blue>）"
+    },
+    "ratingsSummary": {
+      "newbie": null,
+      "totalAssault": "耶索德P2可选群控对策，霍德、寿司P1缺群控辅助可选",
+      "pvp": "450射程可选对位控制兼输出",
+      "grandAssault": "耶索德P2可选群控对策，霍德、寿司P1缺群控辅助可选",
+      "limitBreakAssault": "缺人或机制使用",
+      "jointFiringDrill": "群控或HIT/武器种类机制可选",
+      "eventChallenge": "群控或HIT/武器种类机制可选"
+    },
+    "uniqueWeaponRecommendedSummary": "攻击力增加，提高自身和钢盔团的输出，有爱或对策耶索德，建议活动刷取高专",
+    "overallRecommendation": "特殊对策选用，耶索德P2对策群控输出，竞技场前排储备角",
+    "skillOrder": [
+      "EX3",
+      "技一.二.三Lv4",
+      "EX5",
+      "技一Lv7",
+      "技三Lv7",
+      "技二Lv7",
+      "技一Lv10",
+      "技三Lv10",
+      "技二Lv10",
+      "Max"
+    ]
   }
 ]
